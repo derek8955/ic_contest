@@ -1,0 +1,16 @@
+
+FTP account:                       
+
+Total simulation cycle (cycle):    
+Simulation score (score):          
+
+--- RTL category---
+HDL simulator :                    ncverilog/irun/vcs/vsim/... 
+RTL filename :                     SME.v            
+
+--- Pre-layout gate-level ---
+gate-levelfilename:                SME_syn.v  
+gate-level sdf filename:           SME_syn.sdf        
+
+-----(annotation)--------------------------------------------------------
+ (optional, write down anything that you want grader know)
