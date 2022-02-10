@@ -28,12 +28,14 @@ reg [5:0] IRAM_A;
 //------------------------Self defined--------------------------
 //--------------------------------------------------------------
 
-//reg [2:0] OPT;// operation point
+reg [5:0] P0;
+wire [5:0] P1, P2, P3;
 reg [7:0] data[0:63];
 reg [6:0] idx;
 reg [1:0] state, nx_state;
 reg [5:0] counter;
-
+reg [5:0] max_idx, min_idx;
+reg [9:0] sum;
 //--------------------------------------------------------------
 //---------------------Parameter defined------------------------
 //--------------------------------------------------------------
@@ -49,6 +51,11 @@ parameter RD = 0, CMD = 1, OP = 2, WR = 3;
 //--------------------------------------------------------------
 //---------------------------design-----------------------------
 //--------------------------------------------------------------
+
+assign P1 = P0 + 6'd1;
+assign P2 = P0 + 6'd8;
+assign P3 = P0 + 6'd9;
+
 
 //state
 always@( posedge clk or posedge reset ) 
@@ -80,16 +87,112 @@ begin
 	else if( state == RD ) IROM_A <= IROM_A + 6'd1;
 end
 
-//Apply IROM_Q to data signal 
+//output logic 
 always@( posedge clk or posedge reset )
 begin
 	if( reset ) 
 	begin
 		for(idx = 0; idx < 64; idx = idx+1)
 			data[idx] <= 8'd0;
+			
+		P0 <= 6'h1b;
 	end
-	else if( state == RD ) data[IROM_A] <= IROM_Q;
+	else 
+	begin
+		case(state)
+		RD: data[IROM_A] <= IROM_Q;
+		CMD: 
+		begin
+			case(cmd)
+			cmd_SU: if( P0 > 6'd7 )P0 <= P0 - 6'd8;
+			cmd_SD: if( P0 < 6'h30 )P0 <= P0 + 6'd8;
+			cmd_SL:
+			begin
+				if( P0 == 6'h0 || P0 == 6'h8 || P0 == 6'h10 || P0 == 6'h18 || P0 == 6'h20 || P0 == 6'h28 || P0 == 6'h30 || P0 == 6'h38 )P0 <= P0;
+				else P0 <= P0 - 6'd1;
+			end
+			cmd_SR:
+			begin
+				if ( P0 == 6'h6 || P0 == 6'he || P0 == 6'h16 || P0 == 6'h1e || P0 == 6'h26 || P0 == 6'h2e || P0 == 6'h36 || P0 == 6'h3e ) P0 <= P0;
+                else P0 <= P0 +6'd1;
+			end
+			cmd_MAX:
+			begin
+				data[P0] <= data[max_idx];
+				data[P1] <= data[max_idx];
+				data[P2] <= data[max_idx];
+				data[P3] <= data[max_idx];
+			end
+			cmd_MIN:
+			begin
+				data[P0] <= data[min_idx];
+				data[P1] <= data[min_idx];
+				data[P2] <= data[min_idx];
+				data[P3] <= data[min_idx];
+			end
+			cmd_AVG: 
+			begin
+				data[P0] <= sum[9:2];
+				data[P1] <= sum[9:2];
+				data[P2] <= sum[9:2];
+				data[P3] <= sum[9:2];
+			end
+			cmd_CCR: 
+			begin
+				data[P0] <= data[P1];
+				data[P2] <= data[P0];
+				data[P3] <= data[P2];
+				data[P1] <= data[P3];
+			end
+			cmd_CR:
+			begin
+				data[P0] <= data[P2];
+				data[P1] <= data[P0];
+				data[P3] <= data[P1];
+				data[P2] <= data[P3];
+			end
+			cmd_MRX:
+			begin
+				data[P0] <= data[P2];
+				data[P1] <= data[P3];
+				data[P2] <= data[P0];
+				data[P3] <= data[P1];
+			end
+			cmd_MRY:
+			begin
+				data[P0] <= data[P1];
+				data[P1] <= data[P0];
+				data[P2] <= data[P3];
+				data[P3] <= data[P2];
+			end
+			endcase
+		end
+		
+		endcase
+	end
 end
+
+//cmd == Max
+always@(*)
+begin
+	if( data[P0] >= data[P1] && data[P0] >= data[P2] && data[P0] >= data[P3] ) max_idx = P0;
+	else if( data[P1] >= data[P0] && data[P1] >= data[P2] && data[P1] >= data[P3] ) max_idx = P1;
+	else if( data[P2] >= data[P0] && data[P2] >= data[P1] && data[P2] >= data[P3] ) max_idx = P2;
+	else max_idx = P3;
+end
+
+//cmd == Min
+always@(*)
+begin
+	if( data[P0] <= data[P1] && data[P0] <= data[P2] && data[P0] <= data[P3] ) min_idx = P0;
+	else if( data[P1] <= data[P0] && data[P1] <= data[P2] && data[P1] <= data[P3] ) min_idx = P1;
+	else if( data[P2] <= data[P0] && data[P2] <= data[P1] && data[P2] <= data[P3] ) min_idx = P2;
+	else min_idx = P3;
+end
+
+//cmd == Sum
+always@(*)
+	sum = data[P0] + data[P1] + data[P2] + data[P3];
 
 //control singal
 always@(*)
@@ -136,7 +239,7 @@ begin
 	end
 end
 
-//IRAM_A delay one clock
+//IRAM_A delay 
 always@( posedge clk or posedge reset)
 begin
 	if( reset )

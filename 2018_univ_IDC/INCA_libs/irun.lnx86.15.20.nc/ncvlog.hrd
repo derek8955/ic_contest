@@ -2,5 +2,9 @@
 // File created by:  ncverilog
 // Do not modify this file
 //
+-VFILE
+tsmc13_neg.v
 -DEFINE
-tb1
+SDF
+-DEFINE
+tb3
