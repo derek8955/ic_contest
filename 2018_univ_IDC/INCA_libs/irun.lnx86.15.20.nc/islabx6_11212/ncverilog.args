@@ -1,0 +1,8 @@
+//
+// File created by:  ncverilog
+// Do not modify this file
+//
+testfixture.v
+LCD_CTRL.v
++define+tb1
++access+r

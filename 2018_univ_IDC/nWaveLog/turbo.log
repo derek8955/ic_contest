@@ -1,0 +1,3 @@
+Command Line: /usr/cad/synopsys/verdi/cur/platform/LINUXAMD64/bin/Novas -nWave
+uname(Linux islabx6 2.6.32-642.el6.x86_64 #1 SMP Tue May 10 17:27:01 UTC 2016 x86_64)
+au time 310.903570 3.599453 1.131828 delta 163057664 163057664 total 603500544 603500544

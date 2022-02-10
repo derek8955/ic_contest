@@ -1,0 +1,148 @@
+ncverilog: 15.20-s039: (c) Copyright 1995-2017 Cadence Design Systems, Inc.
+TOOL:	ncverilog	15.20-s039: Started on Feb 10, 2022 at 14:29:52 CST
+ncverilog
+	testfixture.v
+	LCD_CTRL.v
+	+define+tb1
+Recompiling... reason: file './LCD_CTRL.v' is newer than expected.
+	expected: Thu Feb 10 14:24:52 2022
+	actual:   Thu Feb 10 14:29:37 2022
+file: LCD_CTRL.v
+	module worklib.LCD_CTRL:v
+		errors: 0, warnings: 0
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.LCD_CTRL:v <0x6eebb353>
+			streams:  14, words:  5447
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                  Instances  Unique
+		Modules:                  4       4
+		Registers:               30      30
+		Scalar wires:            10       -
+		Vectored wires:           5       -
+		Always blocks:           12      12
+		Initial blocks:           8       8
+		Pseudo assignments:       1       1
+		Simulation timescale:  10ps
+	Writing initial simulation snapshot: worklib.test:v
+Loading snapshot worklib.test:v .................... Done
+*Verdi* Loading libsscore_ius152.so
+ncsim> source /usr/cad/cadence/INCISIV/cur/tools/inca/files/ncsimrc
+ncsim> run
+FSDB Dumper for IUS, Release Verdi_Q-2020.03, Linux, 02/09/2020
+(C) 1996 - 2020 by Synopsys, Inc.
+*Verdi* FSDB WARNING: The FSDB file already exists. Overwriting the FSDB file may crash the programs that are using this file.
+*Verdi* : Create FSDB file 'LCD_CTRL.fsdb'
+*Verdi* : Begin traversing the scopes, layer (0).
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.clk(48)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.reset(48)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.err_IRAM(48)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.cmd(48)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.cmd_valid(48)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.i(25)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.j(25)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.k(25)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.l(25)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.err(25)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.over(48)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.IROM_rd(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.IROM_A(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.IRAM_valid(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.IRAM_D(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.IRAM_A(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.busy(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.done(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.IROM_Q(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.LCD_CTRL.IROM_rd(48)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.LCD_CTRL.IROM_A(48)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.LCD_CTRL.IRAM_valid(48)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.LCD_CTRL.IRAM_D(48)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.LCD_CTRL.IRAM_A(48)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.LCD_CTRL.busy(48)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.LCD_CTRL.done(48)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.LCD_CTRL.data(116)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.LCD_CTRL.idx(48)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.LCD_CTRL.state(48)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.LCD_CTRL.nx_state(48)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.LCD_CTRL.counter(48)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.LCD_CTRL.clk(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.LCD_CTRL.reset(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.LCD_CTRL.cmd(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.LCD_CTRL.cmd_valid(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.LCD_CTRL.IROM_Q(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.IROM_1.IROM_data(48)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.IROM_1.i(25)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.IROM_1.IROM_rd(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.IROM_1.IROM_addr(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.IROM_1.clk(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.IROM_1.reset(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.IRAM_1.IRAM_M(116)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.IRAM_1.i(25)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.IRAM_1.IRAM_valid(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.IRAM_1.IRAM_addr(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.IRAM_1.IRAM_data(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.IRAM_1.clk(36)
+*Verdi* : End of traversing.
+*Verdi* : Begin traversing the MDAs, layer (0).
+*Verdi* : Enable +mda and +packedmda dumping.
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.clk(48)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.reset(48)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.err_IRAM(48)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.cmd(48)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.cmd_valid(48)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.i(25)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.j(25)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.k(25)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.l(25)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.err(25)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.over(48)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.IROM_rd(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.IROM_A(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.IRAM_valid(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.IRAM_D(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.IRAM_A(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.busy(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.done(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.IROM_Q(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.LCD_CTRL.IROM_rd(48)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.LCD_CTRL.IROM_A(48)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.LCD_CTRL.IRAM_valid(48)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.LCD_CTRL.IRAM_D(48)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.LCD_CTRL.IRAM_A(48)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.LCD_CTRL.busy(48)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.LCD_CTRL.done(48)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.LCD_CTRL.data(116)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.LCD_CTRL.idx(48)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.LCD_CTRL.state(48)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.LCD_CTRL.nx_state(48)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.LCD_CTRL.counter(48)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.LCD_CTRL.clk(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.LCD_CTRL.reset(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.LCD_CTRL.cmd(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.LCD_CTRL.cmd_valid(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.LCD_CTRL.IROM_Q(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.IROM_1.IROM_data(48)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.IROM_1.i(25)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.IROM_1.IROM_rd(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.IROM_1.IROM_addr(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.IROM_1.clk(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.IROM_1.reset(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.IRAM_1.IRAM_M(116)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.IRAM_1.i(25)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.IRAM_1.IRAM_valid(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.IRAM_1.IRAM_addr(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.IRAM_1.IRAM_data(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.IRAM_1.clk(36)
+*Verdi* : End of traversing the MDAs.
+All data have been generated successfully!
+
+-------------------PASS-------------------
+
+Simulation complete via $finish(1) at time 1335 NS + 0
+./testfixture.v:148 		    #10 $finish;
+ncsim> exit
+TOOL:	ncverilog	15.20-s039: Exiting on Feb 10, 2022 at 14:29:55 CST  (total: 00:00:03)

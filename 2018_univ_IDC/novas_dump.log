@@ -1,0 +1,266 @@
+ncsim 15.20-s039
+Linux 2.6.32-642.el6.x86_64 #1 SMP Tue May 10 17:27:01 UTC 2016 x86_64
+CPU cores: 24
+Limit information:
+======================================
+cputime			unlimited
+filesize		unlimited
+datasize		unlimited
+stacksize		10240 kbytes
+coredumpsize	0 kbytes
+memoryuse		unlimited
+vmemoryuse		unlimited
+descriptors		4096
+memorylocked	64 kbytes
+maxproc			1024
+======================================
+(Special)Runtime environment variables:
+
+Runtime environment variables:
+ORBIT_SOCKETDIR=/tmp/orbit-t107360223
+MANPATH=/usr/cad/synopsys/synthesis/cur/doc/syn/man:/usr/cad/synopsys/synthesis/cur/doc/syn/man
+SYNOPSYS_TMAX=/usr/cad/synopsys/tmax/cur
+SELINUX_ROLE_REQUESTED=
+TERM=xterm
+SHELL=/bin/tcsh
+HOST=islabx6
+SSH_CLIENT=59.126.46.8 64755 22
+SELINUX_USE_CURRENT_RANGE=
+GTK_RC_FILES=/etc/gtk/gtkrc:/home/t107360223/.gtkrc-1.2-gnome2
+WINDOWID=33554436
+OLDPWD=/home/t107360223
+MGC_LOCATION_MAP=NO_MAP
+QTDIR=/usr/lib64/qt-3.3
+QTINC=/usr/lib64/qt-3.3/include
+SG_HTML_BROWSER=/usr/bin/mozilla
+USER=t107360223
+GROUP=users
+LS_COLORS=rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=01;05;37;41:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arj=01;31:*.taz=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lz=01;31:*.xz=01;31:*.bz2=01;31:*.tbz=01;31:*.tbz2=01;31:*.bz=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.rar=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.axv=01;35:*.anx=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=01;36:*.au=01;36:*.flac=01;36:*.mid=01;36:*.midi=01;36:*.mka=01;36:*.mp3=01;36:*.mpc=01;36:*.ogg=01;36:*.ra=01;36:*.wav=01;36:*.axa=01;36:*.oga=01;36:*.spx=01;36:*.xspf=01;36:
+LD_LIBRARY_PATH=/usr/cad/synopsys/verdi/cur/etc/lib/libstdc++/LINUX64/:/usr/cad/synopsys/verdi/cur/share/PLI/IUS/LINUX:/:/usr/cad/cadence/STRATUS/cur/tools/lib:/usr/cad/cadence/INNOVUS/cur//tools/tlfUtil/lib:/usr/cad/cadence/GENUS/cur/tools/lib:/usr/cad/cadence/INCISIV/cur/tools/lib:/usr/cad/cadence/INCISIV/cur/tools/vtools/vfault/lib:/usr/cad/synopsys/verdi/cur/etc/lib/libstdc++/LINUX64/:/usr/cad/synopsys/verdi/cur/share/PLI/IUS/LINUX:/:/usr/cad/cadence/STRATUS/cur/tools/lib:/usr/cad/cadence/INNOVUS/cur//tools/tlfUtil/lib:/usr/cad/cadence/GENUS/cur/tools/lib:/usr/cad/cadence/INCISIV/cur/tools/lib:/usr/cad/cadence/INCISIV/cur/tools/vtools/vfault/lib:/usr/openwin/lib:/usr/dt/lib:/usr/lib:/usr/local/lib
+GNOME_KEYRING_SOCKET=/tmp/keyring-1zel9J/socket
+SSH_AUTH_SOCK=/tmp/keyring-1zel9J/socket.ssh
+HOSTTYPE=x86_64-linux
+ENCOUNTER=/usr/cad/cadence/INNOVUS/cur/tools/fe
+SESSION_MANAGER=local/unix:@/tmp/.ICE-unix/15097,unix/unix:/tmp/.ICE-unix/15097
+PATH=/usr/cad/mentor/Tessent/cur/bin:/usr/cad/mentor/Catapult/cur//bin:/usr/cad/mentor/calibre/cur/bin:/usr/cad/synopsys/xa/cur/bin:/usr/cad/synopsys/verdi/cur/bin:/usr/cad/synopsys/verdi/cur/nLint/bin:/usr/cad/synopsys/tmax/cur/bin:/usr/bin/X11:/usr/cad/synopsys/coreConsultant/cur/bin:/usr/cad/synopsys/synthesis/cur/amd64/syn/bin:/usr/cad/synopsys/lc/cur/bin:/usr/cad/synopsys/spyglass/cur/SPYGLASS_HOME/bin:/usr/bin/X11:/usr/cad/synopsys/primetime/cur/amd64/syn/bin:/usr/cad/synopsys/formality/cur/bin:/usr/cad/cadence/STRATUS/cur/tools/bin:/usr/cad/cadence/JASPER/cur/bin:/usr/cad/cadence/JASPER/cur/bin:/usr/cad/cadence/JASPER/cur/bin:/usr/cad/cadence/JASPER/cur/bin:/usr/cad/cadence/JASPER/cur/bin:/usr/cad/cadence/INNOVUS/cur/tools/celtic/bin:/usr/cad/cadence/INNOVUS/cur/tools/plato/bin:/usr/cad/cadence/INNOVUS/cur/tools/dfII/bin:/usr/cad/cadence/INNOVUS/cur/tools/bin:/usr/cad/cadence/INNOVUS/cur//tools/tlfUtil/bin:/usr/cad/cadence/GENUS/cur/tools/bin:/usr/cad/cadence/INCISIV/cur/tools/bin:/usr/cad/cadence/INCISIV/cur/tools/vtools/vfault/bin:/usr/cad/cadence/INCISIV/cur/tools/dfII/bin:/bin:/usr/bin:/usr/ucb:/etc:.
+MAIL=/var/spool/mail/t107360223
+PWD=/home/t107360223/Desktop/ic_contest/2018_univ_IDC
+EDITOR=/usr/bin/vim
+LANG=zh_TW.UTF-8
+SYNTHESIS=/usr/cad/synopsys/synthesis/cur
+SELINUX_LEVEL_REQUESTED=
+PRIMETIME=/usr/cad/synopsys/primetime/cur
+LM_LICENSE_FILE=1717@lscic:26585@lscic:5280@lshc:5280@lsnchu:5280@lscic:5280@lsnctu:5280@lsncku:
+SSH_ASKPASS=/usr/libexec/openssh/gnome-ssh-askpass
+HOME=/home/t107360223
+SHLVL=2
+OSTYPE=linux
+FORMALITY=/usr/cad/synopsys/formality/cur
+MGC_HOME=/usr/cad/mentor/calibre/cur
+GNOME_DESKTOP_SESSION_ID=this-is-deprecated
+MGC_TMPDIR=/tmp
+VENDOR=unknown
+MACHTYPE=x86_64
+LOGNAME=t107360223
+QTLIB=/usr/lib64/qt-3.3/lib
+CVS_RSH=ssh
+DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-hQBgoWbTSj,guid=dd3da5df6895151fd72a068800154482
+SSH_CONNECTION=59.126.46.8 64755 140.124.72.29 22
+LESSOPEN=||/usr/bin/lesspipe.sh %s
+SHLIB_PATH=/usr/cad/synopsys/verdi/cur/etc/lib/libstdc++/LINUX64/:/usr/cad/synopsys/verdi/cur/etc/lib/libstdc++/LINUX64/
+DISPLAY=localhost:10.0
+SYN_MAN_DIR=/usr/cad/synopsys/synthesis/cur/doc/syn/man
+G_BROKEN_FILENAMES=1
+COLORTERM=gnome-terminal
+REMOTEHOST=localhost
+_IRUNROOT_=/usr/cad/cadence/INCISIV/cur/tools
+CDS_ARCH=lnx86
+NCRUNMODE=ncverilog:./INCA_libs/irun.lnx86.15.20.nc
+IRUNBATCH=FALSE
+IMPERAS_PORT_FILE=.vsp_ovp_gdb_port
+TCL_LIBRARY=/usr/cad/cadence/INCISIV/cur/tools/inca/files/tcl/library
+Runtime command line arguments:
+argv[0]=ncverilog
+argv[1]=testfixture.v
+argv[2]=LCD_CTRL.v
+argv[3]=+define+tb1
+86 profile - 100
+          CPU/Mem usage: 0.030 sys,  0.040 user,  61.39M sys,  0.00M vm
+87 VC callback profile - scalar:0 vector:0
+88 Thu Feb 10 14:29:54 2022
+89 pliAppInit
+90 FSDB_GATE is disabled.
+91 Enable Parallel Dumping.
+92 pliAppMiscSet: New Sim Round
+93 pliEntryInit
+94 LIBSSCORE=found /usr/cad/synopsys/verdi/cur/share/PLI/IUS/LINUX/libsscore_ius152.so through $LD_LIBRARY_PATH setting.
+95 argv[0]: LCD_CTRL.fsdb
+96 FSDB Dumper for IUS, Release Verdi_Q-2020.03, Linux, 02/09/2020
+97 (C) 1996 - 2020 by Synopsys, Inc.
+98 sps_call_fsdbDumpfile at 0 : /home/t107360223/Desktop/ic_contest/2018_univ_IDC/testfixture.v(79)
+99 argv[0]: LCD_CTRL.fsdb
+100 *Verdi* FSDB WARNING: The FSDB file already exists. Overwriting the FSDB file may crash the programs that are using this file.
+101 *Verdi* : Create FSDB file 'LCD_CTRL.fsdb'
+102 sps_call_fsdbDumpvars at 0 : /home/t107360223/Desktop/ic_contest/2018_univ_IDC/testfixture.v(80)
+103 *Verdi* : Begin traversing the scopes, layer (0).
+104 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.clk(48)
+105 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.reset(48)
+106 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.err_IRAM(48)
+107 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.cmd(48)
+108 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.cmd_valid(48)
+109 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.i(25)
+110 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.j(25)
+111 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.k(25)
+112 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.l(25)
+113 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.err(25)
+114 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.over(48)
+115 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.IROM_rd(36)
+116 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.IROM_A(36)
+117 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.IRAM_valid(36)
+118 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.IRAM_D(36)
+119 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.IRAM_A(36)
+120 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.busy(36)
+121 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.done(36)
+122 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.IROM_Q(36)
+123 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.LCD_CTRL.IROM_rd(48)
+124 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.LCD_CTRL.IROM_A(48)
+125 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.LCD_CTRL.IRAM_valid(48)
+126 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.LCD_CTRL.IRAM_D(48)
+127 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.LCD_CTRL.IRAM_A(48)
+128 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.LCD_CTRL.busy(48)
+129 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.LCD_CTRL.done(48)
+130 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.LCD_CTRL.data(116)
+131 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.LCD_CTRL.idx(48)
+132 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.LCD_CTRL.state(48)
+133 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.LCD_CTRL.nx_state(48)
+134 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.LCD_CTRL.counter(48)
+135 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.LCD_CTRL.clk(36)
+136 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.LCD_CTRL.reset(36)
+137 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.LCD_CTRL.cmd(36)
+138 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.LCD_CTRL.cmd_valid(36)
+139 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.LCD_CTRL.IROM_Q(36)
+140 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.IROM_1.IROM_data(48)
+141 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.IROM_1.i(25)
+142 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.IROM_1.IROM_rd(36)
+143 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.IROM_1.IROM_addr(36)
+144 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.IROM_1.clk(36)
+145 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.IROM_1.reset(36)
+146 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.IRAM_1.IRAM_M(116)
+147 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.IRAM_1.i(25)
+148 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.IRAM_1.IRAM_valid(36)
+149 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.IRAM_1.IRAM_addr(36)
+150 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.IRAM_1.IRAM_data(36)
+151 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.IRAM_1.clk(36)
+152 *Verdi* : End of traversing.
+153 fsdbDumpvars traverse var: profile - 
+          CPU/Mem usage: 0.040 sys,  0.040 user,  143.54M sys,  0.00M vm
+                   incr: 0.010 sys,  0.000 user,  3.30M sys,  0.00M vm
+                   accu: 0.010 sys,  0.000 user,  3.30M sys,  0.00M vm
+              accu incr: 0.010 sys,  0.000 user,  3.30M sys,  0.00M vm
+
+          Count usage: 0 var,  0 idcode,  0 callback
+                 incr: 0 var,  0 idcode,  0 callback
+                 accu: 0 var,  0 idcode,  0 callback
+            accu incr: 0 var,  0 idcode,  0 callback
+154 VC callback profile - scalar:0 vector:0
+155 Thu Feb 10 14:29:54 2022
+156 fsdbDumpvars: profile - 
+          CPU/Mem usage: 0.040 sys,  0.040 user,  143.67M sys,  0.00M vm
+                   incr: 0.000 sys,  0.000 user,  0.14M sys,  0.00M vm
+                   accu: 0.010 sys,  0.000 user,  3.44M sys,  0.00M vm
+              accu incr: 0.000 sys,  0.000 user,  0.14M sys,  0.00M vm
+
+          Count usage: 0 var,  0 idcode,  0 callback
+                 incr: 0 var,  0 idcode,  0 callback
+                 accu: 0 var,  0 idcode,  0 callback
+            accu incr: 0 var,  0 idcode,  0 callback
+157 VC callback profile - scalar:0 vector:0
+158 Thu Feb 10 14:29:54 2022
+159 sps_call_fsdbDumpMDA at 0 : /home/t107360223/Desktop/ic_contest/2018_univ_IDC/testfixture.v(81)
+160 *Verdi* : Begin traversing the MDAs, layer (0).
+161 *Verdi* : Enable +mda and +packedmda dumping.
+162 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.clk(48)
+163 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.reset(48)
+164 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.err_IRAM(48)
+165 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.cmd(48)
+166 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.cmd_valid(48)
+167 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.i(25)
+168 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.j(25)
+169 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.k(25)
+170 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.l(25)
+171 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.err(25)
+172 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.over(48)
+173 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.IROM_rd(36)
+174 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.IROM_A(36)
+175 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.IRAM_valid(36)
+176 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.IRAM_D(36)
+177 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.IRAM_A(36)
+178 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.busy(36)
+179 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.done(36)
+180 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.IROM_Q(36)
+181 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.LCD_CTRL.IROM_rd(48)
+182 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.LCD_CTRL.IROM_A(48)
+183 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.LCD_CTRL.IRAM_valid(48)
+184 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.LCD_CTRL.IRAM_D(48)
+185 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.LCD_CTRL.IRAM_A(48)
+186 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.LCD_CTRL.busy(48)
+187 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.LCD_CTRL.done(48)
+188 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.LCD_CTRL.data(116)
+189 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.LCD_CTRL.idx(48)
+190 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.LCD_CTRL.state(48)
+191 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.LCD_CTRL.nx_state(48)
+192 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.LCD_CTRL.counter(48)
+193 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.LCD_CTRL.clk(36)
+194 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.LCD_CTRL.reset(36)
+195 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.LCD_CTRL.cmd(36)
+196 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.LCD_CTRL.cmd_valid(36)
+197 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.LCD_CTRL.IROM_Q(36)
+198 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.IROM_1.IROM_data(48)
+199 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.IROM_1.i(25)
+200 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.IROM_1.IROM_rd(36)
+201 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.IROM_1.IROM_addr(36)
+202 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.IROM_1.clk(36)
+203 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.IROM_1.reset(36)
+204 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.IRAM_1.IRAM_M(116)
+205 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.IRAM_1.i(25)
+206 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.IRAM_1.IRAM_valid(36)
+207 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.IRAM_1.IRAM_addr(36)
+208 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.IRAM_1.IRAM_data(36)
+209 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:test.IRAM_1.clk(36)
+210 *Verdi* : End of traversing the MDAs.
+211 fsdbDumpMDA traverse var: profile - 
+          CPU/Mem usage: 0.040 sys,  0.050 user,  143.83M sys,  0.00M vm
+                   incr: 0.000 sys,  0.010 user,  0.16M sys,  0.00M vm
+                   accu: 0.000 sys,  0.010 user,  0.16M sys,  0.00M vm
+              accu incr: 0.000 sys,  0.010 user,  0.16M sys,  0.00M vm
+
+          Count usage: 174 var,  174 idcode,  174 callback
+                 incr: 174 var,  174 idcode,  174 callback
+                 accu: 174 var,  174 idcode,  174 callback
+            accu incr: 174 var,  174 idcode,  174 callback
+212 VC callback profile - scalar:0 vector:0
+213 Thu Feb 10 14:29:54 2022
+214 fsdbDumpMDA: profile - 
+          CPU/Mem usage: 0.040 sys,  0.050 user,  144.88M sys,  0.00M vm
+                   incr: 0.000 sys,  0.000 user,  1.05M sys,  0.00M vm
+                   accu: 0.000 sys,  0.010 user,  1.21M sys,  0.00M vm
+              accu incr: 0.000 sys,  0.000 user,  1.05M sys,  0.00M vm
+
+          Count usage: 174 var,  174 idcode,  174 callback
+                 incr: 0 var,  0 idcode,  0 callback
+                 accu: 174 var,  174 idcode,  174 callback
+            accu incr: 0 var,  0 idcode,  0 callback
+215 VC callback profile - scalar:0 vector:174
+216 Thu Feb 10 14:29:54 2022
+217 End of simulation at 133500
+218 VC callback profile - scalar:0 vector:238
+219 Thu Feb 10 14:29:54 2022
+220 Begin FSDB profile info:
+221 FSDB Writer : bc1(0) bcn(238) mtf/stf(0/0)
+FSDB Writer elapsed time : flush(0.076518) io wait(0.000000) theadpool wait(0.000000)
+FSDB Writer cpu time : MT Compression : 0
+222 End FSDB profile info
+223 Parallel profile    -  Flush:4 Expand:0 ProduceWait:0 ConsumerWait:0 BlockUsed:1
+224                        ProduceTime:0.101494380 ConsumerTime:0.000000000 Buffer:64MB
+225 SimExit
+226 Sim process exit
