@@ -1,6 +1,6 @@
 #@ # 
 #@ # Running dc_shell Version Q-2019.12 for linux64 -- Nov 26, 2019
-#@ # Date:   Fri Feb 11 23:14:00 2022
+#@ # Date:   Fri Feb 11 23:21:59 2022
 #@ # Run by: t107360223@islabx6
 #@ 
 
@@ -6693,13 +6693,13 @@ source /home/t107360223/.synopsys_dc.setup
 #@ set view_script_submenu_items [list {Avoid assign statement} {set_fix_multiple_port_nets -all -buffer_constant} {Change Naming Rule} {change_names -rule verilog -hierarchy} {Write SDF} {write_sdf -version 1.0 -context verilog chip.sdf}]
 #@ # -- End source /home/t107360223/.synopsys_dc.setup
 
-source /home/t107360223/Desktop/ic_contest/2018_univ_IDC/.synopsys_dc.setup
-#@ # -- Starting source /home/t107360223/Desktop/ic_contest/2018_univ_IDC/.synopsys_dc.setup
+source /home/t107360223/Desktop/ic_contest/2016_LBP/.synopsys_dc.setup
+#@ # -- Starting source /home/t107360223/Desktop/ic_contest/2016_LBP/.synopsys_dc.setup
 
 #@ set company "CIC"
 #@ set designer "Student"
 #@ set search_path      "/home/ceil_lib/CBDK_IC_Contest_v2.1/SynopsysDC/db  $search_path"
-#@ set target_library   "slow.db fast.db"
+#@ set target_library   "slow.db"
 #@ set link_library     "* $target_library dw_foundation.sldb"
 #@ set symbol_library   "generic.sdb"
 #@ set synthetic_library "dw_foundation.sldb"
@@ -6721,7 +6721,7 @@ source /home/t107360223/Desktop/ic_contest/2018_univ_IDC/.synopsys_dc.setup
 #@ define_name_rules name_rule -allowed {a-z A-Z 0-9 _[]} -max_length 255 -type net
 #@ define_name_rules name_rule -map {{"\\*cell\\*" "cell"}}
 #@ 
-#@ # -- End source /home/t107360223/Desktop/ic_contest/2018_univ_IDC/.synopsys_dc.setup
+#@ # -- End source /home/t107360223/Desktop/ic_contest/2016_LBP/.synopsys_dc.setup
 
 gui_start
 #@ # -- Starting source /usr/cad/synopsys/synthesis/cur/auxx/tcllib/lib/itk4.0.2/itk.tcl
@@ -43084,32 +43084,27 @@ gui_start
 #@ 
 #@ # -- End source /usr/cad/synopsys/synthesis/cur/auxx/tcllib/lib/iwidgets4.1/watch.itk
 
-read_verilog LCD_CTRL.v
-current_design LCD_CTRL
-link
-source -echo -verbose LCD_CTRL.sdc
-#@ # -- Starting source LCD_CTRL.sdc
-
-#@ # operating conditions and boundary conditions #
-#@ 
-#@ set cycle  10.0        ;#clock period defined by designer
-#@ 
-#@ create_clock -period $cycle [get_ports  clk]
-#@ set_dont_touch_network      [get_clocks clk]
-#@ set_clock_uncertainty  0.1  [get_clocks clk]
-#@ set_clock_latency      0.5  [get_clocks clk]
-#@ 
-#@ set_input_delay  5      -clock clk [remove_from_collection [all_inputs] [get_ports clk]]
-#@ set_output_delay 0.5    -clock clk [all_outputs] 
-#@ set_load         1     [all_outputs]
-#@ set_drive        1     [all_inputs]
-#@ 
-#@ set_operating_conditions  -max slow  -min fast
-#@ set_wire_load_model -name tsmc13_wl10 -library slow                        
-#@ 
-#@ set_max_fanout 20 [all_inputs]
-#@ 
-#@ 
-#@ # -- End source LCD_CTRL.sdc
-
+sh mkdir syn
+define_design_lib syn -path ./syn
+analyze -library syn -format verilog {/home/t107360223/Desktop/ic_contest/2016_LBP/LBP.v}
+elaborate LBP -architecture verilog -library syn
+set cycle  10         ;#clock period defined by designer
+create_clock -period $cycle [get_ports  clk]
+set_dont_touch_network      [get_clocks clk]
+set_clock_uncertainty  0.1  [get_clocks clk]
+set_clock_latency      0.5  [get_clocks clk]
+set_input_delay  5      -clock clk [remove_from_collection [all_inputs] [get_ports clk]]
+set_output_delay 0.5    -clock clk [all_outputs]
+set_load         1     [all_outputs]
+set_drive        1     [all_inputs]
+set_operating_conditions -max_library slow -max slow
+set_wire_load_model -name tsmc13_wl10 -library slow
+set_max_fanout 20 [all_inputs]
+compile
+change_selection [get_s LBP]
+uplevel #0 { report_timing -path full -delay max -nworst 1 -max_paths 1 -significant_digits 5 -sort_by group }
+uplevel #0 { report_area }
+write -format ddc     -hierarchy -output "LCD_CTRL_syn.ddc"
+write_sdf LCD_CTRL_syn.sdf
+write_file -format verilog -hierarchy -output LCD_CTRL_syn.v
 exit
