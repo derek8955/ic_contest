@@ -1,6 +1,6 @@
 #@ # 
 #@ # Running dc_shell Version Q-2019.12 for linux64 -- Nov 26, 2019
-#@ # Date:   Mon Feb 14 11:02:17 2022
+#@ # Date:   Mon Feb 14 12:02:15 2022
 #@ # Run by: t107360223@islabx6
 #@ 
 
@@ -6696,23 +6696,25 @@ source /home/t107360223/.synopsys_dc.setup
 source /home/t107360223/Desktop/ic_contest/2016_LBP/.synopsys_dc.setup
 #@ # -- Starting source /home/t107360223/Desktop/ic_contest/2016_LBP/.synopsys_dc.setup
 
+#@ #   1. Modify this file to fit your own environment
+#@ #   2. Copy this file synopsys_dc.setup to .synopsys_dc.setup
+#@ #      and put it in tool's invoking directory or your home directory. 
+#@ 
 #@ set company "CIC"
 #@ set designer "Student"
-#@ set search_path      "/home/ceil_lib/CBDK_IC_Contest_v2.1/SynopsysDC/db  $search_path"
-#@ set target_library   "slow.db"
-#@ set link_library     "* $target_library dw_foundation.sldb"
+#@ set search_path      "/home/cell_lib/CBDK_IC_Contest_v2.1/SynopsysDC/db $search_path"
+#@ set link_library     "slow.db fast.db dw_foundation.sldb"
+#@ set target_library   "slow.db fast.db"
 #@ set symbol_library   "generic.sdb"
 #@ set synthetic_library "dw_foundation.sldb"
+#@ 
 #@ 
 #@ set hdlin_translate_off_skip_text "TRUE"
 #@ set edifout_netlist_only "TRUE"
 #@ set verilogout_no_tri true
+#@ set plot_command {lpr -Plp}
 #@ 
 #@ set hdlin_enable_presto_for_vhdl "TRUE"
-#@ set sh_enable_line_editing true
-#@ set sh_line_editing_mode emacs
-#@ history keep 100
-#@ alias h history
 #@ 
 #@ set bus_inference_style {%s[%d]}
 #@ set bus_naming_style {%s[%d]}
@@ -6721,6 +6723,9 @@ source /home/t107360223/Desktop/ic_contest/2016_LBP/.synopsys_dc.setup
 #@ define_name_rules name_rule -allowed {a-z A-Z 0-9 _[]} -max_length 255 -type net
 #@ define_name_rules name_rule -map {{"\\*cell\\*" "cell"}}
 #@ 
+#@ set view_script_submenu_items [list {Avoid assign statement} {set_fix_multiple_p
+#@ ort_nets -all -buffer_constant} {Change Naming Rule} {change_names -rule verilog
+#@  -hierarchy} {Write SDF} {write_sdf -version 2.1 -context verilog chip.sdf}]  
 #@ # -- End source /home/t107360223/Desktop/ic_contest/2016_LBP/.synopsys_dc.setup
 
 gui_start

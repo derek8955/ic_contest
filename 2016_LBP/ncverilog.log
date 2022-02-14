@@ -1,5 +1,5 @@
 ncverilog: 15.20-s039: (c) Copyright 1995-2017 Cadence Design Systems, Inc.
-TOOL:	ncverilog	15.20-s039: Started on Feb 14, 2022 at 11:06:52 CST
+TOOL:	ncverilog	15.20-s039: Started on Feb 14, 2022 at 12:05:46 CST
 ncverilog
 	testfixture.v
 	LBP_syn.v
@@ -14,259 +14,444 @@ file: testfixture.v
            |
 ncvlog: *W,INTOVF (testfixture.v,106|11): bit overflow during conversion from text [2.5(IEEE)] (32 bits).
 (`define macro: End_CYCLE [testfixture.v line 4], file: testfixture.v line 106)
+file: LBP_syn.v
+	module worklib.LBP_DW01_add_0:v
+		errors: 0, warnings: 0
+	module worklib.LBP_DW01_inc_0_DW01_inc_1:v
+		errors: 0, warnings: 0
+	module worklib.LBP_DW01_inc_1_DW01_inc_2:v
+		errors: 0, warnings: 0
+	module worklib.LBP:v
+		errors: 0, warnings: 0
+file: tsmc13_neg.v
+	module tsmc13_neg.BUFX12:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.INVX3:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.INVX12:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.AOI222XL:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.AO21X1:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.AO22X1:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.NAND3X2:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.NAND3BX1:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.NAND4BX1:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.NAND4BBXL:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.NOR2X2:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.NOR2BX2:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.OAI21X1:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.OAI211X4:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.OAI22XL:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.OAI22X2:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.OAI222XL:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.OAI32X4:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.OAI2BB2XL:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.OA21XL:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.XOR3XL:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.CLKBUFX3:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.CLKINVX1:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.ADDFXL:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.DFFRX1:v
+		errors: 0, warnings: 0
 		Caching library 'worklib' ....... Done
 		Caching library 'tsmc13_neg' ....... Done
 	Elaborating the design hierarchy:
-  LBP_DW01_add_0 add_152_S2 ( .A(lbp_data), .B({N93, N92, N91, N90, N89, N88, 
+  LBP_DW01_add_0 add_152_S2 ( .A({lbp_data[7:1], n441}), .B({N93, N92, N91, 
                           |
-ncelab: *W,CUVWSP (./LBP_syn.v,114|26): 1 output port was not connected:
+ncelab: *W,CUVWSP (./LBP_syn.v,115|26): 1 output port was not connected:
 ncelab: (./LBP_syn.v,8): CO
 
-  DFFSX1 \gc_addr_reg[0]  ( .D(n200), .CK(clk), .SN(n394), .QN(n433) );
+  DFFRX1 \gc_addr_reg[3]  ( .D(n203), .CK(clk), .RN(n361), .QN(n123) );
                         |
-ncelab: *W,CUVWSP (./LBP_syn.v,118|24): 1 output port was not connected:
+ncelab: *W,CUVWSP (./LBP_syn.v,126|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): Q
+
+  DFFRX1 \gc_addr_reg[11]  ( .D(n187), .CK(clk), .RN(n360), .QN(n107) );
+                         |
+ncelab: *W,CUVWSP (./LBP_syn.v,131|25): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): Q
+
+  DFFRX1 \gc_addr_reg[10]  ( .D(n189), .CK(clk), .RN(n360), .QN(n109) );
+                         |
+ncelab: *W,CUVWSP (./LBP_syn.v,132|25): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): Q
+
+  DFFRX1 \gc_addr_reg[9]  ( .D(n191), .CK(clk), .RN(n360), .QN(n111) );
+                        |
+ncelab: *W,CUVWSP (./LBP_syn.v,133|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): Q
+
+  DFFRX1 \gc_addr_reg[8]  ( .D(n195), .CK(clk), .RN(n361), .QN(n113) );
+                        |
+ncelab: *W,CUVWSP (./LBP_syn.v,134|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): Q
+
+  DFFRX1 \gc_addr_reg[1]  ( .D(n208), .CK(clk), .RN(n361), .QN(n93) );
+                        |
+ncelab: *W,CUVWSP (./LBP_syn.v,135|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): Q
+
+  DFFRX1 \gc_addr_reg[6]  ( .D(n197), .CK(clk), .RN(n361), .QN(n117) );
+                        |
+ncelab: *W,CUVWSP (./LBP_syn.v,136|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): Q
+
+  DFFRX1 \gc_addr_reg[2]  ( .D(n205), .CK(clk), .RN(n361), .QN(n94) );
+                        |
+ncelab: *W,CUVWSP (./LBP_syn.v,137|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): Q
+
+  DFFRX1 \gc_addr_reg[13]  ( .D(n183), .CK(clk), .RN(n360), .QN(n103) );
+                         |
+ncelab: *W,CUVWSP (./LBP_syn.v,138|25): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): Q
+
+  DFFRX1 \gc_addr_reg[5]  ( .D(n199), .CK(clk), .RN(n361), .QN(n119) );
+                        |
+ncelab: *W,CUVWSP (./LBP_syn.v,139|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): Q
+
+  DFFRX1 \gc_addr_reg[12]  ( .D(n185), .CK(clk), .RN(n360), .QN(n105) );
+                         |
+ncelab: *W,CUVWSP (./LBP_syn.v,140|25): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): Q
+
+  DFFRX1 \gc_addr_reg[4]  ( .D(n201), .CK(clk), .RN(n361), .QN(n121) );
+                        |
+ncelab: *W,CUVWSP (./LBP_syn.v,141|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): Q
+
+  DFFSX1 \gc_addr_reg[0]  ( .D(n214), .CK(clk), .SN(n364), .QN(n91) );
+                        |
+ncelab: *W,CUVWSP (./LBP_syn.v,142|24): 1 output port was not connected:
 ncelab: (./tsmc13_neg.v,18583): Q
 
-  DFFSX1 \gc_addr_reg[7]  ( .D(n153), .CK(clk), .SN(n394), .QN(n112) );
+  DFFSX1 \gc_addr_reg[7]  ( .D(n193), .CK(clk), .SN(n364), .QN(n115) );
                         |
-ncelab: *W,CUVWSP (./LBP_syn.v,119|24): 1 output port was not connected:
+ncelab: *W,CUVWSP (./LBP_syn.v,143|24): 1 output port was not connected:
 ncelab: (./tsmc13_neg.v,18583): Q
 
-		Caching library 'worklib' ....... Done
-		Caching library 'tsmc13_neg' ....... Done
-  JKFFRXL \counter_reg[0]  ( .J(n395), .K(n116), .CK(clk), .RN(n394), .Q(
-                         |
-ncelab: *E,CUVMUR (./LBP_syn.v,120|25): instance 'testfixture.LBP@LBP<module>.\counter_reg[0] ' of design unit 'JKFFRXL' is unresolved in 'worklib.LBP:v'.
-  JKFFRXL \counter_reg[1]  ( .J(n181), .K(n182), .CK(clk), .RN(n394), .Q(
-                         |
-ncelab: *E,CUVMUR (./LBP_syn.v,122|25): instance 'testfixture.LBP@LBP<module>.\counter_reg[1] ' of design unit 'JKFFRXL' is unresolved in 'worklib.LBP:v'.
-  DFFRHQXL \state_reg[2]  ( .D(n168), .CK(clk), .RN(n394), .Q(state[2]) );
+  DFFRX1 lbp_valid_reg ( .D(n358), .CK(clk), .RN(n361), .QN(n303) );
+                     |
+ncelab: *W,CUVWSP (./LBP_syn.v,204|21): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): Q
+
+  DFFRX1 gray_req_reg ( .D(N82), .CK(clk), .RN(n361), .QN(n301) );
+                    |
+ncelab: *W,CUVWSP (./LBP_syn.v,205|20): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): Q
+
+  DFFRX1 \gc_data_reg[7]  ( .D(n168), .CK(clk), .RN(n399), .Q(gc_data[7]) );
                         |
-ncelab: *E,CUVMUR (./LBP_syn.v,128|24): instance 'testfixture.LBP@LBP<module>.\state_reg[2] ' of design unit 'DFFRHQXL' is unresolved in 'worklib.LBP:v'.
-  DFFRHQXL \state_reg[1]  ( .D(n435), .CK(clk), .RN(n394), .Q(state[1]) );
+ncelab: *W,CUVWSP (./LBP_syn.v,214|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \gc_data_reg[5]  ( .D(n166), .CK(clk), .RN(n399), .Q(gc_data[5]) );
                         |
-ncelab: *E,CUVMUR (./LBP_syn.v,129|24): instance 'testfixture.LBP@LBP<module>.\state_reg[1] ' of design unit 'DFFRHQXL' is unresolved in 'worklib.LBP:v'.
-  DFFRHQXL finish_reg ( .D(n115), .CK(clk), .RN(n394), .Q(n490) );
-                    |
-ncelab: *E,CUVMUR (./LBP_syn.v,130|20): instance 'testfixture.LBP@LBP<module>.finish_reg' of design unit 'DFFRHQXL' is unresolved in 'worklib.LBP:v'.
-  DFFRHQXL \gc_data_reg[6]  ( .D(n426), .CK(clk), .RN(n394), .Q(gc_data[6]) );
-                          |
-ncelab: *E,CUVMUR (./LBP_syn.v,131|26): instance 'testfixture.LBP@LBP<module>.\gc_data_reg[6] ' of design unit 'DFFRHQXL' is unresolved in 'worklib.LBP:v'.
-  DFFRHQXL \gc_data_reg[3]  ( .D(n429), .CK(clk), .RN(n394), .Q(gc_data[3]) );
-                          |
-ncelab: *E,CUVMUR (./LBP_syn.v,132|26): instance 'testfixture.LBP@LBP<module>.\gc_data_reg[3] ' of design unit 'DFFRHQXL' is unresolved in 'worklib.LBP:v'.
-  DFFRHQXL \gc_data_reg[2]  ( .D(n430), .CK(clk), .RN(n394), .Q(gc_data[2]) );
-                          |
-ncelab: *E,CUVMUR (./LBP_syn.v,133|26): instance 'testfixture.LBP@LBP<module>.\gc_data_reg[2] ' of design unit 'DFFRHQXL' is unresolved in 'worklib.LBP:v'.
-  DFFRHQXL \gc_data_reg[0]  ( .D(n432), .CK(clk), .RN(n394), .Q(gc_data[0]) );
-                          |
-ncelab: *E,CUVMUR (./LBP_syn.v,134|26): instance 'testfixture.LBP@LBP<module>.\gc_data_reg[0] ' of design unit 'DFFRHQXL' is unresolved in 'worklib.LBP:v'.
-  DFFRHQXL \gc_data_reg[1]  ( .D(n431), .CK(clk), .RN(n394), .Q(gc_data[1]) );
-                          |
-ncelab: *E,CUVMUR (./LBP_syn.v,135|26): instance 'testfixture.LBP@LBP<module>.\gc_data_reg[1] ' of design unit 'DFFRHQXL' is unresolved in 'worklib.LBP:v'.
-  DFFRHQXL \gc_data_reg[5]  ( .D(n427), .CK(clk), .RN(n394), .Q(gc_data[5]) );
-                          |
-ncelab: *E,CUVMUR (./LBP_syn.v,136|26): instance 'testfixture.LBP@LBP<module>.\gc_data_reg[5] ' of design unit 'DFFRHQXL' is unresolved in 'worklib.LBP:v'.
-  DFFRHQXL \gc_data_reg[7]  ( .D(n425), .CK(clk), .RN(n394), .Q(gc_data[7]) );
-                          |
-ncelab: *E,CUVMUR (./LBP_syn.v,137|26): instance 'testfixture.LBP@LBP<module>.\gc_data_reg[7] ' of design unit 'DFFRHQXL' is unresolved in 'worklib.LBP:v'.
-  DFFRHQXL \gc_data_reg[4]  ( .D(n428), .CK(clk), .RN(n394), .Q(gc_data[4]) );
-                          |
-ncelab: *E,CUVMUR (./LBP_syn.v,138|26): instance 'testfixture.LBP@LBP<module>.\gc_data_reg[4] ' of design unit 'DFFRHQXL' is unresolved in 'worklib.LBP:v'.
-  DFFRHQXL \state_reg[0]  ( .D(\nx_state[0] ), .CK(clk), .RN(n394), .Q(
+ncelab: *W,CUVWSP (./LBP_syn.v,215|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \gc_data_reg[3]  ( .D(n164), .CK(clk), .RN(n399), .Q(gc_data[3]) );
                         |
-ncelab: *E,CUVMUR (./LBP_syn.v,139|24): instance 'testfixture.LBP@LBP<module>.\state_reg[0] ' of design unit 'DFFRHQXL' is unresolved in 'worklib.LBP:v'.
-  DFFRHQXL \lbp_addr_reg[0]  ( .D(n197), .CK(clk), .RN(n394), .Q(n480) );
+ncelab: *W,CUVWSP (./LBP_syn.v,216|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \gc_data_reg[1]  ( .D(n162), .CK(clk), .RN(n399), .Q(gc_data[1]) );
+                        |
+ncelab: *W,CUVWSP (./LBP_syn.v,217|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \gc_data_reg[4]  ( .D(n165), .CK(clk), .RN(n399), .Q(gc_data[4]) );
+                        |
+ncelab: *W,CUVWSP (./LBP_syn.v,218|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \gc_data_reg[2]  ( .D(n163), .CK(clk), .RN(n399), .Q(gc_data[2]) );
+                        |
+ncelab: *W,CUVWSP (./LBP_syn.v,219|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \gray_addr_reg[13]  ( .D(n127), .CK(clk), .RN(n363), .QN(n77) );
                            |
-ncelab: *E,CUVMUR (./LBP_syn.v,141|27): instance 'testfixture.LBP@LBP<module>.\lbp_addr_reg[0] ' of design unit 'DFFRHQXL' is unresolved in 'worklib.LBP:v'.
-  DFFRHQXL \lbp_addr_reg[7]  ( .D(n124), .CK(clk), .RN(n394), .Q(n473) );
+ncelab: *W,CUVWSP (./LBP_syn.v,224|27): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): Q
+
+  DFFRX1 \gray_addr_reg[12]  ( .D(n128), .CK(clk), .RN(n363), .QN(n78) );
                            |
-ncelab: *E,CUVMUR (./LBP_syn.v,142|27): instance 'testfixture.LBP@LBP<module>.\lbp_addr_reg[7] ' of design unit 'DFFRHQXL' is unresolved in 'worklib.LBP:v'.
-  DFFRHQXL gray_req_reg ( .D(N82), .CK(clk), .RN(n394), .Q(n466) );
-                      |
-ncelab: *E,CUVMUR (./LBP_syn.v,143|22): instance 'testfixture.LBP@LBP<module>.gray_req_reg' of design unit 'DFFRHQXL' is unresolved in 'worklib.LBP:v'.
-  DFFRHQXL \gc_addr_reg[13]  ( .D(n424), .CK(clk), .RN(n394), .Q(gc_addr[13])
+ncelab: *W,CUVWSP (./LBP_syn.v,225|27): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): Q
+
+  DFFRX1 \gray_addr_reg[11]  ( .D(n129), .CK(clk), .RN(n363), .QN(n79) );
                            |
-ncelab: *E,CUVMUR (./LBP_syn.v,144|27): instance 'testfixture.LBP@LBP<module>.\gc_addr_reg[13] ' of design unit 'DFFRHQXL' is unresolved in 'worklib.LBP:v'.
-  DFFRHQXL lbp_valid_reg ( .D(n311), .CK(clk), .RN(n394), .Q(n481) );
-                       |
-ncelab: *E,CUVMUR (./LBP_syn.v,146|23): instance 'testfixture.LBP@LBP<module>.lbp_valid_reg' of design unit 'DFFRHQXL' is unresolved in 'worklib.LBP:v'.
-  DFFRHQXL \gc_addr_reg[11]  ( .D(n422), .CK(clk), .RN(n394), .Q(gc_addr[11])
+ncelab: *W,CUVWSP (./LBP_syn.v,226|27): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): Q
+
+  DFFRX1 \gray_addr_reg[10]  ( .D(n130), .CK(clk), .RN(n363), .QN(n80) );
                            |
-ncelab: *E,CUVMUR (./LBP_syn.v,147|27): instance 'testfixture.LBP@LBP<module>.\gc_addr_reg[11] ' of design unit 'DFFRHQXL' is unresolved in 'worklib.LBP:v'.
-  DFFRHQXL \gc_addr_reg[8]  ( .D(n419), .CK(clk), .RN(n394), .Q(gc_addr[8]) );
+ncelab: *W,CUVWSP (./LBP_syn.v,227|27): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): Q
+
+  DFFRX1 \gray_addr_reg[9]  ( .D(n131), .CK(clk), .RN(n363), .QN(n81) );
                           |
-ncelab: *E,CUVMUR (./LBP_syn.v,149|26): instance 'testfixture.LBP@LBP<module>.\gc_addr_reg[8] ' of design unit 'DFFRHQXL' is unresolved in 'worklib.LBP:v'.
-  DFFRHQXL \gc_addr_reg[9]  ( .D(n420), .CK(clk), .RN(n394), .Q(gc_addr[9]) );
+ncelab: *W,CUVWSP (./LBP_syn.v,228|26): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): Q
+
+  DFFRX1 \gray_addr_reg[8]  ( .D(n132), .CK(clk), .RN(n363), .QN(n82) );
                           |
-ncelab: *E,CUVMUR (./LBP_syn.v,150|26): instance 'testfixture.LBP@LBP<module>.\gc_addr_reg[9] ' of design unit 'DFFRHQXL' is unresolved in 'worklib.LBP:v'.
-  DFFRHQXL \gc_addr_reg[10]  ( .D(n421), .CK(clk), .RN(n394), .Q(gc_addr[10])
-                           |
-ncelab: *E,CUVMUR (./LBP_syn.v,151|27): instance 'testfixture.LBP@LBP<module>.\gc_addr_reg[10] ' of design unit 'DFFRHQXL' is unresolved in 'worklib.LBP:v'.
-  DFFRHQXL \gc_addr_reg[12]  ( .D(n423), .CK(clk), .RN(n394), .Q(gc_addr[12])
-                           |
-ncelab: *E,CUVMUR (./LBP_syn.v,153|27): instance 'testfixture.LBP@LBP<module>.\gc_addr_reg[12] ' of design unit 'DFFRHQXL' is unresolved in 'worklib.LBP:v'.
-  DFFRHQXL \gc_addr_reg[6]  ( .D(n151), .CK(clk), .RN(n394), .Q(gc_addr[6]) );
+ncelab: *W,CUVWSP (./LBP_syn.v,229|26): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): Q
+
+  DFFRX1 \gray_addr_reg[7]  ( .D(n133), .CK(clk), .RN(n363), .QN(n83) );
                           |
-ncelab: *E,CUVMUR (./LBP_syn.v,155|26): instance 'testfixture.LBP@LBP<module>.\gc_addr_reg[6] ' of design unit 'DFFRHQXL' is unresolved in 'worklib.LBP:v'.
-  DFFRHQXL \gc_addr_reg[5]  ( .D(n150), .CK(clk), .RN(n394), .Q(gc_addr[5]) );
+ncelab: *W,CUVWSP (./LBP_syn.v,230|26): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): Q
+
+  DFFRX1 \gray_addr_reg[6]  ( .D(n134), .CK(clk), .RN(n363), .QN(n84) );
                           |
-ncelab: *E,CUVMUR (./LBP_syn.v,156|26): instance 'testfixture.LBP@LBP<module>.\gc_addr_reg[5] ' of design unit 'DFFRHQXL' is unresolved in 'worklib.LBP:v'.
-  DFFRHQXL \gc_addr_reg[4]  ( .D(n149), .CK(clk), .RN(n394), .Q(gc_addr[4]) );
+ncelab: *W,CUVWSP (./LBP_syn.v,231|26): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): Q
+
+  DFFRX1 \gray_addr_reg[5]  ( .D(n135), .CK(clk), .RN(n364), .QN(n85) );
                           |
-ncelab: *E,CUVMUR (./LBP_syn.v,157|26): instance 'testfixture.LBP@LBP<module>.\gc_addr_reg[4] ' of design unit 'DFFRHQXL' is unresolved in 'worklib.LBP:v'.
-  DFFRHQXL \gc_addr_reg[3]  ( .D(n148), .CK(clk), .RN(n394), .Q(gc_addr[3]) );
+ncelab: *W,CUVWSP (./LBP_syn.v,232|26): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): Q
+
+  DFFRX1 \gray_addr_reg[4]  ( .D(n136), .CK(clk), .RN(n364), .QN(n86) );
                           |
-ncelab: *E,CUVMUR (./LBP_syn.v,158|26): instance 'testfixture.LBP@LBP<module>.\gc_addr_reg[3] ' of design unit 'DFFRHQXL' is unresolved in 'worklib.LBP:v'.
-  DFFRHQXL \gc_addr_reg[2]  ( .D(n147), .CK(clk), .RN(n394), .Q(gc_addr[2]) );
+ncelab: *W,CUVWSP (./LBP_syn.v,233|26): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): Q
+
+  DFFRX1 \gray_addr_reg[3]  ( .D(n137), .CK(clk), .RN(n364), .QN(n87) );
                           |
-ncelab: *E,CUVMUR (./LBP_syn.v,159|26): instance 'testfixture.LBP@LBP<module>.\gc_addr_reg[2] ' of design unit 'DFFRHQXL' is unresolved in 'worklib.LBP:v'.
-  DFFRHQXL \gc_addr_reg[1]  ( .D(n146), .CK(clk), .RN(n394), .Q(gc_addr[1]) );
+ncelab: *W,CUVWSP (./LBP_syn.v,234|26): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): Q
+
+  DFFRX1 \gray_addr_reg[2]  ( .D(n138), .CK(clk), .RN(n364), .QN(n88) );
                           |
-ncelab: *E,CUVMUR (./LBP_syn.v,160|26): instance 'testfixture.LBP@LBP<module>.\gc_addr_reg[1] ' of design unit 'DFFRHQXL' is unresolved in 'worklib.LBP:v'.
-  DFFRHQXL \counter_reg[2]  ( .D(n396), .CK(clk), .RN(n394), .Q(counter[2]) );
+ncelab: *W,CUVWSP (./LBP_syn.v,235|26): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): Q
+
+  DFFRX1 \gray_addr_reg[1]  ( .D(n139), .CK(clk), .RN(n364), .QN(n89) );
                           |
-ncelab: *E,CUVMUR (./LBP_syn.v,161|26): instance 'testfixture.LBP@LBP<module>.\counter_reg[2] ' of design unit 'DFFRHQXL' is unresolved in 'worklib.LBP:v'.
-  DFFRHQXL \counter_reg[3]  ( .D(n199), .CK(clk), .RN(n394), .Q(counter[3]) );
+ncelab: *W,CUVWSP (./LBP_syn.v,236|26): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): Q
+
+  DFFRX1 \gray_addr_reg[0]  ( .D(n140), .CK(clk), .RN(n364), .QN(n90) );
                           |
-ncelab: *E,CUVMUR (./LBP_syn.v,162|26): instance 'testfixture.LBP@LBP<module>.\counter_reg[3] ' of design unit 'DFFRHQXL' is unresolved in 'worklib.LBP:v'.
-  DFFRHQXL \lbp_addr_reg[13]  ( .D(n399), .CK(clk), .RN(n394), .Q(n467) );
-                            |
-ncelab: *E,CUVMUR (./LBP_syn.v,163|28): instance 'testfixture.LBP@LBP<module>.\lbp_addr_reg[13] ' of design unit 'DFFRHQXL' is unresolved in 'worklib.LBP:v'.
-  DFFRHQXL \lbp_addr_reg[12]  ( .D(n400), .CK(clk), .RN(n394), .Q(n468) );
-                            |
-ncelab: *E,CUVMUR (./LBP_syn.v,164|28): instance 'testfixture.LBP@LBP<module>.\lbp_addr_reg[12] ' of design unit 'DFFRHQXL' is unresolved in 'worklib.LBP:v'.
-  DFFRHQXL \lbp_addr_reg[11]  ( .D(n401), .CK(clk), .RN(n394), .Q(n469) );
-                            |
-ncelab: *E,CUVMUR (./LBP_syn.v,165|28): instance 'testfixture.LBP@LBP<module>.\lbp_addr_reg[11] ' of design unit 'DFFRHQXL' is unresolved in 'worklib.LBP:v'.
-  DFFRHQXL \lbp_addr_reg[10]  ( .D(n402), .CK(clk), .RN(n394), .Q(n470) );
-                            |
-ncelab: *E,CUVMUR (./LBP_syn.v,166|28): instance 'testfixture.LBP@LBP<module>.\lbp_addr_reg[10] ' of design unit 'DFFRHQXL' is unresolved in 'worklib.LBP:v'.
-  DFFRHQXL \lbp_addr_reg[9]  ( .D(n403), .CK(clk), .RN(n394), .Q(n471) );
-                           |
-ncelab: *E,CUVMUR (./LBP_syn.v,167|27): instance 'testfixture.LBP@LBP<module>.\lbp_addr_reg[9] ' of design unit 'DFFRHQXL' is unresolved in 'worklib.LBP:v'.
-  DFFRHQXL \lbp_addr_reg[8]  ( .D(n404), .CK(clk), .RN(n394), .Q(n472) );
-                           |
-ncelab: *E,CUVMUR (./LBP_syn.v,168|27): instance 'testfixture.LBP@LBP<module>.\lbp_addr_reg[8] ' of design unit 'DFFRHQXL' is unresolved in 'worklib.LBP:v'.
-  DFFRHQXL \lbp_addr_reg[6]  ( .D(n405), .CK(clk), .RN(n394), .Q(n474) );
-                           |
-ncelab: *E,CUVMUR (./LBP_syn.v,169|27): instance 'testfixture.LBP@LBP<module>.\lbp_addr_reg[6] ' of design unit 'DFFRHQXL' is unresolved in 'worklib.LBP:v'.
-  DFFRHQXL \lbp_addr_reg[5]  ( .D(n406), .CK(clk), .RN(n394), .Q(n475) );
-                           |
-ncelab: *E,CUVMUR (./LBP_syn.v,170|27): instance 'testfixture.LBP@LBP<module>.\lbp_addr_reg[5] ' of design unit 'DFFRHQXL' is unresolved in 'worklib.LBP:v'.
-  DFFRHQXL \lbp_addr_reg[4]  ( .D(n407), .CK(clk), .RN(n394), .Q(n476) );
-                           |
-ncelab: *E,CUVMUR (./LBP_syn.v,171|27): instance 'testfixture.LBP@LBP<module>.\lbp_addr_reg[4] ' of design unit 'DFFRHQXL' is unresolved in 'worklib.LBP:v'.
-  DFFRHQXL \lbp_addr_reg[3]  ( .D(n408), .CK(clk), .RN(n394), .Q(n477) );
-                           |
-ncelab: *E,CUVMUR (./LBP_syn.v,172|27): instance 'testfixture.LBP@LBP<module>.\lbp_addr_reg[3] ' of design unit 'DFFRHQXL' is unresolved in 'worklib.LBP:v'.
-  DFFRHQXL \lbp_addr_reg[2]  ( .D(n409), .CK(clk), .RN(n394), .Q(n478) );
-                           |
-ncelab: *E,CUVMUR (./LBP_syn.v,173|27): instance 'testfixture.LBP@LBP<module>.\lbp_addr_reg[2] ' of design unit 'DFFRHQXL' is unresolved in 'worklib.LBP:v'.
-  DFFRHQXL \lbp_addr_reg[1]  ( .D(n410), .CK(clk), .RN(n394), .Q(n479) );
-                           |
-ncelab: *E,CUVMUR (./LBP_syn.v,174|27): instance 'testfixture.LBP@LBP<module>.\lbp_addr_reg[1] ' of design unit 'DFFRHQXL' is unresolved in 'worklib.LBP:v'.
-  DFFRHQXL \y_reg[4]  ( .D(n415), .CK(clk), .RN(n394), .Q(g3_addr[11]) );
-                    |
-ncelab: *E,CUVMUR (./LBP_syn.v,175|20): instance 'testfixture.LBP@LBP<module>.\y_reg[4] ' of design unit 'DFFRHQXL' is unresolved in 'worklib.LBP:v'.
-  DFFRHQXL \y_reg[1]  ( .D(n412), .CK(clk), .RN(n394), .Q(g3_addr[8]) );
-                    |
-ncelab: *E,CUVMUR (./LBP_syn.v,176|20): instance 'testfixture.LBP@LBP<module>.\y_reg[1] ' of design unit 'DFFRHQXL' is unresolved in 'worklib.LBP:v'.
-  DFFRHQXL \y_reg[2]  ( .D(n413), .CK(clk), .RN(n394), .Q(g3_addr[9]) );
-                    |
-ncelab: *E,CUVMUR (./LBP_syn.v,177|20): instance 'testfixture.LBP@LBP<module>.\y_reg[2] ' of design unit 'DFFRHQXL' is unresolved in 'worklib.LBP:v'.
-  DFFRHQXL \y_reg[6]  ( .D(n417), .CK(clk), .RN(n394), .Q(g3_addr[13]) );
-                    |
-ncelab: *E,CUVMUR (./LBP_syn.v,178|20): instance 'testfixture.LBP@LBP<module>.\y_reg[6] ' of design unit 'DFFRHQXL' is unresolved in 'worklib.LBP:v'.
-  DFFRHQXL \y_reg[3]  ( .D(n414), .CK(clk), .RN(n394), .Q(g3_addr[10]) );
-                    |
-ncelab: *E,CUVMUR (./LBP_syn.v,179|20): instance 'testfixture.LBP@LBP<module>.\y_reg[3] ' of design unit 'DFFRHQXL' is unresolved in 'worklib.LBP:v'.
-  DFFRHQXL \y_reg[5]  ( .D(n416), .CK(clk), .RN(n394), .Q(g3_addr[12]) );
-                    |
-ncelab: *E,CUVMUR (./LBP_syn.v,180|20): instance 'testfixture.LBP@LBP<module>.\y_reg[5] ' of design unit 'DFFRHQXL' is unresolved in 'worklib.LBP:v'.
-  DFFRHQXL \lbp_data_reg[6]  ( .D(n387), .CK(clk), .RN(n394), .Q(n483) );
-                           |
-ncelab: *E,CUVMUR (./LBP_syn.v,181|27): instance 'testfixture.LBP@LBP<module>.\lbp_data_reg[6] ' of design unit 'DFFRHQXL' is unresolved in 'worklib.LBP:v'.
-  DFFRHQXL \lbp_data_reg[5]  ( .D(n388), .CK(clk), .RN(n394), .Q(n484) );
-                           |
-ncelab: *E,CUVMUR (./LBP_syn.v,182|27): instance 'testfixture.LBP@LBP<module>.\lbp_data_reg[5] ' of design unit 'DFFRHQXL' is unresolved in 'worklib.LBP:v'.
-  DFFRHQXL \lbp_data_reg[4]  ( .D(n389), .CK(clk), .RN(n394), .Q(n485) );
-                           |
-ncelab: *E,CUVMUR (./LBP_syn.v,183|27): instance 'testfixture.LBP@LBP<module>.\lbp_data_reg[4] ' of design unit 'DFFRHQXL' is unresolved in 'worklib.LBP:v'.
-  DFFRHQXL \lbp_data_reg[3]  ( .D(n390), .CK(clk), .RN(n394), .Q(n486) );
-                           |
-ncelab: *E,CUVMUR (./LBP_syn.v,184|27): instance 'testfixture.LBP@LBP<module>.\lbp_data_reg[3] ' of design unit 'DFFRHQXL' is unresolved in 'worklib.LBP:v'.
-  DFFRHQXL \lbp_data_reg[2]  ( .D(n391), .CK(clk), .RN(n394), .Q(n487) );
-                           |
-ncelab: *E,CUVMUR (./LBP_syn.v,185|27): instance 'testfixture.LBP@LBP<module>.\lbp_data_reg[2] ' of design unit 'DFFRHQXL' is unresolved in 'worklib.LBP:v'.
-  DFFRHQXL \lbp_data_reg[1]  ( .D(n392), .CK(clk), .RN(n394), .Q(n488) );
-                           |
-ncelab: *E,CUVMUR (./LBP_syn.v,186|27): instance 'testfixture.LBP@LBP<module>.\lbp_data_reg[1] ' of design unit 'DFFRHQXL' is unresolved in 'worklib.LBP:v'.
-  DFFRHQXL \lbp_data_reg[0]  ( .D(n393), .CK(clk), .RN(n394), .Q(n489) );
-                           |
-ncelab: *E,CUVMUR (./LBP_syn.v,187|27): instance 'testfixture.LBP@LBP<module>.\lbp_data_reg[0] ' of design unit 'DFFRHQXL' is unresolved in 'worklib.LBP:v'.
-  DFFRHQXL \lbp_data_reg[7]  ( .D(n386), .CK(clk), .RN(n394), .Q(n482) );
-                           |
-ncelab: *E,CUVMUR (./LBP_syn.v,188|27): instance 'testfixture.LBP@LBP<module>.\lbp_data_reg[7] ' of design unit 'DFFRHQXL' is unresolved in 'worklib.LBP:v'.
-  DFFRHQXL \x_reg[6]  ( .D(n137), .CK(clk), .RN(n394), .Q(g1_addr[6]) );
-                    |
-ncelab: *E,CUVMUR (./LBP_syn.v,189|20): instance 'testfixture.LBP@LBP<module>.\x_reg[6] ' of design unit 'DFFRHQXL' is unresolved in 'worklib.LBP:v'.
-  DFFRHQXL \x_reg[5]  ( .D(n136), .CK(clk), .RN(n394), .Q(g1_addr[5]) );
-                    |
-ncelab: *E,CUVMUR (./LBP_syn.v,190|20): instance 'testfixture.LBP@LBP<module>.\x_reg[5] ' of design unit 'DFFRHQXL' is unresolved in 'worklib.LBP:v'.
-  DFFRHQXL \x_reg[4]  ( .D(n135), .CK(clk), .RN(n394), .Q(g1_addr[4]) );
-                    |
-ncelab: *E,CUVMUR (./LBP_syn.v,191|20): instance 'testfixture.LBP@LBP<module>.\x_reg[4] ' of design unit 'DFFRHQXL' is unresolved in 'worklib.LBP:v'.
-  DFFRHQXL \x_reg[3]  ( .D(n134), .CK(clk), .RN(n394), .Q(g1_addr[3]) );
-                    |
-ncelab: *E,CUVMUR (./LBP_syn.v,192|20): instance 'testfixture.LBP@LBP<module>.\x_reg[3] ' of design unit 'DFFRHQXL' is unresolved in 'worklib.LBP:v'.
-  DFFRHQXL \x_reg[2]  ( .D(n133), .CK(clk), .RN(n394), .Q(g1_addr[2]) );
-                    |
-ncelab: *E,CUVMUR (./LBP_syn.v,193|20): instance 'testfixture.LBP@LBP<module>.\x_reg[2] ' of design unit 'DFFRHQXL' is unresolved in 'worklib.LBP:v'.
-  DFFRHQXL \x_reg[1]  ( .D(n132), .CK(clk), .RN(n394), .Q(g1_addr[1]) );
-                    |
-ncelab: *E,CUVMUR (./LBP_syn.v,194|20): instance 'testfixture.LBP@LBP<module>.\x_reg[1] ' of design unit 'DFFRHQXL' is unresolved in 'worklib.LBP:v'.
-  DFFRHQXL \gray_addr_reg[13]  ( .D(n196), .CK(clk), .RN(n394), .Q(n452) );
-                             |
-ncelab: *E,CUVMUR (./LBP_syn.v,195|29): instance 'testfixture.LBP@LBP<module>.\gray_addr_reg[13] ' of design unit 'DFFRHQXL' is unresolved in 'worklib.LBP:v'.
-  DFFRHQXL \gray_addr_reg[12]  ( .D(n195), .CK(clk), .RN(n394), .Q(n453) );
-                             |
-ncelab: *E,CUVMUR (./LBP_syn.v,196|29): instance 'testfixture.LBP@LBP<module>.\gray_addr_reg[12] ' of design unit 'DFFRHQXL' is unresolved in 'worklib.LBP:v'.
-  DFFRHQXL \gray_addr_reg[11]  ( .D(n194), .CK(clk), .RN(n394), .Q(n454) );
-                             |
-ncelab: *E,CUVMUR (./LBP_syn.v,197|29): instance 'testfixture.LBP@LBP<module>.\gray_addr_reg[11] ' of design unit 'DFFRHQXL' is unresolved in 'worklib.LBP:v'.
-  DFFRHQXL \gray_addr_reg[10]  ( .D(n193), .CK(clk), .RN(n394), .Q(n455) );
-                             |
-ncelab: *E,CUVMUR (./LBP_syn.v,198|29): instance 'testfixture.LBP@LBP<module>.\gray_addr_reg[10] ' of design unit 'DFFRHQXL' is unresolved in 'worklib.LBP:v'.
-  DFFRHQXL \gray_addr_reg[9]  ( .D(n192), .CK(clk), .RN(n394), .Q(n456) );
-                            |
-ncelab: *E,CUVMUR (./LBP_syn.v,199|28): instance 'testfixture.LBP@LBP<module>.\gray_addr_reg[9] ' of design unit 'DFFRHQXL' is unresolved in 'worklib.LBP:v'.
-  DFFRHQXL \gray_addr_reg[8]  ( .D(n191), .CK(clk), .RN(n394), .Q(n457) );
-                            |
-ncelab: *E,CUVMUR (./LBP_syn.v,200|28): instance 'testfixture.LBP@LBP<module>.\gray_addr_reg[8] ' of design unit 'DFFRHQXL' is unresolved in 'worklib.LBP:v'.
-  DFFRHQXL \gray_addr_reg[6]  ( .D(n189), .CK(clk), .RN(n394), .Q(n459) );
-                            |
-ncelab: *E,CUVMUR (./LBP_syn.v,201|28): instance 'testfixture.LBP@LBP<module>.\gray_addr_reg[6] ' of design unit 'DFFRHQXL' is unresolved in 'worklib.LBP:v'.
-  DFFRHQXL \gray_addr_reg[5]  ( .D(n188), .CK(clk), .RN(n394), .Q(n460) );
-                            |
-ncelab: *E,CUVMUR (./LBP_syn.v,202|28): instance 'testfixture.LBP@LBP<module>.\gray_addr_reg[5] ' of design unit 'DFFRHQXL' is unresolved in 'worklib.LBP:v'.
-  DFFRHQXL \gray_addr_reg[4]  ( .D(n187), .CK(clk), .RN(n394), .Q(n461) );
-                            |
-ncelab: *E,CUVMUR (./LBP_syn.v,203|28): instance 'testfixture.LBP@LBP<module>.\gray_addr_reg[4] ' of design unit 'DFFRHQXL' is unresolved in 'worklib.LBP:v'.
-  DFFRHQXL \gray_addr_reg[3]  ( .D(n186), .CK(clk), .RN(n394), .Q(n462) );
-                            |
-ncelab: *E,CUVMUR (./LBP_syn.v,204|28): instance 'testfixture.LBP@LBP<module>.\gray_addr_reg[3] ' of design unit 'DFFRHQXL' is unresolved in 'worklib.LBP:v'.
-  DFFRHQXL \gray_addr_reg[2]  ( .D(n185), .CK(clk), .RN(n394), .Q(n463) );
-                            |
-ncelab: *E,CUVMUR (./LBP_syn.v,205|28): instance 'testfixture.LBP@LBP<module>.\gray_addr_reg[2] ' of design unit 'DFFRHQXL' is unresolved in 'worklib.LBP:v'.
-  DFFRHQXL \gray_addr_reg[1]  ( .D(n184), .CK(clk), .RN(n394), .Q(n464) );
-                            |
-ncelab: *E,CUVMUR (./LBP_syn.v,206|28): instance 'testfixture.LBP@LBP<module>.\gray_addr_reg[1] ' of design unit 'DFFRHQXL' is unresolved in 'worklib.LBP:v'.
-  DFFRHQXL \gray_addr_reg[7]  ( .D(n190), .CK(clk), .RN(n394), .Q(n458) );
-                            |
-ncelab: *E,CUVMUR (./LBP_syn.v,207|28): instance 'testfixture.LBP@LBP<module>.\gray_addr_reg[7] ' of design unit 'DFFRHQXL' is unresolved in 'worklib.LBP:v'.
-  DFFRHQXL \gray_addr_reg[0]  ( .D(n183), .CK(clk), .RN(n394), .Q(n465) );
-                            |
-ncelab: *E,CUVMUR (./LBP_syn.v,208|28): instance 'testfixture.LBP@LBP<module>.\gray_addr_reg[0] ' of design unit 'DFFRHQXL' is unresolved in 'worklib.LBP:v'.
-ncverilog: *E,ELBERR: Error during elaboration (status 1), exiting.
-TOOL:	ncverilog	15.20-s039: Exiting on Feb 14, 2022 at 11:06:53 CST  (total: 00:00:01)
+ncelab: *W,CUVWSP (./LBP_syn.v,237|26): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): Q
+
+	Reading SDF file from location "LBP_syn.sdf"
+	Writing compiled SDF file to "LBP_syn.sdf.X".
+	Annotating SDF timing data:
+		Compiled SDF file:     LBP_syn.sdf.X
+		Log file:              
+		Backannotation scope:  testfixture.LBP
+		Configuration file:    
+		MTM control:           
+		Scale factors:         
+		Scale type:            
+	Annotation completed successfully...
+	SDF statistics: No. of Pathdelays = 1306  Annotated = 100.00% -- No. of Tchecks = 492  Annotated = 100.00% 
+				        Total 	   Annotated	  Percentage
+		 Path Delays	        1306	        1306	      100.00
+		      $width	         246	         246	      100.00
+		  $setuphold	         246	         246	      100.00
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		tsmc13_neg.ADDFXL:v <0x1931426b>
+			streams:   0, words:     0
+		tsmc13_neg.ADDHXL:v <0x49a69c56>
+			streams:   0, words:     0
+		tsmc13_neg.DFFRX1:v <0x3659f8fe>
+			streams:   0, words:     0
+		tsmc13_neg.DFFRX1:v <0x3b80421d>
+			streams:   0, words:     0
+		tsmc13_neg.DFFRX1:v <0x79d504a5>
+			streams:   0, words:     0
+		tsmc13_neg.DFFSX1:v <0x0171f77d>
+			streams:   0, words:     0
+		tsmc13_neg.DFFSX1:v <0x0ca84d9e>
+			streams:   0, words:     0
+		tsmc13_neg.XNOR2X1:v <0x59e1cd07>
+			streams:   0, words:     0
+		tsmc13_neg.XOR2X1:v <0x27d6c065>
+			streams:   0, words:     0
+		tsmc13_neg.XOR2XL:v <0x3b4c1534>
+			streams:   0, words:     0
+		tsmc13_neg.XOR3XL:v <0x7ae5faab>
+			streams:   0, words:     0
+		worklib.LBP:v <0x03400723>
+			streams:   0, words:     0
+		worklib.lbp_mem:v <0x3ab1926b>
+			streams:   3, words:  1179
+		worklib.testfixture:v <0x6d4d9864>
+			streams:  16, words: 17547
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                    Instances  Unique
+		Modules:                  401      54
+		UDPs:                      82       1
+		Primitives:              1010       8
+		Timing outputs:           457      19
+		Registers:                 98      19
+		Scalar wires:             546       -
+		Expanded wires:             8       1
+		Always blocks:              2       2
+		Initial blocks:            17      17
+		Pseudo assignments:         1       1
+		Timing checks:            738     100
+		Interconnect:            1085       -
+		Delayed tcheck signals:   246      90
+		Simulation timescale:     1ps
+	Writing initial simulation snapshot: worklib.testfixture:v
+Loading snapshot worklib.testfixture:v .................... Done
+*Verdi* Loading libsscore_ius152.so
+ncsim> source /usr/cad/cadence/INCISIV/cur/tools/inca/files/ncsimrc
+ncsim> run
+FSDB Dumper for IUS, Release Verdi_Q-2020.03, Linux, 02/09/2020
+(C) 1996 - 2020 by Synopsys, Inc.
+*Verdi* FSDB WARNING: The FSDB file already exists. Overwriting the FSDB file may crash the programs that are using this file.
+*Verdi* : Create FSDB file 'LBP.fsdb'
+*Verdi* : Begin traversing the scopes, layer (0).
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.LBP_dbg(48)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.exp_dbg(48)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.clk(48)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.reset(48)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.result_compare(48)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.err(25)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.times(25)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.over(48)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.exp_num(25)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.gray_data(48)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.gray_ready(48)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.i(25)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.lbp_data(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.gray_addr(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.lbp_addr(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.finish(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.lbp_valid(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.gray_req(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.LBP.gray_addr(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.LBP.gray_data(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.LBP.lbp_addr(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.LBP.lbp_data(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.LBP.clk(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.LBP.reset(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.LBP.gray_ready(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.LBP.gray_req(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.LBP.lbp_valid(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.LBP.finish(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.LBP.n420(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.LBP.n421(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.LBP.n422(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.LBP.n423(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.LBP.n424(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.LBP.n425(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.LBP.n426(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.LBP.n427(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.LBP.n428(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.LBP.n429(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.LBP.n430(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.LBP.n431(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.LBP.n432(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.LBP.n433(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.LBP.n434(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.LBP.n435(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.LBP.n436(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.LBP.n437(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.LBP.n438(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.LBP.n439(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.LBP.n440(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.LBP.n441(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.LBP.n442(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.LBP.N82(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.LBP.N85(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.LBP.N86(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.LBP.N87(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.LBP.N88(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.LBP.N89(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.LBP.N90(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.LBP.N91(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.LBP.N92(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.LBP.N93(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.LBP.N94(36)
+*Verdi* WARNING: The above messages are printed 50 times. No more similar message will be printed out.
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.LBP.N95(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_lbp_mem.LBP_M(116)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_lbp_mem.i(25)
+*Verdi* : End of traversing.
+-----------------------------------------------------
+
+START!!! Simulation Start .....
+
+-----------------------------------------------------
+
+Output pixel: 0 ~           0 are correct!
+
+Output pixel: 0 ~        1000 are correct!
+
+Output pixel: 0 ~        2000 are correct!
+
+Output pixel: 0 ~        3000 are correct!
+
+Output pixel: 0 ~        4000 are correct!
+
+Output pixel: 0 ~        5000 are correct!
+
+Output pixel: 0 ~        6000 are correct!
+
+Output pixel: 0 ~        7000 are correct!
+
+Output pixel: 0 ~        8000 are correct!
+
+Output pixel: 0 ~        9000 are correct!
+
+Output pixel: 0 ~       10000 are correct!
+
+Output pixel: 0 ~       11000 are correct!
+
+Output pixel: 0 ~       12000 are correct!
+
+Output pixel: 0 ~       13000 are correct!
+
+Output pixel: 0 ~       14000 are correct!
+
+Output pixel: 0 ~       15000 are correct!
+
+Output pixel: 0 ~       16000 are correct!
+
+Output pixel: 0 ~       16383 are correct!
+
+-----------------------------------------------------
+
+Congratulations! All data have been generated successfully!
+
+-------------------------PASS------------------------
+
+Simulation complete via $finish(1) at time 1587670 NS + 0
+./testfixture.v:128       #(`CYCLE/2); $finish;
+ncsim> exit
+TOOL:	ncverilog	15.20-s039: Exiting on Feb 14, 2022 at 12:05:53 CST  (total: 00:00:07)
