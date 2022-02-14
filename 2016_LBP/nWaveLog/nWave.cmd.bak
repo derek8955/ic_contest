@@ -2,335 +2,162 @@ wvSetPosition -win $_nWave1 {("G1" 0)}
 wvOpenFile -win $_nWave1 {/home/t107360223/Desktop/ic_contest/2016_LBP/LBP.fsdb}
 wvGetSignalOpen -win $_nWave1
 wvGetSignalSetScope -win $_nWave1 "/testfixture"
-wvGetSignalSetScope -win $_nWave1 "/testfixture/u_lbp_mem"
 wvGetSignalSetScope -win $_nWave1 "/testfixture/LBP"
-wvGetSignalSetScope -win $_nWave1 "/testfixture/LBP"
-wvGetSignalSetScope -win $_nWave1 "/testfixture/u_lbp_mem"
-wvGetSignalSetScope -win $_nWave1 "/testfixture/LBP"
-wvSetPosition -win $_nWave1 {("G1" 5)}
-wvSetPosition -win $_nWave1 {("G1" 5)}
+wvSetPosition -win $_nWave1 {("G1" 7)}
+wvSetPosition -win $_nWave1 {("G1" 7)}
 wvAddSignal -win $_nWave1 -clear
 wvAddSignal -win $_nWave1 -group {"G1" \
-{/testfixture/LBP/clk} \
+{/testfixture/clk} \
+{/testfixture/LBP/finish} \
 {/testfixture/LBP/counter2\[3:0\]} \
 {/testfixture/LBP/counter\[3:0\]} \
-{/testfixture/LBP/gray_addr\[13:0\]} \
-{/testfixture/LBP/counter2\[3:0\]} \
+{/testfixture/LBP/lbp_addr\[13:0\]} \
+{/testfixture/LBP/ptr\[13:0\]} \
+{/testfixture/LBP/state\[1:0\]} \
 }
 wvAddSignal -win $_nWave1 -group {"G2" \
 }
+wvSelectSignal -win $_nWave1 {( "G1" 3 4 5 6 7 )} 
+wvSetPosition -win $_nWave1 {("G1" 7)}
+wvGetSignalClose -win $_nWave1
+wvZoomIn -win $_nWave1
+wvZoomIn -win $_nWave1
+wvZoomIn -win $_nWave1
+wvZoomIn -win $_nWave1
+wvZoomIn -win $_nWave1
+wvZoomIn -win $_nWave1
+wvZoomIn -win $_nWave1
+wvSetCursor -win $_nWave1 106621439.744621 -snap {("G2" 0)}
+wvSelectGroup -win $_nWave1 {G2}
+wvZoomIn -win $_nWave1
+wvZoomIn -win $_nWave1
+wvZoomIn -win $_nWave1
+wvZoomIn -win $_nWave1
+wvZoomOut -win $_nWave1
 wvSelectSignal -win $_nWave1 {( "G1" 5 )} 
-wvSetPosition -win $_nWave1 {("G1" 5)}
-wvGetSignalClose -win $_nWave1
-wvZoomAll -win $_nWave1
-wvZoomOut -win $_nWave1
-wvZoomOut -win $_nWave1
-wvZoomOut -win $_nWave1
-wvZoomOut -win $_nWave1
-wvZoomOut -win $_nWave1
-wvZoom -win $_nWave1 21852239.851301 162330924.609665
-wvZoom -win $_nWave1 23001136.157874 31043410.303892
-wvZoom -win $_nWave1 23222373.439210 23569177.826176
-wvZoom -win $_nWave1 23230366.700174 23248931.693379
-wvResizeWindow -win $_nWave1 62 245 1536 801
-wvCut -win $_nWave1
-wvSetPosition -win $_nWave1 {("G2" 0)}
-wvSetPosition -win $_nWave1 {("G1" 4)}
-wvGetSignalOpen -win $_nWave1
-wvGetSignalSetScope -win $_nWave1 "/testfixture"
-wvGetSignalSetScope -win $_nWave1 "/testfixture/LBP"
-wvSetPosition -win $_nWave1 {("G1" 4)}
-wvSetPosition -win $_nWave1 {("G1" 4)}
-wvAddSignal -win $_nWave1 -clear
-wvAddSignal -win $_nWave1 -group {"G1" \
-{/testfixture/LBP/clk} \
-{/testfixture/LBP/counter2\[3:0\]} \
-{/testfixture/LBP/counter\[3:0\]} \
-{/testfixture/LBP/gray_addr\[13:0\]} \
-}
-wvAddSignal -win $_nWave1 -group {"G2" \
-}
-wvSetPosition -win $_nWave1 {("G1" 4)}
-wvGetSignalClose -win $_nWave1
-wvGetSignalOpen -win $_nWave1
-wvGetSignalSetScope -win $_nWave1 "/testfixture"
-wvGetSignalSetScope -win $_nWave1 "/testfixture/LBP"
-wvGetSignalSetScope -win $_nWave1 "/testfixture/LBP/genblk1\[1\]"
-wvGetSignalSetScope -win $_nWave1 "/testfixture/LBP"
-wvSetPosition -win $_nWave1 {("G1" 6)}
-wvSetPosition -win $_nWave1 {("G1" 6)}
-wvAddSignal -win $_nWave1 -clear
-wvAddSignal -win $_nWave1 -group {"G1" \
-{/testfixture/LBP/clk} \
-{/testfixture/LBP/counter2\[3:0\]} \
-{/testfixture/LBP/counter\[3:0\]} \
-{/testfixture/LBP/gray_addr\[13:0\]} \
-{/testfixture/LBP/gray_data\[7:0\]} \
-{/testfixture/LBP/gray_data\[7:0\]} \
-}
-wvAddSignal -win $_nWave1 -group {"G2" \
-}
-wvSelectSignal -win $_nWave1 {( "G1" 6 )} 
-wvSetPosition -win $_nWave1 {("G1" 6)}
-wvGetSignalClose -win $_nWave1
-wvCut -win $_nWave1
-wvSetPosition -win $_nWave1 {("G2" 0)}
-wvSetPosition -win $_nWave1 {("G1" 5)}
-wvSelectSignal -win $_nWave1 {( "G1" 4 )} 
-wvSelectSignal -win $_nWave1 {( "G1" 4 )} 
+wvSelectSignal -win $_nWave1 {( "G1" 5 6 )} 
+wvSelectSignal -win $_nWave1 {( "G1" 5 6 )} 
 wvSetRadix -win $_nWave1 -format UDec
-wvSearchNext -win $_nWave1
-wvZoomIn -win $_nWave1
-wvZoomIn -win $_nWave1
-wvZoomOut -win $_nWave1
-wvZoomOut -win $_nWave1
-wvZoomIn -win $_nWave1
-wvSetCursor -win $_nWave1 5510.197424 -snap {("G2" 0)}
-wvGetSignalOpen -win $_nWave1
-wvGetSignalSetScope -win $_nWave1 "/testfixture"
-wvGetSignalSetScope -win $_nWave1 "/testfixture/LBP"
-wvGetSignalSetScope -win $_nWave1 "/testfixture/LBP/genblk1\[1\]"
-wvGetSignalSetScope -win $_nWave1 "/testfixture/LBP"
-wvSetPosition -win $_nWave1 {("G1" 6)}
-wvSetPosition -win $_nWave1 {("G1" 6)}
-wvAddSignal -win $_nWave1 -clear
-wvAddSignal -win $_nWave1 -group {"G1" \
-{/testfixture/LBP/clk} \
-{/testfixture/LBP/counter2\[3:0\]} \
-{/testfixture/LBP/counter\[3:0\]} \
-{/testfixture/LBP/gray_addr\[13:0\]} \
-{/testfixture/LBP/gray_data\[7:0\]} \
-{/testfixture/LBP/state\[1:0\]} \
-}
-wvAddSignal -win $_nWave1 -group {"G2" \
-}
-wvSelectSignal -win $_nWave1 {( "G1" 6 )} 
-wvSetPosition -win $_nWave1 {("G1" 6)}
+wvSetCursor -win $_nWave1 220029680.859986 -snap {("G2" 0)}
+wvSetCursor -win $_nWave1 220015634.620855 -snap {("G1" 4)}
+wvSetCursor -win $_nWave1 220014354.934719 -snap {("G1" 4)}
+wvSetCursor -win $_nWave1 217431554.838284 -snap {("G2" 0)}
+wvDisplayGridCount -win $_nWave1 -off
 wvGetSignalClose -win $_nWave1
-wvGetSignalOpen -win $_nWave1
-wvGetSignalSetScope -win $_nWave1 "/testfixture"
-wvGetSignalSetScope -win $_nWave1 "/testfixture/LBP"
-wvGetSignalSetScope -win $_nWave1 "/testfixture/LBP/genblk1\[1\]"
-wvGetSignalSetScope -win $_nWave1 "/testfixture/LBP"
-wvSetPosition -win $_nWave1 {("G1" 7)}
-wvSetPosition -win $_nWave1 {("G1" 7)}
-wvAddSignal -win $_nWave1 -clear
-wvAddSignal -win $_nWave1 -group {"G1" \
-{/testfixture/LBP/clk} \
-{/testfixture/LBP/counter2\[3:0\]} \
-{/testfixture/LBP/counter\[3:0\]} \
-{/testfixture/LBP/gray_addr\[13:0\]} \
-{/testfixture/LBP/gray_data\[7:0\]} \
-{/testfixture/LBP/state\[1:0\]} \
-{/testfixture/LBP/ptr\[13:0\]} \
-}
-wvAddSignal -win $_nWave1 -group {"G2" \
-}
-wvSelectSignal -win $_nWave1 {( "G1" 7 )} 
-wvSetPosition -win $_nWave1 {("G1" 7)}
-wvGetSignalClose -win $_nWave1
-wvZoomOut -win $_nWave1
-wvZoomOut -win $_nWave1
-wvSetCursor -win $_nWave1 11766.135853 -snap {("G2" 0)}
+wvReloadFile -win $_nWave1
 wvDisplayGridCount -win $_nWave1 -off
 wvGetSignalClose -win $_nWave1
 wvReloadFile -win $_nWave1
 wvGetSignalOpen -win $_nWave1
-wvGetSignalSetScope -win $_nWave1 "/testfixture/LBP"
-wvSetPosition -win $_nWave1 {("G1" 8)}
-wvSetPosition -win $_nWave1 {("G1" 8)}
-wvAddSignal -win $_nWave1 -clear
-wvAddSignal -win $_nWave1 -group {"G1" \
-{/testfixture/LBP/clk} \
-{/testfixture/LBP/counter2\[3:0\]} \
-{/testfixture/LBP/counter\[3:0\]} \
-{/testfixture/LBP/gray_addr\[13:0\]} \
-{/testfixture/LBP/gray_data\[7:0\]} \
-{/testfixture/LBP/state\[1:0\]} \
-{/testfixture/LBP/ptr\[13:0\]} \
-{/testfixture/LBP/lbp_addr\[13:0\]} \
-}
-wvAddSignal -win $_nWave1 -group {"G2" \
-}
-wvSelectSignal -win $_nWave1 {( "G1" 8 )} 
-wvSetPosition -win $_nWave1 {("G1" 8)}
-wvGetSignalClose -win $_nWave1
-wvSetCursor -win $_nWave1 13340.477975 -snap {("G2" 0)}
-wvDisplayGridCount -win $_nWave1 -off
-wvGetSignalClose -win $_nWave1
-wvReloadFile -win $_nWave1
-wvSetCursor -win $_nWave1 13589.058310 -snap {("G2" 0)}
-wvDisplayGridCount -win $_nWave1 -off
-wvGetSignalClose -win $_nWave1
-wvReloadFile -win $_nWave1
-wvSetCursor -win $_nWave1 4602300872.849028 -snap {("G2" 0)}
-wvGetSignalOpen -win $_nWave1
-wvGetSignalOpen -win $_nWave1
-wvGetSignalSetScope -win $_nWave1 "/testfixture/LBP"
 wvSetPosition -win $_nWave1 {("G1" 9)}
 wvSetPosition -win $_nWave1 {("G1" 9)}
 wvAddSignal -win $_nWave1 -clear
 wvAddSignal -win $_nWave1 -group {"G1" \
-{/testfixture/LBP/clk} \
+{/testfixture/clk} \
+{/testfixture/LBP/finish} \
 {/testfixture/LBP/counter2\[3:0\]} \
 {/testfixture/LBP/counter\[3:0\]} \
-{/testfixture/LBP/gray_addr\[13:0\]} \
-{/testfixture/LBP/gray_data\[7:0\]} \
-{/testfixture/LBP/state\[1:0\]} \
-{/testfixture/LBP/ptr\[13:0\]} \
 {/testfixture/LBP/lbp_addr\[13:0\]} \
-{/testfixture/LBP/gray_req} \
+{/testfixture/LBP/ptr\[13:0\]} \
+{/testfixture/LBP/state\[1:0\]} \
+{/testfixture/LBP/lbp_valid} \
+{/testfixture/LBP/lbp_valid} \
 }
 wvAddSignal -win $_nWave1 -group {"G2" \
 }
 wvSelectSignal -win $_nWave1 {( "G1" 9 )} 
 wvSetPosition -win $_nWave1 {("G1" 9)}
 wvGetSignalClose -win $_nWave1
-wvSetCursor -win $_nWave1 14417.659426 -snap {("G2" 0)}
-wvDisplayGridCount -win $_nWave1 -off
-wvGetSignalClose -win $_nWave1
-wvReloadFile -win $_nWave1
-wvSetCursor -win $_nWave1 18394.944785 -snap {("G2" 0)}
-wvSetCursor -win $_nWave1 22151.269846 -snap {("G2" 0)}
-wvDisplayGridCount -win $_nWave1 -off
-wvGetSignalClose -win $_nWave1
-wvReloadFile -win $_nWave1
-wvSetCursor -win $_nWave1 12152.816375 -snap {("G2" 0)}
-wvDisplayGridCount -win $_nWave1 -off
-wvGetSignalClose -win $_nWave1
-wvReloadFile -win $_nWave1
-wvSetCursor -win $_nWave1 7264.069788 -snap {("G2" 0)}
-wvDisplayGridCount -win $_nWave1 -off
-wvGetSignalClose -win $_nWave1
-wvReloadFile -win $_nWave1
-wvSetCursor -win $_nWave1 15881.521399 -snap {("G2" 0)}
-wvSetCursor -win $_nWave1 15301.500617 -snap {("G2" 0)}
-wvSetCursor -win $_nWave1 6152320127.681683 -snap {("G2" 0)}
-wvZoomIn -win $_nWave1
-wvSelectSignal -win $_nWave1 {( "G1" 8 )} 
-wvSetCursor -win $_nWave1 6872845174.774486 -snap {("G2" 0)}
-wvPrevView -win $_nWave1
-wvGetSignalOpen -win $_nWave1
-wvGetSignalSetScope -win $_nWave1 "/testfixture/LBP"
-wvSetPosition -win $_nWave1 {("G1" 11)}
-wvSetPosition -win $_nWave1 {("G1" 11)}
-wvAddSignal -win $_nWave1 -clear
-wvAddSignal -win $_nWave1 -group {"G1" \
-{/testfixture/LBP/clk} \
-{/testfixture/LBP/counter2\[3:0\]} \
-{/testfixture/LBP/counter\[3:0\]} \
-{/testfixture/LBP/gray_addr\[13:0\]} \
-{/testfixture/LBP/gray_data\[7:0\]} \
-{/testfixture/LBP/state\[1:0\]} \
-{/testfixture/LBP/ptr\[13:0\]} \
-{/testfixture/LBP/lbp_addr\[13:0\]} \
-{/testfixture/LBP/gray_req} \
-{/testfixture/LBP/lbp_data\[7:0\]} \
-{/testfixture/LBP/lbp_valid} \
-}
-wvAddSignal -win $_nWave1 -group {"G2" \
-}
-wvSelectSignal -win $_nWave1 {( "G1" 10 11 )} 
-wvSetPosition -win $_nWave1 {("G1" 11)}
-wvGetSignalClose -win $_nWave1
-wvGoToGroup -win $_nWave1 "G2"
-wvGoToGroup -win $_nWave1 "G2"
 wvCut -win $_nWave1
-wvSetPosition -win $_nWave1 {("G1" 9)}
-wvDisplayGridCount -win $_nWave1 -off
-wvGetSignalClose -win $_nWave1
-wvReloadFile -win $_nWave1
-wvGetSignalOpen -win $_nWave1
-wvGetSignalSetScope -win $_nWave1 "/testfixture/LBP"
-wvSetPosition -win $_nWave1 {("G1" 11)}
-wvSetPosition -win $_nWave1 {("G1" 11)}
-wvAddSignal -win $_nWave1 -clear
-wvAddSignal -win $_nWave1 -group {"G1" \
-{/testfixture/LBP/clk} \
-{/testfixture/LBP/counter2\[3:0\]} \
-{/testfixture/LBP/counter\[3:0\]} \
-{/testfixture/LBP/gray_addr\[13:0\]} \
-{/testfixture/LBP/gray_data\[7:0\]} \
-{/testfixture/LBP/state\[1:0\]} \
-{/testfixture/LBP/ptr\[13:0\]} \
-{/testfixture/LBP/lbp_addr\[13:0\]} \
-{/testfixture/LBP/gray_req} \
-{/testfixture/LBP/lbp_data\[7:0\]} \
-{/testfixture/LBP/lbp_valid} \
-}
-wvAddSignal -win $_nWave1 -group {"G2" \
-}
-wvSelectSignal -win $_nWave1 {( "G1" 10 11 )} 
-wvSetPosition -win $_nWave1 {("G1" 11)}
-wvGetSignalClose -win $_nWave1
-wvSetCursor -win $_nWave1 7926.950681 -snap {("G2" 0)}
-wvSetCursor -win $_nWave1 25769.494721 -snap {("G2" 0)}
+wvSetPosition -win $_nWave1 {("G2" 0)}
+wvSetPosition -win $_nWave1 {("G1" 8)}
+wvSetCursor -win $_nWave1 220045589.145712 -snap {("G1" 7)}
+wvSetCursor -win $_nWave1 220034375.054035 -snap {("G1" 6)}
 wvGetSignalOpen -win $_nWave1
 wvGetSignalSetScope -win $_nWave1 "/testfixture"
 wvGetSignalSetScope -win $_nWave1 "/testfixture/LBP"
-wvGetSignalSetScope -win $_nWave1 "/testfixture/LBP/genblk1\[1\]"
-wvGetSignalSetScope -win $_nWave1 "/testfixture/LBP"
-wvGetSignalSetScope -win $_nWave1 "/testfixture/u_lbp_mem"
-wvGetSignalSetScope -win $_nWave1 "/testfixture/LBP"
-wvGetSignalSetScope -win $_nWave1 "/testfixture/LBP/genblk1\[0\]"
-wvGetSignalSetScope -win $_nWave1 "/testfixture/LBP/genblk1\[1\]"
-wvGetSignalSetScope -win $_nWave1 "/testfixture/LBP/genblk1\[0\]"
-wvGetSignalSetScope -win $_nWave1 "/testfixture/LBP/genblk1\[1\]"
-wvGetSignalSetScope -win $_nWave1 "/testfixture/LBP/genblk1\[1\]/genblk1"
-wvGetSignalSetScope -win $_nWave1 "/testfixture/LBP/genblk1\[1\]"
-wvGetSignalSetScope -win $_nWave1 "/testfixture/LBP/genblk1\[2\]"
-wvGetSignalSetScope -win $_nWave1 "/testfixture/LBP/genblk5\[8\]"
-wvGetSignalSetScope -win $_nWave1 "/testfixture/LBP/genblk5\[7\]"
-wvGetSignalSetScope -win $_nWave1 "/testfixture/LBP/genblk4\[3\]"
-wvGetSignalSetScope -win $_nWave1 "/testfixture/LBP"
-wvSetCursor -win $_nWave1 21902.689511 -snap {("G2" 0)}
-wvSetCursor -win $_nWave1 9335.572579 -snap {("G2" 0)}
-wvDisplayGridCount -win $_nWave1 -off
+wvSetPosition -win $_nWave1 {("G1" 10)}
+wvSetPosition -win $_nWave1 {("G1" 10)}
+wvAddSignal -win $_nWave1 -clear
+wvAddSignal -win $_nWave1 -group {"G1" \
+{/testfixture/clk} \
+{/testfixture/LBP/finish} \
+{/testfixture/LBP/counter2\[3:0\]} \
+{/testfixture/LBP/counter\[3:0\]} \
+{/testfixture/LBP/lbp_addr\[13:0\]} \
+{/testfixture/LBP/ptr\[13:0\]} \
+{/testfixture/LBP/state\[1:0\]} \
+{/testfixture/LBP/lbp_valid} \
+{/testfixture/LBP/gray_data\[7:0\]} \
+{/testfixture/LBP/lbp_data\[7:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"G2" \
+}
+wvSelectSignal -win $_nWave1 {( "G1" 9 10 )} 
+wvSetPosition -win $_nWave1 {("G1" 10)}
 wvGetSignalClose -win $_nWave1
-wvReloadFile -win $_nWave1
-wvSelectSignal -win $_nWave1 {( "G1" 8 )} 
-wvSetRadix -win $_nWave1 -1Com
-wvSelectSignal -win $_nWave1 {( "G1" 8 )} 
-wvSetRadix -win $_nWave1 -format UDec
+wvSetCursor -win $_nWave1 53522.872652 -snap {("G2" 0)}
 wvGetSignalOpen -win $_nWave1
-wvSetCursor -win $_nWave1 9860.353286 -snap {("G2" 0)}
-wvDisplayGridCount -win $_nWave1 -off
+wvGetSignalSetScope -win $_nWave1 "/testfixture"
+wvGetSignalSetScope -win $_nWave1 "/testfixture/LBP"
+wvGetSignalSetScope -win $_nWave1 "/testfixture/LBP"
+wvSetPosition -win $_nWave1 {("G1" 11)}
+wvSetPosition -win $_nWave1 {("G1" 11)}
+wvAddSignal -win $_nWave1 -clear
+wvAddSignal -win $_nWave1 -group {"G1" \
+{/testfixture/clk} \
+{/testfixture/LBP/finish} \
+{/testfixture/LBP/counter2\[3:0\]} \
+{/testfixture/LBP/counter\[3:0\]} \
+{/testfixture/LBP/lbp_addr\[13:0\]} \
+{/testfixture/LBP/ptr\[13:0\]} \
+{/testfixture/LBP/state\[1:0\]} \
+{/testfixture/LBP/lbp_valid} \
+{/testfixture/LBP/gray_data\[7:0\]} \
+{/testfixture/LBP/lbp_data\[7:0\]} \
+{/testfixture/LBP/gray_addr\[13:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"G2" \
+}
+wvSelectSignal -win $_nWave1 {( "G1" 11 )} 
+wvSetPosition -win $_nWave1 {("G1" 11)}
 wvGetSignalClose -win $_nWave1
-wvReloadFile -win $_nWave1
-wvSetCursor -win $_nWave1 11959.476114 -snap {("G2" 0)}
-wvDisplayGridCount -win $_nWave1 -off
-wvGetSignalClose -win $_nWave1
-wvReloadFile -win $_nWave1
-wvSetCursor -win $_nWave1 6297.368485 -snap {("G2" 0)}
-wvSetCursor -win $_nWave1 8672.691685 -snap {("G2" 0)}
-wvSetCursor -win $_nWave1 9004.132132 -snap {("G2" 0)}
-wvDisplayGridCount -win $_nWave1 -off
-wvGetSignalClose -win $_nWave1
-wvReloadFile -win $_nWave1
-wvSetCursor -win $_nWave1 10992.774812 -snap {("G2" 0)}
-wvDisplayGridCount -win $_nWave1 -off
-wvGetSignalClose -win $_nWave1
-wvReloadFile -win $_nWave1
-wvDisplayGridCount -win $_nWave1 -off
-wvGetSignalClose -win $_nWave1
-wvReloadFile -win $_nWave1
-wvZoom -win $_nWave1 16157.721771 16406.302106
-wvZoomOut -win $_nWave1
-wvZoomOut -win $_nWave1
-wvZoomOut -win $_nWave1
-wvZoomOut -win $_nWave1
-wvZoomOut -win $_nWave1
-wvZoomOut -win $_nWave1
-wvZoomOut -win $_nWave1
-wvSetCursor -win $_nWave1 10941.391686 -snap {("G2" 0)}
-wvSetCursor -win $_nWave1 17007.600387 -snap {("G2" 0)}
-wvSelectSignal -win $_nWave1 {( "G1" 8 )} 
-wvSelectSignal -win $_nWave1 {( "G1" 7 8 )} 
-wvSelectSignal -win $_nWave1 {( "G1" 7 8 )} 
+wvSetRadix -win $_nWave1 -1Com
+wvSelectSignal -win $_nWave1 {( "G1" 11 )} 
 wvSetRadix -win $_nWave1 -format UDec
-wvSetCursor -win $_nWave1 1183348.846066 -snap {("G2" 0)}
-wvSelectSignal -win $_nWave1 {( "G1" 8 )} 
+wvSetCursor -win $_nWave1 48669.326220 -snap {("G2" 0)}
+wvDisplayGridCount -win $_nWave1 -off
+wvGetSignalClose -win $_nWave1
+wvReloadFile -win $_nWave1
+wvSetCursor -win $_nWave1 1742805.390952 -snap {("G2" 0)}
+wvDisplayGridCount -win $_nWave1 -off
+wvGetSignalClose -win $_nWave1
+wvReloadFile -win $_nWave1
+wvSetCursor -win $_nWave1 1741761.436472 -snap {("G2" 0)}
+wvDisplayGridCount -win $_nWave1 -off
+wvGetSignalClose -win $_nWave1
+wvReloadFile -win $_nWave1
+wvSetCursor -win $_nWave1 1743697.803652 -snap {("G2" 0)}
+wvDisplayGridCount -win $_nWave1 -off
+wvGetSignalClose -win $_nWave1
+wvReloadFile -win $_nWave1
+wvSetCursor -win $_nWave1 1740498.588311 -snap {("G2" 0)}
+wvSetCursor -win $_nWave1 1739336.768003 -snap {("G2" 0)}
+wvDisplayGridCount -win $_nWave1 -off
+wvGetSignalClose -win $_nWave1
+wvReloadFile -win $_nWave1
+wvSetCursor -win $_nWave1 1739589.337636 -snap {("G2" 0)}
+wvSetCursor -win $_nWave1 221762096.242856 -snap {("G2" 0)}
+wvDisplayGridCount -win $_nWave1 -off
+wvGetSignalClose -win $_nWave1
+wvReloadFile -win $_nWave1
+wvSelectSignal -win $_nWave1 {( "G1" 11 )} 
 wvSetRadix -win $_nWave1 -Unsigned
-wvSelectSignal -win $_nWave1 {( "G1" 7 )} 
-wvSetCursor -win $_nWave1 219911080.230107 -snap {("G2" 0)}
+wvSetCursor -win $_nWave1 221763527.470771 -snap {("G2" 0)}
+wvSetCursor -win $_nWave1 220051292.266226 -snap {("G2" 0)}
+wvSetCursor -win $_nWave1 220029352.384169 -snap {("G1" 11)}
+wvSetCursor -win $_nWave1 220031878.080491 -snap {("G2" 0)}
+wvDisplayGridCount -win $_nWave1 -off
+wvGetSignalClose -win $_nWave1
+wvReloadFile -win $_nWave1
 wvExit

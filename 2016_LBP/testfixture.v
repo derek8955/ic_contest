@@ -1,5 +1,5 @@
 `timescale 1ns/10ps
-`define CYCLE      12.5          	  // Modify your clock period here
+`define CYCLE      10          	  // Modify your clock period here
 `define SDFFILE    "LBP_syn.sdf"	  // Modify your sdf file name
 `define End_CYCLE  100000000000              // Modify cycle times once your design need more cycle times!
 

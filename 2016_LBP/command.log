@@ -1,6 +1,6 @@
 #@ # 
 #@ # Running dc_shell Version Q-2019.12 for linux64 -- Nov 26, 2019
-#@ # Date:   Fri Feb 11 23:21:59 2022
+#@ # Date:   Mon Feb 14 11:02:17 2022
 #@ # Run by: t107360223@islabx6
 #@ 
 
@@ -43088,6 +43088,7 @@ sh mkdir syn
 define_design_lib syn -path ./syn
 analyze -library syn -format verilog {/home/t107360223/Desktop/ic_contest/2016_LBP/LBP.v}
 elaborate LBP -architecture verilog -library syn
+# operating conditions and boundary conditions #
 set cycle  10         ;#clock period defined by designer
 create_clock -period $cycle [get_ports  clk]
 set_dont_touch_network      [get_clocks clk]
@@ -43101,10 +43102,7 @@ set_operating_conditions -max_library slow -max slow
 set_wire_load_model -name tsmc13_wl10 -library slow
 set_max_fanout 20 [all_inputs]
 compile
-change_selection [get_s LBP]
-uplevel #0 { report_timing -path full -delay max -nworst 1 -max_paths 1 -significant_digits 5 -sort_by group }
-uplevel #0 { report_area }
-write -format ddc     -hierarchy -output "LCD_CTRL_syn.ddc"
-write_sdf LCD_CTRL_syn.sdf
-write_file -format verilog -hierarchy -output LCD_CTRL_syn.v
+write -format ddc     -hierarchy -output "LBP_syn.ddc"
+write -format verilog -hierarchy -output LBP_syn.v
+write_sdf -version 1.0 -context verilog LBP_syn.sdf
 exit
