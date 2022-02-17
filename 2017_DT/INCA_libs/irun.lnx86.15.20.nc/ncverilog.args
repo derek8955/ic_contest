@@ -1,0 +1,8 @@
+//
+// File created by:  ncverilog
+// Do not modify this file
+//
+testfixture.v
+DT.v
++define+SDF
++define+TB2
