@@ -1,0 +1,46 @@
+ncverilog: 15.20-s039: (c) Copyright 1995-2017 Cadence Design Systems, Inc.
+TOOL:	ncverilog	15.20-s039: Started on Feb 19, 2022 at 01:12:20 CST
+ncverilog
+	tb.v
+	huffman.v
+	+define+tb1
+Recompiling... reason: file './huffman.v' is newer than expected.
+	expected: Sat Feb 19 01:11:52 2022
+	actual:   Sat Feb 19 01:12:16 2022
+file: tb.v
+`define tb1
+           |
+ncvlog: *W,MACNDF (tb.v,7|11): The text macro 'tb1' has also been defined on the command line using the -DEFINE command line option.  The compiler will ignore the definition found in the Verilog source code.
+file: huffman.v
+	module worklib.huffman:v
+		errors: 0, warnings: 0
+	Total errors/warnings found outside modules and primitives:
+		errors: 0, warnings: 1
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.huffman:v <0x0c102405>
+			streams:  12, words:  4850
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                  Instances  Unique
+		Modules:                  3       3
+		Registers:               29      29
+		Scalar wires:             6       -
+		Vectored wires:          37       -
+		Always blocks:            9       9
+		Initial blocks:           6       6
+		Cont. assignments:        8       8
+		Pseudo assignments:       1       1
+		Simulation timescale:  10ps
+	Writing initial simulation snapshot: worklib.tb:v
+Loading snapshot worklib.tb:v .................... Done
+*Verdi* Loading libsscore_ius152.so
+ncsim> source /usr/cad/cadence/INCISIV/cur/tools/inca/files/ncsimrc
+ncsim> run
+./pattern1.dat and ./golden1.dat were used for this simulation.
+0,0,0,0,0,0
+3,1,2,5,6,4
+TOOL:	ncverilog	15.20-s039: Exiting on Feb 19, 2022 at 01:17:12 CST  (total: 00:04:52)

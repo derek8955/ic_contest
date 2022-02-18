@@ -76,3 +76,5 @@ s75(17Feb2022:15:00:09):  ncverilog testfixture.v DT.v +access+r +define+FSDB +d
 s76(17Feb2022:15:01:15):  ncverilog testfixture.v DT.v +access+r +define+FSDB +define+TB1 
 s77(17Feb2022:15:15:37):  ncverilog testfixture.v DT.v +define+SDF +define+TB1 
 s78(17Feb2022:15:15:44):  ncverilog testfixture.v DT.v +define+SDF +define+TB2 
+s79(17Feb2022:15:20:06):  ncverilog testfixture.v DT_syn.v -v tsmc13_neg.v +define+SDF +define+TB1 
+s80(17Feb2022:15:20:14):  ncverilog testfixture.v DT_syn.v -v tsmc13_neg.v +define+SDF +define+TB2 

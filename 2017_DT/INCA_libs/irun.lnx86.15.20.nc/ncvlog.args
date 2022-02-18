@@ -6,7 +6,9 @@
 ./INCA_libs/irun.lnx86.15.20.nc
 -RUNMODE
 testfixture.v
-DT.v
+DT_syn.v
+-VFILE
+tsmc13_neg.v
 -DEFINE
 SDF
 -DEFINE

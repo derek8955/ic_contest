@@ -3,6 +3,8 @@
 // Do not modify this file
 //
 testfixture.v
-DT.v
+DT_syn.v
+-v
+tsmc13_neg.v
 +define+SDF
 +define+TB2
