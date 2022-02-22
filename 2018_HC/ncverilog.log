@@ -1,38 +1,42 @@
 ncverilog: 15.20-s039: (c) Copyright 1995-2017 Cadence Design Systems, Inc.
-TOOL:	ncverilog	15.20-s039: Started on Feb 19, 2022 at 01:12:20 CST
+TOOL:	ncverilog	15.20-s039: Started on Feb 22, 2022 at 15:34:19 CST
 ncverilog
 	tb.v
 	huffman.v
-	+define+tb1
-Recompiling... reason: file './huffman.v' is newer than expected.
-	expected: Sat Feb 19 01:11:52 2022
-	actual:   Sat Feb 19 01:12:16 2022
+	+define+tb2
 file: tb.v
-`define tb1
-           |
-ncvlog: *W,MACNDF (tb.v,7|11): The text macro 'tb1' has also been defined on the command line using the -DEFINE command line option.  The compiler will ignore the definition found in the Verilog source code.
+  `define PAT "./pattern2.dat"
+                              |
+ncvlog: *W,MACRDF (tb.v,15|30): text macro 'PAT' redefined - replaced with new definition.
+  `define EXP "./golden2.dat"
+                             |
+ncvlog: *W,MACRDF (tb.v,16|29): text macro 'EXP' redefined - replaced with new definition.
+	module worklib.tb:v
+		errors: 0, warnings: 0
 file: huffman.v
 	module worklib.huffman:v
 		errors: 0, warnings: 0
 	Total errors/warnings found outside modules and primitives:
-		errors: 0, warnings: 1
+		errors: 0, warnings: 2
 		Caching library 'worklib' ....... Done
 	Elaborating the design hierarchy:
 	Building instance overlay tables: .................... Done
 	Generating native compiled code:
-		worklib.huffman:v <0x0c102405>
-			streams:  12, words:  4850
+		worklib.huffman:v <0x0f64688b>
+			streams:  43, words: 29296
+		worklib.tb:v <0x05b9b7f2>
+			streams:  16, words: 14059
 	Building instance specific data structures.
 	Loading native compiled code:     .................... Done
 	Design hierarchy summary:
 		                  Instances  Unique
-		Modules:                  3       3
-		Registers:               29      29
-		Scalar wires:             6       -
-		Vectored wires:          37       -
+		Modules:                  2       2
+		Registers:               26      26
+		Scalar wires:             5       -
+		Vectored wires:          25       -
 		Always blocks:            9       9
 		Initial blocks:           6       6
-		Cont. assignments:        8       8
+		Cont. assignments:        6       6
 		Pseudo assignments:       1       1
 		Simulation timescale:  10ps
 	Writing initial simulation snapshot: worklib.tb:v
@@ -40,7 +44,13 @@ Loading snapshot worklib.tb:v .................... Done
 *Verdi* Loading libsscore_ius152.so
 ncsim> source /usr/cad/cadence/INCISIV/cur/tools/inca/files/ncsimrc
 ncsim> run
-./pattern1.dat and ./golden1.dat were used for this simulation.
-0,0,0,0,0,0
-3,1,2,5,6,4
-TOOL:	ncverilog	15.20-s039: Exiting on Feb 19, 2022 at 01:17:12 CST  (total: 00:04:52)
+./pattern2.dat and ./golden2.dat were used for this simulation.
+Check CNT : PASS
+ 10 40  6 10  4 30
+ 10 10 30 40 80 80
+546231
+Simulation interrupted at 14159930165 NS + 0
+ncsim> eixt
+ncsim: *E,TCLERR: invalid command name "eixt".
+ncsim> exit
+TOOL:	ncverilog	15.20-s039: Exiting on Feb 22, 2022 at 15:37:28 CST  (total: 00:03:09)

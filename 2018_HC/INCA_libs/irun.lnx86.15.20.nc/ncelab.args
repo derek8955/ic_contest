@@ -2,7 +2,7 @@
 // File created by:  ncverilog
 // Do not modify this file
 //
-+define+tb1
++define+tb2
 -noshowtop
 -MESSAGES
 -XLMODE
