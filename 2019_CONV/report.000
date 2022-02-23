@@ -1,0 +1,16 @@
+ftp帳號(FTP number): 
+
+通過gate-level simulation之cell area report：
+通過gate-level simulation之clock cycle time (ns)：
+
+--- RTL category---
+使用之HDL模擬器名稱(HDL simulator ):  
+RTL檔案名稱(RTL filename):            
+
+--- Pre-layout gate-level ---
+gate-level檔案名稱(gate_level filename):   
+gate-level sdf filename:                   
+design compiler合成資料庫(dc library):     
+
+-----注意事項(annotation)--------------------------------------------------------
+ (其餘注意事項依各參賽隊伍的需求填寫)

@@ -206,7 +206,7 @@ end
 //done
 always@( posedge clk or negedge reset )
 begin
-	if( ~reset ) done <= 0;
+	if( !reset ) done <= 0;
 	else if( state == FN ) done <= 1;
 end
 

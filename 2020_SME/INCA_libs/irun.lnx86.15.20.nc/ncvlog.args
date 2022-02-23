@@ -6,7 +6,7 @@
 ./INCA_libs/irun.lnx86.15.20.nc
 -RUNMODE
 tb_term.sv
-SME_ref.v
+SME.v
 -CDSLIB
 ./INCA_libs/irun.lnx86.15.20.nc/cdsrun.lib
 -HDLVAR

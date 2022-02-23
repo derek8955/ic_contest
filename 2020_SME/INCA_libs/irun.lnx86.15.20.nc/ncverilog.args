@@ -3,4 +3,5 @@
 // Do not modify this file
 //
 tb_term.sv
-SME_ref.v
+SME.v
++access+r

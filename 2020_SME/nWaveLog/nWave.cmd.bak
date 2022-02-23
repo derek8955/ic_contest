@@ -1,0 +1,61 @@
+wvResizeWindow -win $_nWave1 -8 -8 1536 801
+wvSetPosition -win $_nWave1 {("G1" 0)}
+wvOpenFile -win $_nWave1 {/home/t107360223/Desktop/ic_contest/2020_SME/SME.fsdb}
+wvGetSignalOpen -win $_nWave1
+wvGetSignalSetScope -win $_nWave1 "/\$unit_0x29ffa1f6"
+wvGetSignalSetScope -win $_nWave1 "/testfixture"
+wvSetPosition -win $_nWave1 {("G1" 15)}
+wvSetPosition -win $_nWave1 {("G1" 15)}
+wvAddSignal -win $_nWave1 -clear
+wvAddSignal -win $_nWave1 -group {"G1" \
+{/testfixture/u_SME/clk} \
+{/testfixture/u_SME/compare_valid\[2:0\]} \
+{/testfixture/u_SME/counter_comp_pat\[2:0\]} \
+{/testfixture/u_SME/counter_comp_str\[4:0\]} \
+{/testfixture/u_SME/counter_pat\[2:0\]} \
+{/testfixture/u_SME/counter_str\[4:0\]} \
+{/testfixture/u_SME/fail} \
+{/testfixture/u_SME/ispat} \
+{/testfixture/u_SME/ispattern} \
+{/testfixture/u_SME/isstring} \
+{/testfixture/u_SME/lens_pat\[2:0\]} \
+{/testfixture/u_SME/locate_valid} \
+{/testfixture/u_SME/match} \
+{/testfixture/u_SME/match_index\[4:0\]} \
+{/testfixture/u_SME/valid} \
+}
+wvAddSignal -win $_nWave1 -group {"G2" \
+}
+wvSelectSignal -win $_nWave1 {( "G1" 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 )} 
+wvSetPosition -win $_nWave1 {("G1" 15)}
+wvGetSignalClose -win $_nWave1
+wvResizeWindow -win $_nWave1 -8 -8 1536 801
+wvResizeWindow -win $_nWave1 -8 -8 1536 801
+wvZoomIn -win $_nWave1
+wvZoomIn -win $_nWave1
+wvZoomIn -win $_nWave1
+wvZoomIn -win $_nWave1
+wvZoomIn -win $_nWave1
+wvZoomIn -win $_nWave1
+wvZoomIn -win $_nWave1
+wvZoomIn -win $_nWave1
+wvZoomIn -win $_nWave1
+wvZoomIn -win $_nWave1
+wvZoomIn -win $_nWave1
+wvZoomIn -win $_nWave1
+wvZoomIn -win $_nWave1
+wvZoomIn -win $_nWave1
+wvZoomIn -win $_nWave1
+wvSetCursor -win $_nWave1 93873770.188863 -snap {("G2" 0)}
+wvSetCursor -win $_nWave1 1082.638873 -snap {("G1" 13)}
+wvSelectGroup -win $_nWave1 {G2}
+wvSelectSignal -win $_nWave1 {( "G1" 9 )} 
+wvZoomOut -win $_nWave1
+wvSetCursor -win $_nWave1 21517.447592 -snap {("G1" 10)}
+wvSetCursor -win $_nWave1 7472.901668 -snap {("G1" 4)}
+wvSetCursor -win $_nWave1 37410.618965 -snap {("G2" 0)}
+wvDisplayGridCount -win $_nWave1 -off
+wvGetSignalClose -win $_nWave1
+wvReloadFile -win $_nWave1
+wvSelectSignal -win $_nWave1 {( "G1" 10 )} 
+wvSelectSignal -win $_nWave1 {( "G1" 6 )} 

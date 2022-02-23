@@ -1,12 +1,13 @@
 ncverilog: 15.20-s039: (c) Copyright 1995-2017 Cadence Design Systems, Inc.
-TOOL:	ncverilog	15.20-s039: Started on Jan 11, 2022 at 22:26:27 CST
+TOOL:	ncverilog	15.20-s039: Started on Feb 24, 2022 at 00:00:39 CST
 ncverilog
 	tb_term.sv
-	SME_ref.v
-Recompiling... reason: file './SME_ref.v' is newer than expected.
-	expected: Tue Jan 11 15:39:18 2022
-	actual:   Tue Jan 11 22:26:18 2022
-file: SME_ref.v
+	SME.v
+	+access+r
+Recompiling... reason: file './SME.v' is newer than expected.
+	expected: Wed Feb 23 23:58:23 2022
+	actual:   Thu Feb 24 00:00:37 2022
+file: SME.v
 	module worklib.SME:v
 		errors: 0, warnings: 0
 		Caching library 'worklib' ....... Done
@@ -14,18 +15,19 @@ file: SME_ref.v
 ncelab: *W,DSEMEL: This SystemVerilog design will be simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
 	Building instance overlay tables: .................... Done
 	Generating native compiled code:
-		worklib.SME:v <0x0d67c69d>
-			streams:  75, words: 69706
+		worklib.SME:v <0x64680536>
+			streams:  25, words: 15919
 	Building instance specific data structures.
 	Loading native compiled code:     .................... Done
 	Design hierarchy summary:
 		                  Instances  Unique
 		Modules:                  2       2
-		Registers:               52      52
-		Scalar wires:             6       -
+		Registers:               45      45
+		Scalar wires:             7       -
 		Vectored wires:           2       -
-		Always blocks:           25      25
+		Always blocks:           20      20
 		Initial blocks:          10      10
+		Cont. assignments:        0       1
 		Pseudo assignments:       1       1
 		Compilation units:        1       1
 		Simulation timescale:  10ps
@@ -40,85 +42,9 @@ FSDB Dumper for IUS, Release Verdi_Q-2020.03, Linux, 02/09/2020
 *Verdi* FSDB WARNING: The FSDB file already exists. Overwriting the FSDB file may crash the programs that are using this file.
 *Verdi* : Create FSDB file 'SME.fsdb'
 *Verdi* : Begin traversing the scopes, layer (0).
-*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.char_count(25)
-*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.clk(48)
-*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.reset(48)
-*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.chardata(48)
-*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.isstring(48)
-*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.ispattern(48)
-*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.cycle(48)
-*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.strindex(25)
-*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.goldmatch_index(48)
-*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.goldmatch(48)
-*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.valid_reg(48)
-*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.wait_valid(48)
-*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.getmatch(48)
-*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.getmatch_index(48)
-*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.score(25)
-*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.allpass(25)
-*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.valid(36)
-*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.match(36)
-*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.match_index(36)
-*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_SME.match(48)
-*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_SME.match_index(48)
-*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_SME.valid(48)
-*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_SME.current_state(48)
-*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_SME.next_state(48)
-*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_SME.stringData(48)
-*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_SME.pattern(48)
-*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_SME.stringCounter(48)
-*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_SME.stringNum(48)
-*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_SME.patternCounter(48)
-*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_SME.matchTemp(48)
-*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_SME.indexNum(48)
-*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_SME.special_locate(48)
-*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_SME.special(48)
-*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_SME.match_front(48)
-*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_SME.match_after(48)
-*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_SME.pattern_front(48)
-*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_SME.pattern_after(48)
-*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_SME.stringBuffer(48)
-*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_SME.patternTemp(48)
-*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_SME.patternTempAfter(48)
-*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_SME.matc_indexTemp(48)
-*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_SME.pattern_front_count(48)
-*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_SME.clk(36)
-*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_SME.reset(36)
-*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_SME.chardata(36)
-*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_SME.isstring(36)
-*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_SME.ispattern(36)
 *Verdi* : End of traversing.
 *Verdi* : Begin traversing the MDAs, layer (0).
 *Verdi* : Enable +mda and +packedmda dumping.
-*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.char_count(25)
-*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.clk(48)
-*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.reset(48)
-*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.chardata(48)
-*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.isstring(48)
-*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.ispattern(48)
-*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.cycle(48)
-*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.strindex(25)
-*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.goldmatch_index(48)
-*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.goldmatch(48)
-*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.valid_reg(48)
-*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.wait_valid(48)
-*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.getmatch(48)
-*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.getmatch_index(48)
-*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.score(25)
-*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.allpass(25)
-*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.valid(36)
-*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.match(36)
-*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.match_index(36)
-*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_SME.match(48)
-*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_SME.match_index(48)
-*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_SME.valid(48)
-*Verdi* WARNING: The above messages are printed 50 times. No more similar message will be printed out.
-*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_SME.current_state(48)
-*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_SME.clk(36)
-*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_SME.reset(36)
-*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_SME.chardata(36)
-*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_SME.isstring(36)
-*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_SME.ispattern(36)
 *Verdi* : End of traversing the MDAs.
 ----------------------
 -- Simulation Start --
@@ -126,122 +52,102 @@ FSDB Dumper for IUS, Release Verdi_Q-2020.03, Linux, 02/09/2020
   __________________________________________________________
   == String 1  "abcdijk lmnop q rstuv"
   -- Pattern 1  "1234"
-       cycle 30, expect(0,00) , get(0,11) >> Pass
+       cycle 3c, expect(0,00) , get(0,00) >> Pass
   -- Pattern 2  "abcd"
-       cycle 36, expect(1,00) , get(1,00) >> Pass
+       cycle 46, expect(1,00) , get(1,00) >> Pass
   -- Pattern 3  "dijk"
-       cycle 3f, expect(1,03) , get(1,03) >> Pass
+       cycle 53, expect(1,03) , get(1,03) >> Pass
   -- Pattern 4  "pqrst"
-       cycle 56, expect(0,00) , get(0,10) >> Pass
+       cycle 78, expect(0,00) , get(0,03) >> Pass
   -- Pattern 5  "pqr.t"
-       cycle 6d, expect(0,00) , get(0,10) >> Pass
+       cycle 9d, expect(0,00) , get(0,03) >> Pass
   -- Pattern 6  "c...k"
-       cycle 76, expect(1,02) , get(1,02) >> Pass
+       cycle ab, expect(1,02) , get(1,02) >> Pass
   -- Pattern 7  "^lmno"
-       cycle 84, expect(1,08) , get(1,08) >> Pass
+       cycle c1, expect(1,08) , get(1,08) >> Pass
   -- Pattern 8  "rstuv$"
-       cycle 9c, expect(1,10) , get(1,10) >> Pass
+       cycle df, expect(1,10) , get(1,10) >> Pass
   -- Pattern 9  "^rmn"
-       cycle b4, expect(0,00) , get(0,12) >> Pass
+       cycle 10d, expect(0,00) , get(0,10) >> Pass
   -- Pattern a  "ijk l$"
-       cycle cc, expect(0,00) , get(0,10) >> Pass
+       cycle 136, expect(0,00) , get(0,04) >> Pass
   -- Pattern b  "v"
-       cycle e3, expect(1,14) , get(1,14) >> Pass
+       cycle 14e, expect(1,14) , get(1,14) >> Pass
   -- Pattern c  "lmnoprst"
-       cycle fa, expect(0,00) , get(0,0d) >> Pass
+       cycle 177, expect(0,00) , get(0,14) >> Pass
   -- Pattern d  "^ijk$"
-       cycle 112, expect(0,00) , get(0,11) >> Pass
+       cycle 1a4, expect(0,00) , get(0,14) >> Pass
   -- Pattern e  "^q$"
-       cycle 124, expect(1,0e) , get(1,0e) >> Pass
+       cycle 1be, expect(1,0e) , get(1,0e) >> Pass
   __________________________________________________________
   == String 2  "2x1=2 2x2=4 2x3=6"
   -- Pattern 1  "^2.2.2"
-       cycle 148, expect(0,00) , get(0,0b) >> Pass
+       cycle 204, expect(0,00) , get(0,06) >> Pass
   -- Pattern 2  "2.2.2"
-       cycle 153, expect(1,04) , get(1,04) >> Pass
+       cycle 217, expect(1,04) , get(1,04) >> Pass
   -- Pattern 3  "^2.2.4$"
-       cycle 161, expect(1,06) , get(1,06) >> Pass
+       cycle 231, expect(1,06) , get(1,06) >> Pass
   -- Pattern 4  "."
-       cycle 164, expect(1,00) , get(1,00) >> Pass
+       cycle 235, expect(1,00) , get(1,00) >> Pass
   -- Pattern 5  "^.."
-       cycle 169, expect(1,00) , get(1,00) >> Pass
+       cycle 23d, expect(1,00) , get(1,00) >> Pass
   -- Pattern 6  "^.$"
-       cycle 17d, expect(0,00) , get(0,0f) >> Pass
+       cycle 26f, expect(0,00) , get(0,16) >> Pass
   -- Pattern 7  "2.$"
-       cycle 191, expect(0,00) , get(0,0f) >> Pass
+       cycle 2a1, expect(0,00) , get(0,0c) >> Pass
   -- Pattern 8  "2x4=7"
-       cycle 1a5, expect(0,00) , get(0,0d) >> Pass
+       cycle 2d1, expect(0,00) , get(0,0c) >> Pass
   -- Pattern 9  "3=6-3"
-       cycle 1b9, expect(0,00) , get(0,0d) >> Pass
+       cycle 2f8, expect(0,00) , get(0,0c) >> Pass
   -- Pattern a  "1.2=2"
-       cycle 1cd, expect(0,00) , get(0,0d) >> Pass
+       cycle 31f, expect(0,00) , get(0,0c) >> Pass
   -- Pattern b  "2*2=4"
-       cycle 1dc, expect(1,00) , get(1,00) >> Pass
+       cycle 33b, expect(1,00) , get(1,[1;31m06[0m) >> Wrong index
   __________________________________________________________
   == String 3  "She sees cheese"
   -- Pattern 1  "ees."
-       cycle 1f6, expect(1,05) , get(1,05) >> Pass
+       cycle 35b, expect(1,05) , get(1,05) >> Pass
   -- Pattern 2  "ees.$"
-       cycle 208, expect(1,0b) , get(1,0b) >> Pass
+       cycle 37b, expect(1,0b) , get(1,0b) >> Pass
   -- Pattern 3  "e..se"
-       cycle 219, expect(0,00) , get(0,0a) >> Pass
+       cycle 3b6, expect(0,00) , get(0,0b) >> Pass
   -- Pattern 4  "e..ee$"
-       cycle 22b, expect(0,00) , get(0,0a) >> Pass
+       cycle 3f4, expect(0,00) , get(0,02) >> Pass
   -- Pattern 5  "^ees*"
-       cycle 23d, expect(0,00) , get(0,0c) >> Pass
+       cycle 423, expect(0,00) , get(0,02) >> Pass
   -- Pattern 6  "hee*se"
-       cycle 250, expect(1,0a) , get(1,0a) >> Pass
+       cycle 454, expect(1,0a) , get(1,0a) >> Pass
   -- Pattern 7  "he.s"
-       cycle 257, expect(1,01) , get(1,01) >> Pass
+       cycle 45f, expect(1,01) , get(1,01) >> Pass
   -- Pattern 8  "*see$"
-       cycle 26a, expect(0,00) , get(0,0a) >> Pass
+       cycle 482, expect(0,00) , get(0,01) >> Pass
   -- Pattern 9  "se*ce"
-       cycle 27e, expect(0,00) , get(0,04) >> Pass
+       cycle 4cc, expect(0,00) , get(0,0d) >> Pass
   __________________________________________________________
   == String 4  "But she said the butter's bitter"
   -- Pattern 1  "sa*said"
-       cycle 2c3, expect(0,00) , get(0,08) >> Pass
+       cycle 525, expect(0,00) , get(0,0d) >> Pass
   -- Pattern 2  "b*tter"
-       cycle 2de, expect(1,11) , get(1,11) >> Pass
+       cycle 544, expect(1,11) , get(1,11) >> Pass
   -- Pattern 3  "b*tter$"
-       cycle 303, expect(1,11) , get(1,11) >> Pass
+       cycle 56e, expect(1,11) , get([1;31m0,11[0m) >> Fail
   -- Pattern 4  "ut*r"
-       cycle 31e, expect(1,01) , get(1,01) >> Pass
+       cycle 58b, expect(1,01) , get(1,01) >> Pass
   -- Pattern 5  "ut*tted"
-       cycle 343, expect(0,00) , get(0,01) >> Pass
+       cycle 5ca, expect(0,00) , get(0,12) >> Pass
   -- Pattern 6  "^ut*tter"
-       cycle 369, expect(0,00) , get(0,1d) >> Pass
+       cycle 5f7, expect(0,00) , get(0,12) >> Pass
   -- Pattern 7  "*tered"
-       cycle 38d, expect(0,00) , get(0,01) >> Pass
+       cycle 61a, expect(0,00) , get(0,12) >> Pass
   __________________________________________________________
   == String 5  "He threw three free throws"
   -- Pattern 1  "thr*the$"
-       cycle 3c6, expect(0,00) , get(0,03) >> Pass
+       cycle 678, expect(0,00) , get(0,12) >> Pass
   -- Pattern 2  "^thro*th"
-       cycle 3e5, expect(0,00) , get(0,13) >> Pass
-  -- Pattern 3  ".ree th"
-       cycle 3fd, expect(1,0f) , get(1,0f) >> Pass
-  -- Pattern 4  ".ree  fr"
-       cycle 419, expect(0,00) , get(0,12) >> Pass
-  -- Pattern 5  ".ree *re"
-       cycle 42f, expect(1,0a) , get(1,0a) >> Pass
-  -- Pattern 6  "re. thr"
-       cycle 43d, expect(1,05) , get(1,05) >> Pass
-  -- Pattern 7  "ee*ee fr"
-       cycle 45c, expect(0,00) , get(0,0c) >> Pass
-  -- Pattern 8  "ee*ee th"
-       cycle 476, expect(1,0c) , get(1,0c) >> Pass
-  -- Pattern 9  "re*ee.$"
-       cycle 495, expect(0,00) , get(0,05) >> Pass
-  -- Pattern a  "^...$"
-       cycle 4b2, expect(0,00) , get(0,16) >> Pass
-  -- Pattern b  "^....$"
-       cycle 4c8, expect(1,0f) , get(1,0f) >> Pass
-----------------------------------
--- Simulation finish, ALL PASS  --
--- cycle =1225 , Score =100       --
-----------------------------------
-Simulation complete via $finish(1) at time 24500 NS + 0
-./tb_term.sv:201                     $finish;
+--------------------------------------------------
+-- Failed waiting valid signal, Simulation STOP --
+--------------------------------------------------
+Simulation complete via $finish(1) at time 20000010 NS + 0
+./tb_term.sv:70         $finish;
 ncsim> exit
-TOOL:	ncverilog	15.20-s039: Exiting on Jan 11, 2022 at 22:26:29 CST  (total: 00:00:02)
+TOOL:	ncverilog	15.20-s039: Exiting on Feb 24, 2022 at 00:00:43 CST  (total: 00:00:04)
