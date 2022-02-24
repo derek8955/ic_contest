@@ -1,36 +1,1863 @@
 ncverilog: 15.20-s039: (c) Copyright 1995-2017 Cadence Design Systems, Inc.
-TOOL:	ncverilog	15.20-s039: Started on Feb 24, 2022 at 00:00:39 CST
+TOOL:	ncverilog	15.20-s039: Started on Feb 24, 2022 at 17:59:23 CST
 ncverilog
 	tb_term.sv
-	SME.v
-	+access+r
-Recompiling... reason: file './SME.v' is newer than expected.
-	expected: Wed Feb 23 23:58:23 2022
-	actual:   Thu Feb 24 00:00:37 2022
-file: SME.v
+	SME_syn.v
+	-v
+	tsmc13_neg.v
+	+define+SDF
+file: tb_term.sv
+	module worklib.testfixture:sv
+		errors: 0, warnings: 0
+file: SME_syn.v
 	module worklib.SME:v
 		errors: 0, warnings: 0
+file: tsmc13_neg.v
+	module tsmc13_neg.BUFX4:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.BUFX12:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.INVXL:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.INVX3:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.INVX4:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.INVX12:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.AND2XL:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.AND2X1:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.AND2X2:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.AND3XL:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.AND3X2:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.AOI211X1:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.AOI22X1:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.AOI221XL:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.AOI222X1:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.AOI31X1:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.AOI32X1:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.AOI2BB1X1:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.AO21X1:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.AO22X1:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.NAND2XL:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.NAND2X1:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.NAND2X2:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.NAND3XL:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.NAND3X1:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.NAND4XL:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.NAND4X1:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.NAND2BX1:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.NAND3BXL:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.NAND3BX1:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.NAND4BXL:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.NAND4BX1:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.NOR2XL:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.NOR2X1:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.NOR2X2:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.NOR2X4:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.NOR3XL:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.NOR3X1:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.NOR3X2:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.NOR4X1:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.NOR4X2:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.NOR2BXL:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.NOR2BX1:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.NOR3BXL:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.NOR4BXL:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.OR2X1:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.OR3X2:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.OR4X1:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.OAI21XL:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.OAI21X1:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.OAI21X2:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.OAI21X4:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.OAI211X1:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.OAI22XL:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.OAI22X1:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.OAI221XL:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.OAI222XL:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.OAI31XL:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.OAI32X1:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.OAI2BB1X1:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.OAI2BB2XL:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.OAI2BB2X1:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.OA21XL:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.OA21X2:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.OA22X1:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.CLKXOR2X2:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.XOR2XL:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.XOR2X1:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.XOR3XL:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.XOR3X1:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.XNOR2XL:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.XNOR2X1:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.XNOR2X2:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.XNOR2X4:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.CLKBUFX3:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.CLKINVX1:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.ADDHXL:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.ADDHX1:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.ADDFXL:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.ADDFX2:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.DFFRXL:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.DFFRX1:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.DFFRX2:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.TLATNX1:v
+		errors: 0, warnings: 0
+	primitive tsmc13_neg.udp_dff:v
+		errors: 0, warnings: 0
+	primitive tsmc13_neg.udp_tlat:v
+		errors: 0, warnings: 0
 		Caching library 'worklib' ....... Done
+		Caching library 'tsmc13_neg' ....... Done
 	Elaborating the design hierarchy:
+  DFFRX1 fail_reg ( .D(n552), .CK(clk), .RN(n2528), .Q(fail) );
+                |
+ncelab: *W,CUVWSP (./SME_syn.v,356|16): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 fail_temp_reg ( .D(n562), .CK(clk), .RN(n2528), .QN(n206) );
+                     |
+ncelab: *W,CUVWSP (./SME_syn.v,357|21): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): Q
+
+  DFFRX1 \str_reg[9][5]  ( .D(n813), .CK(clk), .RN(n2550), .Q(\str[9][5] ) );
+                       |
+ncelab: *W,CUVWSP (./SME_syn.v,360|23): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \str_reg[31][7]  ( .D(n639), .CK(clk), .RN(n2535), .Q(\str[31][7] )
+                        |
+ncelab: *W,CUVWSP (./SME_syn.v,361|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \str_reg[3][7]  ( .D(n863), .CK(clk), .RN(n2554), .Q(\str[3][7] ) );
+                       |
+ncelab: *W,CUVWSP (./SME_syn.v,363|23): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \str_reg[3][2]  ( .D(n858), .CK(clk), .RN(n2553), .Q(\str[3][2] ) );
+                       |
+ncelab: *W,CUVWSP (./SME_syn.v,364|23): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \str_reg[5][7]  ( .D(n847), .CK(clk), .RN(n2552), .Q(\str[5][7] ) );
+                       |
+ncelab: *W,CUVWSP (./SME_syn.v,365|23): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \str_reg[5][2]  ( .D(n842), .CK(clk), .RN(n2552), .Q(\str[5][2] ) );
+                       |
+ncelab: *W,CUVWSP (./SME_syn.v,366|23): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \str_reg[7][7]  ( .D(n831), .CK(clk), .RN(n2551), .Q(\str[7][7] ) );
+                       |
+ncelab: *W,CUVWSP (./SME_syn.v,367|23): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \str_reg[7][2]  ( .D(n826), .CK(clk), .RN(n2551), .Q(\str[7][2] ) );
+                       |
+ncelab: *W,CUVWSP (./SME_syn.v,368|23): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \str_reg[9][7]  ( .D(n815), .CK(clk), .RN(n2550), .Q(\str[9][7] ) );
+                       |
+ncelab: *W,CUVWSP (./SME_syn.v,369|23): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \str_reg[9][3]  ( .D(n811), .CK(clk), .RN(n2549), .Q(\str[9][3] ) );
+                       |
+ncelab: *W,CUVWSP (./SME_syn.v,370|23): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \str_reg[9][2]  ( .D(n810), .CK(clk), .RN(n2549), .Q(\str[9][2] ) );
+                       |
+ncelab: *W,CUVWSP (./SME_syn.v,371|23): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \str_reg[11][7]  ( .D(n799), .CK(clk), .RN(n2548), .Q(\str[11][7] )
+                        |
+ncelab: *W,CUVWSP (./SME_syn.v,372|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \str_reg[11][3]  ( .D(n795), .CK(clk), .RN(n2548), .Q(\str[11][3] )
+                        |
+ncelab: *W,CUVWSP (./SME_syn.v,374|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \str_reg[11][2]  ( .D(n794), .CK(clk), .RN(n2548), .Q(\str[11][2] )
+                        |
+ncelab: *W,CUVWSP (./SME_syn.v,376|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \str_reg[13][7]  ( .D(n783), .CK(clk), .RN(n2547), .Q(\str[13][7] )
+                        |
+ncelab: *W,CUVWSP (./SME_syn.v,378|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \str_reg[13][2]  ( .D(n778), .CK(clk), .RN(n2547), .Q(\str[13][2] )
+                        |
+ncelab: *W,CUVWSP (./SME_syn.v,380|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \str_reg[15][7]  ( .D(n767), .CK(clk), .RN(n2546), .Q(\str[15][7] )
+                        |
+ncelab: *W,CUVWSP (./SME_syn.v,382|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \str_reg[15][2]  ( .D(n762), .CK(clk), .RN(n2545), .Q(\str[15][2] )
+                        |
+ncelab: *W,CUVWSP (./SME_syn.v,384|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \str_reg[19][2]  ( .D(n730), .CK(clk), .RN(n2543), .Q(\str[19][2] )
+                        |
+ncelab: *W,CUVWSP (./SME_syn.v,386|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \str_reg[20][7]  ( .D(n727), .CK(clk), .RN(n2542), .Q(\str[20][7] )
+                        |
+ncelab: *W,CUVWSP (./SME_syn.v,388|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \str_reg[21][2]  ( .D(n714), .CK(clk), .RN(n2541), .Q(\str[21][2] )
+                        |
+ncelab: *W,CUVWSP (./SME_syn.v,390|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \str_reg[22][7]  ( .D(n711), .CK(clk), .RN(n2541), .Q(\str[22][7] )
+                        |
+ncelab: *W,CUVWSP (./SME_syn.v,392|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \str_reg[23][2]  ( .D(n698), .CK(clk), .RN(n2540), .Q(\str[23][2] )
+                        |
+ncelab: *W,CUVWSP (./SME_syn.v,394|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \str_reg[24][7]  ( .D(n695), .CK(clk), .RN(n2540), .Q(\str[24][7] )
+                        |
+ncelab: *W,CUVWSP (./SME_syn.v,396|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \str_reg[25][2]  ( .D(n682), .CK(clk), .RN(n2539), .Q(\str[25][2] )
+                        |
+ncelab: *W,CUVWSP (./SME_syn.v,398|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \str_reg[26][7]  ( .D(n679), .CK(clk), .RN(n2538), .Q(\str[26][7] )
+                        |
+ncelab: *W,CUVWSP (./SME_syn.v,400|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \str_reg[27][2]  ( .D(n666), .CK(clk), .RN(n2537), .Q(\str[27][2] )
+                        |
+ncelab: *W,CUVWSP (./SME_syn.v,402|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \str_reg[28][7]  ( .D(n663), .CK(clk), .RN(n2537), .Q(\str[28][7] )
+                        |
+ncelab: *W,CUVWSP (./SME_syn.v,404|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \str_reg[29][2]  ( .D(n650), .CK(clk), .RN(n2536), .Q(\str[29][2] )
+                        |
+ncelab: *W,CUVWSP (./SME_syn.v,406|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \str_reg[30][7]  ( .D(n647), .CK(clk), .RN(n2536), .Q(\str[30][7] )
+                        |
+ncelab: *W,CUVWSP (./SME_syn.v,408|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \str_reg[31][2]  ( .D(n634), .CK(clk), .RN(n2535), .Q(\str[31][2] )
+                        |
+ncelab: *W,CUVWSP (./SME_syn.v,410|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \str_reg[8][7]  ( .D(n823), .CK(clk), .RN(n2550), .Q(\str[8][7] ) );
+                       |
+ncelab: *W,CUVWSP (./SME_syn.v,412|23): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \str_reg[8][2]  ( .D(n818), .CK(clk), .RN(n2550), .Q(\str[8][2] ) );
+                       |
+ncelab: *W,CUVWSP (./SME_syn.v,413|23): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \str_reg[10][7]  ( .D(n807), .CK(clk), .RN(n2549), .Q(\str[10][7] )
+                        |
+ncelab: *W,CUVWSP (./SME_syn.v,414|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \str_reg[10][2]  ( .D(n802), .CK(clk), .RN(n2549), .Q(\str[10][2] )
+                        |
+ncelab: *W,CUVWSP (./SME_syn.v,416|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \str_reg[0][7]  ( .D(n887), .CK(clk), .RN(n2556), .Q(\str[0][7] ) );
+                       |
+ncelab: *W,CUVWSP (./SME_syn.v,418|23): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \str_reg[0][2]  ( .D(n882), .CK(clk), .RN(n2555), .Q(\str[0][2] ) );
+                       |
+ncelab: *W,CUVWSP (./SME_syn.v,419|23): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \str_reg[16][2]  ( .D(n754), .CK(clk), .RN(n2545), .Q(\str[16][2] )
+                        |
+ncelab: *W,CUVWSP (./SME_syn.v,420|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \str_reg[18][7]  ( .D(n743), .CK(clk), .RN(n2544), .Q(\str[18][7] )
+                        |
+ncelab: *W,CUVWSP (./SME_syn.v,422|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \str_reg[3][5]  ( .D(n861), .CK(clk), .RN(n2554), .Q(\str[3][5] ) );
+                       |
+ncelab: *W,CUVWSP (./SME_syn.v,424|23): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \str_reg[5][5]  ( .D(n845), .CK(clk), .RN(n2552), .Q(\str[5][5] ) );
+                       |
+ncelab: *W,CUVWSP (./SME_syn.v,425|23): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \str_reg[7][5]  ( .D(n829), .CK(clk), .RN(n2551), .Q(\str[7][5] ) );
+                       |
+ncelab: *W,CUVWSP (./SME_syn.v,426|23): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \str_reg[11][5]  ( .D(n797), .CK(clk), .RN(n2548), .Q(\str[11][5] )
+                        |
+ncelab: *W,CUVWSP (./SME_syn.v,427|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \str_reg[13][5]  ( .D(n781), .CK(clk), .RN(n2547), .Q(\str[13][5] )
+                        |
+ncelab: *W,CUVWSP (./SME_syn.v,429|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \str_reg[15][5]  ( .D(n765), .CK(clk), .RN(n2546), .Q(\str[15][5] )
+                        |
+ncelab: *W,CUVWSP (./SME_syn.v,431|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \str_reg[19][5]  ( .D(n733), .CK(clk), .RN(n2543), .Q(\str[19][5] )
+                        |
+ncelab: *W,CUVWSP (./SME_syn.v,433|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \str_reg[21][5]  ( .D(n717), .CK(clk), .RN(n2542), .Q(\str[21][5] )
+                        |
+ncelab: *W,CUVWSP (./SME_syn.v,435|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \str_reg[23][5]  ( .D(n701), .CK(clk), .RN(n2540), .Q(\str[23][5] )
+                        |
+ncelab: *W,CUVWSP (./SME_syn.v,437|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \str_reg[25][5]  ( .D(n685), .CK(clk), .RN(n2539), .Q(\str[25][5] )
+                        |
+ncelab: *W,CUVWSP (./SME_syn.v,439|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \str_reg[27][5]  ( .D(n669), .CK(clk), .RN(n2538), .Q(\str[27][5] )
+                        |
+ncelab: *W,CUVWSP (./SME_syn.v,441|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \str_reg[29][5]  ( .D(n653), .CK(clk), .RN(n2536), .Q(\str[29][5] )
+                        |
+ncelab: *W,CUVWSP (./SME_syn.v,443|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \str_reg[31][5]  ( .D(n637), .CK(clk), .RN(n2535), .Q(\str[31][5] )
+                        |
+ncelab: *W,CUVWSP (./SME_syn.v,445|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \str_reg[2][5]  ( .D(n869), .CK(clk), .RN(n2554), .Q(\str[2][5] ) );
+                       |
+ncelab: *W,CUVWSP (./SME_syn.v,447|23): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \str_reg[4][5]  ( .D(n853), .CK(clk), .RN(n2553), .Q(\str[4][5] ) );
+                       |
+ncelab: *W,CUVWSP (./SME_syn.v,448|23): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \str_reg[6][5]  ( .D(n837), .CK(clk), .RN(n2552), .Q(\str[6][5] ) );
+                       |
+ncelab: *W,CUVWSP (./SME_syn.v,449|23): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \str_reg[10][5]  ( .D(n805), .CK(clk), .RN(n2549), .Q(\str[10][5] )
+                        |
+ncelab: *W,CUVWSP (./SME_syn.v,450|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \str_reg[12][5]  ( .D(n789), .CK(clk), .RN(n2548), .Q(\str[12][5] )
+                        |
+ncelab: *W,CUVWSP (./SME_syn.v,452|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \str_reg[14][5]  ( .D(n773), .CK(clk), .RN(n2546), .Q(\str[14][5] )
+                        |
+ncelab: *W,CUVWSP (./SME_syn.v,454|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \str_reg[18][5]  ( .D(n741), .CK(clk), .RN(n2544), .Q(\str[18][5] )
+                        |
+ncelab: *W,CUVWSP (./SME_syn.v,456|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \str_reg[20][5]  ( .D(n725), .CK(clk), .RN(n2542), .Q(\str[20][5] )
+                        |
+ncelab: *W,CUVWSP (./SME_syn.v,458|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \str_reg[22][5]  ( .D(n709), .CK(clk), .RN(n2541), .Q(\str[22][5] )
+                        |
+ncelab: *W,CUVWSP (./SME_syn.v,460|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \str_reg[26][5]  ( .D(n677), .CK(clk), .RN(n2538), .Q(\str[26][5] )
+                        |
+ncelab: *W,CUVWSP (./SME_syn.v,462|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \str_reg[28][5]  ( .D(n661), .CK(clk), .RN(n2537), .Q(\str[28][5] )
+                        |
+ncelab: *W,CUVWSP (./SME_syn.v,464|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \str_reg[30][5]  ( .D(n645), .CK(clk), .RN(n2536), .Q(\str[30][5] )
+                        |
+ncelab: *W,CUVWSP (./SME_syn.v,466|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \str_reg[1][5]  ( .D(n877), .CK(clk), .RN(n2555), .Q(\str[1][5] ) );
+                       |
+ncelab: *W,CUVWSP (./SME_syn.v,468|23): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \str_reg[17][5]  ( .D(n749), .CK(clk), .RN(n2544), .Q(\str[17][5] )
+                        |
+ncelab: *W,CUVWSP (./SME_syn.v,469|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \str_reg[3][6]  ( .D(n862), .CK(clk), .RN(n2554), .Q(\str[3][6] ) );
+                       |
+ncelab: *W,CUVWSP (./SME_syn.v,471|23): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \str_reg[3][4]  ( .D(n860), .CK(clk), .RN(n2554), .Q(\str[3][4] ) );
+                       |
+ncelab: *W,CUVWSP (./SME_syn.v,472|23): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \str_reg[3][3]  ( .D(n859), .CK(clk), .RN(n2553), .Q(\str[3][3] ) );
+                       |
+ncelab: *W,CUVWSP (./SME_syn.v,473|23): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \str_reg[3][1]  ( .D(n857), .CK(clk), .RN(n2553), .Q(\str[3][1] ) );
+                       |
+ncelab: *W,CUVWSP (./SME_syn.v,474|23): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \str_reg[3][0]  ( .D(n856), .CK(clk), .RN(n2553), .Q(\str[3][0] ) );
+                       |
+ncelab: *W,CUVWSP (./SME_syn.v,475|23): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \str_reg[5][6]  ( .D(n846), .CK(clk), .RN(n2552), .Q(\str[5][6] ) );
+                       |
+ncelab: *W,CUVWSP (./SME_syn.v,476|23): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \str_reg[5][4]  ( .D(n844), .CK(clk), .RN(n2552), .Q(\str[5][4] ) );
+                       |
+ncelab: *W,CUVWSP (./SME_syn.v,477|23): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \str_reg[5][3]  ( .D(n843), .CK(clk), .RN(n2552), .Q(\str[5][3] ) );
+                       |
+ncelab: *W,CUVWSP (./SME_syn.v,478|23): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \str_reg[5][1]  ( .D(n841), .CK(clk), .RN(n2552), .Q(\str[5][1] ) );
+                       |
+ncelab: *W,CUVWSP (./SME_syn.v,479|23): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \str_reg[5][0]  ( .D(n840), .CK(clk), .RN(n2552), .Q(\str[5][0] ) );
+                       |
+ncelab: *W,CUVWSP (./SME_syn.v,480|23): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \str_reg[7][6]  ( .D(n830), .CK(clk), .RN(n2551), .Q(\str[7][6] ) );
+                       |
+ncelab: *W,CUVWSP (./SME_syn.v,481|23): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \str_reg[7][4]  ( .D(n828), .CK(clk), .RN(n2551), .Q(\str[7][4] ) );
+                       |
+ncelab: *W,CUVWSP (./SME_syn.v,482|23): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \str_reg[7][3]  ( .D(n827), .CK(clk), .RN(n2551), .Q(\str[7][3] ) );
+                       |
+ncelab: *W,CUVWSP (./SME_syn.v,483|23): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \str_reg[7][1]  ( .D(n825), .CK(clk), .RN(n2551), .Q(\str[7][1] ) );
+                       |
+ncelab: *W,CUVWSP (./SME_syn.v,484|23): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \str_reg[7][0]  ( .D(n824), .CK(clk), .RN(n2551), .Q(\str[7][0] ) );
+                       |
+ncelab: *W,CUVWSP (./SME_syn.v,485|23): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \str_reg[9][6]  ( .D(n814), .CK(clk), .RN(n2550), .Q(\str[9][6] ) );
+                       |
+ncelab: *W,CUVWSP (./SME_syn.v,486|23): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \str_reg[9][4]  ( .D(n812), .CK(clk), .RN(n2550), .Q(\str[9][4] ) );
+                       |
+ncelab: *W,CUVWSP (./SME_syn.v,487|23): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \str_reg[9][1]  ( .D(n809), .CK(clk), .RN(n2549), .Q(\str[9][1] ) );
+                       |
+ncelab: *W,CUVWSP (./SME_syn.v,488|23): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \str_reg[9][0]  ( .D(n808), .CK(clk), .RN(n2549), .Q(\str[9][0] ) );
+                       |
+ncelab: *W,CUVWSP (./SME_syn.v,489|23): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \str_reg[11][6]  ( .D(n798), .CK(clk), .RN(n2548), .Q(\str[11][6] )
+                        |
+ncelab: *W,CUVWSP (./SME_syn.v,490|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \str_reg[11][4]  ( .D(n796), .CK(clk), .RN(n2548), .Q(\str[11][4] )
+                        |
+ncelab: *W,CUVWSP (./SME_syn.v,492|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \str_reg[11][1]  ( .D(n793), .CK(clk), .RN(n2548), .Q(\str[11][1] )
+                        |
+ncelab: *W,CUVWSP (./SME_syn.v,494|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \str_reg[11][0]  ( .D(n792), .CK(clk), .RN(n2548), .Q(\str[11][0] )
+                        |
+ncelab: *W,CUVWSP (./SME_syn.v,496|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \str_reg[13][6]  ( .D(n782), .CK(clk), .RN(n2547), .Q(\str[13][6] )
+                        |
+ncelab: *W,CUVWSP (./SME_syn.v,498|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \str_reg[13][4]  ( .D(n780), .CK(clk), .RN(n2547), .Q(\str[13][4] )
+                        |
+ncelab: *W,CUVWSP (./SME_syn.v,500|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \str_reg[13][3]  ( .D(n779), .CK(clk), .RN(n2547), .Q(\str[13][3] )
+                        |
+ncelab: *W,CUVWSP (./SME_syn.v,502|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \str_reg[13][1]  ( .D(n777), .CK(clk), .RN(n2547), .Q(\str[13][1] )
+                        |
+ncelab: *W,CUVWSP (./SME_syn.v,504|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \str_reg[13][0]  ( .D(n776), .CK(clk), .RN(n2547), .Q(\str[13][0] )
+                        |
+ncelab: *W,CUVWSP (./SME_syn.v,506|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \str_reg[15][6]  ( .D(n766), .CK(clk), .RN(n2546), .Q(\str[15][6] )
+                        |
+ncelab: *W,CUVWSP (./SME_syn.v,508|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \str_reg[15][4]  ( .D(n764), .CK(clk), .RN(n2546), .Q(\str[15][4] )
+                        |
+ncelab: *W,CUVWSP (./SME_syn.v,510|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \str_reg[15][3]  ( .D(n763), .CK(clk), .RN(n2545), .Q(\str[15][3] )
+                        |
+ncelab: *W,CUVWSP (./SME_syn.v,512|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \str_reg[15][1]  ( .D(n761), .CK(clk), .RN(n2545), .Q(\str[15][1] )
+                        |
+ncelab: *W,CUVWSP (./SME_syn.v,514|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \str_reg[15][0]  ( .D(n760), .CK(clk), .RN(n2545), .Q(\str[15][0] )
+                        |
+ncelab: *W,CUVWSP (./SME_syn.v,516|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \str_reg[19][6]  ( .D(n734), .CK(clk), .RN(n2543), .Q(\str[19][6] )
+                        |
+ncelab: *W,CUVWSP (./SME_syn.v,518|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \str_reg[19][4]  ( .D(n732), .CK(clk), .RN(n2543), .Q(\str[19][4] )
+                        |
+ncelab: *W,CUVWSP (./SME_syn.v,520|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \str_reg[19][3]  ( .D(n731), .CK(clk), .RN(n2543), .Q(\str[19][3] )
+                        |
+ncelab: *W,CUVWSP (./SME_syn.v,522|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \str_reg[19][1]  ( .D(n729), .CK(clk), .RN(n2543), .Q(\str[19][1] )
+                        |
+ncelab: *W,CUVWSP (./SME_syn.v,524|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \str_reg[19][0]  ( .D(n728), .CK(clk), .RN(n2543), .Q(\str[19][0] )
+                        |
+ncelab: *W,CUVWSP (./SME_syn.v,526|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \str_reg[21][6]  ( .D(n718), .CK(clk), .RN(n2542), .Q(\str[21][6] )
+                        |
+ncelab: *W,CUVWSP (./SME_syn.v,528|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \str_reg[21][4]  ( .D(n716), .CK(clk), .RN(n2542), .Q(\str[21][4] )
+                        |
+ncelab: *W,CUVWSP (./SME_syn.v,530|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \str_reg[21][3]  ( .D(n715), .CK(clk), .RN(n2541), .Q(\str[21][3] )
+                        |
+ncelab: *W,CUVWSP (./SME_syn.v,532|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \str_reg[21][1]  ( .D(n713), .CK(clk), .RN(n2541), .Q(\str[21][1] )
+                        |
+ncelab: *W,CUVWSP (./SME_syn.v,534|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \str_reg[21][0]  ( .D(n712), .CK(clk), .RN(n2541), .Q(\str[21][0] )
+                        |
+ncelab: *W,CUVWSP (./SME_syn.v,536|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \str_reg[23][6]  ( .D(n702), .CK(clk), .RN(n2540), .Q(\str[23][6] )
+                        |
+ncelab: *W,CUVWSP (./SME_syn.v,538|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \str_reg[23][4]  ( .D(n700), .CK(clk), .RN(n2540), .Q(\str[23][4] )
+                        |
+ncelab: *W,CUVWSP (./SME_syn.v,540|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \str_reg[23][3]  ( .D(n699), .CK(clk), .RN(n2540), .Q(\str[23][3] )
+                        |
+ncelab: *W,CUVWSP (./SME_syn.v,542|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \str_reg[23][1]  ( .D(n697), .CK(clk), .RN(n2540), .Q(\str[23][1] )
+                        |
+ncelab: *W,CUVWSP (./SME_syn.v,544|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \str_reg[23][0]  ( .D(n696), .CK(clk), .RN(n2540), .Q(\str[23][0] )
+                        |
+ncelab: *W,CUVWSP (./SME_syn.v,546|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \str_reg[25][6]  ( .D(n686), .CK(clk), .RN(n2539), .Q(\str[25][6] )
+                        |
+ncelab: *W,CUVWSP (./SME_syn.v,548|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \str_reg[25][4]  ( .D(n684), .CK(clk), .RN(n2539), .Q(\str[25][4] )
+                        |
+ncelab: *W,CUVWSP (./SME_syn.v,550|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \str_reg[25][3]  ( .D(n683), .CK(clk), .RN(n2539), .Q(\str[25][3] )
+                        |
+ncelab: *W,CUVWSP (./SME_syn.v,552|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \str_reg[25][1]  ( .D(n681), .CK(clk), .RN(n2539), .Q(\str[25][1] )
+                        |
+ncelab: *W,CUVWSP (./SME_syn.v,554|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \str_reg[25][0]  ( .D(n680), .CK(clk), .RN(n2539), .Q(\str[25][0] )
+                        |
+ncelab: *W,CUVWSP (./SME_syn.v,556|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \str_reg[27][6]  ( .D(n670), .CK(clk), .RN(n2538), .Q(\str[27][6] )
+                        |
+ncelab: *W,CUVWSP (./SME_syn.v,558|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \str_reg[27][4]  ( .D(n668), .CK(clk), .RN(n2538), .Q(\str[27][4] )
+                        |
+ncelab: *W,CUVWSP (./SME_syn.v,560|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \str_reg[27][3]  ( .D(n667), .CK(clk), .RN(n2537), .Q(\str[27][3] )
+                        |
+ncelab: *W,CUVWSP (./SME_syn.v,562|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \str_reg[27][1]  ( .D(n665), .CK(clk), .RN(n2537), .Q(\str[27][1] )
+                        |
+ncelab: *W,CUVWSP (./SME_syn.v,564|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \str_reg[27][0]  ( .D(n664), .CK(clk), .RN(n2537), .Q(\str[27][0] )
+                        |
+ncelab: *W,CUVWSP (./SME_syn.v,566|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \str_reg[29][6]  ( .D(n654), .CK(clk), .RN(n2536), .Q(\str[29][6] )
+                        |
+ncelab: *W,CUVWSP (./SME_syn.v,568|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \str_reg[29][4]  ( .D(n652), .CK(clk), .RN(n2536), .Q(\str[29][4] )
+                        |
+ncelab: *W,CUVWSP (./SME_syn.v,570|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \str_reg[29][3]  ( .D(n651), .CK(clk), .RN(n2536), .Q(\str[29][3] )
+                        |
+ncelab: *W,CUVWSP (./SME_syn.v,572|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \str_reg[29][1]  ( .D(n649), .CK(clk), .RN(n2536), .Q(\str[29][1] )
+                        |
+ncelab: *W,CUVWSP (./SME_syn.v,574|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \str_reg[29][0]  ( .D(n648), .CK(clk), .RN(n2536), .Q(\str[29][0] )
+                        |
+ncelab: *W,CUVWSP (./SME_syn.v,576|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \str_reg[31][6]  ( .D(n638), .CK(clk), .RN(n2535), .Q(\str[31][6] )
+                        |
+ncelab: *W,CUVWSP (./SME_syn.v,578|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \str_reg[31][4]  ( .D(n636), .CK(clk), .RN(n2535), .Q(\str[31][4] )
+                        |
+ncelab: *W,CUVWSP (./SME_syn.v,580|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \str_reg[31][3]  ( .D(n635), .CK(clk), .RN(n2535), .Q(\str[31][3] )
+                        |
+ncelab: *W,CUVWSP (./SME_syn.v,582|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \str_reg[31][1]  ( .D(n633), .CK(clk), .RN(n2535), .Q(\str[31][1] )
+                        |
+ncelab: *W,CUVWSP (./SME_syn.v,584|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \str_reg[31][0]  ( .D(n632), .CK(clk), .RN(n2535), .Q(\str[31][0] )
+                        |
+ncelab: *W,CUVWSP (./SME_syn.v,586|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \str_reg[2][7]  ( .D(n871), .CK(clk), .RN(n2554), .Q(\str[2][7] ) );
+                       |
+ncelab: *W,CUVWSP (./SME_syn.v,588|23): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \str_reg[2][6]  ( .D(n870), .CK(clk), .RN(n2554), .Q(\str[2][6] ) );
+                       |
+ncelab: *W,CUVWSP (./SME_syn.v,589|23): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \str_reg[2][4]  ( .D(n868), .CK(clk), .RN(n2554), .Q(\str[2][4] ) );
+                       |
+ncelab: *W,CUVWSP (./SME_syn.v,590|23): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \str_reg[2][3]  ( .D(n867), .CK(clk), .RN(n2554), .Q(\str[2][3] ) );
+                       |
+ncelab: *W,CUVWSP (./SME_syn.v,591|23): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \str_reg[2][2]  ( .D(n866), .CK(clk), .RN(n2554), .Q(\str[2][2] ) );
+                       |
+ncelab: *W,CUVWSP (./SME_syn.v,592|23): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \str_reg[2][1]  ( .D(n865), .CK(clk), .RN(n2554), .Q(\str[2][1] ) );
+                       |
+ncelab: *W,CUVWSP (./SME_syn.v,593|23): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \str_reg[2][0]  ( .D(n864), .CK(clk), .RN(n2554), .Q(\str[2][0] ) );
+                       |
+ncelab: *W,CUVWSP (./SME_syn.v,594|23): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \str_reg[4][7]  ( .D(n855), .CK(clk), .RN(n2553), .Q(\str[4][7] ) );
+                       |
+ncelab: *W,CUVWSP (./SME_syn.v,595|23): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \str_reg[4][6]  ( .D(n854), .CK(clk), .RN(n2553), .Q(\str[4][6] ) );
+                       |
+ncelab: *W,CUVWSP (./SME_syn.v,596|23): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \str_reg[4][4]  ( .D(n852), .CK(clk), .RN(n2553), .Q(\str[4][4] ) );
+                       |
+ncelab: *W,CUVWSP (./SME_syn.v,597|23): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \str_reg[4][3]  ( .D(n851), .CK(clk), .RN(n2553), .Q(\str[4][3] ) );
+                       |
+ncelab: *W,CUVWSP (./SME_syn.v,598|23): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \str_reg[4][2]  ( .D(n850), .CK(clk), .RN(n2553), .Q(\str[4][2] ) );
+                       |
+ncelab: *W,CUVWSP (./SME_syn.v,599|23): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \str_reg[4][1]  ( .D(n849), .CK(clk), .RN(n2553), .Q(\str[4][1] ) );
+                       |
+ncelab: *W,CUVWSP (./SME_syn.v,600|23): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \str_reg[4][0]  ( .D(n848), .CK(clk), .RN(n2553), .Q(\str[4][0] ) );
+                       |
+ncelab: *W,CUVWSP (./SME_syn.v,601|23): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \str_reg[6][7]  ( .D(n839), .CK(clk), .RN(n2552), .Q(\str[6][7] ) );
+                       |
+ncelab: *W,CUVWSP (./SME_syn.v,602|23): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \str_reg[6][6]  ( .D(n838), .CK(clk), .RN(n2552), .Q(\str[6][6] ) );
+                       |
+ncelab: *W,CUVWSP (./SME_syn.v,603|23): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \str_reg[6][4]  ( .D(n836), .CK(clk), .RN(n2552), .Q(\str[6][4] ) );
+                       |
+ncelab: *W,CUVWSP (./SME_syn.v,604|23): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \str_reg[6][3]  ( .D(n835), .CK(clk), .RN(n2551), .Q(\str[6][3] ) );
+                       |
+ncelab: *W,CUVWSP (./SME_syn.v,605|23): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \str_reg[6][2]  ( .D(n834), .CK(clk), .RN(n2551), .Q(\str[6][2] ) );
+                       |
+ncelab: *W,CUVWSP (./SME_syn.v,606|23): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \str_reg[6][1]  ( .D(n833), .CK(clk), .RN(n2551), .Q(\str[6][1] ) );
+                       |
+ncelab: *W,CUVWSP (./SME_syn.v,607|23): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \str_reg[6][0]  ( .D(n832), .CK(clk), .RN(n2551), .Q(\str[6][0] ) );
+                       |
+ncelab: *W,CUVWSP (./SME_syn.v,608|23): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \str_reg[8][6]  ( .D(n822), .CK(clk), .RN(n2550), .Q(\str[8][6] ) );
+                       |
+ncelab: *W,CUVWSP (./SME_syn.v,609|23): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \str_reg[8][4]  ( .D(n820), .CK(clk), .RN(n2550), .Q(\str[8][4] ) );
+                       |
+ncelab: *W,CUVWSP (./SME_syn.v,610|23): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \str_reg[8][3]  ( .D(n819), .CK(clk), .RN(n2550), .Q(\str[8][3] ) );
+                       |
+ncelab: *W,CUVWSP (./SME_syn.v,611|23): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \str_reg[8][1]  ( .D(n817), .CK(clk), .RN(n2550), .Q(\str[8][1] ) );
+                       |
+ncelab: *W,CUVWSP (./SME_syn.v,612|23): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \str_reg[8][0]  ( .D(n816), .CK(clk), .RN(n2550), .Q(\str[8][0] ) );
+                       |
+ncelab: *W,CUVWSP (./SME_syn.v,613|23): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \str_reg[10][6]  ( .D(n806), .CK(clk), .RN(n2549), .Q(\str[10][6] )
+                        |
+ncelab: *W,CUVWSP (./SME_syn.v,614|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \str_reg[10][4]  ( .D(n804), .CK(clk), .RN(n2549), .Q(\str[10][4] )
+                        |
+ncelab: *W,CUVWSP (./SME_syn.v,616|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \str_reg[10][3]  ( .D(n803), .CK(clk), .RN(n2549), .Q(\str[10][3] )
+                        |
+ncelab: *W,CUVWSP (./SME_syn.v,618|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \str_reg[10][1]  ( .D(n801), .CK(clk), .RN(n2549), .Q(\str[10][1] )
+                        |
+ncelab: *W,CUVWSP (./SME_syn.v,620|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \str_reg[10][0]  ( .D(n800), .CK(clk), .RN(n2549), .Q(\str[10][0] )
+                        |
+ncelab: *W,CUVWSP (./SME_syn.v,622|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \str_reg[12][7]  ( .D(n791), .CK(clk), .RN(n2548), .Q(\str[12][7] )
+                        |
+ncelab: *W,CUVWSP (./SME_syn.v,624|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \str_reg[12][6]  ( .D(n790), .CK(clk), .RN(n2548), .Q(\str[12][6] )
+                        |
+ncelab: *W,CUVWSP (./SME_syn.v,626|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \str_reg[12][4]  ( .D(n788), .CK(clk), .RN(n2548), .Q(\str[12][4] )
+                        |
+ncelab: *W,CUVWSP (./SME_syn.v,628|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \str_reg[12][3]  ( .D(n787), .CK(clk), .RN(n2547), .Q(\str[12][3] )
+                        |
+ncelab: *W,CUVWSP (./SME_syn.v,630|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \str_reg[12][2]  ( .D(n786), .CK(clk), .RN(n2547), .Q(\str[12][2] )
+                        |
+ncelab: *W,CUVWSP (./SME_syn.v,632|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \str_reg[12][1]  ( .D(n785), .CK(clk), .RN(n2547), .Q(\str[12][1] )
+                        |
+ncelab: *W,CUVWSP (./SME_syn.v,634|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \str_reg[12][0]  ( .D(n784), .CK(clk), .RN(n2547), .Q(\str[12][0] )
+                        |
+ncelab: *W,CUVWSP (./SME_syn.v,636|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \str_reg[14][7]  ( .D(n775), .CK(clk), .RN(n2546), .Q(\str[14][7] )
+                        |
+ncelab: *W,CUVWSP (./SME_syn.v,638|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \str_reg[14][6]  ( .D(n774), .CK(clk), .RN(n2546), .Q(\str[14][6] )
+                        |
+ncelab: *W,CUVWSP (./SME_syn.v,640|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \str_reg[14][4]  ( .D(n772), .CK(clk), .RN(n2546), .Q(\str[14][4] )
+                        |
+ncelab: *W,CUVWSP (./SME_syn.v,642|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \str_reg[14][3]  ( .D(n771), .CK(clk), .RN(n2546), .Q(\str[14][3] )
+                        |
+ncelab: *W,CUVWSP (./SME_syn.v,644|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \str_reg[14][2]  ( .D(n770), .CK(clk), .RN(n2546), .Q(\str[14][2] )
+                        |
+ncelab: *W,CUVWSP (./SME_syn.v,646|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \str_reg[14][1]  ( .D(n769), .CK(clk), .RN(n2546), .Q(\str[14][1] )
+                        |
+ncelab: *W,CUVWSP (./SME_syn.v,648|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \str_reg[14][0]  ( .D(n768), .CK(clk), .RN(n2546), .Q(\str[14][0] )
+                        |
+ncelab: *W,CUVWSP (./SME_syn.v,650|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \str_reg[18][6]  ( .D(n742), .CK(clk), .RN(n2544), .Q(\str[18][6] )
+                        |
+ncelab: *W,CUVWSP (./SME_syn.v,652|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \str_reg[18][4]  ( .D(n740), .CK(clk), .RN(n2544), .Q(\str[18][4] )
+                        |
+ncelab: *W,CUVWSP (./SME_syn.v,654|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \str_reg[18][3]  ( .D(n739), .CK(clk), .RN(n2543), .Q(\str[18][3] )
+                        |
+ncelab: *W,CUVWSP (./SME_syn.v,656|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \str_reg[18][2]  ( .D(n738), .CK(clk), .RN(n2543), .Q(\str[18][2] )
+                        |
+ncelab: *W,CUVWSP (./SME_syn.v,658|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \str_reg[18][1]  ( .D(n737), .CK(clk), .RN(n2543), .Q(\str[18][1] )
+                        |
+ncelab: *W,CUVWSP (./SME_syn.v,660|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \str_reg[18][0]  ( .D(n736), .CK(clk), .RN(n2543), .Q(\str[18][0] )
+                        |
+ncelab: *W,CUVWSP (./SME_syn.v,662|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \str_reg[19][7]  ( .D(n735), .CK(clk), .RN(n2543), .Q(\str[19][7] )
+                        |
+ncelab: *W,CUVWSP (./SME_syn.v,664|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \str_reg[20][6]  ( .D(n726), .CK(clk), .RN(n2542), .Q(\str[20][6] )
+                        |
+ncelab: *W,CUVWSP (./SME_syn.v,666|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \str_reg[20][4]  ( .D(n724), .CK(clk), .RN(n2542), .Q(\str[20][4] )
+                        |
+ncelab: *W,CUVWSP (./SME_syn.v,668|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \str_reg[20][3]  ( .D(n723), .CK(clk), .RN(n2542), .Q(\str[20][3] )
+                        |
+ncelab: *W,CUVWSP (./SME_syn.v,670|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \str_reg[20][2]  ( .D(n722), .CK(clk), .RN(n2542), .Q(\str[20][2] )
+                        |
+ncelab: *W,CUVWSP (./SME_syn.v,672|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \str_reg[20][1]  ( .D(n721), .CK(clk), .RN(n2542), .Q(\str[20][1] )
+                        |
+ncelab: *W,CUVWSP (./SME_syn.v,674|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \str_reg[20][0]  ( .D(n720), .CK(clk), .RN(n2542), .Q(\str[20][0] )
+                        |
+ncelab: *W,CUVWSP (./SME_syn.v,676|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \str_reg[21][7]  ( .D(n719), .CK(clk), .RN(n2542), .Q(\str[21][7] )
+                        |
+ncelab: *W,CUVWSP (./SME_syn.v,678|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \str_reg[22][6]  ( .D(n710), .CK(clk), .RN(n2541), .Q(\str[22][6] )
+                        |
+ncelab: *W,CUVWSP (./SME_syn.v,680|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \str_reg[22][4]  ( .D(n708), .CK(clk), .RN(n2541), .Q(\str[22][4] )
+                        |
+ncelab: *W,CUVWSP (./SME_syn.v,682|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \str_reg[22][3]  ( .D(n707), .CK(clk), .RN(n2541), .Q(\str[22][3] )
+                        |
+ncelab: *W,CUVWSP (./SME_syn.v,684|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \str_reg[22][2]  ( .D(n706), .CK(clk), .RN(n2541), .Q(\str[22][2] )
+                        |
+ncelab: *W,CUVWSP (./SME_syn.v,686|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \str_reg[22][1]  ( .D(n705), .CK(clk), .RN(n2541), .Q(\str[22][1] )
+                        |
+ncelab: *W,CUVWSP (./SME_syn.v,688|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \str_reg[22][0]  ( .D(n704), .CK(clk), .RN(n2541), .Q(\str[22][0] )
+                        |
+ncelab: *W,CUVWSP (./SME_syn.v,690|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \str_reg[23][7]  ( .D(n703), .CK(clk), .RN(n2540), .Q(\str[23][7] )
+                        |
+ncelab: *W,CUVWSP (./SME_syn.v,692|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \str_reg[24][6]  ( .D(n694), .CK(clk), .RN(n2540), .Q(\str[24][6] )
+                        |
+ncelab: *W,CUVWSP (./SME_syn.v,694|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \str_reg[24][4]  ( .D(n692), .CK(clk), .RN(n2540), .Q(\str[24][4] )
+                        |
+ncelab: *W,CUVWSP (./SME_syn.v,696|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \str_reg[24][3]  ( .D(n691), .CK(clk), .RN(n2539), .Q(\str[24][3] )
+                        |
+ncelab: *W,CUVWSP (./SME_syn.v,698|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \str_reg[24][2]  ( .D(n690), .CK(clk), .RN(n2539), .Q(\str[24][2] )
+                        |
+ncelab: *W,CUVWSP (./SME_syn.v,700|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \str_reg[24][1]  ( .D(n689), .CK(clk), .RN(n2539), .Q(\str[24][1] )
+                        |
+ncelab: *W,CUVWSP (./SME_syn.v,702|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \str_reg[24][0]  ( .D(n688), .CK(clk), .RN(n2539), .Q(\str[24][0] )
+                        |
+ncelab: *W,CUVWSP (./SME_syn.v,704|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \str_reg[25][7]  ( .D(n687), .CK(clk), .RN(n2539), .Q(\str[25][7] )
+                        |
+ncelab: *W,CUVWSP (./SME_syn.v,706|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \str_reg[26][6]  ( .D(n678), .CK(clk), .RN(n2538), .Q(\str[26][6] )
+                        |
+ncelab: *W,CUVWSP (./SME_syn.v,708|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \str_reg[26][4]  ( .D(n676), .CK(clk), .RN(n2538), .Q(\str[26][4] )
+                        |
+ncelab: *W,CUVWSP (./SME_syn.v,710|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \str_reg[26][3]  ( .D(n675), .CK(clk), .RN(n2538), .Q(\str[26][3] )
+                        |
+ncelab: *W,CUVWSP (./SME_syn.v,712|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \str_reg[26][2]  ( .D(n674), .CK(clk), .RN(n2538), .Q(\str[26][2] )
+                        |
+ncelab: *W,CUVWSP (./SME_syn.v,714|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \str_reg[26][1]  ( .D(n673), .CK(clk), .RN(n2538), .Q(\str[26][1] )
+                        |
+ncelab: *W,CUVWSP (./SME_syn.v,716|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \str_reg[26][0]  ( .D(n672), .CK(clk), .RN(n2538), .Q(\str[26][0] )
+                        |
+ncelab: *W,CUVWSP (./SME_syn.v,718|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \str_reg[27][7]  ( .D(n671), .CK(clk), .RN(n2538), .Q(\str[27][7] )
+                        |
+ncelab: *W,CUVWSP (./SME_syn.v,720|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \str_reg[28][6]  ( .D(n662), .CK(clk), .RN(n2537), .Q(\str[28][6] )
+                        |
+ncelab: *W,CUVWSP (./SME_syn.v,722|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \str_reg[28][4]  ( .D(n660), .CK(clk), .RN(n2537), .Q(\str[28][4] )
+                        |
+ncelab: *W,CUVWSP (./SME_syn.v,724|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \str_reg[28][3]  ( .D(n659), .CK(clk), .RN(n2537), .Q(\str[28][3] )
+                        |
+ncelab: *W,CUVWSP (./SME_syn.v,726|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \str_reg[28][2]  ( .D(n658), .CK(clk), .RN(n2537), .Q(\str[28][2] )
+                        |
+ncelab: *W,CUVWSP (./SME_syn.v,728|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \str_reg[28][1]  ( .D(n657), .CK(clk), .RN(n2537), .Q(\str[28][1] )
+                        |
+ncelab: *W,CUVWSP (./SME_syn.v,730|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \str_reg[28][0]  ( .D(n656), .CK(clk), .RN(n2537), .Q(\str[28][0] )
+                        |
+ncelab: *W,CUVWSP (./SME_syn.v,732|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \str_reg[29][7]  ( .D(n655), .CK(clk), .RN(n2536), .Q(\str[29][7] )
+                        |
+ncelab: *W,CUVWSP (./SME_syn.v,734|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \str_reg[30][6]  ( .D(n646), .CK(clk), .RN(n2536), .Q(\str[30][6] )
+                        |
+ncelab: *W,CUVWSP (./SME_syn.v,736|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \str_reg[30][4]  ( .D(n644), .CK(clk), .RN(n2536), .Q(\str[30][4] )
+                        |
+ncelab: *W,CUVWSP (./SME_syn.v,738|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \str_reg[30][3]  ( .D(n643), .CK(clk), .RN(n2535), .Q(\str[30][3] )
+                        |
+ncelab: *W,CUVWSP (./SME_syn.v,740|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \str_reg[30][2]  ( .D(n642), .CK(clk), .RN(n2535), .Q(\str[30][2] )
+                        |
+ncelab: *W,CUVWSP (./SME_syn.v,742|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \str_reg[30][1]  ( .D(n641), .CK(clk), .RN(n2535), .Q(\str[30][1] )
+                        |
+ncelab: *W,CUVWSP (./SME_syn.v,744|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \str_reg[30][0]  ( .D(n640), .CK(clk), .RN(n2535), .Q(\str[30][0] )
+                        |
+ncelab: *W,CUVWSP (./SME_syn.v,746|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \str_reg[0][6]  ( .D(n886), .CK(clk), .RN(n2556), .Q(\str[0][6] ) );
+                       |
+ncelab: *W,CUVWSP (./SME_syn.v,748|23): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \str_reg[0][5]  ( .D(n885), .CK(clk), .RN(n2556), .Q(\str[0][5] ) );
+                       |
+ncelab: *W,CUVWSP (./SME_syn.v,749|23): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \str_reg[0][4]  ( .D(n884), .CK(clk), .RN(n2556), .Q(\str[0][4] ) );
+                       |
+ncelab: *W,CUVWSP (./SME_syn.v,750|23): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \str_reg[0][3]  ( .D(n883), .CK(clk), .RN(n2555), .Q(\str[0][3] ) );
+                       |
+ncelab: *W,CUVWSP (./SME_syn.v,751|23): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \str_reg[0][1]  ( .D(n881), .CK(clk), .RN(n2555), .Q(\str[0][1] ) );
+                       |
+ncelab: *W,CUVWSP (./SME_syn.v,752|23): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \str_reg[0][0]  ( .D(n880), .CK(clk), .RN(n2555), .Q(\str[0][0] ) );
+                       |
+ncelab: *W,CUVWSP (./SME_syn.v,753|23): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \str_reg[16][6]  ( .D(n758), .CK(clk), .RN(n2545), .Q(\str[16][6] )
+                        |
+ncelab: *W,CUVWSP (./SME_syn.v,754|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \str_reg[16][4]  ( .D(n756), .CK(clk), .RN(n2545), .Q(\str[16][4] )
+                        |
+ncelab: *W,CUVWSP (./SME_syn.v,756|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \str_reg[16][3]  ( .D(n755), .CK(clk), .RN(n2545), .Q(\str[16][3] )
+                        |
+ncelab: *W,CUVWSP (./SME_syn.v,758|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \str_reg[16][1]  ( .D(n753), .CK(clk), .RN(n2545), .Q(\str[16][1] )
+                        |
+ncelab: *W,CUVWSP (./SME_syn.v,760|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \str_reg[16][0]  ( .D(n752), .CK(clk), .RN(n2545), .Q(\str[16][0] )
+                        |
+ncelab: *W,CUVWSP (./SME_syn.v,762|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \str_reg[8][5]  ( .D(n821), .CK(clk), .RN(n2550), .Q(\str[8][5] ) );
+                       |
+ncelab: *W,CUVWSP (./SME_syn.v,764|23): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \str_reg[24][5]  ( .D(n693), .CK(clk), .RN(n2540), .Q(\str[24][5] )
+                        |
+ncelab: *W,CUVWSP (./SME_syn.v,765|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \str_reg[1][7]  ( .D(n879), .CK(clk), .RN(n2555), .Q(\str[1][7] ) );
+                       |
+ncelab: *W,CUVWSP (./SME_syn.v,767|23): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \str_reg[1][6]  ( .D(n878), .CK(clk), .RN(n2555), .Q(\str[1][6] ) );
+                       |
+ncelab: *W,CUVWSP (./SME_syn.v,768|23): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \str_reg[1][4]  ( .D(n876), .CK(clk), .RN(n2555), .Q(\str[1][4] ) );
+                       |
+ncelab: *W,CUVWSP (./SME_syn.v,769|23): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \str_reg[1][3]  ( .D(n875), .CK(clk), .RN(n2555), .Q(\str[1][3] ) );
+                       |
+ncelab: *W,CUVWSP (./SME_syn.v,770|23): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \str_reg[1][2]  ( .D(n874), .CK(clk), .RN(n2555), .Q(\str[1][2] ) );
+                       |
+ncelab: *W,CUVWSP (./SME_syn.v,771|23): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \str_reg[1][1]  ( .D(n873), .CK(clk), .RN(n2555), .Q(\str[1][1] ) );
+                       |
+ncelab: *W,CUVWSP (./SME_syn.v,772|23): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \str_reg[1][0]  ( .D(n872), .CK(clk), .RN(n2555), .Q(\str[1][0] ) );
+                       |
+ncelab: *W,CUVWSP (./SME_syn.v,773|23): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \str_reg[17][6]  ( .D(n750), .CK(clk), .RN(n2544), .Q(\str[17][6] )
+                        |
+ncelab: *W,CUVWSP (./SME_syn.v,774|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \str_reg[17][4]  ( .D(n748), .CK(clk), .RN(n2544), .Q(\str[17][4] )
+                        |
+ncelab: *W,CUVWSP (./SME_syn.v,776|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \str_reg[17][3]  ( .D(n747), .CK(clk), .RN(n2544), .Q(\str[17][3] )
+                        |
+ncelab: *W,CUVWSP (./SME_syn.v,778|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \str_reg[17][2]  ( .D(n746), .CK(clk), .RN(n2544), .Q(\str[17][2] )
+                        |
+ncelab: *W,CUVWSP (./SME_syn.v,780|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \str_reg[17][1]  ( .D(n745), .CK(clk), .RN(n2544), .Q(\str[17][1] )
+                        |
+ncelab: *W,CUVWSP (./SME_syn.v,782|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \str_reg[17][0]  ( .D(n744), .CK(clk), .RN(n2544), .Q(\str[17][0] )
+                        |
+ncelab: *W,CUVWSP (./SME_syn.v,784|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \str_reg[16][5]  ( .D(n757), .CK(clk), .RN(n2545), .Q(\str[16][5] )
+                        |
+ncelab: *W,CUVWSP (./SME_syn.v,786|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \str_reg[17][7]  ( .D(n751), .CK(clk), .RN(n2544), .Q(\str[17][7] )
+                        |
+ncelab: *W,CUVWSP (./SME_syn.v,788|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \str_reg[16][7]  ( .D(n759), .CK(clk), .RN(n2545), .Q(\str[16][7] )
+                        |
+ncelab: *W,CUVWSP (./SME_syn.v,790|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \star_occur_reg[4]  ( .D(n557), .CK(clk), .RN(n2528), .Q(
+                           |
+ncelab: *W,CUVWSP (./SME_syn.v,792|27): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pat_reg[4][1]  ( .D(n595), .CK(clk), .RN(n2533), .Q(\pat[4][1] ) );
+                       |
+ncelab: *W,CUVWSP (./SME_syn.v,794|23): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pat_reg[4][3]  ( .D(n597), .CK(clk), .RN(n2532), .Q(\pat[4][3] ) );
+                       |
+ncelab: *W,CUVWSP (./SME_syn.v,795|23): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pat_reg[4][7]  ( .D(n601), .CK(clk), .RN(n2532), .Q(\pat[4][7] ) );
+                       |
+ncelab: *W,CUVWSP (./SME_syn.v,796|23): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pat_reg[6][1]  ( .D(n611), .CK(clk), .RN(n2532), .Q(\pat[6][1] ) );
+                       |
+ncelab: *W,CUVWSP (./SME_syn.v,797|23): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pat_reg[6][3]  ( .D(n613), .CK(clk), .RN(n2532), .Q(\pat[6][3] ) );
+                       |
+ncelab: *W,CUVWSP (./SME_syn.v,798|23): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pat_reg[6][7]  ( .D(n617), .CK(clk), .RN(n2531), .Q(\pat[6][7] ) );
+                       |
+ncelab: *W,CUVWSP (./SME_syn.v,799|23): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pat_reg[7][1]  ( .D(n619), .CK(clk), .RN(n2531), .Q(\pat[7][1] ) );
+                       |
+ncelab: *W,CUVWSP (./SME_syn.v,800|23): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pat_reg[7][3]  ( .D(n621), .CK(clk), .RN(n2531), .Q(\pat[7][3] ) );
+                       |
+ncelab: *W,CUVWSP (./SME_syn.v,801|23): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pat_reg[7][7]  ( .D(n625), .CK(clk), .RN(n2531), .Q(\pat[7][7] ) );
+                       |
+ncelab: *W,CUVWSP (./SME_syn.v,802|23): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pat_reg[5][1]  ( .D(n603), .CK(clk), .RN(n2530), .Q(\pat[5][1] ) );
+                       |
+ncelab: *W,CUVWSP (./SME_syn.v,803|23): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pat_reg[5][3]  ( .D(n605), .CK(clk), .RN(n2530), .Q(\pat[5][3] ) );
+                       |
+ncelab: *W,CUVWSP (./SME_syn.v,804|23): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pat_reg[5][7]  ( .D(n609), .CK(clk), .RN(n2529), .Q(\pat[5][7] ) );
+                       |
+ncelab: *W,CUVWSP (./SME_syn.v,805|23): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pat_reg[2][1]  ( .D(n579), .CK(clk), .RN(n2534), .Q(\pat[2][1] ) );
+                       |
+ncelab: *W,CUVWSP (./SME_syn.v,806|23): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pat_reg[2][2]  ( .D(n580), .CK(clk), .RN(n2534), .Q(\pat[2][2] ) );
+                       |
+ncelab: *W,CUVWSP (./SME_syn.v,807|23): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pat_reg[2][3]  ( .D(n581), .CK(clk), .RN(n2534), .Q(\pat[2][3] ) );
+                       |
+ncelab: *W,CUVWSP (./SME_syn.v,808|23): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pat_reg[2][4]  ( .D(n582), .CK(clk), .RN(n2534), .Q(\pat[2][4] ) );
+                       |
+ncelab: *W,CUVWSP (./SME_syn.v,809|23): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pat_reg[2][5]  ( .D(n583), .CK(clk), .RN(n2534), .Q(\pat[2][5] ) );
+                       |
+ncelab: *W,CUVWSP (./SME_syn.v,810|23): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pat_reg[2][6]  ( .D(n584), .CK(clk), .RN(n2533), .Q(\pat[2][6] ) );
+                       |
+ncelab: *W,CUVWSP (./SME_syn.v,811|23): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pat_reg[2][7]  ( .D(n585), .CK(clk), .RN(n2533), .Q(\pat[2][7] ) );
+                       |
+ncelab: *W,CUVWSP (./SME_syn.v,812|23): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pat_reg[2][0]  ( .D(n586), .CK(clk), .RN(n2533), .Q(\pat[2][0] ) );
+                       |
+ncelab: *W,CUVWSP (./SME_syn.v,813|23): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pat_reg[3][1]  ( .D(n587), .CK(clk), .RN(n2533), .Q(\pat[3][1] ) );
+                       |
+ncelab: *W,CUVWSP (./SME_syn.v,814|23): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pat_reg[3][2]  ( .D(n588), .CK(clk), .RN(n2533), .Q(\pat[3][2] ) );
+                       |
+ncelab: *W,CUVWSP (./SME_syn.v,815|23): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pat_reg[3][3]  ( .D(n589), .CK(clk), .RN(n2533), .Q(\pat[3][3] ) );
+                       |
+ncelab: *W,CUVWSP (./SME_syn.v,816|23): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pat_reg[3][4]  ( .D(n590), .CK(clk), .RN(n2533), .Q(\pat[3][4] ) );
+                       |
+ncelab: *W,CUVWSP (./SME_syn.v,817|23): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pat_reg[3][5]  ( .D(n591), .CK(clk), .RN(n2533), .Q(\pat[3][5] ) );
+                       |
+ncelab: *W,CUVWSP (./SME_syn.v,818|23): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pat_reg[3][6]  ( .D(n592), .CK(clk), .RN(n2533), .Q(\pat[3][6] ) );
+                       |
+ncelab: *W,CUVWSP (./SME_syn.v,819|23): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pat_reg[3][7]  ( .D(n593), .CK(clk), .RN(n2533), .Q(\pat[3][7] ) );
+                       |
+ncelab: *W,CUVWSP (./SME_syn.v,820|23): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pat_reg[3][0]  ( .D(n594), .CK(clk), .RN(n2533), .Q(\pat[3][0] ) );
+                       |
+ncelab: *W,CUVWSP (./SME_syn.v,821|23): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pat_reg[4][2]  ( .D(n596), .CK(clk), .RN(n2532), .Q(\pat[4][2] ) );
+                       |
+ncelab: *W,CUVWSP (./SME_syn.v,822|23): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pat_reg[4][4]  ( .D(n598), .CK(clk), .RN(n2532), .Q(\pat[4][4] ) );
+                       |
+ncelab: *W,CUVWSP (./SME_syn.v,823|23): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pat_reg[4][5]  ( .D(n599), .CK(clk), .RN(n2532), .Q(\pat[4][5] ) );
+                       |
+ncelab: *W,CUVWSP (./SME_syn.v,824|23): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pat_reg[4][6]  ( .D(n600), .CK(clk), .RN(n2532), .Q(\pat[4][6] ) );
+                       |
+ncelab: *W,CUVWSP (./SME_syn.v,825|23): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pat_reg[4][0]  ( .D(n602), .CK(clk), .RN(n2532), .Q(\pat[4][0] ) );
+                       |
+ncelab: *W,CUVWSP (./SME_syn.v,826|23): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pat_reg[6][2]  ( .D(n612), .CK(clk), .RN(n2532), .Q(\pat[6][2] ) );
+                       |
+ncelab: *W,CUVWSP (./SME_syn.v,827|23): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pat_reg[6][4]  ( .D(n614), .CK(clk), .RN(n2532), .Q(\pat[6][4] ) );
+                       |
+ncelab: *W,CUVWSP (./SME_syn.v,828|23): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pat_reg[6][5]  ( .D(n615), .CK(clk), .RN(n2532), .Q(\pat[6][5] ) );
+                       |
+ncelab: *W,CUVWSP (./SME_syn.v,829|23): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pat_reg[6][6]  ( .D(n616), .CK(clk), .RN(n2531), .Q(\pat[6][6] ) );
+                       |
+ncelab: *W,CUVWSP (./SME_syn.v,830|23): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pat_reg[6][0]  ( .D(n618), .CK(clk), .RN(n2531), .Q(\pat[6][0] ) );
+                       |
+ncelab: *W,CUVWSP (./SME_syn.v,831|23): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pat_reg[7][2]  ( .D(n620), .CK(clk), .RN(n2531), .Q(\pat[7][2] ) );
+                       |
+ncelab: *W,CUVWSP (./SME_syn.v,832|23): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pat_reg[7][4]  ( .D(n622), .CK(clk), .RN(n2531), .Q(\pat[7][4] ) );
+                       |
+ncelab: *W,CUVWSP (./SME_syn.v,833|23): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pat_reg[7][5]  ( .D(n623), .CK(clk), .RN(n2531), .Q(\pat[7][5] ) );
+                       |
+ncelab: *W,CUVWSP (./SME_syn.v,834|23): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pat_reg[7][6]  ( .D(n624), .CK(clk), .RN(n2531), .Q(\pat[7][6] ) );
+                       |
+ncelab: *W,CUVWSP (./SME_syn.v,835|23): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pat_reg[7][0]  ( .D(n626), .CK(clk), .RN(n2531), .Q(\pat[7][0] ) );
+                       |
+ncelab: *W,CUVWSP (./SME_syn.v,836|23): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pat_reg[5][2]  ( .D(n604), .CK(clk), .RN(n2530), .Q(\pat[5][2] ) );
+                       |
+ncelab: *W,CUVWSP (./SME_syn.v,843|23): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pat_reg[5][4]  ( .D(n606), .CK(clk), .RN(n2530), .Q(\pat[5][4] ) );
+                       |
+ncelab: *W,CUVWSP (./SME_syn.v,844|23): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pat_reg[5][5]  ( .D(n607), .CK(clk), .RN(n2530), .Q(\pat[5][5] ) );
+                       |
+ncelab: *W,CUVWSP (./SME_syn.v,845|23): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pat_reg[5][6]  ( .D(n608), .CK(clk), .RN(n2529), .Q(\pat[5][6] ) );
+                       |
+ncelab: *W,CUVWSP (./SME_syn.v,846|23): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pat_reg[5][0]  ( .D(n610), .CK(clk), .RN(n2529), .Q(\pat[5][0] ) );
+                       |
+ncelab: *W,CUVWSP (./SME_syn.v,847|23): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pat_reg[0][1]  ( .D(n563), .CK(clk), .RN(n2531), .Q(\pat[0][1] ) );
+                       |
+ncelab: *W,CUVWSP (./SME_syn.v,848|23): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pat_reg[0][3]  ( .D(n565), .CK(clk), .RN(n2530), .Q(\pat[0][3] ) );
+                       |
+ncelab: *W,CUVWSP (./SME_syn.v,849|23): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pat_reg[0][5]  ( .D(n567), .CK(clk), .RN(n2530), .Q(\pat[0][5] ) );
+                       |
+ncelab: *W,CUVWSP (./SME_syn.v,850|23): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \counter_comp_pat_temp_reg[3]  ( .D(n558), .CK(clk), .RN(n2527), .Q(
+                                      |
+ncelab: *W,CUVWSP (./SME_syn.v,865|38): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \star_occur_reg[3]  ( .D(n553), .CK(clk), .RN(n2527), .Q(
+                           |
+ncelab: *W,CUVWSP (./SME_syn.v,873|27): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \counter_comp_pat_reg[3]  ( .D(N412), .CK(clk), .RN(n2528), .Q(
+                                 |
+ncelab: *W,CUVWSP (./SME_syn.v,877|33): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \star_occur_reg[1]  ( .D(n555), .CK(clk), .RN(n2527), .Q(
+                           |
+ncelab: *W,CUVWSP (./SME_syn.v,881|27): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \counter_comp_pat_reg[2]  ( .D(N411), .CK(clk), .RN(n2607), .QN(n1741) );
+                                 |
+ncelab: *W,CUVWSP (./SME_syn.v,895|33): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): Q
+
+  DFFRX1 \counter_pat_reg[0]  ( .D(n629), .CK(clk), .RN(n2607), .Q(
+                            |
+ncelab: *W,CUVWSP (./SME_syn.v,896|28): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pat_reg[1][5]  ( .D(n575), .CK(clk), .RN(n2607), .QN(n215) );
+                       |
+ncelab: *W,CUVWSP (./SME_syn.v,900|23): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): Q
+
+  DFFRX1 \pat_reg[1][4]  ( .D(n574), .CK(clk), .RN(n2607), .QN(n216) );
+                       |
+ncelab: *W,CUVWSP (./SME_syn.v,901|23): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): Q
+
 ncelab: *W,DSEMEL: This SystemVerilog design will be simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+	Reading SDF file from location "./SME_syn.sdf"
+	Writing compiled SDF file to "SME_syn.sdf.X".
+	Annotating SDF timing data:
+		Compiled SDF file:     SME_syn.sdf.X
+		Log file:              
+		Backannotation scope:  testfixture.u_SME
+		Configuration file:    
+		MTM control:           
+		Scale factors:         
+		Scale type:            
+	Annotation completed successfully...
+	SDF statistics: No. of Pathdelays = 10484  Annotated = 100.00% -- No. of Tchecks = 2145  Annotated = 100.00% 
+				        Total 	   Annotated	  Percentage
+		 Path Delays	       10484	       10484	      100.00
+		      $width	        1072	        1072	      100.00
+		  $setuphold	        1073	        1073	      100.00
 	Building instance overlay tables: .................... Done
 	Generating native compiled code:
-		worklib.SME:v <0x64680536>
-			streams:  25, words: 15919
+		tsmc13_neg.ADDFX2:v <0x767d9f2a>
+			streams:   0, words:     0
+		tsmc13_neg.ADDFXL:v <0x43b0aff9>
+			streams:   0, words:     0
+		tsmc13_neg.ADDHX1:v <0x301263ab>
+			streams:   0, words:     0
+		tsmc13_neg.ADDHXL:v <0x1eb77e02>
+			streams:   0, words:     0
+		tsmc13_neg.CLKXOR2X2:v <0x17dd21db>
+			streams:   0, words:     0
+		tsmc13_neg.DFFRX1:v <0x34848226>
+			streams:   0, words:     0
+		tsmc13_neg.DFFRX1:v <0x76d1c49e>
+			streams:   0, words:     0
+		tsmc13_neg.DFFRX1:v <0x7b087e7d>
+			streams:   0, words:     0
+		tsmc13_neg.DFFRX2:v <0x156e7d64>
+			streams:   0, words:     0
+		tsmc13_neg.DFFRXL:v <0x1a4ff8cb>
+			streams:   0, words:     0
+		tsmc13_neg.TLATNX1:v <0x1158eedd>
+			streams:   0, words:     0
+		tsmc13_neg.XNOR2X1:v <0x52786a51>
+			streams:   0, words:     0
+		tsmc13_neg.XNOR2X2:v <0x5b97a41e>
+			streams:   0, words:     0
+		tsmc13_neg.XNOR2X4:v <0x65d1ca66>
+			streams:   0, words:     0
+		tsmc13_neg.XNOR2XL:v <0x4ee2bf00>
+			streams:   0, words:     0
+		tsmc13_neg.XOR2X1:v <0x2c4f6733>
+			streams:   0, words:     0
+		tsmc13_neg.XOR2XL:v <0x7d7d89a1>
+			streams:   0, words:     0
+		tsmc13_neg.XOR3X1:v <0x206f5c53>
+			streams:   0, words:     0
+		tsmc13_neg.XOR3XL:v <0x4754622c>
+			streams:   0, words:     0
+		worklib.\$unit_0x40a49fc8 :compilation_unit <0x716ea4a0>
+			streams:   1, words:  6032
+		worklib.testfixture:sv <0x4df83501>
+			streams:  16, words: 20445
 	Building instance specific data structures.
 	Loading native compiled code:     .................... Done
 	Design hierarchy summary:
-		                  Instances  Unique
-		Modules:                  2       2
-		Registers:               45      45
-		Scalar wires:             7       -
-		Vectored wires:           2       -
-		Always blocks:           20      20
-		Initial blocks:          10      10
-		Cont. assignments:        0       1
-		Pseudo assignments:       1       1
-		Compilation units:        1       1
-		Simulation timescale:  10ps
+		                    Instances  Unique
+		Modules:                 2990      86
+		UDPs:                     358       2
+		Primitives:              7610       8
+		Timing outputs:          3049      31
+		Registers:                387      35
+		Scalar wires:            3413       -
+		Expanded wires:             8       1
+		Always blocks:              5       5
+		Initial blocks:            11      11
+		Pseudo assignments:         1       1
+		Timing checks:           3218     427
+		Interconnect:            9789       -
+		Delayed tcheck signals:  1073     391
+		Compilation units:          1       1
+		Simulation timescale:     1ps
 	Writing initial simulation snapshot: worklib.testfixture:sv
 Loading snapshot worklib.testfixture:sv .................... Done
 ncsim: *W,DSEM2009: This SystemVerilog design is simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
@@ -42,9 +1869,93 @@ FSDB Dumper for IUS, Release Verdi_Q-2020.03, Linux, 02/09/2020
 *Verdi* FSDB WARNING: The FSDB file already exists. Overwriting the FSDB file may crash the programs that are using this file.
 *Verdi* : Create FSDB file 'SME.fsdb'
 *Verdi* : Begin traversing the scopes, layer (0).
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.char_count(25)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.clk(48)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.reset(48)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.chardata(48)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.isstring(48)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.ispattern(48)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.cycle(48)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.strindex(25)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.goldmatch_index(48)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.goldmatch(48)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.valid_reg(48)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.wait_valid(48)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.getmatch(48)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.getmatch_index(48)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.score(25)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.allpass(25)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.valid(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.match(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.match_index(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_SME.chardata(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_SME.match_index(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_SME.clk(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_SME.reset(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_SME.isstring(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_SME.ispattern(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_SME.valid(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_SME.match(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_SME.N143(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_SME.N144(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_SME.N145(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_SME.N146(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_SME.N148(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_SME.N149(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_SME.N150(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_SME.N151(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_SME.N152(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_SME.N153(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_SME.N154(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_SME.N155(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_SME.N156(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_SME.N169(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_SME.N170(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_SME.N186(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_SME.N187(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_SME.N188(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_SME.N189(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_SME.N190(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_SME.N194(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_SME.N195(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_SME.N196(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_SME.N203(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_SME.N204(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_SME.N205(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_SME.n2670(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_SME.n2671(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_SME.n2672(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_SME.n2673(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_SME.n2674(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_SME.n2675(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_SME.n2676(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_SME.N209(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_SME.N210(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_SME.N211(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_SME.N212(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_SME.N213(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_SME.N214(36)
+*Verdi* WARNING: The above messages are printed 50 times. No more similar message will be printed out.
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_SME.N215(36)
 *Verdi* : End of traversing.
 *Verdi* : Begin traversing the MDAs, layer (0).
 *Verdi* : Enable +mda and +packedmda dumping.
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.char_count(25)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.clk(48)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.reset(48)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.chardata(48)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.isstring(48)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.ispattern(48)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.cycle(48)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.strindex(25)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.goldmatch_index(48)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.goldmatch(48)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.valid_reg(48)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.wait_valid(48)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.getmatch(48)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.getmatch_index(48)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.score(25)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.allpass(25)
 *Verdi* : End of traversing the MDAs.
 ----------------------
 -- Simulation Start --
@@ -88,66 +1999,86 @@ FSDB Dumper for IUS, Release Verdi_Q-2020.03, Linux, 02/09/2020
   -- Pattern 3  "^2.2.4$"
        cycle 231, expect(1,06) , get(1,06) >> Pass
   -- Pattern 4  "."
-       cycle 235, expect(1,00) , get(1,00) >> Pass
+       cycle 234, expect(1,00) , get(1,00) >> Pass
   -- Pattern 5  "^.."
-       cycle 23d, expect(1,00) , get(1,00) >> Pass
+       cycle 23c, expect(1,00) , get(1,00) >> Pass
   -- Pattern 6  "^.$"
-       cycle 26f, expect(0,00) , get(0,16) >> Pass
+       cycle 26e, expect(0,00) , get(0,16) >> Pass
   -- Pattern 7  "2.$"
-       cycle 2a1, expect(0,00) , get(0,0c) >> Pass
+       cycle 2a0, expect(0,00) , get(0,0c) >> Pass
   -- Pattern 8  "2x4=7"
-       cycle 2d1, expect(0,00) , get(0,0c) >> Pass
+       cycle 2d0, expect(0,00) , get(0,0c) >> Pass
   -- Pattern 9  "3=6-3"
-       cycle 2f8, expect(0,00) , get(0,0c) >> Pass
+       cycle 2f7, expect(0,00) , get(0,0c) >> Pass
   -- Pattern a  "1.2=2"
-       cycle 31f, expect(0,00) , get(0,0c) >> Pass
+       cycle 31e, expect(0,00) , get(0,0c) >> Pass
   -- Pattern b  "2*2=4"
-       cycle 33b, expect(1,00) , get(1,[1;31m06[0m) >> Wrong index
+       cycle 335, expect(1,00) , get(1,00) >> Pass
   __________________________________________________________
   == String 3  "She sees cheese"
   -- Pattern 1  "ees."
-       cycle 35b, expect(1,05) , get(1,05) >> Pass
+       cycle 355, expect(1,05) , get(1,05) >> Pass
   -- Pattern 2  "ees.$"
-       cycle 37b, expect(1,0b) , get(1,0b) >> Pass
+       cycle 375, expect(1,0b) , get(1,0b) >> Pass
   -- Pattern 3  "e..se"
-       cycle 3b6, expect(0,00) , get(0,0b) >> Pass
+       cycle 3b0, expect(0,00) , get(0,0b) >> Pass
   -- Pattern 4  "e..ee$"
-       cycle 3f4, expect(0,00) , get(0,02) >> Pass
+       cycle 3ee, expect(0,00) , get(0,02) >> Pass
   -- Pattern 5  "^ees*"
-       cycle 423, expect(0,00) , get(0,02) >> Pass
+       cycle 41d, expect(0,00) , get(0,02) >> Pass
   -- Pattern 6  "hee*se"
-       cycle 454, expect(1,0a) , get(1,0a) >> Pass
+       cycle 438, expect(1,0a) , get(1,0a) >> Pass
   -- Pattern 7  "he.s"
-       cycle 45f, expect(1,01) , get(1,01) >> Pass
+       cycle 443, expect(1,01) , get(1,01) >> Pass
   -- Pattern 8  "*see$"
-       cycle 482, expect(0,00) , get(0,01) >> Pass
+       cycle 466, expect(0,00) , get(0,01) >> Pass
   -- Pattern 9  "se*ce"
-       cycle 4cc, expect(0,00) , get(0,0d) >> Pass
+       cycle 479, expect(0,00) , get(0,04) >> Pass
   __________________________________________________________
   == String 4  "But she said the butter's bitter"
   -- Pattern 1  "sa*said"
-       cycle 525, expect(0,00) , get(0,0d) >> Pass
+       cycle 4da, expect(0,00) , get(0,04) >> Pass
   -- Pattern 2  "b*tter"
-       cycle 544, expect(1,11) , get(1,11) >> Pass
+       cycle 4fa, expect(1,11) , get(1,11) >> Pass
   -- Pattern 3  "b*tter$"
-       cycle 56e, expect(1,11) , get([1;31m0,11[0m) >> Fail
+       cycle 51c, expect(1,11) , get(1,11) >> Pass
   -- Pattern 4  "ut*r"
-       cycle 58b, expect(1,01) , get(1,01) >> Pass
+       cycle 53a, expect(1,01) , get(1,01) >> Pass
   -- Pattern 5  "ut*tted"
-       cycle 5ca, expect(0,00) , get(0,12) >> Pass
+       cycle 55d, expect(0,00) , get(0,01) >> Pass
   -- Pattern 6  "^ut*tter"
-       cycle 5f7, expect(0,00) , get(0,12) >> Pass
+       cycle 58a, expect(0,00) , get(0,01) >> Pass
   -- Pattern 7  "*tered"
-       cycle 61a, expect(0,00) , get(0,12) >> Pass
+       cycle 5ad, expect(0,00) , get(0,01) >> Pass
   __________________________________________________________
   == String 5  "He threw three free throws"
   -- Pattern 1  "thr*the$"
-       cycle 678, expect(0,00) , get(0,12) >> Pass
+       cycle 63e, expect(0,00) , get(0,01) >> Pass
   -- Pattern 2  "^thro*th"
---------------------------------------------------
--- Failed waiting valid signal, Simulation STOP --
---------------------------------------------------
-Simulation complete via $finish(1) at time 20000010 NS + 0
-./tb_term.sv:70         $finish;
+       cycle 674, expect(0,00) , get(0,14) >> Pass
+  -- Pattern 3  ".ree th"
+       cycle 69d, expect(1,0f) , get(1,0f) >> Pass
+  -- Pattern 4  ".ree  fr"
+       cycle 6d3, expect(0,00) , get(0,0f) >> Pass
+  -- Pattern 5  ".ree *re"
+       cycle 6f4, expect(1,0a) , get(1,0a) >> Pass
+  -- Pattern 6  "re. thr"
+       cycle 709, expect(1,05) , get(1,05) >> Pass
+  -- Pattern 7  "ee*ee fr"
+       cycle 761, expect(0,00) , get(0,05) >> Pass
+  -- Pattern 8  "ee*ee th"
+       cycle 786, expect(1,0c) , get(1,0c) >> Pass
+  -- Pattern 9  "re*ee.$"
+       cycle 804, expect(0,00) , get(0,0c) >> Pass
+  -- Pattern a  "^...$"
+       cycle 845, expect(0,00) , get(0,1b) >> Pass
+  -- Pattern b  "^....$"
+       cycle 874, expect(1,0f) , get(1,0f) >> Pass
+----------------------------------
+-- Simulation finish, ALL PASS  --
+-- cycle =2165 , Score =100       --
+----------------------------------
+Simulation complete via $finish(1) at time 43300 NS + 0
+./tb_term.sv:201                     $finish;
 ncsim> exit
-TOOL:	ncverilog	15.20-s039: Exiting on Feb 24, 2022 at 00:00:43 CST  (total: 00:00:04)
+TOOL:	ncverilog	15.20-s039: Exiting on Feb 24, 2022 at 17:59:27 CST  (total: 00:00:04)

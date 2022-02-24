@@ -1,0 +1,3 @@
+define LIB_MAP ( $LIB_MAP \
+, ../../../tsmc13_neg.v => tsmc13_neg \
+)

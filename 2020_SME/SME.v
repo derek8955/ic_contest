@@ -23,12 +23,12 @@ reg valid;
 reg [7:0] str[0:31], pat[0:7];
 reg [5:0] idx;
 reg [4:0] counter_str, counter_comp_str;
-reg [3:0] counter_pat, counter_comp_pat;
+reg [3:0] counter_pat, counter_comp_pat, counter_comp_pat_temp;
 reg [4:0] str_idx, star_occur;
 reg locate_valid;
 reg [2:0] compare_valid;
 wire fn_input;
-reg fail;
+reg fail, fail_temp;
 reg valid_temp; // Delay one clk
 
 //================================================================
@@ -75,10 +75,13 @@ begin
 		else compare_valid = 1'd0;
 	end
 	STAR:begin end
-	DOT: compare_valid = (!fail&&fn_input&&counter_comp_pat != counter_pat)? 1'd1:1'd0;
+	DOT: 
+	begin
+		compare_valid = ( !fail && fn_input && counter_comp_pat != counter_pat && pat[1] == str[counter_comp_str+5'd1] )? 1'd1:1'd0;		
+	end
 	default:
 	begin
-		compare_valid = (!fail&&fn_input&&counter_comp_pat != counter_pat&&pat[0]==str[counter_comp_str])? 1'd1:1'd0;
+		compare_valid = ( !fail && fn_input && counter_comp_pat != counter_pat && pat[0]==str[counter_comp_str] )? 1'd1:1'd0;
 	end
 	endcase
 end
@@ -93,32 +96,44 @@ end
 //str_idx
 always@( * )
 begin
-	if( pat[0] == HEAD || pat[0] == STAR || pat[0] == DOT ) 
+	if( pat[0] == HEAD ) 
 	begin
-		if( counter_comp_str == 5'd0 && counter_comp_pat == 3'd0 ) str_idx = 5'd0;
-		else str_idx = counter_comp_str + counter_comp_pat - 1'd1;
+		if( counter_comp_str == 5'd0 && counter_comp_pat == 4'd0 ) str_idx = 5'd0;
+		else 
+		begin
+			if( pat[counter_comp_pat-4'd1] == STAR ) 
+				str_idx = counter_comp_str + counter_comp_pat + star_occur -1'd2 ;
+			else 
+				str_idx = counter_comp_str + counter_comp_pat - 1'd1;
+		end
 	end	
-	else str_idx = counter_comp_str + counter_comp_pat + star_occur ;
+	else 
+	begin
+		if( pat[counter_comp_pat-4'd1] == STAR ) str_idx = counter_comp_str + counter_comp_pat + star_occur -1'd1 ;
+		else str_idx = counter_comp_str + counter_comp_pat ;
+	end
 end
 
 //counter_comp_pat
 always@( posedge clk or posedge reset )
 begin
-	if( reset ) counter_comp_pat <= 3'd0;
-	else if( locate_valid ) counter_comp_pat <= 3'd0;
-	else if( compare_valid && fail == 1'd0 ) 
+	if( reset ) counter_comp_pat <= 4'd0;
+	else if( locate_valid ) counter_comp_pat <= 4'd0;
+	else if( str_idx == 5'd31 ) counter_comp_pat <= 4'd0;
+	else if( compare_valid ) 
 	begin
-		if( pat[counter_comp_pat-3'd1] == STAR && pat[counter_comp_pat]!=str[str_idx]) counter_comp_pat <= counter_comp_pat;
-		else counter_comp_pat <= counter_comp_pat + 3'd1;
+		if( pat[counter_comp_pat-4'd1] == STAR ) counter_comp_pat <= counter_comp_pat;
+		else counter_comp_pat <= counter_comp_pat + 4'd1;
 	end
-	else counter_comp_pat <= 3'd0;
+	else counter_comp_pat <= 4'd0;
 end
 
 //counter_comp_str
 always@( posedge clk or posedge reset )
 begin
 	if( reset ) counter_comp_str <= 5'd0;
-	else if( valid )counter_comp_str <= 5'd0;
+	else if( valid ) counter_comp_str <= 5'd0;
+	else if( str_idx == 5'd31 ) counter_comp_str <= counter_comp_str +5'd1;
 	else if( pat[0]==str[counter_comp_str] || pat[0]==HEAD || pat[0] == DOT || pat[0] ==STAR ) // STOP counting
 	begin
 		if( fail || locate_valid ) counter_comp_str <= counter_comp_str + 5'd1;
@@ -132,18 +147,31 @@ always@( posedge clk or posedge reset )
 begin
 	if( reset ) star_occur <= 5'd0;
 	else if( locate_valid ) star_occur <= 5'd0;
-	else if( compare_valid && pat[counter_comp_pat-3'd1] == STAR && pat[counter_comp_pat]!=str[str_idx] ) star_occur <= star_occur + 5'd1;
+	else if( str_idx == 5'd31 ) star_occur <= 5'd0;
+	else if( compare_valid && pat[counter_comp_pat-4'd1] == STAR && pat[counter_comp_pat] != str[str_idx] )
+		star_occur <= star_occur + 5'd1;
+	else if( fail_temp ) star_occur <= star_occur + 5'd1;
 end
 
-//fail
+//counter_comp_pat_temp
+always@( posedge clk or posedge reset )
+begin
+	if( reset ) counter_comp_pat_temp <= 4'd0;
+	else if( fail_temp ) counter_comp_pat_temp <= 4'd0;
+	else if( compare_valid && pat[counter_comp_pat-4'd1] == STAR && pat[counter_comp_pat] == str[str_idx] ) 
+		counter_comp_pat_temp <= counter_comp_pat_temp + 4'd1;
+end
+
+//fail 
 always@( posedge clk or posedge reset )
 begin
 	if( reset ) fail <= 1'd0;
 	else if( fail ) fail <= 1'd0;
+	else if( counter_comp_pat_temp == counter_pat - counter_comp_pat ) fail <= 1'd0;
 	else if( compare_valid )
 	begin
 		case( pat[counter_comp_pat] ) 
-		str[str_idx]: fail <= 1'd0;
+		str[str_idx]: if( pat[counter_comp_pat-4'd1] != STAR ) fail <= 1'd0;
 		HEAD: fail <= 1'd0;		
 		STAR: fail <= 1'd0;
 		DOT: fail <= 1'd0;
@@ -152,8 +180,23 @@ begin
 			if( pat[0] == HEAD ) fail <= ( str[str_idx] == SPACE )? 1'd0 : 1'd1 ;
 			else fail <= ( str[str_idx] == SPACE )? 1'd0 : 1'd1 ;
 		end
-		default: fail <= ( pat[counter_comp_pat-3'd1] == STAR )?1'd0 : 1'd1;
+		default: if( pat[counter_comp_pat-4'd1] != STAR ) fail <= 1'd1;	
 		endcase
+	end
+end
+
+//fail_temp
+always@( posedge clk or posedge reset )
+begin
+	if( reset ) fail_temp <= 1'd0;
+	else if( fail_temp ) fail_temp <= 1'd0;
+	else if( compare_valid && pat[counter_comp_pat] == str[str_idx] )
+	begin
+		if( counter_comp_pat_temp == counter_pat - counter_comp_pat ) fail_temp <= 1'd0;
+		else if( str[str_idx+counter_comp_pat_temp]!=pat[counter_comp_pat+counter_comp_pat_temp] ) 
+		begin
+			if( pat[counter_comp_pat+counter_comp_pat_temp] != END ) fail_temp <= 1'd1;
+		end
 	end
 end
 
@@ -196,15 +239,23 @@ end
 always@( posedge clk or posedge reset )
 begin
 	if( reset )	match <= 1'd0;
+	else if( fn_input && counter_pat == 4'd1 && pat[0] == DOT ) match <= 1'd1;
 	else if( counter_comp_str == (6'd33 - counter_pat) ) match <= 1'd0;
-	else if( fn_input && counter_comp_pat == counter_pat ) match <= !fail;
+	else if( fn_input && pat[counter_comp_pat-1] == STAR && counter_comp_pat_temp == counter_pat-counter_comp_pat) 
+		match <= !fail_temp;
+	else if( fn_input && counter_comp_pat == counter_pat ) 
+		match <= !fail;
 end
 
 //match_index
 always@( posedge clk or posedge reset )
 begin
 	if( reset ) match_index <= 5'd0;
-	else if( fn_input && counter_comp_pat == counter_pat ) match_index <= counter_comp_str;
+	else if( fn_input && counter_pat == 4'd1 && pat[0] == DOT ) match_index <= 5'd0;
+	else if( fn_input && pat[counter_comp_pat-1] == STAR && counter_comp_pat_temp == counter_pat-counter_comp_pat)  
+		match_index <= counter_comp_str;
+	else if( fn_input && counter_comp_pat == counter_pat ) 
+		match_index <= counter_comp_str;
 end
 
 //valid_temp
@@ -212,7 +263,9 @@ always@( posedge clk or posedge reset )
 begin
 	if( reset ) valid_temp <= 1'd0;
 	else if( valid_temp ) valid_temp <= 1'd0; //limit valid_temp signal to one clock cycle
+	else if( fn_input &&  counter_pat == 4'd1 && pat[0] == DOT ) valid_temp <= 1'd1;	
 	else if( counter_comp_str == (6'd33 - counter_pat) ) valid_temp <= 1'd1;
+	else if( fn_input && pat[counter_comp_pat-1] == STAR && counter_comp_pat_temp == counter_pat-counter_comp_pat && fail == 1'd0 ) valid_temp <= 1'd1;
 	else if( fn_input && counter_comp_pat == counter_pat && fail == 1'd0 ) valid_temp <= 1'd1;
 	else valid_temp <= 1'd0;
 end

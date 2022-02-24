@@ -3,5 +3,7 @@
 // Do not modify this file
 //
 tb_term.sv
-SME.v
-+access+r
+SME_syn.v
+-v
+tsmc13_neg.v
++define+SDF
