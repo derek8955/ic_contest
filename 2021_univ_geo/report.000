@@ -1,0 +1,17 @@
+
+FTP account:                       Exxxxx
+
+Level:                             A/B/C/D
+Object pass number :               50
+Synthesis area:                    20000
+
+--- RTL category---
+HDL simulator :                    ncverilog/irun/vcs/vsim/... 
+RTL filename :                     geofence.v            
+
+--- Pre-layout gate-level ---
+gate-levelfilename:                geofence_syn.v  
+gate-level sdf filename:           geofence_syn.sdf        
+
+-----(annotation)--------------------------------------------------------
+ (optional, write down anything that you want grader know)

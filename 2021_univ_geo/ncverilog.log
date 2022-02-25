@@ -1,0 +1,143 @@
+ncverilog: 15.20-s039: (c) Copyright 1995-2017 Cadence Design Systems, Inc.
+TOOL:	ncverilog	15.20-s039: Started on Feb 25, 2022 at 15:08:30 CST
+ncverilog
+	tb.sv
+	geofence.v
+Recompiling... reason: file './geofence.v' is newer than expected.
+	expected: Fri Feb 25 15:07:26 2022
+	actual:   Fri Feb 25 15:08:26 2022
+file: geofence.v
+	module worklib.geofence:v
+		errors: 0, warnings: 0
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+ncelab: *W,DSEMEL: This SystemVerilog design will be simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.geofence:v <0x0b4ad717>
+			streams:   8, words:  3323
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                  Instances  Unique
+		Modules:                  2       2
+		Registers:               25      25
+		Scalar wires:             4       -
+		Vectored wires:           4       -
+		Always blocks:           11      11
+		Initial blocks:           8       8
+		Cont. assignments:        0       2
+		Pseudo assignments:       3       3
+		Simulation timescale:  10ps
+	Writing initial simulation snapshot: worklib.testfixture:sv
+Loading snapshot worklib.testfixture:sv .................... Done
+ncsim: *W,DSEM2009: This SystemVerilog design is simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+*Verdi* Loading libsscore_ius152.so
+ncsim> source /usr/cad/cadence/INCISIV/cur/tools/inca/files/ncsimrc
+ncsim> run
+FSDB Dumper for IUS, Release Verdi_Q-2020.03, Linux, 02/09/2020
+(C) 1996 - 2020 by Synopsys, Inc.
+*Verdi* FSDB WARNING: The FSDB file already exists. Overwriting the FSDB file may crash the programs that are using this file.
+*Verdi* : Create FSDB file 'geofence.fsdb'
+*Verdi* : Begin traversing the scopes, layer (0).
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.objnum(25)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.obj_isin(25)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.charcount(25)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.pass(25)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.fail(25)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.npoint(48)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.X(48)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.Y(48)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.clk(48)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.reset(48)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.cycle(48)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.valid_reg(48)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.wait_valid(48)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.get_inside(48)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.ap_num(25)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.valid(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.is_inside(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence.valid(48)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence.is_inside(48)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence.state(48)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence.nx_state(48)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence.x(116)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence.y(116)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence.counter_IN(48)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence.counter_RESULT(48)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence.clk(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence.reset(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence.X(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence.Y(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence.Ax(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence.Bx(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence.Ay(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence.By(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence.AxBy(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence.BxAy(36)
+*Verdi* : End of traversing.
+*Verdi* : Begin traversing the MDAs, layer (0).
+*Verdi* : Enable +mda and +packedmda dumping.
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.objnum(25)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.obj_isin(25)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.charcount(25)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.pass(25)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.fail(25)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.npoint(48)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.X(48)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.Y(48)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.clk(48)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.reset(48)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.cycle(48)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.valid_reg(48)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.wait_valid(48)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.get_inside(48)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.ap_num(25)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.valid(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.is_inside(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence.valid(48)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence.is_inside(48)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence.state(48)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence.nx_state(48)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence.x(116)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence.y(116)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence.counter_IN(48)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence.counter_RESULT(48)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence.clk(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence.reset(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence.X(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence.Y(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence.Ax(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence.Bx(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence.Ay(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence.By(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence.AxBy(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence.BxAy(36)
+*Verdi* : End of traversing the MDAs.
+----------------------
+-- Simulation Start --
+----------------------
+   0   0   0   0   0   0   0
+Scenario1(in):     X     Y
+        Object:   220,  320
+ 220   0   0   0   0   0   0
+           AP1:   103,  340
+ 220 103   0   0   0   0   0
+           AP2:   755,  510
+ 220 103 755   0   0   0   0
+           AP3:   103,   50
+ 220 103 755 103   0   0   0
+           AP4:   982,  280
+ 220 103 755 103 982   0   0
+           AP5:   298,  560
+ 220 103 755 103 982 298   0
+           AP6:   710,   50
+ 220 103 755 103 982 298 710
+ 220 103 755 103 982 298 710
+--------------------------------------------------
+-- Failed waiting valid signal, Simulation STOP --
+--------------------------------------------------
+Simulation complete via $finish(1) at time 30000015 NS + 0
+./tb.sv:65         $finish;
+ncsim> exit
+TOOL:	ncverilog	15.20-s039: Exiting on Feb 25, 2022 at 15:08:33 CST  (total: 00:00:03)
