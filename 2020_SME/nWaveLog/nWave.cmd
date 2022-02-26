@@ -283,3 +283,4 @@ wvReloadFile -win $_nWave1
 wvSetCursor -win $_nWave1 2971084.971809 -snap {("G4" 1)}
 wvSetCursor -win $_nWave1 3316088.938599 -snap {("G1" 2)}
 wvSetCursor -win $_nWave1 3322962.157081 -snap {("G2" 1)}
+wvExit
