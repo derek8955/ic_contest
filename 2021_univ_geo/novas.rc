@@ -326,7 +326,7 @@ PaperSize = A4 - 210x297 (mm)
 ColorPrint = FALSE
 [QtDialog]
 openFileDlg = 491,206,602,483
-qWaveSignalDialog = 448,337,800,479
+qWaveSignalDialog = 448,356,800,479
 [Session Cache]
 1 = string (session file name)
 2 = string (session file name)
@@ -540,8 +540,8 @@ waveform_vertical_scroll_bar = TRUE
 scope_to_save_with_macro
 open_file_dir
 open_rc_file_dir
-getSignalForm = 448 337 800 479 164 381 390 89
-viewPort = -16 -16 1536 801 229 65
+getSignalForm = 448 356 800 479 164 381 390 89
+viewPort = 0 -16 1536 801 229 65
 signalSpacing = 5
 digitalSignalHeight = 15
 analogSignalHeight = 98

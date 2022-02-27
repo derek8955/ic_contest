@@ -1,0 +1,102 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : geofence
+Version: Q-2019.12
+Date   : Sun Feb 27 10:18:12 2022
+****************************************
+
+Operating Conditions: slow   Library: slow
+Wire Load Model Mode: top
+
+  Startpoint: counter_RESULT_reg[1]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: y_reg[4][0]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  geofence           tsmc13_wl10           slow
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.50       0.50
+  counter_RESULT_reg[1]/CK (DFFRX1)                       0.00       0.50 r
+  counter_RESULT_reg[1]/QN (DFFRX1)                       0.64       1.14 f
+  U1147/Y (NOR2X1)                                        0.75       1.89 r
+  U1329/Y (XNOR2X2)                                       0.64       2.53 r
+  U1821/Y (NOR2X1)                                        0.32       2.86 f
+  U1230/Y (NOR2BX1)                                       0.30       3.16 f
+  U1229/Y (CLKBUFX3)                                      0.87       4.03 f
+  U1857/Y (AOI222XL)                                      0.85       4.88 r
+  U1858/Y (NAND2X1)                                       0.49       5.37 f
+  sub_104/B[1] (geofence_DW01_sub_3)                      0.00       5.37 f
+  sub_104/U4/Y (CLKINVX1)                                 0.24       5.61 r
+  sub_104/U2_1/CO (ADDFX2)                                0.51       6.11 r
+  sub_104/U2_2/CO (ADDFXL)                                0.46       6.57 r
+  sub_104/U2_3/CO (ADDFXL)                                0.50       7.06 r
+  sub_104/U2_4/CO (ADDFXL)                                0.50       7.56 r
+  sub_104/U2_5/CO (ADDFXL)                                0.50       8.06 r
+  sub_104/U2_6/CO (ADDFXL)                                0.50       8.55 r
+  sub_104/U2_7/CO (ADDFXL)                                0.50       9.05 r
+  sub_104/U2_8/CO (ADDFXL)                                0.50       9.55 r
+  sub_104/U2_9/S (ADDFXL)                                 1.06      10.61 r
+  sub_104/DIFF[9] (geofence_DW01_sub_3)                   0.00      10.61 r
+  mult_135/a[9] (geofence_DW_mult_tc_3)                   0.00      10.61 r
+  mult_135/U444/Y (XOR2X1)                                0.45      11.06 r
+  mult_135/U282/Y (NAND2X1)                               0.17      11.23 f
+  mult_135/U281/Y (CLKBUFX3)                              0.59      11.82 f
+  mult_135/U398/Y (OAI22XL)                               0.51      12.33 r
+  mult_135/U50/S (ADDHXL)                                 0.68      13.01 r
+  mult_135/U48/S (CMPR42X1)                               0.88      13.89 f
+  mult_135/U16/CO (ADDFXL)                                0.68      14.56 f
+  mult_135/U15/CO (ADDFXL)                                0.53      15.09 f
+  mult_135/U14/CO (ADDFXL)                                0.53      15.62 f
+  mult_135/U13/CO (ADDFXL)                                0.53      16.14 f
+  mult_135/U12/CO (ADDFXL)                                0.53      16.67 f
+  mult_135/U11/CO (ADDFXL)                                0.53      17.20 f
+  mult_135/U10/CO (ADDFXL)                                0.53      17.73 f
+  mult_135/U9/CO (ADDFXL)                                 0.53      18.25 f
+  mult_135/U8/S (ADDFXL)                                  0.57      18.82 r
+  mult_135/product[17] (geofence_DW_mult_tc_3)            0.00      18.82 r
+  gt_135/A[17] (geofence_DW_cmp_0)                        0.00      18.82 r
+  gt_135/U60/Y (CLKINVX1)                                 0.32      19.15 f
+  gt_135/U124/Y (OAI222XL)                                0.82      19.97 r
+  gt_135/U123/Y (OAI222XL)                                0.65      20.62 f
+  gt_135/U122/Y (OAI222XL)                                0.95      21.57 r
+  gt_135/U121/Y (OAI222XL)                                0.64      22.21 f
+  gt_135/U80/Y (AOI2BB2X1)                                0.46      22.67 f
+  gt_135/U79/Y (OAI221XL)                                 0.32      22.99 r
+  gt_135/GE_LT_GT_LE (geofence_DW_cmp_0)                  0.00      22.99 r
+  U1163/Y (NAND2X1)                                       0.56      23.55 f
+  U1231/Y (NAND3BX1)                                      0.49      24.04 f
+  U1151/Y (OAI222XL)                                      0.92      24.96 r
+  U1233/Y (CLKINVX1)                                      0.32      25.28 f
+  U1232/Y (BUFX4)                                         0.50      25.78 f
+  U1192/Y (NOR2X1)                                        0.43      26.21 r
+  U1203/Y (NAND2BX1)                                      0.61      26.81 f
+  U1202/Y (CLKBUFX3)                                      0.78      27.60 f
+  U1330/Y (OAI221XL)                                      0.65      28.25 r
+  y_reg[4][0]/D (DFFRX1)                                  0.00      28.25 r
+  data arrival time                                                 28.25
+
+  clock clk (rise edge)                                  30.00      30.00
+  clock network delay (ideal)                             0.50      30.50
+  clock uncertainty                                      -0.10      30.40
+  y_reg[4][0]/CK (DFFRX1)                                 0.00      30.40 r
+  library setup time                                     -0.30      30.10
+  data required time                                                30.10
+  --------------------------------------------------------------------------
+  data required time                                                30.10
+  data arrival time                                                -28.25
+  --------------------------------------------------------------------------
+  slack (MET)                                                        1.85
+
+
+1
