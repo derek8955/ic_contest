@@ -6,11 +6,7 @@
 ./INCA_libs/irun.lnx86.15.20.nc
 -RUNMODE
 tb_term.sv
-SME_syn.v
--VFILE
-tsmc13_neg.v
--DEFINE
-SDF
+SME.v
 -CDSLIB
 ./INCA_libs/irun.lnx86.15.20.nc/cdsrun.lib
 -HDLVAR
