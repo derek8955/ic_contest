@@ -1,7 +1,7 @@
 //############################################################################
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 //   2021 IC Contest
-//   univ_cell_based          : geofence
+//   grad_cell_based          : geofence
 //   Author         : Yao-Zhan Xu (xuyaozhan8905@gmail.com)
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 //   File Name   : geofence.v
@@ -10,10 +10,9 @@
 //############################################################################
 module geofence ( 
     // Input signals
-	clk,reset,X,Y,
-    // Output signals	
-	valid,is_inside
-);	
+	clk,reset,X,Y,R,
+    // Output signals		
+	valid,is_inside);
 //================================================================
 //  INPUT AND OUTPUT DECLARATION                         
 //================================================================	
@@ -21,6 +20,7 @@ input clk;
 input reset;
 input [9:0] X;
 input [9:0] Y;
+input [10:0] R;
 output reg valid;
 output reg is_inside;
 
@@ -33,7 +33,7 @@ parameter IDLE = 3'd0, IN = 3'd1, RESULT = 3'd2, IS_INSIDE = 3'd3, DELAY_CLK_1 =
 //  Wires & Registers 
 //================================================================
 reg [2:0] state, nx_state;
-reg [9:0] obj_x, obj_y;
+reg [9:0] obj_x, obj_y, obj_r;
 reg [9:0] x[0:5]; //[x1,x2,x3,x4,x5,x6]
 reg [9:0] y[0:5]; //[y1,y2,y3,y4,y5,y6]
 reg [2:0] counter_IN, counter_INSIDE;
@@ -122,16 +122,12 @@ end
 //  INPUT
 //================================================================
 
-//obj_x, obj_y
-always@( posedge clk or posedge reset )
+//obj_x, obj_y, obj_r
+always@( posedge clk )
 begin
-	if( reset ) 
+	if( state == IDLE || state == DELAY_CLK_2 )
 	begin
-		obj_x <= 10'd0; obj_y <= 10'd0;	
-	end
-	else if( state == IDLE || state == DELAY_CLK_2 )
-	begin
-		obj_x <= X; obj_y <= Y;
+		obj_x <= X; obj_y <= Y; obj_r <= R;
 	end
 end
 
@@ -219,4 +215,6 @@ begin
 end
 
 endmodule
+
+
 

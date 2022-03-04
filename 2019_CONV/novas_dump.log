@@ -23,9 +23,9 @@ HOME=/home/t107360223
 PATH=/usr/cad/mentor/Tessent/cur/bin:/usr/cad/mentor/Catapult/cur//bin:/usr/cad/mentor/calibre/cur/bin:/usr/cad/synopsys/xa/cur/bin:/usr/cad/synopsys/verdi/cur/bin:/usr/cad/synopsys/verdi/cur/nLint/bin:/usr/cad/synopsys/tmax/cur/bin:/usr/bin/X11:/usr/cad/synopsys/coreConsultant/cur/bin:/usr/cad/synopsys/synthesis/cur/amd64/syn/bin:/usr/cad/synopsys/lc/cur/bin:/usr/cad/synopsys/spyglass/cur/SPYGLASS_HOME/bin:/usr/bin/X11:/usr/cad/synopsys/primetime/cur/amd64/syn/bin:/usr/cad/synopsys/formality/cur/bin:/usr/cad/cadence/STRATUS/cur/tools/bin:/usr/cad/cadence/JASPER/cur/bin:/usr/cad/cadence/JASPER/cur/bin:/usr/cad/cadence/JASPER/cur/bin:/usr/cad/cadence/JASPER/cur/bin:/usr/cad/cadence/JASPER/cur/bin:/usr/cad/cadence/INNOVUS/cur/tools/celtic/bin:/usr/cad/cadence/INNOVUS/cur/tools/plato/bin:/usr/cad/cadence/INNOVUS/cur/tools/dfII/bin:/usr/cad/cadence/INNOVUS/cur/tools/bin:/usr/cad/cadence/INNOVUS/cur//tools/tlfUtil/bin:/usr/cad/cadence/GENUS/cur/tools/bin:/usr/cad/cadence/INCISIV/cur/tools/bin:/usr/cad/cadence/INCISIV/cur/tools/vtools/vfault/bin:/usr/cad/cadence/INCISIV/cur/tools/dfII/bin:/bin:/usr/bin:/usr/ucb:/etc:.
 MAIL=/var/spool/mail/t107360223
 SHELL=/bin/tcsh
-SSH_CLIENT=27.247.201.231 64067 22
-SSH_CONNECTION=27.247.201.231 64067 140.124.72.29 22
-SSH_TTY=/dev/pts/0
+SSH_CLIENT=27.51.113.95 54287 22
+SSH_CONNECTION=27.51.113.95 54287 140.124.72.29 22
+SSH_TTY=/dev/pts/3
 TERM=xterm-256color
 SELINUX_ROLE_REQUESTED=
 SELINUX_LEVEL_REQUESTED=
@@ -38,7 +38,7 @@ SHLVL=1
 PWD=/home/t107360223/Desktop/ic_contest/2019_CONV
 GROUP=users
 HOST=islabx6
-REMOTEHOST=27-247-201-231.adsl.fetnet.net
+REMOTEHOST=27-51-113-95.adsl.fetnet.net
 HOSTNAME=islabx6
 LS_COLORS=rs=0:di=38;5;27:ln=38;5;51:mh=44;38;5;15:pi=40;38;5;11:so=38;5;13:do=38;5;5:bd=48;5;232;38;5;11:cd=48;5;232;38;5;3:or=48;5;232;38;5;9:mi=05;48;5;232;38;5;15:su=48;5;196;38;5;15:sg=48;5;11;38;5;16:ca=48;5;196;38;5;226:tw=48;5;10;38;5;16:ow=48;5;10;38;5;21:st=48;5;21;38;5;15:ex=38;5;34:*.tar=38;5;9:*.tgz=38;5;9:*.arj=38;5;9:*.taz=38;5;9:*.lzh=38;5;9:*.lzma=38;5;9:*.tlz=38;5;9:*.txz=38;5;9:*.zip=38;5;9:*.z=38;5;9:*.Z=38;5;9:*.dz=38;5;9:*.gz=38;5;9:*.lz=38;5;9:*.xz=38;5;9:*.bz2=38;5;9:*.tbz=38;5;9:*.tbz2=38;5;9:*.bz=38;5;9:*.tz=38;5;9:*.deb=38;5;9:*.rpm=38;5;9:*.jar=38;5;9:*.rar=38;5;9:*.ace=38;5;9:*.zoo=38;5;9:*.cpio=38;5;9:*.7z=38;5;9:*.rz=38;5;9:*.jpg=38;5;13:*.jpeg=38;5;13:*.gif=38;5;13:*.bmp=38;5;13:*.pbm=38;5;13:*.pgm=38;5;13:*.ppm=38;5;13:*.tga=38;5;13:*.xbm=38;5;13:*.xpm=38;5;13:*.tif=38;5;13:*.tiff=38;5;13:*.png=38;5;13:*.svg=38;5;13:*.svgz=38;5;13:*.mng=38;5;13:*.pcx=38;5;13:*.mov=38;5;13:*.mpg=38;5;13:*.mpeg=38;5;13:*.m2v=38;5;13:*.mkv=38;5;13:*.ogm=38;5;13:*.mp4=38;5;13:*.m4v=38;5;13:*.mp4v=38;5;13:*.vob=38;5;13:*.qt=38;5;13:*.nuv=38;5;13:*.wmv=38;5;13:*.asf=38;5;13:*.rm=38;5;13:*.rmvb=38;5;13:*.flc=38;5;13:*.avi=38;5;13:*.fli=38;5;13:*.flv=38;5;13:*.gl=38;5;13:*.dl=38;5;13:*.xcf=38;5;13:*.xwd=38;5;13:*.yuv=38;5;13:*.cgm=38;5;13:*.emf=38;5;13:*.axv=38;5;13:*.anx=38;5;13:*.ogv=38;5;13:*.ogx=38;5;13:*.aac=38;5;45:*.au=38;5;45:*.flac=38;5;45:*.mid=38;5;45:*.midi=38;5;45:*.mka=38;5;45:*.mp3=38;5;45:*.mpc=38;5;45:*.ogg=38;5;45:*.ra=38;5;45:*.wav=38;5;45:*.axa=38;5;45:*.oga=38;5;45:*.spx=38;5;45:*.xspf=38;5;45:
 CVS_RSH=ssh
@@ -50,7 +50,7 @@ QTDIR=/usr/lib64/qt-3.3
 QTINC=/usr/lib64/qt-3.3/include
 QTLIB=/usr/lib64/qt-3.3/lib
 LD_LIBRARY_PATH=/usr/cad/synopsys/verdi/cur/etc/lib/libstdc++/LINUX64/:/usr/cad/synopsys/verdi/cur/share/PLI/IUS/LINUX:/:/usr/cad/cadence/STRATUS/cur/tools/lib:/usr/cad/cadence/INNOVUS/cur//tools/tlfUtil/lib:/usr/cad/cadence/GENUS/cur/tools/lib:/usr/cad/cadence/INCISIV/cur/tools/lib:/usr/cad/cadence/INCISIV/cur/tools/vtools/vfault/lib:/usr/openwin/lib:/usr/dt/lib:/usr/lib:/usr/local/lib
-LM_LICENSE_FILE=1717@lscic:26585@lscic:5280@lshc:5280@lscic:5280@lsnctu:
+LM_LICENSE_FILE=1717@lshc:26585@lscic:5280@lshc:5280@lsnctu:5280@lsncu:
 ENCOUNTER=/usr/cad/cadence/INNOVUS/cur/tools/fe
 FORMALITY=/usr/cad/synopsys/formality/cur
 PRIMETIME=/usr/cad/synopsys/primetime/cur
@@ -75,13 +75,212 @@ argv[0]=ncverilog
 argv[1]=testfixture.v
 argv[2]=CONV.v
 76 profile - 100
-          CPU/Mem usage: 0.030 sys,  0.020 user,  61.67M sys,  0.00M vm
+          CPU/Mem usage: 0.040 sys,  0.030 user,  61.67M sys,  0.00M vm
 77 VC callback profile - scalar:0 vector:0
-78 Thu Feb 10 12:13:05 2022
+78 Wed Mar  2 16:50:40 2022
 79 pliAppInit
 80 FSDB_GATE is disabled.
 81 Enable Parallel Dumping.
 82 pliAppMiscSet: New Sim Round
 83 pliEntryInit
 84 LIBSSCORE=found /usr/cad/synopsys/verdi/cur/share/PLI/IUS/LINUX/libsscore_ius152.so through $LD_LIBRARY_PATH setting.
-85 Sim process exit
+85 argv[0]: CONV.fsdb
+86 FSDB Dumper for IUS, Release Verdi_Q-2020.03, Linux, 02/09/2020
+87 (C) 1996 - 2020 by Synopsys, Inc.
+88 sps_call_fsdbDumpfile at 0 : /home/t107360223/Desktop/ic_contest/2019_CONV/testfixture.v(78)
+89 argv[0]: CONV.fsdb
+90 *Verdi* FSDB WARNING: The FSDB file already exists. Overwriting the FSDB file may crash the programs that are using this file.
+91 *Verdi* : Create FSDB file 'CONV.fsdb'
+92 sps_call_fsdbDumpvars at 0 : /home/t107360223/Desktop/ic_contest/2019_CONV/testfixture.v(79)
+93 *Verdi* : Begin traversing the scopes, layer (0).
+94 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.L0_MEM0(116)
+95 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.L0_MEM1(116)
+96 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.L1_MEM0(116)
+97 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.L1_MEM1(116)
+98 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.L2_MEM(116)
+99 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.reset(48)
+100 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.clk(48)
+101 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.ready(48)
+102 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.cdata_rd(48)
+103 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.idata(48)
+104 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.p0(25)
+105 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.p1(25)
+106 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.p3(25)
+107 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.p4(25)
+108 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.p2(25)
+109 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.err00(25)
+110 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.err01(25)
+111 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.err10(25)
+112 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.err11(25)
+113 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.err2(25)
+114 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.pat_num(25)
+115 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.check0(48)
+116 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.check1(48)
+117 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.check2(48)
+118 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.cwr(36)
+119 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.crd(36)
+120 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.cdata_wr(36)
+121 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.csel(36)
+122 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.caddr_rd(36)
+123 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.caddr_wr(36)
+124 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.iaddr(36)
+125 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.busy(36)
+126 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_CONV.busy(48)
+127 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_CONV.iaddr(48)
+128 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_CONV.cwr(48)
+129 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_CONV.caddr_wr(48)
+130 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_CONV.cdata_wr(48)
+131 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_CONV.crd(48)
+132 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_CONV.caddr_rd(48)
+133 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_CONV.csel(48)
+134 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_CONV.dir_y(48)
+135 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_CONV.dir_x(48)
+136 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_CONV.x(48)
+137 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_CONV.flagX(48)
+138 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_CONV.flagY(48)
+139 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_CONV.temp(48)
+140 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_CONV.image(116)
+141 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_CONV.register1(116)
+142 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_CONV.register2(116)
+143 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_CONV.register3(116)
+144 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_CONV.register4(116)
+145 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_CONV.result(116)
+146 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_CONV.Kernel0(116)
+147 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_CONV.Kernel1(116)
+148 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_CONV.bias0(48)
+149 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_CONV.bias1(48)
+150 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_CONV.status(48)
+151 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_CONV.status_temp(48)
+152 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_CONV.clk(36)
+153 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_CONV.reset(36)
+154 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_CONV.ready(36)
+155 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_CONV.idata(36)
+156 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_CONV.cdata_rd(36)
+157 *Verdi* : End of traversing.
+158 fsdbDumpvars traverse var: profile - 
+          CPU/Mem usage: 0.050 sys,  0.040 user,  143.81M sys,  0.00M vm
+                   incr: 0.000 sys,  0.010 user,  3.32M sys,  0.00M vm
+                   accu: 0.000 sys,  0.010 user,  3.32M sys,  0.00M vm
+              accu incr: 0.000 sys,  0.010 user,  3.32M sys,  0.00M vm
+
+          Count usage: 0 var,  0 idcode,  0 callback
+                 incr: 0 var,  0 idcode,  0 callback
+                 accu: 0 var,  0 idcode,  0 callback
+            accu incr: 0 var,  0 idcode,  0 callback
+159 VC callback profile - scalar:0 vector:0
+160 Wed Mar  2 16:50:40 2022
+161 fsdbDumpvars: profile - 
+          CPU/Mem usage: 0.050 sys,  0.040 user,  143.94M sys,  0.00M vm
+                   incr: 0.000 sys,  0.000 user,  0.14M sys,  0.00M vm
+                   accu: 0.000 sys,  0.010 user,  3.45M sys,  0.00M vm
+              accu incr: 0.000 sys,  0.000 user,  0.14M sys,  0.00M vm
+
+          Count usage: 0 var,  0 idcode,  0 callback
+                 incr: 0 var,  0 idcode,  0 callback
+                 accu: 0 var,  0 idcode,  0 callback
+            accu incr: 0 var,  0 idcode,  0 callback
+162 VC callback profile - scalar:0 vector:0
+163 Wed Mar  2 16:50:40 2022
+164 sps_call_fsdbDumpMDA at 0 : /home/t107360223/Desktop/ic_contest/2019_CONV/testfixture.v(80)
+165 *Verdi* : Begin traversing the MDAs, layer (0).
+166 *Verdi* : Enable +mda and +packedmda dumping.
+167 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.L0_MEM0(116)
+168 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.L0_MEM1(116)
+169 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.L1_MEM0(116)
+170 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.L1_MEM1(116)
+171 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.L2_MEM(116)
+172 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.reset(48)
+173 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.clk(48)
+174 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.ready(48)
+175 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.cdata_rd(48)
+176 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.idata(48)
+177 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.p0(25)
+178 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.p1(25)
+179 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.p3(25)
+180 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.p4(25)
+181 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.p2(25)
+182 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.err00(25)
+183 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.err01(25)
+184 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.err10(25)
+185 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.err11(25)
+186 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.err2(25)
+187 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.pat_num(25)
+188 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.check0(48)
+189 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.check1(48)
+190 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.check2(48)
+191 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.cwr(36)
+192 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.crd(36)
+193 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.cdata_wr(36)
+194 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.csel(36)
+195 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.caddr_rd(36)
+196 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.caddr_wr(36)
+197 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.iaddr(36)
+198 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.busy(36)
+199 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_CONV.busy(48)
+200 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_CONV.iaddr(48)
+201 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_CONV.cwr(48)
+202 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_CONV.caddr_wr(48)
+203 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_CONV.cdata_wr(48)
+204 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_CONV.crd(48)
+205 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_CONV.caddr_rd(48)
+206 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_CONV.csel(48)
+207 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_CONV.dir_y(48)
+208 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_CONV.dir_x(48)
+209 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_CONV.x(48)
+210 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_CONV.flagX(48)
+211 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_CONV.flagY(48)
+212 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_CONV.temp(48)
+213 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_CONV.image(116)
+214 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_CONV.register1(116)
+215 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_CONV.register2(116)
+216 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_CONV.register3(116)
+217 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_CONV.register4(116)
+218 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_CONV.result(116)
+219 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_CONV.Kernel0(116)
+220 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_CONV.Kernel1(116)
+221 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_CONV.bias0(48)
+222 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_CONV.bias1(48)
+223 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_CONV.status(48)
+224 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_CONV.status_temp(48)
+225 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_CONV.clk(36)
+226 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_CONV.reset(36)
+227 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_CONV.ready(36)
+228 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_CONV.idata(36)
+229 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_CONV.cdata_rd(36)
+230 *Verdi* : End of traversing the MDAs.
+231 fsdbDumpMDA traverse var: profile - 
+          CPU/Mem usage: 0.050 sys,  0.110 user,  145.13M sys,  0.00M vm
+                   incr: 0.000 sys,  0.070 user,  1.19M sys,  0.00M vm
+                   accu: 0.000 sys,  0.070 user,  1.19M sys,  0.00M vm
+              accu incr: 0.000 sys,  0.070 user,  1.19M sys,  0.00M vm
+
+          Count usage: 16384 var,  16384 idcode,  16390 callback
+                 incr: 16384 var,  16384 idcode,  16390 callback
+                 accu: 16384 var,  16384 idcode,  16390 callback
+            accu incr: 16384 var,  16384 idcode,  16390 callback
+232 VC callback profile - scalar:0 vector:0
+233 Wed Mar  2 16:50:40 2022
+234 fsdbDumpMDA: profile - 
+          CPU/Mem usage: 0.050 sys,  0.130 user,  146.74M sys,  0.00M vm
+                   incr: 0.000 sys,  0.020 user,  1.61M sys,  0.00M vm
+                   accu: 0.000 sys,  0.090 user,  2.80M sys,  0.00M vm
+              accu incr: 0.000 sys,  0.020 user,  1.61M sys,  0.00M vm
+
+          Count usage: 16384 var,  16384 idcode,  16390 callback
+                 incr: 0 var,  0 idcode,  0 callback
+                 accu: 16384 var,  16384 idcode,  16390 callback
+            accu incr: 0 var,  0 idcode,  0 callback
+235 VC callback profile - scalar:0 vector:16384
+236 Wed Mar  2 16:50:40 2022
+237 End of simulation at 39817000
+238 VC callback profile - scalar:0 vector:32768
+239 Wed Mar  2 16:50:40 2022
+240 Begin FSDB profile info:
+241 FSDB Writer : bc1(0) bcn(32768) mtf/stf(0/0)
+FSDB Writer elapsed time : flush(0.132892) io wait(0.000000) theadpool wait(0.000000)
+FSDB Writer cpu time : MT Compression : 0
+242 End FSDB profile info
+243 Parallel profile    -  Flush:4 Expand:0 ProduceWait:0 ConsumerWait:0 BlockUsed:1
+244                        ProduceTime:0.262615791 ConsumerTime:0.000000000 Buffer:64MB
+245 SimExit
+246 Sim process exit
