@@ -1,0 +1,18 @@
+//
+// File created by:  ncverilog
+// Do not modify this file
+//
+-XLMODE
+./INCA_libs/irun.lnx86.15.20.nc
+-RUNMODE
+testfixture2.v
+STI_DAC.v
+-CDSLIB
+./INCA_libs/irun.lnx86.15.20.nc/cdsrun.lib
+-HDLVAR
+./INCA_libs/irun.lnx86.15.20.nc/hdlrun.var
+-MESSAGES
+-UPDATE
+-XLLIBSTORE
+./INCA_libs/irun.lnx86.15.20.nc/xllibs
+-ALLOWUNBOUND

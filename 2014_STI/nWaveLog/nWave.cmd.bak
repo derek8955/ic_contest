@@ -1,0 +1,18 @@
+wvSetPosition -win $_nWave1 {("G1" 0)}
+wvOpenFile -win $_nWave1 \
+           {/home/t107360223/Desktop/ic_contest/2014_STI/STI_DAC.fsdb}
+wvGetSignalOpen -win $_nWave1
+wvGetSignalSetScope -win $_nWave1 "/testfixture1"
+wvSetFileTimeRange -win $_nWave1 -time_unit 10p 0 2196750
+wvGetSignalOpen -win $_nWave1
+wvDisplayGridCount -win $_nWave1 -off
+wvGetSignalClose -win $_nWave1
+wvReloadFile -win $_nWave1
+wvSetCursor -win $_nWave1 140676.130851
+wvGetSignalOpen -win $_nWave1
+wvGetSignalSetScope -win $_nWave1 "/testfixture1/u_rtl/dac"
+wvDisplayGridCount -win $_nWave1 -off
+wvGetSignalClose -win $_nWave1
+wvReloadFile -win $_nWave1
+wvGetSignalOpen -win $_nWave1
+wvExit

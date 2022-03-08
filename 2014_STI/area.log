@@ -1,0 +1,30 @@
+ 
+****************************************
+Report : area
+Design : STI_DAC
+Version: Q-2019.12
+Date   : Tue Mar  8 22:37:15 2022
+****************************************
+
+Library(s) Used:
+
+    slow (File: /home/cell_lib/CBDK_IC_Contest_v2.1/SynopsysDC/db/slow.db)
+
+Number of ports:                          103
+Number of nets:                           410
+Number of cells:                          296
+Number of combinational cells:            241
+Number of sequential cells:                53
+Number of macros/black boxes:               0
+Number of buf/inv:                         58
+Number of references:                       2
+
+Combinational area:               2114.960420
+Buf/Inv area:                      531.286212
+Noncombinational area:            1714.373947
+Macro/Black Box area:                0.000000
+Net Interconnect area:           38966.860962
+
+Total cell area:                  3829.334367
+Total area:                      42796.195329
+1

@@ -1,0 +1,56 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : STI_DAC
+Version: Q-2019.12
+Date   : Tue Mar  8 22:37:15 2022
+****************************************
+
+Operating Conditions: slow   Library: slow
+Wire Load Model Mode: top
+
+  Startpoint: pi_msb (input port clocked by clk)
+  Endpoint: sti/state_reg[0]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  STI_DAC            tsmc13_wl10           slow
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.50       0.50
+  input external delay                     5.00       5.50 f
+  pi_msb (in)                              0.05       5.55 f
+  sti/pi_msb (STI)                         0.00       5.55 f
+  sti/U71/Y (NOR3X1)                       0.29       5.84 r
+  sti/U70/Y (NAND3X1)                      0.36       6.21 f
+  sti/U64/Y (OAI31XL)                      0.39       6.59 r
+  sti/U63/Y (NAND2X1)                      0.21       6.80 f
+  sti/U62/Y (MXI2X1)                       0.27       7.07 r
+  sti/U57/Y (MXI3X1)                       0.52       7.59 f
+  sti/U56/Y (AOI21X1)                      0.28       7.87 r
+  sti/U54/Y (OAI221XL)                     0.29       8.16 f
+  sti/state_reg[0]/D (DFFRX1)              0.00       8.16 f
+  data arrival time                                   8.16
+
+  clock clk (rise edge)                   10.00      10.00
+  clock network delay (ideal)              0.50      10.50
+  clock uncertainty                       -0.10      10.40
+  sti/state_reg[0]/CK (DFFRX1)             0.00      10.40 r
+  library setup time                      -0.27      10.13
+  data required time                                 10.13
+  -----------------------------------------------------------
+  data required time                                 10.13
+  data arrival time                                  -8.16
+  -----------------------------------------------------------
+  slack (MET)                                         1.98
+
+
+1
