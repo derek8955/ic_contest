@@ -1,6 +1,6 @@
 #@ # 
 #@ # Running dc_shell Version Q-2019.12 for linux64 -- Nov 26, 2019
-#@ # Date:   Wed Mar  9 18:02:21 2022
+#@ # Date:   Wed Mar  9 18:28:45 2022
 #@ # Run by: t107360223@islabx6
 #@ 
 
@@ -6732,7 +6732,7 @@ source -echo -verbose /home/t107360223/Desktop/ic_contest/2014_STI/dc_syn.tcl
 #@ # -- Starting source /home/t107360223/Desktop/ic_contest/2014_STI/dc_syn.tcl
 
 #@ #Read All Files
-#@ read_file -format verilog ./STI_DAC.v 
+#@ read_file -format verilog ./STI_DAC_2.v 
 #@ current_design STI_DAC
 #@ link
 #@ 

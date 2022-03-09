@@ -1,5 +1,5 @@
 ncverilog: 15.20-s039: (c) Copyright 1995-2017 Cadence Design Systems, Inc.
-TOOL:	ncverilog	15.20-s039: Started on Mar 09, 2022 at 18:07:10 CST
+TOOL:	ncverilog	15.20-s039: Started on Mar 09, 2022 at 18:30:48 CST
 ncverilog
 	testfixture2.v
 	STI_DAC_syn.v
@@ -7,106 +7,129 @@ ncverilog
 	tsmc13_neg.v
 	+define+SDF
 file: STI_DAC_syn.v
-	module worklib.STI_DAC_DW01_inc_1_DW01_inc_2:v
-		errors: 0, warnings: 0
 	module worklib.STI_DAC:v
 		errors: 0, warnings: 0
 		Caching library 'worklib' ....... Done
 		Caching library 'tsmc13_neg' ....... Done
 	Elaborating the design hierarchy:
-  DFFRX1 \delay_buffer_reg[4]  ( .D(n169), .CK(clk), .RN(n413), .Q(
-                             |
-ncelab: *W,CUVWSP (./STI_DAC_syn.v,103|29): 1 output port was not connected:
-ncelab: (./tsmc13_neg.v,18307): QN
-
-  DFFRX1 \delay_buffer_reg[3]  ( .D(n170), .CK(clk), .RN(n413), .Q(
-                             |
-ncelab: *W,CUVWSP (./STI_DAC_syn.v,105|29): 1 output port was not connected:
-ncelab: (./tsmc13_neg.v,18307): QN
-
-  DFFRX1 \delay_buffer_reg[2]  ( .D(n171), .CK(clk), .RN(n413), .Q(
-                             |
-ncelab: *W,CUVWSP (./STI_DAC_syn.v,107|29): 1 output port was not connected:
-ncelab: (./tsmc13_neg.v,18307): QN
-
-  DFFRX1 \delay_buffer_reg[1]  ( .D(n172), .CK(clk), .RN(n413), .Q(
-                             |
-ncelab: *W,CUVWSP (./STI_DAC_syn.v,109|29): 1 output port was not connected:
-ncelab: (./tsmc13_neg.v,18307): QN
-
-  DFFRX1 \oem_addr_reg[3]  ( .D(delay_buffer[3]), .CK(clk), .RN(n413), .Q(n466) );
-                         |
-ncelab: *W,CUVWSP (./STI_DAC_syn.v,411|25): 1 output port was not connected:
-ncelab: (./tsmc13_neg.v,18307): QN
-
-  DFFRX1 \oem_addr_reg[2]  ( .D(delay_buffer[2]), .CK(clk), .RN(n413), .Q(n467) );
-                         |
-ncelab: *W,CUVWSP (./STI_DAC_syn.v,412|25): 1 output port was not connected:
-ncelab: (./tsmc13_neg.v,18307): QN
-
-  DFFRX1 \oem_addr_reg[1]  ( .D(delay_buffer[1]), .CK(clk), .RN(n413), .Q(n468) );
-                         |
-ncelab: *W,CUVWSP (./STI_DAC_syn.v,413|25): 1 output port was not connected:
-ncelab: (./tsmc13_neg.v,18307): QN
-
-  DFFRX1 \oem_addr_reg[0]  ( .D(delay_buffer[0]), .CK(clk), .RN(n413), .Q(n469) );
-                         |
-ncelab: *W,CUVWSP (./STI_DAC_syn.v,414|25): 1 output port was not connected:
-ncelab: (./tsmc13_neg.v,18307): QN
-
-  DFFRX1 \oem_addr_reg[4]  ( .D(delay_buffer[4]), .CK(clk), .RN(n413), .Q(n465) );
-                         |
-ncelab: *W,CUVWSP (./STI_DAC_syn.v,415|25): 1 output port was not connected:
-ncelab: (./tsmc13_neg.v,18307): QN
-
-  DFFRX1 odd_even_reg ( .D(n189), .CK(clk), .RN(n413), .QN(n360) );
-                    |
-ncelab: *W,CUVWSP (./STI_DAC_syn.v,416|20): 1 output port was not connected:
+  DFFRX1 \data_in_reg[7]  ( .D(n154), .CK(clk), .RN(n228), .QN(n189) );
+                        |
+ncelab: *W,CUVWSP (./STI_DAC_syn.v,51|24): 1 output port was not connected:
 ncelab: (./tsmc13_neg.v,18307): Q
 
-  DFFRX1 even4_wr_reg ( .D(N283), .CK(clk), .RN(n413), .Q(n477) );
+  DFFRX1 \data_in_reg[6]  ( .D(n155), .CK(clk), .RN(n229), .QN(n190) );
+                        |
+ncelab: *W,CUVWSP (./STI_DAC_syn.v,52|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): Q
+
+  DFFRX1 \data_in_reg[5]  ( .D(n156), .CK(clk), .RN(n229), .QN(n191) );
+                        |
+ncelab: *W,CUVWSP (./STI_DAC_syn.v,53|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): Q
+
+  DFFRX1 \data_in_reg[4]  ( .D(n157), .CK(clk), .RN(n229), .QN(n192) );
+                        |
+ncelab: *W,CUVWSP (./STI_DAC_syn.v,54|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): Q
+
+  DFFRX1 \data_in_reg[3]  ( .D(n158), .CK(clk), .RN(n229), .QN(n193) );
+                        |
+ncelab: *W,CUVWSP (./STI_DAC_syn.v,55|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): Q
+
+  DFFRX1 \data_in_reg[2]  ( .D(n159), .CK(clk), .RN(n229), .QN(n194) );
+                        |
+ncelab: *W,CUVWSP (./STI_DAC_syn.v,56|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): Q
+
+  DFFRX1 \data_in_reg[1]  ( .D(n160), .CK(clk), .RN(n229), .QN(n195) );
+                        |
+ncelab: *W,CUVWSP (./STI_DAC_syn.v,57|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): Q
+
+  DFFRX1 \data_in_reg[0]  ( .D(n161), .CK(clk), .RN(n355), .QN(n196) );
+                        |
+ncelab: *W,CUVWSP (./STI_DAC_syn.v,58|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): Q
+
+  DFFRX1 finish_reg ( .D(n142), .CK(clk), .RN(n226), .QN(n187) );
+                  |
+ncelab: *W,CUVWSP (./STI_DAC_syn.v,61|18): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): Q
+
+  DFFRX1 \ptr_reg[4]  ( .D(n136), .CK(clk), .RN(n227), .Q(ptr[4]) );
                     |
-ncelab: *W,CUVWSP (./STI_DAC_syn.v,417|20): 1 output port was not connected:
+ncelab: *W,CUVWSP (./STI_DAC_syn.v,62|20): 1 output port was not connected:
 ncelab: (./tsmc13_neg.v,18307): QN
 
-  DFFRX1 odd4_wr_reg ( .D(N274), .CK(clk), .RN(n413), .Q(n473) );
-                   |
-ncelab: *W,CUVWSP (./STI_DAC_syn.v,418|19): 1 output port was not connected:
-ncelab: (./tsmc13_neg.v,18307): QN
-
-  DFFRX1 odd1_wr_reg ( .D(N222), .CK(clk), .RN(n413), .Q(n470) );
-                   |
-ncelab: *W,CUVWSP (./STI_DAC_syn.v,419|19): 1 output port was not connected:
-ncelab: (./tsmc13_neg.v,18307): QN
-
-  DFFRX1 even1_wr_reg ( .D(N229), .CK(clk), .RN(n413), .Q(n474) );
+  DFFRX1 \ptr_reg[3]  ( .D(n137), .CK(clk), .RN(n227), .Q(ptr[3]) );
                     |
-ncelab: *W,CUVWSP (./STI_DAC_syn.v,420|20): 1 output port was not connected:
+ncelab: *W,CUVWSP (./STI_DAC_syn.v,63|20): 1 output port was not connected:
 ncelab: (./tsmc13_neg.v,18307): QN
 
-  DFFRX1 odd3_wr_reg ( .D(N256), .CK(clk), .RN(n413), .Q(n472) );
-                   |
-ncelab: *W,CUVWSP (./STI_DAC_syn.v,421|19): 1 output port was not connected:
-ncelab: (./tsmc13_neg.v,18307): QN
-
-  DFFRX1 even3_wr_reg ( .D(N265), .CK(clk), .RN(n413), .Q(n476) );
+  DFFRX1 \ptr_reg[1]  ( .D(n140), .CK(clk), .RN(n226), .Q(ptr[1]) );
                     |
-ncelab: *W,CUVWSP (./STI_DAC_syn.v,422|20): 1 output port was not connected:
+ncelab: *W,CUVWSP (./STI_DAC_syn.v,64|20): 1 output port was not connected:
 ncelab: (./tsmc13_neg.v,18307): QN
 
-  DFFRX1 odd2_wr_reg ( .D(N238), .CK(clk), .RN(n413), .Q(n471) );
-                   |
-ncelab: *W,CUVWSP (./STI_DAC_syn.v,423|19): 1 output port was not connected:
+  DFFRX1 \ptr_mem_reg[0]  ( .D(n141), .CK(clk), .RN(n226), .Q(ptr_mem[0]) );
+                        |
+ncelab: *W,CUVWSP (./STI_DAC_syn.v,65|24): 1 output port was not connected:
 ncelab: (./tsmc13_neg.v,18307): QN
 
-  DFFRX1 even2_wr_reg ( .D(N247), .CK(clk), .RN(n413), .Q(n475) );
+  DFFRX1 \state_reg[2]  ( .D(nx_state[2]), .CK(clk), .RN(n226), .Q(state[2])
+                      |
+ncelab: *W,CUVWSP (./STI_DAC_syn.v,70|22): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \state_reg[0]  ( .D(nx_state[0]), .CK(clk), .RN(n226), .Q(state[0])
+                      |
+ncelab: *W,CUVWSP (./STI_DAC_syn.v,78|22): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \ptr_reg[2]  ( .D(n138), .CK(clk), .RN(n227), .Q(ptr[2]) );
                     |
-ncelab: *W,CUVWSP (./STI_DAC_syn.v,424|20): 1 output port was not connected:
+ncelab: *W,CUVWSP (./STI_DAC_syn.v,82|20): 1 output port was not connected:
 ncelab: (./tsmc13_neg.v,18307): QN
 
-  DFFRX1 \counter_16bit_reg[1]  ( .D(n196), .CK(clk), .RN(n413), .QN(n344) );
-                              |
-ncelab: *W,CUVWSP (./STI_DAC_syn.v,439|30): 1 output port was not connected:
+  DFFRX1 odd4_wr_reg ( .D(n165), .CK(clk), .RN(n228), .QN(n220) );
+                   |
+ncelab: *W,CUVWSP (./STI_DAC_syn.v,83|19): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): Q
+
+  DFFRX1 \oem_addr_reg[4]  ( .D(ptr[4]), .CK(clk), .RN(n227), .QN(n184) );
+                         |
+ncelab: *W,CUVWSP (./STI_DAC_syn.v,109|25): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): Q
+
+  DFFRX1 \oem_addr_reg[3]  ( .D(ptr[3]), .CK(clk), .RN(n227), .QN(n183) );
+                         |
+ncelab: *W,CUVWSP (./STI_DAC_syn.v,110|25): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): Q
+
+  DFFRX1 \oem_addr_reg[2]  ( .D(ptr[2]), .CK(clk), .RN(n227), .QN(n182) );
+                         |
+ncelab: *W,CUVWSP (./STI_DAC_syn.v,111|25): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): Q
+
+  DFFRX1 \oem_addr_reg[0]  ( .D(ptr[0]), .CK(clk), .RN(n226), .QN(n180) );
+                         |
+ncelab: *W,CUVWSP (./STI_DAC_syn.v,112|25): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): Q
+
+  DFFRX1 \oem_addr_reg[1]  ( .D(ptr[1]), .CK(clk), .RN(n226), .QN(n181) );
+                         |
+ncelab: *W,CUVWSP (./STI_DAC_syn.v,113|25): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): Q
+
+  DFFSX1 \counter_dac_reg[2]  ( .D(n143), .CK(clk), .SN(n355), .Q(n352) );
+                            |
+ncelab: *W,CUVWSP (./STI_DAC_syn.v,116|28): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18583): QN
+
+  DFFRX1 so_valid_reg ( .D(n172), .CK(clk), .RN(n355), .QN(n312) );
+                    |
+ncelab: *W,CUVWSP (./STI_DAC_syn.v,126|20): 1 output port was not connected:
 ncelab: (./tsmc13_neg.v,18307): Q
 
 	Reading SDF file from location "./STI_DAC_syn.sdf"
@@ -118,33 +141,31 @@ ncelab: (./tsmc13_neg.v,18307): Q
 		MTM control:           
 		Scale factors:         
 		Scale type:            
-ncelab: *W,SDFINF: Instance dac not found at scope level <top-level> <./STI_DAC_syn.sdf, line 297>.
-ncelab: *W,SDFINF: Instance sti not found at scope level <top-level> <./STI_DAC_syn.sdf, line 774>.
-ncelab: *W,SDFINF: Instance dac not found at scope level <top-level> <./STI_DAC_syn.sdf, line 2888>.
-ncelab: *W,SDFINF: Instance sti not found at scope level <top-level> <./STI_DAC_syn.sdf, line 4354>.
-	Annotation completed with 0 Errors and 4 Warnings
-	SDF statistics: No. of Pathdelays = 1139  Annotated = 0.00% -- No. of Tchecks = 324  Annotated = 0.00% 
+	Annotation completed successfully...
+	SDF statistics: No. of Pathdelays = 832  Annotated = 100.00% -- No. of Tchecks = 318  Annotated = 100.00% 
+				        Total 	   Annotated	  Percentage
+		 Path Delays	         832	         832	      100.00
+		      $width	         159	         159	      100.00
+		  $setuphold	         159	         159	      100.00
 	Building instance overlay tables: .................... Done
-	Generating native compiled code:
-		worklib.STI_DAC:v <0x25cdfa42>
-			streams:   0, words:     0
 	Building instance specific data structures.
 	Loading native compiled code:     .................... Done
 	Design hierarchy summary:
 		                   Instances  Unique
-		Modules:                 339      46
-		UDPs:                     71       2
-		Primitives:              705       8
-		Timing outputs:          383      45
-		Registers:               108      59
-		Scalar wires:            445       -
+		Modules:                 265      50
+		UDPs:                     75       2
+		Primitives:              601       8
+		Timing outputs:          298      18
+		Registers:               107      58
+		Scalar wires:            360       -
 		Expanded wires:           18       2
 		Always blocks:            10      10
 		Initial blocks:           13      13
 		Cont. assignments:         1       5
 		Pseudo assignments:        3       3
-		Timing checks:           486      64
-		Delayed tcheck signals:  162      60
+		Timing checks:           477      69
+		Interconnect:            713       -
+		Delayed tcheck signals:  159      59
 		Simulation timescale:    1ps
 	Writing initial simulation snapshot: worklib.testfixture2:v
 Loading snapshot worklib.testfixture2:v .................... Done
@@ -243,36 +264,31 @@ FSDB Dumper for IUS, Release Verdi_Q-2020.03, Linux, 02/09/2020
 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture2.u_rtl.even2_wr(36)
 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture2.u_rtl.even3_wr(36)
 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture2.u_rtl.even4_wr(36)
-*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture2.u_rtl.N39(36)
-*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture2.u_rtl.N40(36)
-*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture2.u_rtl.N41(36)
-*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture2.u_rtl.N42(36)
-*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture2.u_rtl.N43(36)
-*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture2.u_rtl.n414(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture2.u_rtl.N72(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture2.u_rtl.N73(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture2.u_rtl.N74(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture2.u_rtl.N75(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture2.u_rtl.N76(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture2.u_rtl.n356(36)
 *Verdi* WARNING: The above messages are printed 50 times. No more similar message will be printed out.
-*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture2.u_rtl.n415(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture2.u_rtl.n357(36)
 *Verdi* : End of traversing.
 --------------------------- [ testfixture2.v ] Simulation START !!---------------------------
 --------------------------- Simulation at parallel data input stage  !!---------------------------
+--------------------------- Simulation at serial data output and result verify !! ---------------------------
+--------------------------- so_data simulation FINISH !!---------------------------
+============================================================================
 
-Warning!  Timing violation
-           $setuphold<hold>( posedge CK &&& (flag == 1):25 NS, posedge D:25 NS,  1.000 : 1 NS,  0.500 : 500 PS );
-            File: ./tsmc13_neg.v, line = 18347
-           Scope: testfixture2.u_rtl.\current_state_reg[0] 
-            Time: 25 NS
+ \(^o^)/  The simulation result of so_data is PASS!!!
 
+============================================================================
+--------------------------- OM-memory and EM-memory simulation FINISH !!---------------------------
+============================================================================
 
-Warning!  Timing violation
-           $setuphold<hold>( posedge CK &&& (flag == 1):35 NS, negedge D:35 NS,  1.000 : 1 NS,  0.500 : 500 PS );
-            File: ./tsmc13_neg.v, line = 18348
-           Scope: testfixture2.u_rtl.\current_state_reg[0] 
-            Time: 35 NS
+ \(^o^)/  The simulation result of OM-memory and EM-memory is PASS!!!
 
-================================================================================================================
---------------------------- (/`n`)/ ~#  There was something wrong with your code !! ---------------------------
---------------------------- The simulation can't finished!!, Please check it !!! ---------------------------
-================================================================================================================
-Simulation complete via $finish(1) at time 100 US + 0
-./testfixture2.v:206 	$finish;
+============================================================================
+Simulation complete via $finish(1) at time 11968736 PS + 0
+./testfixture2.v:196      $finish;
 ncsim> exit
-TOOL:	ncverilog	15.20-s039: Exiting on Mar 09, 2022 at 18:07:12 CST  (total: 00:00:02)
+TOOL:	ncverilog	15.20-s039: Exiting on Mar 09, 2022 at 18:30:50 CST  (total: 00:00:02)

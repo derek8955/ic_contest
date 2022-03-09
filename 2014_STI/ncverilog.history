@@ -193,3 +193,18 @@ s192(09Mar2022:18:02:57):  ncverilog testfixture1.v STI_DAC_syn.v -v tsmc13_neg.
 s193(09Mar2022:18:06:39):  ncverilog testfixture1.v STI_DAC_syn.v -v tsmc13_neg.v +define+SDF 
 s194(09Mar2022:18:06:52):  ncverilog testfixture1.v STI_DAC_syn.v -v tsmc13_neg.v +define+SDF +notimingcheck 
 s195(09Mar2022:18:07:10):  ncverilog testfixture2.v STI_DAC_syn.v -v tsmc13_neg.v +define+SDF 
+s196(09Mar2022:18:09:51):  ncverilog testfixture1.v STI_DAC.v 
+s197(09Mar2022:18:10:49):  ncverilog testfixture1.v STI_DAC_syn.v -v tsmc13_neg.v +define+SDF 
+s198(09Mar2022:18:11:03):  ncverilog testfixture1.v STI_DAC_syn.v -v tsmc13_neg.v +define+SDF +notimingcheck 
+s199(09Mar2022:18:13:18):  ncverilog testfixture1.v STI_DAC_syn.v -v tsmc13_neg.v +define+SDF 
+s200(09Mar2022:18:14:06):  ncverilog testfixture1.v STI_DAC_syn.v -v tsmc13_neg.v +define+SDF 
+s201(09Mar2022:18:14:38):  ncverilog testfixture2.v STI_DAC_syn.v -v tsmc13_neg.v +define+SDF 
+s202(09Mar2022:18:15:25):  ncverilog testfixture1.v STI_DAC_syn.v -v tsmc13_neg.v +define+SDF 
+s203(09Mar2022:18:21:29):  ncverilog testfixture1.v STI_DAC_2.v 
+s204(09Mar2022:18:21:51):  ncverilog testfixture1.v STI_DAC_2.v 
+s205(09Mar2022:18:22:32):  ncverilog testfixture1.v STI_DAC_syn.v -v tsmc13_neg.v +define+SDF 
+s206(09Mar2022:18:28:08):  ncverilog testfixture1.v STI_DAC_2.v 
+s207(09Mar2022:18:28:23):  ncverilog testfixture1.v STI_DAC_2.v 
+s208(09Mar2022:18:29:14):  ncverilog testfixture1.v STI_DAC_syn.v -v tsmc13_neg.v +define+SDF 
+s209(09Mar2022:18:30:42):  ncverilog testfixture1.v STI_DAC_syn.v -v tsmc13_neg.v +define+SDF 
+s210(09Mar2022:18:30:48):  ncverilog testfixture2.v STI_DAC_syn.v -v tsmc13_neg.v +define+SDF 
