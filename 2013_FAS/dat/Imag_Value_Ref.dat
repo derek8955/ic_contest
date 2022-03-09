@@ -1,0 +1,8 @@
+00000000      //The imag part of the reference table about COS(x)+i*SIN(x) value , 0: 000
+FFFF9E09      //The imag part of the reference table about COS(x)+i*SIN(x) value , 1: -3.826752e-001
+FFFF4AFC      //The imag part of the reference table about COS(x)+i*SIN(x) value , 2: -7.070923e-001
+FFFF137D      //The imag part of the reference table about COS(x)+i*SIN(x) value , 3: -9.238739e-001
+FFFF0000      //The imag part of the reference table about COS(x)+i*SIN(x) value , 4: -01
+FFFF137D      //The imag part of the reference table about COS(x)+i*SIN(x) value , 5: -9.238739e-001
+FFFF4AFC      //The imag part of the reference table about COS(x)+i*SIN(x) value , 6: -7.070923e-001
+FFFF9E09      //The imag part of the reference table about COS(x)+i*SIN(x) value , 7: -3.826752e-001

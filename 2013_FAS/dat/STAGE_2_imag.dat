@@ -1,0 +1,16 @@
+00000000      //The STAGE_2 pattern of FFT_16 (imag) , 0: 000
+00000000      //The STAGE_2 pattern of FFT_16 (imag) , 1: 000
+00000000      //The STAGE_2 pattern of FFT_16 (imag) , 2: 000
+00000000      //The STAGE_2 pattern of FFT_16 (imag) , 3: 000
+00000000      //The STAGE_2 pattern of FFT_16 (imag) , 4: 000
+000030CA      //The STAGE_2 pattern of FFT_16 (imag) , 5: 1.905823e-001
+00003300      //The STAGE_2 pattern of FFT_16 (imag) , 6: 1.992188e-001
+000011AD      //The STAGE_2 pattern of FFT_16 (imag) , 7: 6.904602e-002
+FFFEA000      //The STAGE_2 pattern of FFT_16 (imag) , 8: -1.375000e+000
+FFFEB097      //The STAGE_2 pattern of FFT_16 (imag) , 9: -1.310196e+000
+FFFEB18C      //The STAGE_2 pattern of FFT_16 (imag) , 10: -1.306458e+000
+FFFEA77C      //The STAGE_2 pattern of FFT_16 (imag) , 11: -1.345764e+000
+00016000      //The STAGE_2 pattern of FFT_16 (imag) , 12: 1.375000e+000
+FFFE9F8B      //The STAGE_2 pattern of FFT_16 (imag) , 13: -1.376785e+000
+FFFEB18C      //The STAGE_2 pattern of FFT_16 (imag) , 14: -1.306458e+000
+000189CD      //The STAGE_2 pattern of FFT_16 (imag) , 15: 1.538284e+000

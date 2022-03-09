@@ -17,4 +17,3 @@ set_wire_load_model -name tsmc13_wl10 -library slow
 
 set_max_fanout 20 [all_inputs]
 
-                       

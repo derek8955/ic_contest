@@ -6,7 +6,7 @@ Report : timing
         -max_paths 1
 Design : STI_DAC
 Version: Q-2019.12
-Date   : Tue Mar  8 22:37:15 2022
+Date   : Wed Mar  9 18:02:31 2022
 ****************************************
 
 Operating Conditions: slow   Library: slow
@@ -26,19 +26,19 @@ Wire Load Model Mode: top
   -----------------------------------------------------------
   clock clk (rise edge)                    0.00       0.00
   clock network delay (ideal)              0.50       0.50
-  input external delay                     5.00       5.50 f
-  pi_msb (in)                              0.05       5.55 f
-  sti/pi_msb (STI)                         0.00       5.55 f
-  sti/U71/Y (NOR3X1)                       0.29       5.84 r
-  sti/U70/Y (NAND3X1)                      0.36       6.21 f
-  sti/U64/Y (OAI31XL)                      0.39       6.59 r
-  sti/U63/Y (NAND2X1)                      0.21       6.80 f
-  sti/U62/Y (MXI2X1)                       0.27       7.07 r
-  sti/U57/Y (MXI3X1)                       0.52       7.59 f
-  sti/U56/Y (AOI21X1)                      0.28       7.87 r
-  sti/U54/Y (OAI221XL)                     0.29       8.16 f
-  sti/state_reg[0]/D (DFFRX1)              0.00       8.16 f
-  data arrival time                                   8.16
+  input external delay                     5.00       5.50 r
+  pi_msb (in)                              0.05       5.55 r
+  sti/pi_msb_i (STI)                       0.00       5.55 r
+  sti/U100/Y (CLKINVX1)                    0.32       5.86 f
+  sti/U78/Y (NOR2X1)                       0.30       6.16 r
+  sti/U5/Y (NAND4XL)                       0.62       6.78 f
+  sti/U77/Y (OAI21XL)                      0.51       7.28 r
+  sti/U73/Y (MXI2X1)                       0.35       7.64 f
+  sti/U66/Y (MX3XL)                        0.65       8.28 f
+  sti/U65/Y (AOI21X1)                      0.27       8.55 r
+  sti/U63/Y (OAI221XL)                     0.29       8.84 f
+  sti/state_reg[0]/D (DFFRX1)              0.00       8.84 f
+  data arrival time                                   8.84
 
   clock clk (rise edge)                   10.00      10.00
   clock network delay (ideal)              0.50      10.50
@@ -48,9 +48,9 @@ Wire Load Model Mode: top
   data required time                                 10.13
   -----------------------------------------------------------
   data required time                                 10.13
-  data arrival time                                  -8.16
+  data arrival time                                  -8.84
   -----------------------------------------------------------
-  slack (MET)                                         1.98
+  slack (MET)                                         1.29
 
 
 1

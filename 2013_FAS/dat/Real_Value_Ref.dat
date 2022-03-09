@@ -1,0 +1,8 @@
+00010000      //The real part of the reference table about COS(x)+i*SIN(x) value , 0: 001
+0000EC83      //The real part of the reference table about COS(x)+i*SIN(x) value , 1: 9.238739e-001
+0000B504      //The real part of the reference table about COS(x)+i*SIN(x) value , 2: 7.070923e-001
+000061F7      //The real part of the reference table about COS(x)+i*SIN(x) value , 3: 3.826752e-001
+00000000      //The real part of the reference table about COS(x)+i*SIN(x) value , 4: 000
+FFFF9E09      //The real part of the reference table about COS(x)+i*SIN(x) value , 5: -3.826752e-001
+FFFF4AFC      //The real part of the reference table about COS(x)+i*SIN(x) value , 6: -7.070923e-001
+FFFF137D      //The real part of the reference table about COS(x)+i*SIN(x) value , 7: -9.238739e-001

@@ -1,0 +1,16 @@
+00000000      //The STAGE_4 pattern of FFT_16 (imag) , 0: 000
+00000000      //The STAGE_4 pattern of FFT_16 (imag) , 1: 000
+00002600      //The STAGE_4 pattern of FFT_16 (imag) , 2: 1.484375e-001
+FFFFDA00      //The STAGE_4 pattern of FFT_16 (imag) , 3: -1.484375e-001
+00007577      //The STAGE_4 pattern of FFT_16 (imag) , 4: 4.588470e-001
+FFFFF089      //The STAGE_4 pattern of FFT_16 (imag) , 5: -6.040955e-002
+00000F77      //The STAGE_4 pattern of FFT_16 (imag) , 6: 6.040955e-002
+FFFF8A89      //The STAGE_4 pattern of FFT_16 (imag) , 7: -4.588470e-001
+FFFAA99F      //The STAGE_4 pattern of FFT_16 (imag) , 8: -5.337418e+000
+FFFFF979      //The STAGE_4 pattern of FFT_16 (imag) , 9: -2.549744e-002
+000017CA      //The STAGE_4 pattern of FFT_16 (imag) , 10: 9.292603e-002
+FFFFC51E      //The STAGE_4 pattern of FFT_16 (imag) , 11: -2.300110e-001
+00003AE4      //The STAGE_4 pattern of FFT_16 (imag) , 12: 2.300415e-001
+FFFFE834      //The STAGE_4 pattern of FFT_16 (imag) , 13: -9.295654e-002
+0000068D      //The STAGE_4 pattern of FFT_16 (imag) , 14: 2.558899e-002
+0005565B      //The STAGE_4 pattern of FFT_16 (imag) , 15: 5.337326e+000

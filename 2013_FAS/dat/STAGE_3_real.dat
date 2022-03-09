@@ -1,0 +1,16 @@
+00002D00      //The STAGE_3 pattern of FFT_16 (real) , 0: 1.757813e-001
+00005800      //The STAGE_3 pattern of FFT_16 (real) , 1: 3.437500e-001
+FFFFCF00      //The STAGE_3 pattern of FFT_16 (real) , 2: -1.914063e-001
+00000000      //The STAGE_3 pattern of FFT_16 (real) , 3: 000
+FFFFB600      //The STAGE_3 pattern of FFT_16 (real) , 4: -2.890625e-001
+FFFFE0E3      //The STAGE_3 pattern of FFT_16 (real) , 5: -1.215363e-001
+FFFFB600      //The STAGE_3 pattern of FFT_16 (real) , 6: -2.890625e-001
+00001F1D      //The STAGE_3 pattern of FFT_16 (real) , 7: 1.215363e-001
+0002BE4A      //The STAGE_3 pattern of FFT_16 (real) , 8: 2.743317e+000
+0002EA48      //The STAGE_3 pattern of FFT_16 (real) , 9: 2.915161e+000
+FFFFC9B6      //The STAGE_3 pattern of FFT_16 (real) , 10: -2.120667e-001
+0000091B      //The STAGE_3 pattern of FFT_16 (real) , 11: 3.556824e-002
+FFFFC9B6      //The STAGE_3 pattern of FFT_16 (real) , 12: -2.120667e-001
+FFFFF6E7      //The STAGE_3 pattern of FFT_16 (real) , 13: -3.553772e-002
+0002BE4A      //The STAGE_3 pattern of FFT_16 (real) , 14: 2.743317e+000
+FFFD15BE      //The STAGE_3 pattern of FFT_16 (real) , 15: -2.915070e+000
