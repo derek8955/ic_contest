@@ -2,10 +2,8 @@
 // File created by:  ncverilog
 // Do not modify this file
 //
-+access+r
++define+SDF
 -noshowtop
--ACCESS
-+r
 -MESSAGES
 -XLMODE
 ./INCA_libs/irun.lnx86.15.20.nc

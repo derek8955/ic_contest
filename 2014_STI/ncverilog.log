@@ -1,73 +1,145 @@
 ncverilog: 15.20-s039: (c) Copyright 1995-2017 Cadence Design Systems, Inc.
-TOOL:	ncverilog	15.20-s039: Started on Mar 08, 2022 at 22:36:54 CST
+TOOL:	ncverilog	15.20-s039: Started on Mar 09, 2022 at 10:05:47 CST
 ncverilog
 	testfixture2.v
-	STI_DAC.v
-	+access+r
-file: STI_DAC.v
-	module worklib.STI_DAC:v
+	STI_DAC_syn.v
+	-v
+	tsmc13_neg.v
+	+define+SDF
+file: testfixture2.v
+`define SDF    "STI_DAC_syn.sdf"    // Modify your sdf file name
+                                                                |
+ncvlog: *W,MACNDF (testfixture2.v,2|64): The text macro 'SDF' has also been defined on the command line using the -DEFINE command line option.  The compiler will ignore the definition found in the Verilog source code.
+	module worklib.testfixture2:v
 		errors: 0, warnings: 0
-	module worklib.STI:v
-		errors: 0, warnings: 0
-		3'd010: 
-		     |
-ncvlog: *W,INTOVF (STI_DAC.v,258|7): bit overflow during conversion from text [2.5(IEEE)] (3 bits).
-		3'd011:
-		     |
-ncvlog: *W,INTOVF (STI_DAC.v,263|7): bit overflow during conversion from text [2.5(IEEE)] (3 bits).
-		3'd100: 
-		     |
-ncvlog: *W,INTOVF (STI_DAC.v,268|7): bit overflow during conversion from text [2.5(IEEE)] (3 bits).
-		3'd101: 
-		     |
-ncvlog: *W,INTOVF (STI_DAC.v,273|7): bit overflow during conversion from text [2.5(IEEE)] (3 bits).
-		3'd110: 
-		     |
-ncvlog: *W,INTOVF (STI_DAC.v,278|7): bit overflow during conversion from text [2.5(IEEE)] (3 bits).
-		3'd111: 
-		     |
-ncvlog: *W,INTOVF (STI_DAC.v,283|7): bit overflow during conversion from text [2.5(IEEE)] (3 bits).
-		else if( {ptr[7:5]} == 3'd010 ) ptr <= {3'b011,ptr[4:0]}; 
-		                            |
-ncvlog: *W,INTOVF (STI_DAC.v,359|30): bit overflow during conversion from text [2.5(IEEE)] (3 bits).
-		else if( {ptr[7:5]} == 3'd011 ) 
-		                            |
-ncvlog: *W,INTOVF (STI_DAC.v,360|30): bit overflow during conversion from text [2.5(IEEE)] (3 bits).
-		else if( {ptr[7:5]} == 3'd100 ) ptr <= {3'b101,ptr[4:0]}; 
-		                            |
-ncvlog: *W,INTOVF (STI_DAC.v,365|30): bit overflow during conversion from text [2.5(IEEE)] (3 bits).
-		else if( {ptr[7:5]} == 3'd101 ) 
-		                            |
-ncvlog: *W,INTOVF (STI_DAC.v,366|30): bit overflow during conversion from text [2.5(IEEE)] (3 bits).
-		else if( {ptr[7:5]} == 3'd110 ) ptr <= {3'b111,ptr[4:0]}; 
-		                            |
-ncvlog: *W,INTOVF (STI_DAC.v,371|30): bit overflow during conversion from text [2.5(IEEE)] (3 bits).
-		else if( {ptr[7:5]} == 3'd111 ) 
-		                            |
-ncvlog: *W,INTOVF (STI_DAC.v,372|30): bit overflow during conversion from text [2.5(IEEE)] (3 bits).
-	module worklib.DAC:v
-		errors: 0, warnings: 12
+	Total errors/warnings found outside modules and primitives:
+		errors: 0, warnings: 1
 		Caching library 'worklib' ....... Done
+		Caching library 'tsmc13_neg' ....... Done
 	Elaborating the design hierarchy:
-	Building instance overlay tables: .................... Done
+		Caching library 'worklib' ....... Done
+		Caching library 'tsmc13_neg' ....... Done
+  DFFRX1 \ptr_reg[4]  ( .D(n134), .CK(clk), .RN(n170), .Q(ptr[4]) );
+                    |
+ncelab: *W,CUVWSP (./STI_DAC_syn.v,69|20): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \ptr_reg[3]  ( .D(n135), .CK(clk), .RN(n170), .Q(ptr[3]) );
+                    |
+ncelab: *W,CUVWSP (./STI_DAC_syn.v,70|20): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \ptr_reg[1]  ( .D(n138), .CK(clk), .RN(n170), .Q(ptr[1]) );
+                    |
+ncelab: *W,CUVWSP (./STI_DAC_syn.v,71|20): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 output_valid_reg ( .D(N89), .CK(clk), .RN(n170), .Q(output_valid) );
+                        |
+ncelab: *W,CUVWSP (./STI_DAC_syn.v,74|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \oem_addr_reg[3]  ( .D(ptr[3]), .CK(clk), .RN(n170), .QN(n142) );
+                         |
+ncelab: *W,CUVWSP (./STI_DAC_syn.v,77|25): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): Q
+
+  DFFRX1 \oem_addr_reg[1]  ( .D(ptr[1]), .CK(clk), .RN(n170), .QN(n140) );
+                         |
+ncelab: *W,CUVWSP (./STI_DAC_syn.v,78|25): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): Q
+
+  DFFRX1 \oem_addr_reg[4]  ( .D(ptr[4]), .CK(clk), .RN(n170), .QN(n143) );
+                         |
+ncelab: *W,CUVWSP (./STI_DAC_syn.v,79|25): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): Q
+
+  DFFRX1 \oem_addr_reg[0]  ( .D(ptr[0]), .CK(clk), .RN(n170), .QN(n139) );
+                         |
+ncelab: *W,CUVWSP (./STI_DAC_syn.v,80|25): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): Q
+
+  DFFRX1 finish_reg ( .D(n111), .CK(clk), .RN(n170), .QN(n88) );
+                  |
+ncelab: *W,CUVWSP (./STI_DAC_syn.v,81|18): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): Q
+
+  DFFRX1 \data_in_reg[1]  ( .D(n116), .CK(clk), .RN(n170), .QN(n81) );
+                        |
+ncelab: *W,CUVWSP (./STI_DAC_syn.v,82|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): Q
+
+  DFFRX1 \data_in_reg[7]  ( .D(n122), .CK(clk), .RN(n170), .QN(n87) );
+                        |
+ncelab: *W,CUVWSP (./STI_DAC_syn.v,83|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): Q
+
+  DFFRX1 \data_in_reg[4]  ( .D(n119), .CK(clk), .RN(n170), .QN(n84) );
+                        |
+ncelab: *W,CUVWSP (./STI_DAC_syn.v,84|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): Q
+
+  DFFRX1 \data_in_reg[5]  ( .D(n120), .CK(clk), .RN(n170), .QN(n85) );
+                        |
+ncelab: *W,CUVWSP (./STI_DAC_syn.v,85|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): Q
+
+  DFFRX1 \data_in_reg[6]  ( .D(n121), .CK(clk), .RN(n170), .QN(n86) );
+                        |
+ncelab: *W,CUVWSP (./STI_DAC_syn.v,86|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): Q
+
+  DFFRX1 \data_in_reg[3]  ( .D(n118), .CK(clk), .RN(n170), .QN(n83) );
+                        |
+ncelab: *W,CUVWSP (./STI_DAC_syn.v,87|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): Q
+
+  DFFRX1 \data_in_reg[0]  ( .D(n115), .CK(clk), .RN(n170), .QN(n80) );
+                        |
+ncelab: *W,CUVWSP (./STI_DAC_syn.v,88|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): Q
+
+  DFFRX1 \data_in_reg[2]  ( .D(n117), .CK(clk), .RN(n170), .QN(n82) );
+                        |
+ncelab: *W,CUVWSP (./STI_DAC_syn.v,89|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): Q
+
+  DFFRXL \oem_addr_reg[2]  ( .D(ptr[2]), .CK(clk), .RN(n170), .QN(n141) );
+                         |
+ncelab: *W,CUVWSP (./STI_DAC_syn.v,90|25): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18238): Q
+
+  DFFRX2 \ptr_reg[2]  ( .D(n136), .CK(clk), .RN(n170), .Q(ptr[2]) );
+                    |
+ncelab: *W,CUVWSP (./STI_DAC_syn.v,91|20): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18376): QN
+
+ncelab: *W,CUSNOF: No SDF file specified in SDF System Task..
+initial $sdf_annotate(`SDF, u_rtl);
+                    |
+ncelab: *W,CUSSTI (./testfixture2.v,79|20): This SDF System Task will be Ignored..
+	Building instance overlay tables: .......... Done
 	Generating native compiled code:
-		worklib.DAC:v <0x46840a97>
-			streams:  20, words:  9950
-		worklib.STI:v <0x37ef4c88>
-			streams:   7, words:  6840
+		worklib.testfixture2:v <0x23fe6387>
+			streams:  27, words: 47987
 	Building instance specific data structures.
 	Loading native compiled code:     .................... Done
 	Design hierarchy summary:
-		                  Instances  Unique
-		Modules:                  4       4
-		Registers:               75      75
-		Scalar wires:            19       -
-		Vectored wires:           6       -
-		Always blocks:           24      24
-		Initial blocks:          12      12
-		Cont. assignments:        1       5
-		Pseudo assignments:       3       3
-		Simulation timescale:  10ps
+		                   Instances  Unique
+		Modules:                 358      39
+		UDPs:                     86       1
+		Primitives:              902       8
+		Timing outputs:          204      40
+		Registers:               102      64
+		Scalar wires:            257       -
+		Vectored wires:            2       -
+		Always blocks:            15      15
+		Initial blocks:           13      13
+		Cont. assignments:         1       5
+		Pseudo assignments:        3       3
+		Timing checks:           387      49
+		Delayed tcheck signals:  129      46
+		Simulation timescale:    1ps
 	Writing initial simulation snapshot: worklib.testfixture2:v
 Loading snapshot worklib.testfixture2:v .................... Done
 *Verdi* Loading libsscore_ius152.so
@@ -79,6 +151,105 @@ FSDB Dumper for IUS, Release Verdi_Q-2020.03, Linux, 02/09/2020
 *Verdi* FSDB WARNING: The FSDB file already exists. Overwriting the FSDB file may crash the programs that are using this file.
 *Verdi* : Create FSDB file 'STI_DAC.fsdb'
 *Verdi* : Begin traversing the scopes, layer (0).
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture2.stimulus_in(48)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture2.pattern_in(48)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture2.Exp_so(48)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture2.pi_end(48)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture2.load(48)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture2.reset(48)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture2.clk(48)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture2.pp(25)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture2.pixel_err(25)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture2.PIXEL_MEM(116)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture2.oo1(25)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture2.oo1_err(25)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture2.oo2(25)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture2.oo2_err(25)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture2.oo3(25)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture2.oo3_err(25)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture2.oo4(25)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture2.oo4_err(25)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture2.ODD1_MEM(116)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture2.ODD2_MEM(116)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture2.ODD3_MEM(116)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture2.ODD4_MEM(116)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture2.ee1(25)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture2.ee1_err(25)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture2.ee2(25)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture2.ee2_err(25)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture2.ee3(25)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture2.ee3_err(25)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture2.ee4(25)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture2.ee4_err(25)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture2.EVEN1_MEM(116)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture2.EVEN2_MEM(116)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture2.EVEN3_MEM(116)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture2.EVEN4_MEM(116)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture2.Real_memory(116)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture2.k(25)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture2.i(25)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture2.err_cnt(25)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture2.c(25)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture2.so_pass(48)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture2.Real_so(48)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture2.so_exp(48)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture2.pi_length(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture2.fill_mode(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture2.msb_first(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture2.low_en(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture2.pi_data(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture2.so_data(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture2.so_valid(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture2.pixel_finish(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture2.pixel_wr(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture2.oem_finish(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture2.odd1_wr(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture2.odd2_wr(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture2.odd3_wr(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture2.odd4_wr(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture2.even1_wr(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture2.even2_wr(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture2.even3_wr(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture2.even4_wr(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture2.pixel_addr(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture2.pixel_dataout(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture2.oem_addr(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture2.oem_dataout(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture2.u_rtl.clk(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture2.u_rtl.reset(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture2.u_rtl.load(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture2.u_rtl.pi_msb(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture2.u_rtl.pi_low(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture2.u_rtl.pi_end(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture2.u_rtl.pi_data(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture2.u_rtl.pi_length(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture2.u_rtl.pi_fill(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture2.u_rtl.so_data(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture2.u_rtl.so_valid(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture2.u_rtl.oem_finish(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture2.u_rtl.odd1_wr(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture2.u_rtl.odd2_wr(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture2.u_rtl.odd3_wr(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture2.u_rtl.odd4_wr(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture2.u_rtl.even1_wr(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture2.u_rtl.even2_wr(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture2.u_rtl.even3_wr(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture2.u_rtl.even4_wr(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture2.u_rtl.oem_addr(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture2.u_rtl.oem_dataout(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture2.u_rtl.sti.so_data(48)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture2.u_rtl.sti.so_valid(48)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture2.u_rtl.sti.counter(48)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture2.u_rtl.sti.state(48)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture2.u_rtl.sti.nx_state(48)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture2.u_rtl.sti.clk(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture2.u_rtl.sti.reset(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture2.u_rtl.sti.load(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture2.u_rtl.sti.pi_msb(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture2.u_rtl.sti.pi_low(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture2.u_rtl.sti.pi_end(36)
+*Verdi* WARNING: The above messages are printed 50 times. No more similar message will be printed out.
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture2.u_rtl.sti.pi_data(36)
 *Verdi* : End of traversing.
 --------------------------- [ testfixture2.v ] Simulation START !!---------------------------
 --------------------------- Simulation at parallel data input stage  !!---------------------------
@@ -95,7 +266,7 @@ FSDB Dumper for IUS, Release Verdi_Q-2020.03, Linux, 02/09/2020
  \(^o^)/  The simulation result of OM-memory and EM-memory is PASS!!!
 
 ============================================================================
-Simulation complete via $finish(1) at time 11967500 PS + 0
+Simulation complete via $finish(1) at time 11969500 PS + 0
 ./testfixture2.v:196      $finish;
 ncsim> exit
-TOOL:	ncverilog	15.20-s039: Exiting on Mar 08, 2022 at 22:36:57 CST  (total: 00:00:03)
+TOOL:	ncverilog	15.20-s039: Exiting on Mar 09, 2022 at 10:05:49 CST  (total: 00:00:02)

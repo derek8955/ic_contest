@@ -1,5 +1,5 @@
 `timescale 1ns/10ps
-`define SDFFILE    "./syn/STI_DAC_syn.sdf"    // Modify your sdf file name
+`define SDF    "STI_DAC_syn.sdf"    // Modify your sdf file name
 `define cycle 10
 `define terminate_cycle 100000
 
@@ -76,7 +76,7 @@ STI_DAC u_rtl(.clk(clk) ,.reset(reset), .load(load), .pi_data(pi_data), .pi_leng
 	      .even1_wr(even1_wr), .even2_wr(even2_wr), .even3_wr(even3_wr), .even4_wr(even4_wr));
 
 `ifdef SDF
-initial $sdf_annotate(`SDFFILE, u_rtl);
+initial $sdf_annotate(`SDF, u_rtl);
 `endif
 
 

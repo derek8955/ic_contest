@@ -6,7 +6,11 @@
 ./INCA_libs/irun.lnx86.15.20.nc
 -RUNMODE
 testfixture2.v
-STI_DAC.v
+STI_DAC_syn.v
+-VFILE
+tsmc13_neg.v
+-DEFINE
+SDF
 -CDSLIB
 ./INCA_libs/irun.lnx86.15.20.nc/cdsrun.lib
 -HDLVAR

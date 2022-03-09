@@ -2,8 +2,7 @@
 // File created by:  ncverilog
 // Do not modify this file
 //
-testfixture2.v
-STI_DAC_syn.v
--v
+-VFILE
 tsmc13_neg.v
-+define+SDF
+-DEFINE
+SDF

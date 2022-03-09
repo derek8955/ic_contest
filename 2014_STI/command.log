@@ -1,6 +1,6 @@
 #@ # 
 #@ # Running dc_shell Version Q-2019.12 for linux64 -- Nov 26, 2019
-#@ # Date:   Tue Mar  8 22:37:07 2022
+#@ # Date:   Wed Mar  9 10:01:22 2022
 #@ # Run by: t107360223@islabx6
 #@ 
 
@@ -6727,59 +6727,6 @@ source /home/t107360223/Desktop/ic_contest/2014_STI/.synopsys_dc.setup
 #@ ort_nets -all -buffer_constant} {Change Naming Rule} {change_names -rule verilog
 #@  -hierarchy} {Write SDF} {write_sdf -version 2.1 -context verilog chip.sdf}]  
 #@ # -- End source /home/t107360223/Desktop/ic_contest/2014_STI/.synopsys_dc.setup
-
-source -echo -verbose /home/t107360223/Desktop/ic_contest/2014_STI/dc_syn.tcl
-#@ # -- Starting source /home/t107360223/Desktop/ic_contest/2014_STI/dc_syn.tcl
-
-#@ #Read All Files
-#@ read_file -format verilog  STI_DAC.v
-#@ #read_file -format sverilog  STI_DAC.v
-#@ current_design STI_DAC
-#@ link
-#@ 
-#@ #Setting Clock Constraints
-#@ source -echo -verbose STI_DAC.sdc
-#@ # -- Starting source STI_DAC.sdc
-
-#@ # operating conditions and boundary conditions #
-#@ 
-#@ set cycle  10         ;#clock period defined by designer
-#@ 
-#@ create_clock -period $cycle [get_ports  clk]
-#@ set_dont_touch_network      [get_clocks clk]
-#@ set_clock_uncertainty  0.1  [get_clocks clk]
-#@ set_clock_latency      0.5  [get_clocks clk]
-#@ 
-#@ set_input_delay  5      -clock clk [remove_from_collection [all_inputs] [get_ports clk]]
-#@ set_output_delay 0.5    -clock clk [all_outputs] 
-#@ set_load         1     [all_outputs]
-#@ set_drive        1     [all_inputs]
-#@ 
-#@ set_operating_conditions -max_library slow -max slow
-#@ set_wire_load_model -name tsmc13_wl10 -library slow                        
-#@ 
-#@ set_max_fanout 20 [all_inputs]
-#@ 
-#@ 
-#@ # -- End source STI_DAC.sdc
-
-#@ check_design
-#@ set high_fanout_net_threshold 0
-#@ uniquify
-#@ set_fix_multiple_port_nets -all -buffer_constants [get_designs *]
-#@ 
-#@ #Synthesis all design
-#@ #compile -map_effort high -area_effort high
-#@ #compile -map_effort high -area_effort high -inc
-#@ compile
-#@ 
-#@ write -format ddc     -hierarchy -output "STI_DAC.ddc"
-#@ write_sdf -version 1.0  STI_DAC_syn.sdf
-#@ write -format verilog -hierarchy -output STI_DAC_syn.v
-#@ report_area > area.log
-#@ report_timing > timing.log
-#@ report_qor   >  STI_DAC_syn.qor
-#@ # -- End source /home/t107360223/Desktop/ic_contest/2014_STI/dc_syn.tcl
 
 gui_start
 #@ # -- Starting source /usr/cad/synopsys/synthesis/cur/auxx/tcllib/lib/itk4.0.2/itk.tcl
@@ -43142,6 +43089,25 @@ gui_start
 #@ 
 #@ # -- End source /usr/cad/synopsys/synthesis/cur/auxx/tcllib/lib/iwidgets4.1/watch.itk
 
-uplevel #0 { report_timing -path full -delay max -nworst 1 -max_paths 1 -significant_digits 2 -sort_by group }
-uplevel #0 { report_area }
+sh mkdir SYN
+define_design_lib SYN -path ./SYN
+analyze -library SYN -format verilog {/home/t107360223/Desktop/ic_contest/2014_STI/STI_DAC.v}
+elaborate DAC -architecture verilog -library SYN
+# operating conditions and boundary conditions #
+set cycle  10         ;#clock period defined by designer
+create_clock -period $cycle [get_ports  clk]
+set_dont_touch_network      [get_clocks clk]
+set_clock_uncertainty  0.1  [get_clocks clk]
+set_clock_latency      0.5  [get_clocks clk]
+set_input_delay  5      -clock clk [remove_from_collection [all_inputs] [get_ports clk]]
+set_output_delay 0.5    -clock clk [all_outputs]
+set_load         1     [all_outputs]
+set_drive        1     [all_inputs]
+set_operating_conditions -max_library slow -max slow
+set_wire_load_model -name tsmc13_wl10 -library slow
+set_max_fanout 20 [all_inputs]
+compile
+write -format ddc     -hierarchy -output "STI_DAC.ddc"
+write_sdf -version 1.0  STI_DAC_syn.sdf
+write -format verilog -hierarchy -output STI_DAC_syn.v
 exit
