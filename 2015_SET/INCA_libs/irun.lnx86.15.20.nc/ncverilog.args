@@ -1,0 +1,10 @@
+//
+// File created by:  ncverilog
+// Do not modify this file
+//
+testfixture.v
+SET_syn.v
+-v
+tsmc13_neg.v
++define+SDF
++define+MD4

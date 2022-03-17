@@ -1,0 +1,256 @@
+ncverilog: 15.20-s039: (c) Copyright 1995-2017 Cadence Design Systems, Inc.
+TOOL:	ncverilog	15.20-s039: Started on Mar 17, 2022 at 16:33:32 CST
+ncverilog
+	testfixture.v
+	SET_syn.v
+	-v
+	tsmc13_neg.v
+	+define+SDF
+	+define+MD4
+file: testfixture.v
+	module worklib.testfixture1:v
+		errors: 0, warnings: 0
+file: SET_syn.v
+	module worklib.SET_DW01_inc_0_DW01_inc_3:v
+		errors: 0, warnings: 0
+	module worklib.SET:v
+		errors: 0, warnings: 0
+		Caching library 'worklib' ....... Done
+		Caching library 'tsmc13_neg' ....... Done
+	Elaborating the design hierarchy:
+  DFFRX1 \state_reg[0]  ( .D(n425), .CK(clk), .RN(n551), .Q(state[0]) );
+                      |
+ncelab: *W,CUVWSP (./SET_syn.v,98|22): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \x_A_reg[0]  ( .D(n411), .CK(clk), .RN(n552), .Q(x_A[0]) );
+                    |
+ncelab: *W,CUVWSP (./SET_syn.v,115|20): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \x_B_reg[2]  ( .D(n405), .CK(clk), .RN(n552), .Q(n380) );
+                    |
+ncelab: *W,CUVWSP (./SET_syn.v,116|20): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \x_A_reg[2]  ( .D(n401), .CK(clk), .RN(n553), .Q(x_A[2]) );
+                    |
+ncelab: *W,CUVWSP (./SET_syn.v,119|20): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \y_C_reg[3]  ( .D(n413), .CK(clk), .RN(n552), .Q(y_C[3]) );
+                    |
+ncelab: *W,CUVWSP (./SET_syn.v,125|20): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \x_B_reg[1]  ( .D(n404), .CK(clk), .RN(n553), .Q(n379) );
+                    |
+ncelab: *W,CUVWSP (./SET_syn.v,130|20): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \x_A_reg[1]  ( .D(n400), .CK(clk), .RN(n552), .Q(n378) );
+                    |
+ncelab: *W,CUVWSP (./SET_syn.v,131|20): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \y_B_reg[2]  ( .D(n418), .CK(clk), .RN(n552), .Q(n385) );
+                    |
+ncelab: *W,CUVWSP (./SET_syn.v,137|20): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \x_C_reg[0]  ( .D(n407), .CK(clk), .RN(n551), .Q(x_C[0]) );
+                    |
+ncelab: *W,CUVWSP (./SET_syn.v,142|20): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 busy_reg ( .D(n441), .CK(clk), .RN(n860), .Q(n879) );
+                |
+ncelab: *W,CUVWSP (./SET_syn.v,658|16): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+	Reading SDF file from location "./SET_syn.sdf"
+	Annotating SDF timing data:
+		Compiled SDF file:     SET_syn.sdf.X
+		Log file:              
+		Backannotation scope:  testfixture1.u_set
+		Configuration file:    
+		MTM control:           
+		Scale factors:         
+		Scale type:            
+	Annotation completed successfully...
+	SDF statistics: No. of Pathdelays = 1647  Annotated = 100.00% -- No. of Tchecks = 354  Annotated = 100.00% 
+				        Total 	   Annotated	  Percentage
+		 Path Delays	        1647	        1647	      100.00
+		      $width	         177	         177	      100.00
+		  $setuphold	         177	         177	      100.00
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.SET:v <0x16361025>
+			streams:   0, words:     0
+		worklib.testfixture1:v <0x353f6e9a>
+			streams:  11, words: 15060
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                    Instances  Unique
+		Modules:                  540     109
+		UDPs:                     110       2
+		Primitives:               939       8
+		Timing outputs:           592      35
+		Registers:                 71      18
+		Scalar wires:             657       -
+		Expanded wires:            38       3
+		Always blocks:              2       2
+		Initial blocks:             7       7
+		Pseudo assignments:         2       2
+		Timing checks:            531      80
+		Interconnect:            1341       -
+		Delayed tcheck signals:   177      64
+		Simulation timescale:     1ps
+	Writing initial simulation snapshot: worklib.testfixture1:v
+Loading snapshot worklib.testfixture1:v .................... Done
+*Verdi* Loading libsscore_ius152.so
+ncsim> source /usr/cad/cadence/INCISIV/cur/tools/inca/files/ncsimrc
+ncsim> run
+FSDB Dumper for IUS, Release Verdi_Q-2020.03, Linux, 02/09/2020
+(C) 1996 - 2020 by Synopsys, Inc.
+*Verdi* FSDB WARNING: The FSDB file already exists. Overwriting the FSDB file may crash the programs that are using this file.
+*Verdi* : Create FSDB file 'SET.fsdb'
+*Verdi* : Begin traversing the scopes, layer (0).
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture1.clk(48)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture1.rst(48)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture1.en(48)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture1.central(48)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture1.radius(48)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture1.mode(48)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture1.err_cnt(25)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture1.k(25)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture1.p(25)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture1.busy(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture1.valid(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture1.candidate(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture1.u_set.central(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture1.u_set.radius(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture1.u_set.mode(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture1.u_set.candidate(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture1.u_set.clk(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture1.u_set.rst(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture1.u_set.en(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture1.u_set.busy(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture1.u_set.valid(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture1.u_set.n869(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture1.u_set.n870(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture1.u_set.n871(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture1.u_set.n872(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture1.u_set.n873(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture1.u_set.n874(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture1.u_set.n875(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture1.u_set.n876(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture1.u_set.N293(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture1.u_set.N294(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture1.u_set.N295(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture1.u_set.\nx_state[1] (36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture1.u_set.N542(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture1.u_set.n1(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture1.u_set.n2(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture1.u_set.n3(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture1.u_set.n4(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture1.u_set.n5(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture1.u_set.n6(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture1.u_set.n7(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture1.u_set.n8(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture1.u_set.n112(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture1.u_set.n113(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture1.u_set.n123(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture1.u_set.n147(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture1.u_set.n148(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture1.u_set.n149(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture1.u_set.n152(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture1.u_set.n154(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture1.u_set.n168(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture1.u_set.n170(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture1.u_set.n173(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture1.u_set.n177(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture1.u_set.n180(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture1.u_set.n182(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture1.u_set.n242(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture1.u_set.n243(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture1.u_set.n244(36)
+*Verdi* WARNING: The above messages are printed 50 times. No more similar message will be printed out.
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture1.u_set.n262(36)
+*Verdi* : End of traversing.
+--------------------------- [ Function 4. Simulation START !! ] ---------------------------
+ Pattern           0 at Mode 3 is PASS !
+ Pattern           1 at Mode 3 is PASS !
+ Pattern           2 at Mode 3 is PASS !
+ Pattern           3 at Mode 3 is PASS !
+ Pattern           4 at Mode 3 is PASS !
+ Pattern           5 at Mode 3 is PASS !
+ Pattern           6 at Mode 3 is PASS !
+ Pattern           7 at Mode 3 is PASS !
+ Pattern           8 at Mode 3 is PASS !
+ Pattern           9 at Mode 3 is PASS !
+ Pattern          10 at Mode 3 is PASS !
+ Pattern          11 at Mode 3 is PASS !
+ Pattern          12 at Mode 3 is PASS !
+ Pattern          13 at Mode 3 is PASS !
+ Pattern          14 at Mode 3 is PASS !
+ Pattern          15 at Mode 3 is PASS !
+ Pattern          16 at Mode 3 is PASS !
+ Pattern          17 at Mode 3 is PASS !
+ Pattern          18 at Mode 3 is PASS !
+ Pattern          19 at Mode 3 is PASS !
+ Pattern          20 at Mode 3 is PASS !
+ Pattern          21 at Mode 3 is PASS !
+ Pattern          22 at Mode 3 is PASS !
+ Pattern          23 at Mode 3 is PASS !
+ Pattern          24 at Mode 3 is PASS !
+ Pattern          25 at Mode 3 is PASS !
+ Pattern          26 at Mode 3 is PASS !
+ Pattern          27 at Mode 3 is PASS !
+ Pattern          28 at Mode 3 is PASS !
+ Pattern          29 at Mode 3 is PASS !
+ Pattern          30 at Mode 3 is PASS !
+ Pattern          31 at Mode 3 is PASS !
+ Pattern          32 at Mode 3 is PASS !
+ Pattern          33 at Mode 3 is PASS !
+ Pattern          34 at Mode 3 is PASS !
+ Pattern          35 at Mode 3 is PASS !
+ Pattern          36 at Mode 3 is PASS !
+ Pattern          37 at Mode 3 is PASS !
+ Pattern          38 at Mode 3 is PASS !
+ Pattern          39 at Mode 3 is PASS !
+ Pattern          40 at Mode 3 is PASS !
+ Pattern          41 at Mode 3 is PASS !
+ Pattern          42 at Mode 3 is PASS !
+ Pattern          43 at Mode 3 is PASS !
+ Pattern          44 at Mode 3 is PASS !
+ Pattern          45 at Mode 3 is PASS !
+ Pattern          46 at Mode 3 is PASS !
+ Pattern          47 at Mode 3 is PASS !
+ Pattern          48 at Mode 3 is PASS !
+ Pattern          49 at Mode 3 is PASS !
+ Pattern          50 at Mode 3 is PASS !
+ Pattern          51 at Mode 3 is PASS !
+ Pattern          52 at Mode 3 is PASS !
+ Pattern          53 at Mode 3 is PASS !
+ Pattern          54 at Mode 3 is PASS !
+ Pattern          55 at Mode 3 is PASS !
+ Pattern          56 at Mode 3 is PASS !
+ Pattern          57 at Mode 3 is PASS !
+ Pattern          58 at Mode 3 is PASS !
+ Pattern          59 at Mode 3 is PASS !
+ Pattern          60 at Mode 3 is PASS !
+ Pattern          61 at Mode 3 is PASS !
+ Pattern          62 at Mode 3 is PASS !
+ Pattern          63 at Mode 3 is PASS !
+--------------------------- Simulation FINISH !!---------------------------
+============================================================================
+
+ \(^o^)/ CONGRATULATIONS!!  The simulation result is PASS!!!
+
+============================================================================
+Simulation complete via $finish(1) at time 187275 NS + 0
+./testfixture.v:131 $finish;
+ncsim> exit
+TOOL:	ncverilog	15.20-s039: Exiting on Mar 17, 2022 at 16:33:35 CST  (total: 00:00:03)

@@ -1,39 +1,34 @@
 ncverilog: 15.20-s039: (c) Copyright 1995-2017 Cadence Design Systems, Inc.
-TOOL:	ncverilog	15.20-s039: Started on Feb 27, 2022 at 10:17:46 CST
+TOOL:	ncverilog	15.20-s039: Started on Mar 16, 2022 at 14:55:27 CST
 ncverilog
 	tb.sv
 	geofence.v
-Recompiling... reason: file './geofence.v' is newer than expected.
-	expected: Sun Feb 27 10:14:21 2022
-	actual:   Sun Feb 27 10:17:43 2022
+file: tb.sv
+	module worklib.testfixture:sv
+		errors: 0, warnings: 0
 file: geofence.v
 	module worklib.geofence:v
 		errors: 0, warnings: 0
 		Caching library 'worklib' ....... Done
 	Elaborating the design hierarchy:
 ncelab: *W,DSEMEL: This SystemVerilog design will be simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
-	Building instance overlay tables: ....................
-		x[0] <= 10'd0; x[1] <= 10'd0; x[2] <= 10'd0; x[3] <= 10'd0; x[4] <= 10'd0; x[5] <= 10'd0; x[6] <= 10'd0;
-		                                                                                          |
-ncelab: *W,BNDMEM (./geofence.v,118|92): Memory index out of declared bounds.
-		y[0] <= 10'd0; y[1] <= 10'd0; y[2] <= 10'd0; y[3] <= 10'd0; y[4] <= 10'd0; y[5] <= 10'd0; y[6] <= 10'd0;
-		                                                                                          |
-ncelab: *W,BNDMEM (./geofence.v,119|92): Memory index out of declared bounds.
- Done
+	Building instance overlay tables: .................... Done
 	Generating native compiled code:
-		worklib.geofence:v <0x4d121a64>
-			streams:  39, words: 16517
+		worklib.geofence:v <0x1055dc87>
+			streams:  28, words: 14913
+		worklib.testfixture:sv <0x3e64f208>
+			streams:  14, words: 20084
 	Building instance specific data structures.
 	Loading native compiled code:     .................... Done
 	Design hierarchy summary:
 		                  Instances  Unique
 		Modules:                  2       2
-		Registers:               30      30
-		Scalar wires:             4       -
-		Vectored wires:          16       -
-		Always blocks:           14      14
+		Registers:               34      34
+		Scalar wires:             5       -
+		Vectored wires:          11       -
+		Always blocks:            6       6
 		Initial blocks:           8       8
-		Cont. assignments:       12      14
+		Cont. assignments:       10      12
 		Pseudo assignments:       3       3
 		Simulation timescale:  10ps
 	Writing initial simulation snapshot: worklib.testfixture:sv
@@ -44,7 +39,6 @@ ncsim> source /usr/cad/cadence/INCISIV/cur/tools/inca/files/ncsimrc
 ncsim> run
 FSDB Dumper for IUS, Release Verdi_Q-2020.03, Linux, 02/09/2020
 (C) 1996 - 2020 by Synopsys, Inc.
-*Verdi* FSDB WARNING: The FSDB file already exists. Overwriting the FSDB file may crash the programs that are using this file.
 *Verdi* : Create FSDB file 'geofence.fsdb'
 *Verdi* : Begin traversing the scopes, layer (0).
 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.objnum(25)
@@ -64,37 +58,40 @@ FSDB Dumper for IUS, Release Verdi_Q-2020.03, Linux, 02/09/2020
 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.ap_num(25)
 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.valid(36)
 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.is_inside(36)
-*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence.valid(48)
-*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence.is_inside(48)
-*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence.state(48)
-*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence.nx_state(48)
-*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence.obj_x(48)
-*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence.obj_y(48)
-*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence.x(116)
-*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence.y(116)
-*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence.counter_IN(48)
-*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence.counter_INSIDE(48)
-*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence.counter_RESULT(48)
-*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence.counter_RES(48)
-*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence.match_array(116)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence.targetX(48)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence.targetY(48)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence.i(25)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence.countGeofence(48)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence.geofenceX(116)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence.geofenceY(116)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence.readStatus(48)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence.calStatus(48)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence.countElement(48)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence.countResult(48)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence.xA(48)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence.yA(48)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence.xB(48)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence.yB(48)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence._valid(48)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence._inside(48)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence.bitJudge(48)
 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence.clk(36)
 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence.reset(36)
 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence.X(36)
 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence.Y(36)
-*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence.Ax(36)
-*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence.Bx(36)
-*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence.Ay(36)
-*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence.By(36)
-*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence.det_Ax(36)
-*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence.det_Bx(36)
-*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence.det_Ay(36)
-*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence.det_By(36)
-*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence.det_AxBy(36)
-*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence.det_BxAy(36)
-*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence.counter_A(36)
-*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence.counter_B(36)
-*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence.counter_det_A(36)
-*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence.counter_det_B(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence.valid(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence.is_inside(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence.sxA(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence.syA(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence.sxB(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence.syB(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence.subxA(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence.subyA(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence.subxB(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence.subyB(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence.outPot(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence.judge(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence.calResult(36)
 *Verdi* : End of traversing.
 *Verdi* : Begin traversing the MDAs, layer (0).
 *Verdi* : Enable +mda and +packedmda dumping.
@@ -115,37 +112,40 @@ FSDB Dumper for IUS, Release Verdi_Q-2020.03, Linux, 02/09/2020
 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.ap_num(25)
 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.valid(36)
 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.is_inside(36)
-*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence.valid(48)
-*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence.is_inside(48)
-*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence.state(48)
-*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence.nx_state(48)
-*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence.obj_x(48)
-*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence.obj_y(48)
-*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence.x(116)
-*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence.y(116)
-*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence.counter_IN(48)
-*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence.counter_INSIDE(48)
-*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence.counter_RESULT(48)
-*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence.counter_RES(48)
-*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence.match_array(116)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence.targetX(48)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence.targetY(48)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence.i(25)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence.countGeofence(48)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence.geofenceX(116)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence.geofenceY(116)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence.readStatus(48)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence.calStatus(48)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence.countElement(48)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence.countResult(48)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence.xA(48)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence.yA(48)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence.xB(48)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence.yB(48)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence._valid(48)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence._inside(48)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence.bitJudge(48)
 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence.clk(36)
 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence.reset(36)
 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence.X(36)
 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence.Y(36)
-*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence.Ax(36)
-*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence.Bx(36)
-*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence.Ay(36)
-*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence.By(36)
-*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence.det_Ax(36)
-*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence.det_Bx(36)
-*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence.det_Ay(36)
-*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence.det_By(36)
-*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence.det_AxBy(36)
-*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence.det_BxAy(36)
-*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence.counter_A(36)
-*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence.counter_B(36)
-*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence.counter_det_A(36)
-*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence.counter_det_B(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence.valid(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence.is_inside(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence.sxA(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence.syA(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence.sxB(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence.syB(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence.subxA(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence.subyA(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence.subxB(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence.subyB(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence.outPot(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence.judge(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence.calResult(36)
 *Verdi* : End of traversing the MDAs.
 ----------------------
 -- Simulation Start --
@@ -653,7 +653,7 @@ Object50: Golde/Return => 0/0, PASS
 -------------------------------------------------
 --    Simulation finish,  ALL PASS             --
 -------------------------------------------------
-Simulation complete via $finish(1) at time 64650 NS + 0
+Simulation complete via $finish(1) at time 56460 NS + 0
 ./tb.sv:149              $finish;
 ncsim> exit
-TOOL:	ncverilog	15.20-s039: Exiting on Feb 27, 2022 at 10:17:48 CST  (total: 00:00:02)
+TOOL:	ncverilog	15.20-s039: Exiting on Mar 16, 2022 at 14:55:31 CST  (total: 00:00:04)
