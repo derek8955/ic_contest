@@ -1,0 +1,84 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : CONV
+Version: Q-2019.12
+Date   : Wed Mar 23 21:33:40 2022
+****************************************
+
+Operating Conditions: slow   Library: slow
+Wire Load Model Mode: top
+
+  Startpoint: counter_data_reg[0]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: data_conv_sum_reg[32]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  CONV               tsmc13_wl10           slow
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.50       0.50
+  counter_data_reg[0]/CK (DFFRHQX8)                       0.00       0.50 r
+  counter_data_reg[0]/Q (DFFRHQX8)                        0.25       0.75 f
+  U614/Y (NAND2X1)                                        0.30       1.05 r
+  U613/Y (CLKINVX3)                                       0.27       1.31 f
+  U687/Y (NAND3BX4)                                       0.25       1.56 r
+  U555/Y (CLKINVX1)                                       0.26       1.83 f
+  U688/Y (NAND3BX4)                                       0.23       2.06 f
+  U617/Y (NAND3BX2)                                       0.21       2.27 f
+  mult_137/b[13] (CONV_DW_mult_tc_2)                      0.00       2.27 f
+  mult_137/U982/Y (CLKBUFX8)                              0.28       2.56 f
+  mult_137/U1491/Y (XNOR2XL)                              0.45       3.01 f
+  mult_137/U1699/Y (OAI22XL)                              0.68       3.69 r
+  mult_137/U1019/ICO (CMPR42X2)                           0.31       4.00 r
+  mult_137/U1739/ICO (CMPR42X1)                           0.25       4.24 r
+  mult_137/U1713/S (CMPR42X1)                             0.46       4.70 r
+  mult_137/U1307/CO (CMPR42X2)                            0.62       5.33 r
+  mult_137/U1128/Y (OR2X1)                                0.52       5.85 r
+  mult_137/U1017/Y (NAND2X6)                              0.16       6.00 f
+  mult_137/U1220/Y (CLKINVX4)                             0.12       6.13 r
+  mult_137/U1257/Y (NAND2XL)                              0.28       6.41 f
+  mult_137/U1530/Y (NOR2X1)                               0.46       6.86 r
+  mult_137/U1531/Y (NAND2X1)                              0.19       7.06 f
+  mult_137/U1292/Y (OAI21X1)                              0.34       7.40 r
+  mult_137/U1291/Y (XNOR2X4)                              0.23       7.63 f
+  mult_137/product[28] (CONV_DW_mult_tc_2)                0.00       7.63 f
+  r461/B[28] (CONV_DW01_add_5)                            0.00       7.63 f
+  r461/U451/Y (NAND2X1)                                   0.39       8.02 r
+  r461/U434/Y (INVX1)                                     0.20       8.22 f
+  r461/U509/Y (AOI21X2)                                   0.28       8.50 r
+  r461/U442/Y (OAI21X1)                                   0.19       8.69 f
+  r461/U441/Y (AOI21X2)                                   0.20       8.90 r
+  r461/U499/Y (OA21X4)                                    0.21       9.10 r
+  r461/U464/Y (INVX8)                                     0.11       9.21 f
+  r461/U621/Y (AOI21X1)                                   0.24       9.45 r
+  r461/U660/Y (XOR2X1)                                    0.27       9.72 r
+  r461/SUM[32] (CONV_DW01_add_5)                          0.00       9.72 r
+  U593/Y (NAND2X1)                                        0.18       9.91 f
+  U592/Y (OAI221X1)                                       0.21      10.12 r
+  data_conv_sum_reg[32]/D (DFFRX1)                        0.00      10.12 r
+  data arrival time                                                 10.12
+
+  clock clk (rise edge)                                  10.00      10.00
+  clock network delay (ideal)                             0.50      10.50
+  clock uncertainty                                      -0.10      10.40
+  data_conv_sum_reg[32]/CK (DFFRX1)                       0.00      10.40 r
+  library setup time                                     -0.28      10.12
+  data required time                                                10.12
+  --------------------------------------------------------------------------
+  data required time                                                10.12
+  data arrival time                                                -10.12
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+1

@@ -1,32 +1,295 @@
 ncverilog: 15.20-s039: (c) Copyright 1995-2017 Cadence Design Systems, Inc.
-TOOL:	ncverilog	15.20-s039: Started on Mar 02, 2022 at 16:50:38 CST
+TOOL:	ncverilog	15.20-s039: Started on Mar 23, 2022 at 21:34:40 CST
 ncverilog
 	testfixture.v
-	CONV.v
-Recompiling... reason: file './testfixture.v' is newer than expected.
-	expected: Tue Mar 26 08:30:22 2019
-	actual:   Wed Mar  2 16:50:28 2022
+	conv_syn.v
+	-v
+	tsmc13_neg.v
+	+define+SDF
 file: testfixture.v
 	module worklib.testfixture:v
 		errors: 0, warnings: 0
+file: conv_syn.v
+	module worklib.CONV_DW_cmp_0:v
+		errors: 0, warnings: 0
+	module worklib.CONV_DW01_inc_0_DW01_inc_2:v
+		errors: 0, warnings: 0
+	module worklib.CONV_DW_mult_tc_2:v
+		errors: 0, warnings: 0
+	module worklib.CONV_DW01_add_5:v
+		errors: 0, warnings: 0
+	module worklib.CONV:v
+		errors: 0, warnings: 0
+file: tsmc13_neg.v
+	module tsmc13_neg.CMPR42X4:v
+		errors: 0, warnings: 0
 		Caching library 'worklib' ....... Done
+		Caching library 'tsmc13_neg' ....... Done
 	Elaborating the design hierarchy:
+  CONV_DW_cmp_0 gt_250 ( .A(cdata_rd), .B({n1015, n1016, n1017, n1018, n1019, 
+                     |
+ncelab: *W,CUVWSP (./conv_syn.v,1613|21): 1 output port was not connected:
+ncelab: (./conv_syn.v,8): EQ_NE
+
+  CONV_DW01_add_5 r461 ( .A({data_conv_sum[39:20], N741, N740, N739, N738, 
+                     |
+ncelab: *W,CUVWSP (./conv_syn.v,1632|21): 1 output port was not connected:
+ncelab: (./conv_syn.v,1130): CO
+
+  DFFRX1 \data_conv_sum_reg[13]  ( .D(n948), .CK(clk), .RN(n793), .Q(N735) );
+                               |
+ncelab: *W,CUVWSP (./conv_syn.v,1649|31): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \data_conv_sum_reg[5]  ( .D(n956), .CK(clk), .RN(n793), .Q(N727) );
+                              |
+ncelab: *W,CUVWSP (./conv_syn.v,1663|30): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \data_conv_sum_reg[6]  ( .D(n955), .CK(clk), .RN(n793), .Q(N728) );
+                              |
+ncelab: *W,CUVWSP (./conv_syn.v,1664|30): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \data_conv_sum_reg[7]  ( .D(n954), .CK(clk), .RN(n793), .Q(N729) );
+                              |
+ncelab: *W,CUVWSP (./conv_syn.v,1665|30): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \data_conv_sum_reg[8]  ( .D(n953), .CK(clk), .RN(n793), .Q(N730) );
+                              |
+ncelab: *W,CUVWSP (./conv_syn.v,1666|30): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \data_conv_sum_reg[9]  ( .D(n952), .CK(clk), .RN(n793), .Q(N731) );
+                              |
+ncelab: *W,CUVWSP (./conv_syn.v,1667|30): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \data_conv_sum_reg[10]  ( .D(n951), .CK(clk), .RN(n793), .Q(N732) );
+                               |
+ncelab: *W,CUVWSP (./conv_syn.v,1668|31): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \data_conv_sum_reg[11]  ( .D(n950), .CK(clk), .RN(n793), .Q(N733) );
+                               |
+ncelab: *W,CUVWSP (./conv_syn.v,1669|31): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \data_conv_sum_reg[12]  ( .D(n949), .CK(clk), .RN(n793), .Q(N734) );
+                               |
+ncelab: *W,CUVWSP (./conv_syn.v,1670|31): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \data_conv_sum_reg[14]  ( .D(n947), .CK(clk), .RN(n792), .Q(N736) );
+                               |
+ncelab: *W,CUVWSP (./conv_syn.v,1671|31): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \data_conv_sum_reg[0]  ( .D(n961), .CK(clk), .RN(n794), .Q(N722) );
+                              |
+ncelab: *W,CUVWSP (./conv_syn.v,1682|30): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \data_conv_sum_reg[1]  ( .D(n960), .CK(clk), .RN(n794), .Q(N723) );
+                              |
+ncelab: *W,CUVWSP (./conv_syn.v,1683|30): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \data_conv_sum_reg[2]  ( .D(n959), .CK(clk), .RN(n793), .Q(N724) );
+                              |
+ncelab: *W,CUVWSP (./conv_syn.v,1684|30): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \data_conv_sum_reg[3]  ( .D(n958), .CK(clk), .RN(n793), .Q(N725) );
+                              |
+ncelab: *W,CUVWSP (./conv_syn.v,1685|30): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \data_conv_sum_reg[4]  ( .D(n957), .CK(clk), .RN(n793), .Q(N726) );
+                              |
+ncelab: *W,CUVWSP (./conv_syn.v,1686|30): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  EDFFX1 \idata_tmp_reg[2]  ( .D(idata[2]), .E(n645), .CK(clk), .Q(
+                          |
+ncelab: *W,CUVWSP (./conv_syn.v,1689|26): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): QN
+
+  EDFFX1 \idata_tmp_reg[16]  ( .D(idata[16]), .E(n645), .CK(clk), .Q(
+                           |
+ncelab: *W,CUVWSP (./conv_syn.v,1691|27): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): QN
+
+  EDFFX1 \idata_tmp_reg[1]  ( .D(idata[1]), .E(n645), .CK(clk), .Q(
+                          |
+ncelab: *W,CUVWSP (./conv_syn.v,1693|26): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): QN
+
+  EDFFX1 \idata_tmp_reg[3]  ( .D(idata[3]), .E(n645), .CK(clk), .Q(
+                          |
+ncelab: *W,CUVWSP (./conv_syn.v,1695|26): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): QN
+
+  EDFFX1 \idata_tmp_reg[5]  ( .D(idata[5]), .E(n645), .CK(clk), .Q(
+                          |
+ncelab: *W,CUVWSP (./conv_syn.v,1697|26): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): QN
+
+  EDFFX1 \idata_tmp_reg[7]  ( .D(idata[7]), .E(n645), .CK(clk), .Q(
+                          |
+ncelab: *W,CUVWSP (./conv_syn.v,1699|26): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): QN
+
+  EDFFX1 \idata_tmp_reg[9]  ( .D(idata[9]), .E(n645), .CK(clk), .Q(
+                          |
+ncelab: *W,CUVWSP (./conv_syn.v,1701|26): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): QN
+
+  EDFFX1 \idata_tmp_reg[11]  ( .D(idata[11]), .E(n645), .CK(clk), .Q(
+                           |
+ncelab: *W,CUVWSP (./conv_syn.v,1703|27): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): QN
+
+  EDFFX1 \idata_tmp_reg[13]  ( .D(idata[13]), .E(n645), .CK(clk), .Q(
+                           |
+ncelab: *W,CUVWSP (./conv_syn.v,1705|27): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): QN
+
+  EDFFX1 \idata_tmp_reg[15]  ( .D(idata[15]), .E(n645), .CK(clk), .Q(
+                           |
+ncelab: *W,CUVWSP (./conv_syn.v,1707|27): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): QN
+
+  EDFFX1 \idata_tmp_reg[17]  ( .D(idata[17]), .E(n645), .CK(clk), .Q(
+                           |
+ncelab: *W,CUVWSP (./conv_syn.v,1709|27): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): QN
+
+  EDFFX1 \idata_tmp_reg[0]  ( .D(idata[0]), .E(n645), .CK(clk), .Q(
+                          |
+ncelab: *W,CUVWSP (./conv_syn.v,1711|26): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): QN
+
+  DFFRX1 \data_conv_sum_reg[36]  ( .D(n946), .CK(clk), .RN(n791), .Q(
+                               |
+ncelab: *W,CUVWSP (./conv_syn.v,1713|31): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \data_conv_sum_reg[38]  ( .D(n944), .CK(clk), .RN(n792), .Q(
+                               |
+ncelab: *W,CUVWSP (./conv_syn.v,1715|31): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \csel_reg[1]  ( .D(n775), .CK(clk), .RN(n933), .QN(n657) );
+                     |
+ncelab: *W,CUVWSP (./conv_syn.v,1859|21): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): Q
+
+  DFFRX1 crd_reg ( .D(n641), .CK(clk), .RN(n933), .QN(n658) );
+               |
+ncelab: *W,CUVWSP (./conv_syn.v,1860|15): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): Q
+
+  DFFRX1 cwr_reg ( .D(n417), .CK(clk), .RN(n933), .QN(n659) );
+               |
+ncelab: *W,CUVWSP (./conv_syn.v,1861|15): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): Q
+
+  DFFRX1 \csel_reg[0]  ( .D(N997), .CK(clk), .RN(n933), .QN(n656) );
+                     |
+ncelab: *W,CUVWSP (./conv_syn.v,1862|21): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): Q
+
+  DFFRX1 \counter_layer1_reg[2]  ( .D(N988), .CK(clk), .RN(n933), .QN(n416) );
+                               |
+ncelab: *W,CUVWSP (./conv_syn.v,1867|31): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): Q
+
+  EDFFXL \idata_tmp_reg[18]  ( .D(idata[18]), .E(n645), .CK(clk), .Q(
+                           |
+ncelab: *W,CUVWSP (./conv_syn.v,1868|27): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19722): QN
+
+  EDFFXL \idata_tmp_reg[14]  ( .D(idata[14]), .E(n645), .CK(clk), .Q(
+                           |
+ncelab: *W,CUVWSP (./conv_syn.v,1870|27): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19722): QN
+
+  EDFFXL \idata_tmp_reg[12]  ( .D(idata[12]), .E(n645), .CK(clk), .Q(
+                           |
+ncelab: *W,CUVWSP (./conv_syn.v,1872|27): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19722): QN
+
+  EDFFXL \idata_tmp_reg[8]  ( .D(idata[8]), .E(n645), .CK(clk), .Q(
+                          |
+ncelab: *W,CUVWSP (./conv_syn.v,1874|26): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19722): QN
+
+  EDFFXL \idata_tmp_reg[6]  ( .D(idata[6]), .E(n645), .CK(clk), .Q(
+                          |
+ncelab: *W,CUVWSP (./conv_syn.v,1876|26): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19722): QN
+
+  EDFFXL \idata_tmp_reg[4]  ( .D(idata[4]), .E(n645), .CK(clk), .Q(
+                          |
+ncelab: *W,CUVWSP (./conv_syn.v,1878|26): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19722): QN
+
+  EDFFX1 \idata_tmp_reg[19]  ( .D(idata[19]), .E(n645), .CK(clk), .Q(
+                           |
+ncelab: *W,CUVWSP (./conv_syn.v,1884|27): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): QN
+
+  EDFFX1 \idata_tmp_reg[10]  ( .D(idata[10]), .E(n645), .CK(clk), .Q(
+                           |
+ncelab: *W,CUVWSP (./conv_syn.v,1886|27): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): QN
+
+	Reading SDF file from location "./conv_syn.sdf"
+	Compiled SDF file "conv_syn.sdf.X" older than source SDF file "./conv_syn.sdf".
+	Recompiling.
+	Writing compiled SDF file to "conv_syn.sdf.X".
+	Annotating SDF timing data:
+		Compiled SDF file:     conv_syn.sdf.X
+		Log file:              
+		Backannotation scope:  testfixture.u_CONV
+		Configuration file:    
+		MTM control:           
+		Scale factors:         
+		Scale type:            
+	Annotation completed successfully...
+	SDF statistics: No. of Pathdelays = 7216  Annotated = 100.00% -- No. of Tchecks = 954  Annotated = 100.00% 
+				        Total 	   Annotated	  Percentage
+		 Path Delays	        7216	        7216	      100.00
+		      $width	         457	         457	      100.00
+		  $setuphold	         497	         497	      100.00
 	Building instance overlay tables: .................... Done
 	Generating native compiled code:
-		worklib.testfixture:v <0x582ea726>
-			streams:  31, words: 38971
+		tsmc13_neg.CMPR42X4:v <0x636269d7>
+			streams:   0, words:     0
+		worklib.CONV:v <0x2468c544>
+			streams:   0, words:     0
+		worklib.testfixture:v <0x7b7ec798>
+			streams:  26, words: 26377
 	Building instance specific data structures.
 	Loading native compiled code:     .................... Done
 	Design hierarchy summary:
-		                  Instances  Unique
-		Modules:                  2       2
-		Registers:               56      56
-		Scalar wires:             6       -
-		Vectored wires:           7       -
-		Always blocks:            5       5
-		Initial blocks:          14      14
-		Pseudo assignments:       3       3
-		Simulation timescale:  10ps
+		                    Instances  Unique
+		Modules:                 2059     142
+		UDPs:                     167       3
+		Primitives:              4370       8
+		Timing outputs:          2333      49
+		Registers:                179      28
+		Scalar wires:            2503       -
+		Expanded wires:            40       2
+		Always blocks:              4       4
+		Initial blocks:            13      13
+		Pseudo assignments:         3       3
+		Timing checks:           1451     201
+		Interconnect:            5154       -
+		Delayed tcheck signals:   477     174
+		Simulation timescale:     1ps
 	Writing initial simulation snapshot: worklib.testfixture:v
 Loading snapshot worklib.testfixture:v .................... Done
 *Verdi* Loading libsscore_ius152.so
@@ -38,10 +301,7 @@ FSDB Dumper for IUS, Release Verdi_Q-2020.03, Linux, 02/09/2020
 *Verdi* : Create FSDB file 'CONV.fsdb'
 *Verdi* : Begin traversing the scopes, layer (0).
 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.L0_MEM0(116)
-*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.L0_MEM1(116)
 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.L1_MEM0(116)
-*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.L1_MEM1(116)
-*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.L2_MEM(116)
 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.reset(48)
 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.clk(48)
 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.ready(48)
@@ -53,14 +313,10 @@ FSDB Dumper for IUS, Release Verdi_Q-2020.03, Linux, 02/09/2020
 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.p4(25)
 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.p2(25)
 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.err00(25)
-*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.err01(25)
 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.err10(25)
-*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.err11(25)
-*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.err2(25)
 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.pat_num(25)
 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.check0(48)
 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.check1(48)
-*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.check2(48)
 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.cwr(36)
 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.crd(36)
 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.cdata_wr(36)
@@ -69,45 +325,55 @@ FSDB Dumper for IUS, Release Verdi_Q-2020.03, Linux, 02/09/2020
 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.caddr_wr(36)
 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.iaddr(36)
 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.busy(36)
-*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_CONV.busy(48)
-*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_CONV.iaddr(48)
-*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_CONV.cwr(48)
-*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_CONV.caddr_wr(48)
-*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_CONV.cdata_wr(48)
-*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_CONV.crd(48)
-*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_CONV.caddr_rd(48)
-*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_CONV.csel(48)
-*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_CONV.dir_y(48)
-*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_CONV.dir_x(48)
-*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_CONV.x(48)
-*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_CONV.flagX(48)
-*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_CONV.flagY(48)
-*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_CONV.temp(48)
-*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_CONV.image(116)
-*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_CONV.register1(116)
-*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_CONV.register2(116)
-*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_CONV.register3(116)
-*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_CONV.register4(116)
-*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_CONV.result(116)
-*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_CONV.Kernel0(116)
-*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_CONV.Kernel1(116)
-*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_CONV.bias0(48)
-*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_CONV.bias1(48)
-*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_CONV.status(48)
-*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_CONV.status_temp(48)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_CONV.iaddr(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_CONV.idata(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_CONV.caddr_wr(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_CONV.cdata_wr(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_CONV.caddr_rd(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_CONV.cdata_rd(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_CONV.csel(36)
 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_CONV.clk(36)
 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_CONV.reset(36)
 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_CONV.ready(36)
-*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_CONV.idata(36)
-*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_CONV.cdata_rd(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_CONV.busy(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_CONV.cwr(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_CONV.crd(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_CONV.n990(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_CONV.n991(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_CONV.n992(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_CONV.n993(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_CONV.n994(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_CONV.n995(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_CONV.n996(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_CONV.n997(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_CONV.n998(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_CONV.n999(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_CONV.n1000(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_CONV.n1001(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_CONV.n1002(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_CONV.n1003(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_CONV.n1004(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_CONV.n1005(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_CONV.n1006(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_CONV.n1007(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_CONV.n1008(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_CONV.n1009(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_CONV.n1010(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_CONV.n1011(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_CONV.n1012(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_CONV.n1013(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_CONV.n1014(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_CONV.n1015(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_CONV.n1016(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_CONV.n1017(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_CONV.n1018(36)
+*Verdi* WARNING: The above messages are printed 50 times. No more similar message will be printed out.
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_CONV.n1019(36)
 *Verdi* : End of traversing.
 *Verdi* : Begin traversing the MDAs, layer (0).
 *Verdi* : Enable +mda and +packedmda dumping.
 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.L0_MEM0(116)
-*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.L0_MEM1(116)
 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.L1_MEM0(116)
-*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.L1_MEM1(116)
-*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.L2_MEM(116)
 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.reset(48)
 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.clk(48)
 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.ready(48)
@@ -119,53 +385,10 @@ FSDB Dumper for IUS, Release Verdi_Q-2020.03, Linux, 02/09/2020
 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.p4(25)
 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.p2(25)
 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.err00(25)
-*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.err01(25)
 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.err10(25)
-*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.err11(25)
-*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.err2(25)
 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.pat_num(25)
 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.check0(48)
 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.check1(48)
-*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.check2(48)
-*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.cwr(36)
-*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.crd(36)
-*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.cdata_wr(36)
-*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.csel(36)
-*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.caddr_rd(36)
-*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.caddr_wr(36)
-*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.iaddr(36)
-*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.busy(36)
-*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_CONV.busy(48)
-*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_CONV.iaddr(48)
-*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_CONV.cwr(48)
-*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_CONV.caddr_wr(48)
-*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_CONV.cdata_wr(48)
-*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_CONV.crd(48)
-*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_CONV.caddr_rd(48)
-*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_CONV.csel(48)
-*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_CONV.dir_y(48)
-*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_CONV.dir_x(48)
-*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_CONV.x(48)
-*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_CONV.flagX(48)
-*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_CONV.flagY(48)
-*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_CONV.temp(48)
-*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_CONV.image(116)
-*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_CONV.register1(116)
-*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_CONV.register2(116)
-*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_CONV.register3(116)
-*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_CONV.register4(116)
-*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_CONV.result(116)
-*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_CONV.Kernel0(116)
-*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_CONV.Kernel1(116)
-*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_CONV.bias0(48)
-*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_CONV.bias1(48)
-*Verdi* WARNING: The above messages are printed 50 times. No more similar message will be printed out.
-*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_CONV.status(48)
-*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_CONV.clk(36)
-*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_CONV.reset(36)
-*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_CONV.ready(36)
-*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_CONV.idata(36)
-*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_CONV.cdata_rd(36)
 *Verdi* : End of traversing the MDAs.
 -----------------------------------------------------
 
@@ -174,10 +397,7 @@ START!!! Simulation Start .....
 -----------------------------------------------------
 
 Layer 0 (Convolutional Output) with Kernel 0 is correct !
-Layer 0 (Convolutional Output) with Kernel 1 is correct!
 Layer 1 (Max-pooling Output) with Kernel 0 is correct!
-Layer 1 (Max-pooling Output) with Kernel 1 is correct!
-Layer 2 (Flatten  Output) is correct!
  
 -----------------------------------------------------
 
@@ -187,11 +407,9 @@ Congratulations! Layer 0 data have been generated successfully! The result is PA
 
 Congratulations! Layer 1 data have been generated successfully! The result is PASS!!
 
-Congratulations! Layer 2 data have been generated successfully! The result is PASS!!
-
 -----------------------------------------------------
 
-Simulation complete via $finish(1) at time 398170 NS + 0
-./testfixture.v:267       #(`CYCLE/2); $finish;
+Simulation complete via $finish(1) at time 593981138 PS + 0
+./testfixture.v:191       #(`CYCLE/2); $finish;
 ncsim> exit
-TOOL:	ncverilog	15.20-s039: Exiting on Mar 02, 2022 at 16:50:41 CST  (total: 00:00:03)
+TOOL:	ncverilog	15.20-s039: Exiting on Mar 23, 2022 at 21:34:57 CST  (total: 00:00:17)

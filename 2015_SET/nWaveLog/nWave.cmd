@@ -337,3 +337,4 @@ wvGetSignalOpen -win $_nWave1
 wvSetCursor -win $_nWave1 63915.986753 -snap {("G3" 1)}
 wvSetCursor -win $_nWave1 65134.428766 -snap {("G3" 1)}
 wvSetCursor -win $_nWave1 74330.764914 -snap {("G3" 1)}
+wvExit

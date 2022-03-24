@@ -1,0 +1,8 @@
+//
+// File created by:  ncverilog
+// Do not modify this file
+//
+-VFILE
+tsmc13_neg.v
+-DEFINE
+SDF

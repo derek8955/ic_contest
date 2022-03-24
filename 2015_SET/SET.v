@@ -132,7 +132,7 @@ begin
 			y_tmp = ( y > y_A )? y - y_A : y_A - y;
 			R = R_A;
 		end
-		else if( counter == 2'd1)
+		else if( counter == 2'd1 )
 		begin
 			x_tmp = ( x > x_B )? x - x_B : x_B - x;
 			y_tmp = ( y > y_B )? y - y_B : y_B - y;
@@ -260,16 +260,19 @@ begin
 		end
 		2'b10:
 		begin
-			if( sqrt_xy_plus <= sqrt_r && match_array[0] == 1'd0 && counter == 2'd1 ) candidate <= candidate + 8'd1;	
-			else if( sqrt_xy_plus > sqrt_r && match_array[0] == 1'd1 && counter == 2'd1 ) candidate <= candidate + 8'd1;	
+			if( counter == 2'd1 )
+			begin
+				if( sqrt_xy_plus <= sqrt_r && match_array[0] == 1'd0 ) candidate <= candidate + 8'd1;	
+				else if( sqrt_xy_plus > sqrt_r && match_array[0] == 1'd1 ) candidate <= candidate + 8'd1;	
+			end
 		end
 		2'b11:
 		begin
 			if( counter == 2'd2 )
 			begin
-				if( sqrt_xy_plus <= sqrt_r && match_array[0] == 1'd0 && match_array[1] == 1'd1 ) candidate <= candidate + 8'd1;	
-				else if( sqrt_xy_plus <= sqrt_r && match_array[0] == 1'd1 && match_array[1] == 1'd0 ) candidate <= candidate + 8'd1;	
-				else if( sqrt_xy_plus > sqrt_r && match_array[0] == 1'd1 && match_array[1] == 1'd1) candidate <= candidate + 8'd1;
+				if( sqrt_xy_plus <= sqrt_r && match_array == 2'b01 ) candidate <= candidate + 8'd1;	
+				else if( sqrt_xy_plus <= sqrt_r && match_array == 2'b10 ) candidate <= candidate + 8'd1;	
+				else if( sqrt_xy_plus > sqrt_r && match_array == 2'b11 ) candidate <= candidate + 8'd1;
 			end
 		end
 		endcase
