@@ -1,0 +1,53 @@
+str:1:abcdijk lmnop q rstuv
+pat:1:0:00:1234
+pat:2:1:00:abcd
+pat:3:1:03:dijk
+pat:4:0:00:pqrst
+pat:5:0:00:pqr.t
+pat:6:1:02:c...k
+pat:7:1:08:^lmno
+pat:8:1:16:rstuv$
+pat:9:0:00:ijk l$
+pat:a:1:20:v
+pat:b:0:00:lmnoprst
+pat:c:0:00:^ijk$
+pat:d:1:14:^q$
+str:2:2*1=2 2*2=4 2*3=6
+pat:1:0:00:^2.2.2
+pat:2:1:04:2.2.2
+pat:3:1:06:^2*2.4$
+pat:4:1:00:.
+pat:5:0:00:^.$
+pat:6:0:00:3=6-3
+pat:7:0:00:1.2=2
+pat:8:1:02:1.2.2
+str:3:She sees cheese
+pat:1:1:05:ees.
+pat:2:1:11:ees.$
+pat:3:0:00:e..se
+pat:4:0:00:e..ee$
+pat:5:0:00:^s$
+pat:6:1:04:.ees$
+pat:7:1:10:.eese$
+pat:8:1:01:he.se
+pat:9:1:10:he.se$
+str:4:But she said the butter's bitter
+pat:1:1:08:^said th
+pat:2:1:29:ter$
+pat:3:0:00:ter.$
+pat:4:0:00:the bit
+pat:5:0:00:^tho
+pat:6:0:00:but$
+pat:7:1:14:he but
+pat:8:1:17:..tt..
+pat:9:1:26:..tt..$
+pat:a:1:26:^..tt..$
+str:5:He threw three free throws
+pat:1:0:00:he
+pat:2:0:00:20200325
+pat:3:0:00:.ree  fr
+pat:4:1:05:re. thr
+pat:5:1:00:...
+pat:6:0:00:^...$
+pat:7:1:15:^....$
+pat:8:0:00:^.......$

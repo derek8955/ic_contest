@@ -6,11 +6,7 @@
 ./INCA_libs/irun.lnx86.15.20.nc
 -RUNMODE
 testfixture.v
-LCD_CTRL_syn.v
--VFILE
-tsmc13_neg.v
--DEFINE
-SDF
+LCD_CTRL.v
 -DEFINE
 tb3
 -CDSLIB

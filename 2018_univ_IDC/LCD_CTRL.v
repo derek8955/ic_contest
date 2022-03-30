@@ -1,35 +1,39 @@
+//############################################################################
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+//   2018 IC Contest
+//   univ_cell_based          : Image Display Control
+//   Author         : Yao-Zhan Xu (xuyaozhan8905@gmail.com)
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+//   File Name   : LCD_CTRL.v
+//   Module Name : LCD_CTRL
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+//############################################################################
 module LCD_CTRL(clk, reset, cmd, cmd_valid, IROM_Q, IROM_rd, IROM_A, IRAM_valid, IRAM_D, IRAM_A, busy, done);
-input clk;//
-input reset;//
+//================================================================
+//  INPUT AND OUTPUT DECLARATION                         
+//================================================================	
+input clk;
+input reset;
 input [3:0] cmd;
 input cmd_valid;
-input [7:0] IROM_Q;//
-output IROM_rd;//
-output [5:0] IROM_A;//
-output IRAM_valid;//
-output [7:0] IRAM_D;//
-output [5:0] IRAM_A;//
-output busy;//
-output done;//
-
-//--------------------------------------------------------------
-//------------------------Wire/Reg defined----------------------
-//--------------------------------------------------------------
-
-reg IROM_rd;
-reg [5:0] IROM_A;
-reg busy;
-reg done;
-reg IRAM_valid;
-reg [7:0] IRAM_D;
-reg [5:0] IRAM_A;
-
+input [7:0] IROM_Q;
+output reg IROM_rd;
+output reg [5:0] IROM_A;
+output reg IRAM_valid;
+output reg [7:0] IRAM_D;
+output reg [5:0] IRAM_A;
+output reg busy;
+output reg done;
 //--------------------------------------------------------------
 //------------------------Self defined--------------------------
 //--------------------------------------------------------------
 
 reg [5:0] P0;
 wire [5:0] P1, P2, P3;
+assign P1 = P0 + 6'd1;
+assign P2 = P0 + 6'd8;
+assign P3 = P0 + 6'd9;
+
 reg [7:0] data[0:63];
 reg [6:0] idx;
 reg [1:0] state, nx_state;
@@ -47,17 +51,9 @@ parameter cmd_AVG = 7, cmd_CCR = 8, cmd_CR = 9, cmd_MRX = 10, cmd_MRY = 11;
 //global status
 parameter RD = 0, CMD = 1, OP = 2, WR = 3;
 
-
-//--------------------------------------------------------------
-//---------------------------design-----------------------------
-//--------------------------------------------------------------
-
-assign P1 = P0 + 6'd1;
-assign P2 = P0 + 6'd8;
-assign P3 = P0 + 6'd9;
-
-
-//state
+//================================================================
+//  FSM
+//================================================================
 always@( posedge clk or posedge reset ) 
 begin
 	if( reset ) state <= RD;
@@ -225,7 +221,6 @@ begin
 	endcase
 end
 
-
 //counter & IRAM_D
 always@( posedge clk or posedge reset )
 begin
@@ -242,10 +237,8 @@ end
 //IRAM_A delay 
 always@( posedge clk or posedge reset)
 begin
-	if( reset )
-		IRAM_A <= 6'd0;
-	else
-		IRAM_A <= counter;
+	if( reset ) IRAM_A <= 6'd0;
+	else IRAM_A <= counter;
 end
 
 //done

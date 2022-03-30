@@ -1,15 +1,15 @@
-ftp帳號(FTP number): 
+ftp帳號(FTP number): E22053
 
-通過gate-level simulation之cell area report：
-通過gate-level simulation之clock cycle time (ns)：
+通過gate-level simulation之cell area report： 7648 
+通過gate-level simulation之clock cycle time (ns)： 582080
 
 --- RTL category---
-使用之HDL模擬器名稱(HDL simulator ):  
-RTL檔案名稱(RTL filename):            
+使用之HDL模擬器名稱(HDL simulator ):  ncverilog
+RTL檔案名稱(RTL filename):  JAM.v          
 
 --- Pre-layout gate-level ---
-gate-level檔案名稱(gate_level filename):   
-gate-level sdf filename:                   
+gate-level檔案名稱(gate_level filename):  JAM_syn.v
+gate-level sdf filename: JAM_syn.sdf                  
 design compiler合成資料庫(dc library):     
 
 -----注意事項(annotation)--------------------------------------------------------

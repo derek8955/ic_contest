@@ -27,7 +27,7 @@ output reg is_inside;
 //================================================================
 //  integer / genvar / parameters
 //================================================================
-parameter IDLE = 3'd0, IN = 3'd1, RESULT = 3'd2, IS_INSIDE = 3'd3, DELAY_CLK_1 = 3'd4, DELAY_CLK_2 = 3'd5;
+parameter IDLE = 3'd0, IN_MID = 3'd1, IN = 3'd2, SORT = 3'd3, IS_INSIDE = 3'd4, DELAY_CLK_1 = 3'd5;
 
 //================================================================
 //  Wires & Registers 
@@ -54,13 +54,13 @@ assign BxAy = Bx * Ay;
 assign counter_A = counter_RESULT + 3'd1;
 assign counter_B = counter_RESULT + 3'd2;
 assign counter_det_A = counter_INSIDE;
-assign counter_det_B = ( counter_det_A == 3'd5 )? 3'd0 : counter_INSIDE + 3'd1;
+assign counter_det_B = ( counter_INSIDE == 3'd5 )? 3'd0 : counter_INSIDE + 3'd1;
 
 //Ax, Bx, Ay, By
 always@( * )
 begin
 	case( state )
-	RESULT:
+	SORT:
 	begin
 		Ax = x[ 0 ] - x[ counter_A ];
 		Bx = x[ 0 ] - x[ counter_B ];
@@ -129,7 +129,7 @@ begin
 	begin
 		obj_x <= 10'd0; obj_y <= 10'd0;	
 	end
-	else if( state == IDLE || state == DELAY_CLK_2 )
+	else if( state == IDLE || state == IN_MID )
 	begin
 		obj_x <= X; obj_y <= Y;
 	end
@@ -142,7 +142,7 @@ begin
 	begin
 		x[ counter_IN ] <= X; y[ counter_IN ] <= Y; 
 	end
-	else if( state == RESULT )
+	else if( state == SORT )
 	begin
 		if( AxBy > BxAy ) 
 		begin
@@ -170,7 +170,7 @@ always@( posedge clk or posedge reset )
 begin
 	if( reset ) counter_RESULT <= 2'd0;
 	else if( state == IN ) counter_RESULT <= 2'd0;
-	else if( state == RESULT ) counter_RESULT <= ( counter_RESULT == 2'd3 )? 2'd0 : counter_RESULT + 2'd1;
+	else if( state == SORT ) counter_RESULT <= ( counter_RESULT == 2'd3 )? 2'd0 : counter_RESULT + 2'd1;
 end
 
 //================================================================
@@ -190,7 +190,7 @@ always@( posedge clk or posedge reset )
 begin 
 	if( reset ) counter_RES <= 2'd0;
 	else if( state == IN ) counter_RES <= 2'd0;
-	else if( state == RESULT ) 
+	else if( state == SORT ) 
 	begin
 		if( counter_RESULT == 2'd3 ) counter_RES <= counter_RES + 2'd1;
 	end
@@ -208,12 +208,12 @@ end
 always@( * )
 begin
 	case( state )
-	IDLE: 		nx_state = IN;
-	IN: 		nx_state = ( counter_IN == 3'd6 )? RESULT : IN ;
-	RESULT: 	nx_state = ( counter_RES == 2'd3 && counter_RESULT == 2'd3 )? IS_INSIDE : RESULT ;
+	IDLE: 		nx_state = IN; 
+	IN_MID:		nx_state = IN;
+	IN: 		nx_state = ( counter_IN == 3'd6 )? SORT : IN ;
+	SORT: 	nx_state = ( counter_RES == 2'd3 && counter_RESULT == 2'd3 )? IS_INSIDE : SORT ;
 	IS_INSIDE:	nx_state = ( counter_INSIDE == 3'd6 )? DELAY_CLK_1 : IS_INSIDE ;
-	DELAY_CLK_1: nx_state = DELAY_CLK_2;
-	DELAY_CLK_2: nx_state = IN;
+	DELAY_CLK_1: nx_state = IN_MID;
 	default: 	nx_state = IDLE; 
 	endcase
 end

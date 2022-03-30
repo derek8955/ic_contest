@@ -17,62 +17,53 @@ maxproc			1024
 (Special)Runtime environment variables:
 
 Runtime environment variables:
-ORBIT_SOCKETDIR=/tmp/orbit-t107360223
-MANPATH=/usr/cad/synopsys/synthesis/cur/doc/syn/man:/usr/cad/synopsys/synthesis/cur/doc/syn/man
-SYNOPSYS_TMAX=/usr/cad/synopsys/tmax/cur
-SELINUX_ROLE_REQUESTED=
-TERM=xterm
-SHELL=/bin/tcsh
-HOST=islabx6
-SSH_CLIENT=59.126.46.8 60077 22
-SELINUX_USE_CURRENT_RANGE=
-GTK_RC_FILES=/etc/gtk/gtkrc:/home/t107360223/.gtkrc-1.2-gnome2
-WINDOWID=33554436
-OLDPWD=/home/t107360223
-MGC_LOCATION_MAP=NO_MAP
-QTDIR=/usr/lib64/qt-3.3
-QTINC=/usr/lib64/qt-3.3/include
-SG_HTML_BROWSER=/usr/bin/mozilla
 USER=t107360223
-GROUP=users
-LS_COLORS=rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=01;05;37;41:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arj=01;31:*.taz=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lz=01;31:*.xz=01;31:*.bz2=01;31:*.tbz=01;31:*.tbz2=01;31:*.bz=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.rar=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.axv=01;35:*.anx=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=01;36:*.au=01;36:*.flac=01;36:*.mid=01;36:*.midi=01;36:*.mka=01;36:*.mp3=01;36:*.mpc=01;36:*.ogg=01;36:*.ra=01;36:*.wav=01;36:*.axa=01;36:*.oga=01;36:*.spx=01;36:*.xspf=01;36:
-LD_LIBRARY_PATH=/usr/cad/synopsys/verdi/cur/etc/lib/libstdc++/LINUX64/:/usr/cad/synopsys/verdi/cur/share/PLI/IUS/LINUX:/:/usr/cad/cadence/STRATUS/cur/tools/lib:/usr/cad/cadence/INNOVUS/cur//tools/tlfUtil/lib:/usr/cad/cadence/GENUS/cur/tools/lib:/usr/cad/cadence/INCISIV/cur/tools/lib:/usr/cad/cadence/INCISIV/cur/tools/vtools/vfault/lib:/usr/cad/synopsys/verdi/cur/etc/lib/libstdc++/LINUX64/:/usr/cad/synopsys/verdi/cur/share/PLI/IUS/LINUX:/:/usr/cad/cadence/STRATUS/cur/tools/lib:/usr/cad/cadence/INNOVUS/cur//tools/tlfUtil/lib:/usr/cad/cadence/GENUS/cur/tools/lib:/usr/cad/cadence/INCISIV/cur/tools/lib:/usr/cad/cadence/INCISIV/cur/tools/vtools/vfault/lib:/usr/openwin/lib:/usr/dt/lib:/usr/lib:/usr/local/lib
-GNOME_KEYRING_SOCKET=/tmp/keyring-bbSk0g/socket
-SSH_AUTH_SOCK=/tmp/keyring-bbSk0g/socket.ssh
-HOSTTYPE=x86_64-linux
-ENCOUNTER=/usr/cad/cadence/INNOVUS/cur/tools/fe
-SESSION_MANAGER=local/unix:@/tmp/.ICE-unix/6688,unix/unix:/tmp/.ICE-unix/6688
+LOGNAME=t107360223
+HOME=/home/t107360223
 PATH=/usr/cad/mentor/Tessent/cur/bin:/usr/cad/mentor/Catapult/cur//bin:/usr/cad/mentor/calibre/cur/bin:/usr/cad/synopsys/xa/cur/bin:/usr/cad/synopsys/verdi/cur/bin:/usr/cad/synopsys/verdi/cur/nLint/bin:/usr/cad/synopsys/tmax/cur/bin:/usr/bin/X11:/usr/cad/synopsys/coreConsultant/cur/bin:/usr/cad/synopsys/synthesis/cur/amd64/syn/bin:/usr/cad/synopsys/lc/cur/bin:/usr/cad/synopsys/spyglass/cur/SPYGLASS_HOME/bin:/usr/bin/X11:/usr/cad/synopsys/primetime/cur/amd64/syn/bin:/usr/cad/synopsys/formality/cur/bin:/usr/cad/cadence/STRATUS/cur/tools/bin:/usr/cad/cadence/JASPER/cur/bin:/usr/cad/cadence/JASPER/cur/bin:/usr/cad/cadence/JASPER/cur/bin:/usr/cad/cadence/JASPER/cur/bin:/usr/cad/cadence/JASPER/cur/bin:/usr/cad/cadence/INNOVUS/cur/tools/celtic/bin:/usr/cad/cadence/INNOVUS/cur/tools/plato/bin:/usr/cad/cadence/INNOVUS/cur/tools/dfII/bin:/usr/cad/cadence/INNOVUS/cur/tools/bin:/usr/cad/cadence/INNOVUS/cur//tools/tlfUtil/bin:/usr/cad/cadence/GENUS/cur/tools/bin:/usr/cad/cadence/INCISIV/cur/tools/bin:/usr/cad/cadence/INCISIV/cur/tools/vtools/vfault/bin:/usr/cad/cadence/INCISIV/cur/tools/dfII/bin:/bin:/usr/bin:/usr/ucb:/etc:.
 MAIL=/var/spool/mail/t107360223
-PWD=/home/t107360223/Desktop/ic_contest/2021_univ_geo
-EDITOR=/usr/bin/vim
-LANG=zh_TW.UTF-8
-SYNTHESIS=/usr/cad/synopsys/synthesis/cur
+SHELL=/bin/tcsh
+SSH_CLIENT=219.71.79.60 51326 22
+SSH_CONNECTION=219.71.79.60 51326 140.124.72.29 22
+SSH_TTY=/dev/pts/0
+TERM=xterm-256color
+SELINUX_ROLE_REQUESTED=
 SELINUX_LEVEL_REQUESTED=
-PRIMETIME=/usr/cad/synopsys/primetime/cur
-LM_LICENSE_FILE=1717@lshc:26585@lscic:5280@lshc:5280@lsntu:5280@lsncku:5280@lsnchu:
-SSH_ASKPASS=/usr/libexec/openssh/gnome-ssh-askpass
-HOME=/home/t107360223
-SHLVL=2
-OSTYPE=linux
-FORMALITY=/usr/cad/synopsys/formality/cur
-MGC_HOME=/usr/cad/mentor/calibre/cur
-GNOME_DESKTOP_SESSION_ID=this-is-deprecated
-MGC_TMPDIR=/tmp
+SELINUX_USE_CURRENT_RANGE=
+HOSTTYPE=x86_64-linux
 VENDOR=unknown
+OSTYPE=linux
 MACHTYPE=x86_64
-LOGNAME=t107360223
-QTLIB=/usr/lib64/qt-3.3/lib
+SHLVL=1
+PWD=/home/t107360223/Desktop/ic_contest/2021_univ_geo
+GROUP=users
+HOST=islabx6
+REMOTEHOST=219.71.79.60
+HOSTNAME=islabx6
+LS_COLORS=rs=0:di=38;5;27:ln=38;5;51:mh=44;38;5;15:pi=40;38;5;11:so=38;5;13:do=38;5;5:bd=48;5;232;38;5;11:cd=48;5;232;38;5;3:or=48;5;232;38;5;9:mi=05;48;5;232;38;5;15:su=48;5;196;38;5;15:sg=48;5;11;38;5;16:ca=48;5;196;38;5;226:tw=48;5;10;38;5;16:ow=48;5;10;38;5;21:st=48;5;21;38;5;15:ex=38;5;34:*.tar=38;5;9:*.tgz=38;5;9:*.arj=38;5;9:*.taz=38;5;9:*.lzh=38;5;9:*.lzma=38;5;9:*.tlz=38;5;9:*.txz=38;5;9:*.zip=38;5;9:*.z=38;5;9:*.Z=38;5;9:*.dz=38;5;9:*.gz=38;5;9:*.lz=38;5;9:*.xz=38;5;9:*.bz2=38;5;9:*.tbz=38;5;9:*.tbz2=38;5;9:*.bz=38;5;9:*.tz=38;5;9:*.deb=38;5;9:*.rpm=38;5;9:*.jar=38;5;9:*.rar=38;5;9:*.ace=38;5;9:*.zoo=38;5;9:*.cpio=38;5;9:*.7z=38;5;9:*.rz=38;5;9:*.jpg=38;5;13:*.jpeg=38;5;13:*.gif=38;5;13:*.bmp=38;5;13:*.pbm=38;5;13:*.pgm=38;5;13:*.ppm=38;5;13:*.tga=38;5;13:*.xbm=38;5;13:*.xpm=38;5;13:*.tif=38;5;13:*.tiff=38;5;13:*.png=38;5;13:*.svg=38;5;13:*.svgz=38;5;13:*.mng=38;5;13:*.pcx=38;5;13:*.mov=38;5;13:*.mpg=38;5;13:*.mpeg=38;5;13:*.m2v=38;5;13:*.mkv=38;5;13:*.ogm=38;5;13:*.mp4=38;5;13:*.m4v=38;5;13:*.mp4v=38;5;13:*.vob=38;5;13:*.qt=38;5;13:*.nuv=38;5;13:*.wmv=38;5;13:*.asf=38;5;13:*.rm=38;5;13:*.rmvb=38;5;13:*.flc=38;5;13:*.avi=38;5;13:*.fli=38;5;13:*.flv=38;5;13:*.gl=38;5;13:*.dl=38;5;13:*.xcf=38;5;13:*.xwd=38;5;13:*.yuv=38;5;13:*.cgm=38;5;13:*.emf=38;5;13:*.axv=38;5;13:*.anx=38;5;13:*.ogv=38;5;13:*.ogx=38;5;13:*.aac=38;5;45:*.au=38;5;45:*.flac=38;5;45:*.mid=38;5;45:*.midi=38;5;45:*.mka=38;5;45:*.mp3=38;5;45:*.mpc=38;5;45:*.ogg=38;5;45:*.ra=38;5;45:*.wav=38;5;45:*.axa=38;5;45:*.oga=38;5;45:*.spx=38;5;45:*.xspf=38;5;45:
 CVS_RSH=ssh
-DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-g2MTP6Yc5A,guid=39ad76178433eae6a52bc195000629bc
-SSH_CONNECTION=59.126.46.8 60077 140.124.72.29 22
-LESSOPEN=||/usr/bin/lesspipe.sh %s
-SHLIB_PATH=/usr/cad/synopsys/verdi/cur/etc/lib/libstdc++/LINUX64/:/usr/cad/synopsys/verdi/cur/etc/lib/libstdc++/LINUX64/
-DISPLAY=localhost:10.0
-SYN_MAN_DIR=/usr/cad/synopsys/synthesis/cur/doc/syn/man
 G_BROKEN_FILENAMES=1
-COLORTERM=gnome-terminal
-REMOTEHOST=localhost
+SSH_ASKPASS=/usr/libexec/openssh/gnome-ssh-askpass
+LANG=zh_TW.UTF-8
+LESSOPEN=||/usr/bin/lesspipe.sh %s
+QTDIR=/usr/lib64/qt-3.3
+QTINC=/usr/lib64/qt-3.3/include
+QTLIB=/usr/lib64/qt-3.3/lib
+LD_LIBRARY_PATH=/usr/cad/synopsys/verdi/cur/etc/lib/libstdc++/LINUX64/:/usr/cad/synopsys/verdi/cur/share/PLI/IUS/LINUX:/:/usr/cad/cadence/STRATUS/cur/tools/lib:/usr/cad/cadence/INNOVUS/cur//tools/tlfUtil/lib:/usr/cad/cadence/GENUS/cur/tools/lib:/usr/cad/cadence/INCISIV/cur/tools/lib:/usr/cad/cadence/INCISIV/cur/tools/vtools/vfault/lib:/usr/openwin/lib:/usr/dt/lib:/usr/lib:/usr/local/lib
+LM_LICENSE_FILE=1717@lshc:26585@lscic:5280@lshc:5280@lsnctu:5280@lsncu:
+ENCOUNTER=/usr/cad/cadence/INNOVUS/cur/tools/fe
+FORMALITY=/usr/cad/synopsys/formality/cur
+PRIMETIME=/usr/cad/synopsys/primetime/cur
+SG_HTML_BROWSER=/usr/bin/mozilla
+EDITOR=/usr/bin/vim
+SYNTHESIS=/usr/cad/synopsys/synthesis/cur
+SYN_MAN_DIR=/usr/cad/synopsys/synthesis/cur/doc/syn/man
+MANPATH=/usr/cad/synopsys/synthesis/cur/doc/syn/man
+SYNOPSYS_TMAX=/usr/cad/synopsys/tmax/cur
+SHLIB_PATH=/usr/cad/synopsys/verdi/cur/etc/lib/libstdc++/LINUX64/
+MGC_HOME=/usr/cad/mentor/calibre/cur
+MGC_TMPDIR=/tmp
+MGC_LOCATION_MAP=NO_MAP
 _IRUNROOT_=/usr/cad/cadence/INCISIV/cur/tools
 CDS_ARCH=lnx86
 NCRUNMODE=ncverilog:./INCA_libs/irun.lnx86.15.20.nc
@@ -83,78 +74,67 @@ Runtime command line arguments:
 argv[0]=ncverilog
 argv[1]=tb.sv
 argv[2]=geofence.v
-85 profile - 100
-          CPU/Mem usage: 0.060 sys,  0.040 user,  61.59M sys,  0.00M vm
-86 VC callback profile - scalar:0 vector:0
-87 Wed Mar 16 14:55:30 2022
-88 pliAppInit
-89 FSDB_GATE is disabled.
-90 Enable Parallel Dumping.
-91 pliAppMiscSet: New Sim Round
-92 pliEntryInit
-93 LIBSSCORE=found /usr/cad/synopsys/verdi/cur/share/PLI/IUS/LINUX/libsscore_ius152.so through $LD_LIBRARY_PATH setting.
-94 argv[0]: geofence.fsdb
-95 FSDB Dumper for IUS, Release Verdi_Q-2020.03, Linux, 02/09/2020
-96 (C) 1996 - 2020 by Synopsys, Inc.
-97 sps_call_fsdbDumpfile at 0 : /home/t107360223/Desktop/ic_contest/2021_univ_geo/tb.sv(37)
-98 argv[0]: geofence.fsdb
-99 *Verdi* : Create FSDB file 'geofence.fsdb'
-100 sps_call_fsdbDumpvars at 0 : /home/t107360223/Desktop/ic_contest/2021_univ_geo/tb.sv(38)
-101 *Verdi* : Begin traversing the scopes, layer (0).
-102 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.objnum(25)
-103 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.obj_isin(25)
-104 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.charcount(25)
-105 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.pass(25)
-106 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.fail(25)
-107 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.npoint(48)
-108 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.X(48)
-109 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.Y(48)
-110 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.clk(48)
-111 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.reset(48)
-112 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.cycle(48)
-113 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.valid_reg(48)
-114 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.wait_valid(48)
-115 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.get_inside(48)
-116 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.ap_num(25)
-117 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.valid(36)
-118 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.is_inside(36)
-119 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence.targetX(48)
-120 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence.targetY(48)
-121 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence.i(25)
-122 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence.countGeofence(48)
-123 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence.geofenceX(116)
-124 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence.geofenceY(116)
-125 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence.readStatus(48)
-126 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence.calStatus(48)
-127 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence.countElement(48)
-128 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence.countResult(48)
-129 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence.xA(48)
-130 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence.yA(48)
-131 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence.xB(48)
-132 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence.yB(48)
-133 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence._valid(48)
-134 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence._inside(48)
-135 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence.bitJudge(48)
-136 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence.clk(36)
-137 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence.reset(36)
-138 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence.X(36)
-139 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence.Y(36)
-140 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence.valid(36)
-141 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence.is_inside(36)
-142 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence.sxA(36)
-143 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence.syA(36)
-144 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence.sxB(36)
-145 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence.syB(36)
-146 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence.subxA(36)
-147 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence.subyA(36)
-148 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence.subxB(36)
-149 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence.subyB(36)
-150 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence.outPot(36)
-151 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence.judge(36)
-152 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence.calResult(36)
-153 *Verdi* : End of traversing.
-154 fsdbDumpvars traverse var: profile - 
-          CPU/Mem usage: 0.060 sys,  0.040 user,  144.05M sys,  0.00M vm
+76 profile - 100
+          CPU/Mem usage: 0.050 sys,  0.040 user,  61.54M sys,  0.00M vm
+77 VC callback profile - scalar:0 vector:0
+78 Tue Mar 29 18:48:06 2022
+79 pliAppInit
+80 FSDB_GATE is disabled.
+81 Enable Parallel Dumping.
+82 pliAppMiscSet: New Sim Round
+83 pliEntryInit
+84 LIBSSCORE=found /usr/cad/synopsys/verdi/cur/share/PLI/IUS/LINUX/libsscore_ius152.so through $LD_LIBRARY_PATH setting.
+85 argv[0]: geofence.fsdb
+86 FSDB Dumper for IUS, Release Verdi_Q-2020.03, Linux, 02/09/2020
+87 (C) 1996 - 2020 by Synopsys, Inc.
+88 sps_call_fsdbDumpfile at 0 : /home/t107360223/Desktop/ic_contest/2021_univ_geo/tb.sv(37)
+89 argv[0]: geofence.fsdb
+90 *Verdi* FSDB WARNING: The FSDB file already exists. Overwriting the FSDB file may crash the programs that are using this file.
+91 *Verdi* : Create FSDB file 'geofence.fsdb'
+92 sps_call_fsdbDumpvars at 0 : /home/t107360223/Desktop/ic_contest/2021_univ_geo/tb.sv(38)
+93 *Verdi* : Begin traversing the scopes, layer (0).
+94 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.objnum(25)
+95 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.obj_isin(25)
+96 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.charcount(25)
+97 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.pass(25)
+98 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.fail(25)
+99 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.npoint(48)
+100 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.X(48)
+101 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.Y(48)
+102 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.clk(48)
+103 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.reset(48)
+104 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.cycle(48)
+105 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.valid_reg(48)
+106 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.wait_valid(48)
+107 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.get_inside(48)
+108 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.ap_num(25)
+109 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.valid(36)
+110 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.is_inside(36)
+111 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence.valid(48)
+112 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence.is_inside(48)
+113 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence.x(116)
+114 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence.y(116)
+115 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence.px(48)
+116 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence.py(48)
+117 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence.count(48)
+118 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence.start(48)
+119 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence.busy(48)
+120 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence.calculate(48)
+121 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence.sequence(116)
+122 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence.p(48)
+123 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence.s(48)
+124 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence.step(48)
+125 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence.tmp(48)
+126 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence.a(48)
+127 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence.b(48)
+128 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence.clk(36)
+129 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence.reset(36)
+130 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence.X(36)
+131 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence.Y(36)
+132 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence.mul(36)
+133 *Verdi* : End of traversing.
+134 fsdbDumpvars traverse var: profile - 
+          CPU/Mem usage: 0.050 sys,  0.040 user,  144.01M sys,  0.00M vm
                    incr: 0.000 sys,  0.000 user,  3.48M sys,  0.00M vm
                    accu: 0.000 sys,  0.000 user,  3.48M sys,  0.00M vm
               accu incr: 0.000 sys,  0.000 user,  3.48M sys,  0.00M vm
@@ -163,10 +143,10 @@ argv[2]=geofence.v
                  incr: 1 var,  1 idcode,  1 callback
                  accu: 1 var,  1 idcode,  1 callback
             accu incr: 1 var,  1 idcode,  1 callback
-155 VC callback profile - scalar:0 vector:0
-156 Wed Mar 16 14:55:30 2022
-157 fsdbDumpvars: profile - 
-          CPU/Mem usage: 0.060 sys,  0.040 user,  145.10M sys,  0.00M vm
+135 VC callback profile - scalar:0 vector:0
+136 Tue Mar 29 18:48:07 2022
+137 fsdbDumpvars: profile - 
+          CPU/Mem usage: 0.050 sys,  0.040 user,  145.06M sys,  0.00M vm
                    incr: 0.000 sys,  0.000 user,  1.05M sys,  0.00M vm
                    accu: 0.000 sys,  0.000 user,  4.53M sys,  0.00M vm
               accu incr: 0.000 sys,  0.000 user,  1.05M sys,  0.00M vm
@@ -175,65 +155,53 @@ argv[2]=geofence.v
                  incr: 0 var,  0 idcode,  0 callback
                  accu: 1 var,  1 idcode,  1 callback
             accu incr: 0 var,  0 idcode,  0 callback
-158 VC callback profile - scalar:0 vector:1
-159 Wed Mar 16 14:55:30 2022
-160 sps_call_fsdbDumpMDA at 0 : /home/t107360223/Desktop/ic_contest/2021_univ_geo/tb.sv(39)
-161 *Verdi* : Begin traversing the MDAs, layer (0).
-162 *Verdi* : Enable +mda and +packedmda dumping.
-163 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.objnum(25)
-164 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.obj_isin(25)
-165 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.charcount(25)
-166 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.pass(25)
-167 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.fail(25)
-168 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.npoint(48)
-169 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.X(48)
-170 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.Y(48)
-171 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.clk(48)
-172 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.reset(48)
-173 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.cycle(48)
-174 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.valid_reg(48)
-175 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.wait_valid(48)
-176 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.get_inside(48)
-177 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.ap_num(25)
-178 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.valid(36)
-179 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.is_inside(36)
-180 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence.targetX(48)
-181 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence.targetY(48)
-182 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence.i(25)
-183 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence.countGeofence(48)
-184 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence.geofenceX(116)
-185 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence.geofenceY(116)
-186 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence.readStatus(48)
-187 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence.calStatus(48)
-188 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence.countElement(48)
-189 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence.countResult(48)
-190 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence.xA(48)
-191 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence.yA(48)
-192 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence.xB(48)
-193 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence.yB(48)
-194 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence._valid(48)
-195 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence._inside(48)
-196 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence.bitJudge(48)
-197 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence.clk(36)
-198 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence.reset(36)
-199 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence.X(36)
-200 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence.Y(36)
-201 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence.valid(36)
-202 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence.is_inside(36)
-203 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence.sxA(36)
-204 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence.syA(36)
-205 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence.sxB(36)
-206 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence.syB(36)
-207 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence.subxA(36)
-208 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence.subyA(36)
-209 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence.subxB(36)
-210 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence.subyB(36)
-211 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence.outPot(36)
-212 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence.judge(36)
-213 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence.calResult(36)
-214 *Verdi* : End of traversing the MDAs.
-215 fsdbDumpMDA traverse var: profile - 
-          CPU/Mem usage: 0.060 sys,  0.040 user,  145.10M sys,  0.00M vm
+138 VC callback profile - scalar:0 vector:1
+139 Tue Mar 29 18:48:07 2022
+140 sps_call_fsdbDumpMDA at 0 : /home/t107360223/Desktop/ic_contest/2021_univ_geo/tb.sv(39)
+141 *Verdi* : Begin traversing the MDAs, layer (0).
+142 *Verdi* : Enable +mda and +packedmda dumping.
+143 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.objnum(25)
+144 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.obj_isin(25)
+145 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.charcount(25)
+146 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.pass(25)
+147 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.fail(25)
+148 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.npoint(48)
+149 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.X(48)
+150 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.Y(48)
+151 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.clk(48)
+152 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.reset(48)
+153 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.cycle(48)
+154 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.valid_reg(48)
+155 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.wait_valid(48)
+156 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.get_inside(48)
+157 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.ap_num(25)
+158 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.valid(36)
+159 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.is_inside(36)
+160 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence.valid(48)
+161 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence.is_inside(48)
+162 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence.x(116)
+163 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence.y(116)
+164 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence.px(48)
+165 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence.py(48)
+166 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence.count(48)
+167 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence.start(48)
+168 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence.busy(48)
+169 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence.calculate(48)
+170 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence.sequence(116)
+171 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence.p(48)
+172 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence.s(48)
+173 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence.step(48)
+174 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence.tmp(48)
+175 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence.a(48)
+176 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence.b(48)
+177 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence.clk(36)
+178 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence.reset(36)
+179 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence.X(36)
+180 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence.Y(36)
+181 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_geofence.mul(36)
+182 *Verdi* : End of traversing the MDAs.
+183 fsdbDumpMDA traverse var: profile - 
+          CPU/Mem usage: 0.050 sys,  0.040 user,  145.06M sys,  0.00M vm
                    incr: 0.000 sys,  0.000 user,  0.00M sys,  0.00M vm
                    accu: 0.000 sys,  0.000 user,  0.00M sys,  0.00M vm
               accu incr: 0.000 sys,  0.000 user,  0.00M sys,  0.00M vm
@@ -242,10 +210,10 @@ argv[2]=geofence.v
                  incr: 0 var,  0 idcode,  0 callback
                  accu: 0 var,  0 idcode,  0 callback
             accu incr: 0 var,  0 idcode,  0 callback
-216 VC callback profile - scalar:0 vector:1
-217 Wed Mar 16 14:55:30 2022
-218 fsdbDumpMDA: profile - 
-          CPU/Mem usage: 0.060 sys,  0.040 user,  145.10M sys,  0.00M vm
+184 VC callback profile - scalar:0 vector:1
+185 Tue Mar 29 18:48:07 2022
+186 fsdbDumpMDA: profile - 
+          CPU/Mem usage: 0.050 sys,  0.040 user,  145.06M sys,  0.00M vm
                    incr: 0.000 sys,  0.000 user,  0.00M sys,  0.00M vm
                    accu: 0.000 sys,  0.000 user,  0.00M sys,  0.00M vm
               accu incr: 0.000 sys,  0.000 user,  0.00M sys,  0.00M vm
@@ -254,17 +222,17 @@ argv[2]=geofence.v
                  incr: 0 var,  0 idcode,  0 callback
                  accu: 0 var,  0 idcode,  0 callback
             accu incr: 0 var,  0 idcode,  0 callback
-219 VC callback profile - scalar:0 vector:1
-220 Wed Mar 16 14:55:30 2022
-221 End of simulation at 5646000
-222 VC callback profile - scalar:0 vector:2
-223 Wed Mar 16 14:55:30 2022
-224 Begin FSDB profile info:
-225 FSDB Writer : bc1(0) bcn(2) mtf/stf(0/0)
-FSDB Writer elapsed time : flush(0.058597) io wait(0.000000) theadpool wait(0.000000)
+187 VC callback profile - scalar:0 vector:1
+188 Tue Mar 29 18:48:07 2022
+189 End of simulation at 13422000
+190 VC callback profile - scalar:0 vector:2
+191 Tue Mar 29 18:48:07 2022
+192 Begin FSDB profile info:
+193 FSDB Writer : bc1(0) bcn(2) mtf/stf(0/0)
+FSDB Writer elapsed time : flush(0.068624) io wait(0.000000) theadpool wait(0.000000)
 FSDB Writer cpu time : MT Compression : 0
-226 End FSDB profile info
-227 Parallel profile    -  Flush:4 Expand:0 ProduceWait:0 ConsumerWait:0 BlockUsed:1
-228                        ProduceTime:0.133595099 ConsumerTime:0.000000000 Buffer:64MB
-229 SimExit
-230 Sim process exit
+194 End FSDB profile info
+195 Parallel profile    -  Flush:4 Expand:0 ProduceWait:0 ConsumerWait:0 BlockUsed:1
+196                        ProduceTime:0.126835572 ConsumerTime:0.000000000 Buffer:64MB
+197 SimExit
+198 Sim process exit

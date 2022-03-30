@@ -3,8 +3,5 @@
 // Do not modify this file
 //
 testfixture.v
-LCD_CTRL_syn.v
--v
-tsmc13_neg.v
-+define+SDF
+LCD_CTRL.v
 +define+tb3

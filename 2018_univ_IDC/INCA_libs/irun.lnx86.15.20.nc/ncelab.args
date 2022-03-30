@@ -2,7 +2,6 @@
 // File created by:  ncverilog
 // Do not modify this file
 //
-+define+SDF
 +define+tb3
 -noshowtop
 -MESSAGES

@@ -1,0 +1,172 @@
+ncverilog: 15.20-s039: (c) Copyright 1995-2017 Cadence Design Systems, Inc.
+TOOL:	ncverilog	15.20-s039: Started on Mar 30, 2022 at 22:12:16 CST
+ncverilog
+	-sv
+	tb.sv
+	JAM.v
+	+define+P3
+Recompiling... reason: file './JAM.v' is newer than expected.
+	expected: Wed Mar 30 13:07:34 2022
+	actual:   Wed Mar 30 22:12:15 2022
+file: JAM.v
+	module worklib.JAM:v
+		errors: 0, warnings: 0
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+ncelab: *W,DSEMEL: This SystemVerilog design will be simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.JAM:v <0x07edcfec>
+			streams: 197, words: 71374
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                  Instances  Unique
+		Modules:                  2       2
+		Registers:               43      43
+		Scalar wires:             3       -
+		Vectored wires:           7       -
+		Always blocks:           17      17
+		Initial blocks:           7       7
+		Cont. assignments:        2       2
+		Pseudo assignments:       1       1
+		Simulation timescale:  10ps
+	Writing initial simulation snapshot: worklib.testfixture:sv
+Loading snapshot worklib.testfixture:sv .................... Done
+ncsim: *W,DSEM2009: This SystemVerilog design is simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+*Verdi* Loading libsscore_ius152.so
+ncsim> source /usr/cad/cadence/INCISIV/cur/tools/inca/files/ncsimrc
+ncsim> run
+FSDB Dumper for IUS, Release Verdi_Q-2020.03, Linux, 02/09/2020
+(C) 1996 - 2020 by Synopsys, Inc.
+*Verdi* FSDB WARNING: The FSDB file already exists. Overwriting the FSDB file may crash the programs that are using this file.
+*Verdi* : Create FSDB file 'JAM.fsdb'
+*Verdi* : Begin traversing the scopes, layer (0).
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.charcount(25)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.freturn(25)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.patnum(25)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.CLK(48)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.RST(48)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.Cost(48)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.cycle(48)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.costrom(116)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.key_value(25)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.v0(25)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.v1(25)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.v2(25)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.v3(25)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.v4(25)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.v5(25)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.v6(25)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.v7(25)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.worker(25)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.i(25)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.j(25)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.goldMatchCount(48)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.goldMinCost(48)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.wait_valid(48)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.Valid(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.W(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.J(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.MatchCount(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.MinCost(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_JAM.W(48)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_JAM.J(48)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_JAM.MatchCount(48)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_JAM.MinCost(48)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_JAM.Valid(48)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_JAM.state(48)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_JAM.nx_state(48)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_JAM.n(116)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_JAM.counter_RES(48)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_JAM.sum(48)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_JAM.counter(48)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_JAM.change_point(48)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_JAM.find_fn(48)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_JAM.finish(48)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_JAM.mini_idx(48)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_JAM.counter_sort(48)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_JAM.sort_fn(48)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_JAM.CLK(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_JAM.RST(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_JAM.Cost(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_JAM.cnt1(36)
+*Verdi* : End of traversing.
+*Verdi* : Begin traversing the MDAs, layer (0).
+*Verdi* : Enable +mda and +packedmda dumping.
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.charcount(25)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.freturn(25)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.patnum(25)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.CLK(48)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.RST(48)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.Cost(48)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.cycle(48)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.costrom(116)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.key_value(25)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.v0(25)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.v1(25)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.v2(25)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.v3(25)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.v4(25)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.v5(25)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.v6(25)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.v7(25)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.worker(25)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.i(25)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.j(25)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.goldMatchCount(48)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.goldMinCost(48)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.wait_valid(48)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.Valid(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.W(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.J(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.MatchCount(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.MinCost(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_JAM.W(48)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_JAM.J(48)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_JAM.MatchCount(48)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_JAM.MinCost(48)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_JAM.Valid(48)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_JAM.state(48)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_JAM.nx_state(48)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_JAM.n(116)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_JAM.counter_RES(48)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_JAM.sum(48)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_JAM.counter(48)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_JAM.change_point(48)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_JAM.find_fn(48)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_JAM.finish(48)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_JAM.mini_idx(48)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_JAM.counter_sort(48)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_JAM.sort_fn(48)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_JAM.CLK(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_JAM.RST(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_JAM.Cost(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_JAM.cnt1(36)
+*Verdi* : End of traversing the MDAs.
+*******************************
+** Simulation Start          **
+*******************************
+PATTERN:   3
+-------------- Cost Table --------------
+Jobs       0   1   2   3   4   5   6   7
+worker0:  81  60  60  65  96  60  65  96
+worker1:  96  60  66  96  60  60  60  81
+worker2:  96  66  60  99  60  81  65  65
+worker3:  66  96  80  99  81  81  96  60
+worker4:  81  96  65  96  60  96  60  81
+worker5:  60  96  80  96  80  60  81  60
+worker6:  99  60  99  65  80  80  81  66
+worker7:  65  60  60  99  99  80  60  96
+----------------------------------------------------------------------
+Get Valid at cycle:    582080
+receive MinCost/MatchCount=  485/ 9 , golden MinCost/MatchCount= 485/ 9
+----------------------------------------------------------------------
+*************************
+**  FUNCTION  CORRECT  **
+*************************
+
+Simulation complete via $finish(1) at time 5820795 NS + 0
+./tb.sv:180                 $finish;
+ncsim> exit
+TOOL:	ncverilog	15.20-s039: Exiting on Mar 30, 2022 at 22:12:19 CST  (total: 00:00:03)
