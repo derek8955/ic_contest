@@ -2,7 +2,7 @@
 // File created by:  ncverilog
 // Do not modify this file
 //
-+define+P3
++define+P1
 -noshowtop
 -MESSAGES
 -XLMODE

@@ -23,9 +23,9 @@ HOME=/home/t107360223
 PATH=/usr/cad/mentor/Tessent/cur/bin:/usr/cad/mentor/Catapult/cur//bin:/usr/cad/mentor/calibre/cur/bin:/usr/cad/synopsys/xa/cur/bin:/usr/cad/synopsys/verdi/cur/bin:/usr/cad/synopsys/verdi/cur/nLint/bin:/usr/cad/synopsys/tmax/cur/bin:/usr/bin/X11:/usr/cad/synopsys/coreConsultant/cur/bin:/usr/cad/synopsys/synthesis/cur/amd64/syn/bin:/usr/cad/synopsys/lc/cur/bin:/usr/cad/synopsys/spyglass/cur/SPYGLASS_HOME/bin:/usr/bin/X11:/usr/cad/synopsys/primetime/cur/amd64/syn/bin:/usr/cad/synopsys/formality/cur/bin:/usr/cad/cadence/STRATUS/cur/tools/bin:/usr/cad/cadence/JASPER/cur/bin:/usr/cad/cadence/JASPER/cur/bin:/usr/cad/cadence/JASPER/cur/bin:/usr/cad/cadence/JASPER/cur/bin:/usr/cad/cadence/JASPER/cur/bin:/usr/cad/cadence/INNOVUS/cur/tools/celtic/bin:/usr/cad/cadence/INNOVUS/cur/tools/plato/bin:/usr/cad/cadence/INNOVUS/cur/tools/dfII/bin:/usr/cad/cadence/INNOVUS/cur/tools/bin:/usr/cad/cadence/INNOVUS/cur//tools/tlfUtil/bin:/usr/cad/cadence/GENUS/cur/tools/bin:/usr/cad/cadence/INCISIV/cur/tools/bin:/usr/cad/cadence/INCISIV/cur/tools/vtools/vfault/bin:/usr/cad/cadence/INCISIV/cur/tools/dfII/bin:/bin:/usr/bin:/usr/ucb:/etc:.
 MAIL=/var/spool/mail/t107360223
 SHELL=/bin/tcsh
-SSH_CLIENT=59.126.46.8 51199 22
-SSH_CONNECTION=59.126.46.8 51199 140.124.72.29 22
-SSH_TTY=/dev/pts/2
+SSH_CLIENT=59.126.46.8 63292 22
+SSH_CONNECTION=59.126.46.8 63292 140.124.72.29 22
+SSH_TTY=/dev/pts/0
 TERM=xterm-256color
 SELINUX_ROLE_REQUESTED=
 SELINUX_LEVEL_REQUESTED=
@@ -35,7 +35,7 @@ VENDOR=unknown
 OSTYPE=linux
 MACHTYPE=x86_64
 SHLVL=1
-PWD=/home/t107360223/Desktop/icc
+PWD=/home/t107360223/Desktop/ic_contest/2022_univ_JAM
 GROUP=users
 HOST=islabx6
 REMOTEHOST=59-126-46-8.hinet-ip.hinet.net
@@ -75,11 +75,11 @@ argv[0]=ncverilog
 argv[1]=-sv
 argv[2]=tb.sv
 argv[3]=JAM.v
-argv[4]=+define+P3
+argv[4]=+define+P1
 78 profile - 100
-          CPU/Mem usage: 0.050 sys,  0.030 user,  61.67M sys,  0.00M vm
+          CPU/Mem usage: 0.040 sys,  0.030 user,  61.68M sys,  0.00M vm
 79 VC callback profile - scalar:0 vector:0
-80 Wed Mar 30 22:12:18 2022
+80 Thu Mar 31 22:03:41 2022
 81 pliAppInit
 82 FSDB_GATE is disabled.
 83 Enable Parallel Dumping.
@@ -89,11 +89,11 @@ argv[4]=+define+P3
 87 argv[0]: JAM.fsdb
 88 FSDB Dumper for IUS, Release Verdi_Q-2020.03, Linux, 02/09/2020
 89 (C) 1996 - 2020 by Synopsys, Inc.
-90 sps_call_fsdbDumpfile at 0 : /home/t107360223/Desktop/icc/tb.sv(50)
+90 sps_call_fsdbDumpfile at 0 : /home/t107360223/Desktop/ic_contest/2022_univ_JAM/tb.sv(50)
 91 argv[0]: JAM.fsdb
 92 *Verdi* FSDB WARNING: The FSDB file already exists. Overwriting the FSDB file may crash the programs that are using this file.
 93 *Verdi* : Create FSDB file 'JAM.fsdb'
-94 sps_call_fsdbDumpvars at 0 : /home/t107360223/Desktop/icc/tb.sv(51)
+94 sps_call_fsdbDumpvars at 0 : /home/t107360223/Desktop/ic_contest/2022_univ_JAM/tb.sv(51)
 95 *Verdi* : Begin traversing the scopes, layer (0).
 96 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.charcount(25)
 97 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.freturn(25)
@@ -146,7 +146,7 @@ argv[4]=+define+P3
 144 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_JAM.cnt1(36)
 145 *Verdi* : End of traversing.
 146 fsdbDumpvars traverse var: profile - 
-          CPU/Mem usage: 0.060 sys,  0.030 user,  144.13M sys,  0.00M vm
+          CPU/Mem usage: 0.050 sys,  0.030 user,  144.13M sys,  0.00M vm
                    incr: 0.000 sys,  0.000 user,  3.48M sys,  0.00M vm
                    accu: 0.000 sys,  0.000 user,  3.48M sys,  0.00M vm
               accu incr: 0.000 sys,  0.000 user,  3.48M sys,  0.00M vm
@@ -156,9 +156,9 @@ argv[4]=+define+P3
                  accu: 1 var,  1 idcode,  1 callback
             accu incr: 1 var,  1 idcode,  1 callback
 147 VC callback profile - scalar:0 vector:0
-148 Wed Mar 30 22:12:18 2022
+148 Thu Mar 31 22:03:41 2022
 149 fsdbDumpvars: profile - 
-          CPU/Mem usage: 0.060 sys,  0.030 user,  145.18M sys,  0.00M vm
+          CPU/Mem usage: 0.050 sys,  0.030 user,  145.19M sys,  0.00M vm
                    incr: 0.000 sys,  0.000 user,  1.05M sys,  0.00M vm
                    accu: 0.000 sys,  0.000 user,  4.53M sys,  0.00M vm
               accu incr: 0.000 sys,  0.000 user,  1.05M sys,  0.00M vm
@@ -168,8 +168,8 @@ argv[4]=+define+P3
                  accu: 1 var,  1 idcode,  1 callback
             accu incr: 0 var,  0 idcode,  0 callback
 150 VC callback profile - scalar:0 vector:1
-151 Wed Mar 30 22:12:18 2022
-152 sps_call_fsdbDumpMDA at 0 : /home/t107360223/Desktop/icc/tb.sv(52)
+151 Thu Mar 31 22:03:41 2022
+152 sps_call_fsdbDumpMDA at 0 : /home/t107360223/Desktop/ic_contest/2022_univ_JAM/tb.sv(52)
 153 *Verdi* : Begin traversing the MDAs, layer (0).
 154 *Verdi* : Enable +mda and +packedmda dumping.
 155 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.charcount(25)
@@ -223,7 +223,7 @@ argv[4]=+define+P3
 203 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_JAM.cnt1(36)
 204 *Verdi* : End of traversing the MDAs.
 205 fsdbDumpMDA traverse var: profile - 
-          CPU/Mem usage: 0.060 sys,  0.030 user,  145.18M sys,  0.00M vm
+          CPU/Mem usage: 0.050 sys,  0.030 user,  145.19M sys,  0.00M vm
                    incr: 0.000 sys,  0.000 user,  0.00M sys,  0.00M vm
                    accu: 0.000 sys,  0.000 user,  0.00M sys,  0.00M vm
               accu incr: 0.000 sys,  0.000 user,  0.00M sys,  0.00M vm
@@ -233,9 +233,9 @@ argv[4]=+define+P3
                  accu: 0 var,  0 idcode,  0 callback
             accu incr: 0 var,  0 idcode,  0 callback
 206 VC callback profile - scalar:0 vector:1
-207 Wed Mar 30 22:12:18 2022
+207 Thu Mar 31 22:03:41 2022
 208 fsdbDumpMDA: profile - 
-          CPU/Mem usage: 0.060 sys,  0.030 user,  145.18M sys,  0.00M vm
+          CPU/Mem usage: 0.050 sys,  0.030 user,  145.19M sys,  0.00M vm
                    incr: 0.000 sys,  0.000 user,  0.00M sys,  0.00M vm
                    accu: 0.000 sys,  0.000 user,  0.00M sys,  0.00M vm
               accu incr: 0.000 sys,  0.000 user,  0.00M sys,  0.00M vm
@@ -245,16 +245,16 @@ argv[4]=+define+P3
                  accu: 0 var,  0 idcode,  0 callback
             accu incr: 0 var,  0 idcode,  0 callback
 209 VC callback profile - scalar:0 vector:1
-210 Wed Mar 30 22:12:18 2022
+210 Thu Mar 31 22:03:41 2022
 211 End of simulation at 582079500
 212 VC callback profile - scalar:0 vector:2
-213 Wed Mar 30 22:12:18 2022
+213 Thu Mar 31 22:03:42 2022
 214 Begin FSDB profile info:
 215 FSDB Writer : bc1(0) bcn(2) mtf/stf(0/0)
-FSDB Writer elapsed time : flush(0.080568) io wait(0.000000) theadpool wait(0.000000)
+FSDB Writer elapsed time : flush(0.117523) io wait(0.000000) theadpool wait(0.000000)
 FSDB Writer cpu time : MT Compression : 0
 216 End FSDB profile info
 217 Parallel profile    -  Flush:4 Expand:0 ProduceWait:0 ConsumerWait:0 BlockUsed:1
-218                        ProduceTime:0.311110088 ConsumerTime:0.000000000 Buffer:64MB
+218                        ProduceTime:0.292333116 ConsumerTime:0.000000000 Buffer:64MB
 219 SimExit
 220 Sim process exit

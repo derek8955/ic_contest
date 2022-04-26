@@ -1,0 +1,8 @@
+ncverilog testfixture.v IOTDF.v +access+r -clean +define+F1
+ncverilog testfixture.v IOTDF.v +access+r -clean +define+F2
+ncverilog testfixture.v IOTDF.v +access+r -clean +define+F3
+ncverilog testfixture.v IOTDF.v +access+r -clean +define+F4
+ncverilog testfixture.v IOTDF.v +access+r -clean +define+F5
+ncverilog testfixture.v IOTDF.v +access+r -clean +define+F6
+ncverilog testfixture.v IOTDF.v +access+r -clean +define+F7
+

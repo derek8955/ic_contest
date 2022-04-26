@@ -1,13 +1,13 @@
 ncverilog: 15.20-s039: (c) Copyright 1995-2017 Cadence Design Systems, Inc.
-TOOL:	ncverilog	15.20-s039: Started on Mar 30, 2022 at 22:12:16 CST
+TOOL:	ncverilog	15.20-s039: Started on Mar 31, 2022 at 22:03:40 CST
 ncverilog
 	-sv
 	tb.sv
 	JAM.v
-	+define+P3
-Recompiling... reason: file './JAM.v' is newer than expected.
-	expected: Wed Mar 30 13:07:34 2022
-	actual:   Wed Mar 30 22:12:15 2022
+	+define+P1
+file: tb.sv
+	module worklib.testfixture:sv
+		errors: 0, warnings: 0
 file: JAM.v
 	module worklib.JAM:v
 		errors: 0, warnings: 0
@@ -18,6 +18,8 @@ ncelab: *W,DSEMEL: This SystemVerilog design will be simulated as per IEEE 1800-
 	Generating native compiled code:
 		worklib.JAM:v <0x07edcfec>
 			streams: 197, words: 71374
+		worklib.testfixture:sv <0x6c72085d>
+			streams:  11, words: 24109
 	Building instance specific data structures.
 	Loading native compiled code:     .................... Done
 	Design hierarchy summary:
@@ -147,20 +149,20 @@ FSDB Dumper for IUS, Release Verdi_Q-2020.03, Linux, 02/09/2020
 *******************************
 ** Simulation Start          **
 *******************************
-PATTERN:   3
+PATTERN:   1
 -------------- Cost Table --------------
 Jobs       0   1   2   3   4   5   6   7
-worker0:  81  60  60  65  96  60  65  96
-worker1:  96  60  66  96  60  60  60  81
-worker2:  96  66  60  99  60  81  65  65
-worker3:  66  96  80  99  81  81  96  60
-worker4:  81  96  65  96  60  96  60  81
-worker5:  60  96  80  96  80  60  81  60
-worker6:  99  60  99  65  80  80  81  66
-worker7:  65  60  60  99  99  80  60  96
+worker0:  11  25  53  41  59  32  25  59
+worker1:   4  11  25  11  59  31  53  11
+worker2:  11  59  15  11  15  15  53  53
+worker3:   4  59  32  34  53  41  34  59
+worker4:  15  32  41  34   4  59  34  32
+worker5:  41  59  59   4   4  41  34  34
+worker6:  53  31  25  41  59  32  31  53
+worker7:  11  31  25  11  34  34  53  32
 ----------------------------------------------------------------------
 Get Valid at cycle:    582080
-receive MinCost/MatchCount=  485/ 9 , golden MinCost/MatchCount= 485/ 9
+receive MinCost/MatchCount=  119/ 3 , golden MinCost/MatchCount= 119/ 3
 ----------------------------------------------------------------------
 *************************
 **  FUNCTION  CORRECT  **
@@ -169,4 +171,4 @@ receive MinCost/MatchCount=  485/ 9 , golden MinCost/MatchCount= 485/ 9
 Simulation complete via $finish(1) at time 5820795 NS + 0
 ./tb.sv:180                 $finish;
 ncsim> exit
-TOOL:	ncverilog	15.20-s039: Exiting on Mar 30, 2022 at 22:12:19 CST  (total: 00:00:03)
+TOOL:	ncverilog	15.20-s039: Exiting on Mar 31, 2022 at 22:03:42 CST  (total: 00:00:02)

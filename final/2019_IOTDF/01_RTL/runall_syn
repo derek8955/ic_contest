@@ -1,0 +1,7 @@
+ncverilog testfixture.v IOTDF_syn.v -v tsmc13_neg.v +access+r -clean +define+SDF+F1
+ncverilog testfixture.v IOTDF_syn.v -v tsmc13_neg.v +access+r -clean +define+SDF+F2
+ncverilog testfixture.v IOTDF_syn.v -v tsmc13_neg.v +access+r -clean +define+SDF+F3
+ncverilog testfixture.v IOTDF_syn.v -v tsmc13_neg.v +access+r -clean +define+SDF+F4
+ncverilog testfixture.v IOTDF_syn.v -v tsmc13_neg.v +access+r -clean +define+SDF+F5
+ncverilog testfixture.v IOTDF_syn.v -v tsmc13_neg.v +access+r -clean +define+SDF+F6
+ncverilog testfixture.v IOTDF_syn.v -v tsmc13_neg.v +access+r -clean +define+SDF+F7

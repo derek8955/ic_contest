@@ -1,0 +1,7 @@
+ncverilog  +ncmaxdelays  testfixture.v IOTDF_pr.v -v tsmc13_neg.v +access+r -clean +define+SDF+F1
+ncverilog  +ncmaxdelays  testfixture.v IOTDF_pr.v -v tsmc13_neg.v +access+r -clean +define+SDF+F2
+ncverilog  +ncmaxdelays  testfixture.v IOTDF_pr.v -v tsmc13_neg.v +access+r -clean +define+SDF+F3
+ncverilog  +ncmaxdelays  testfixture.v IOTDF_pr.v -v tsmc13_neg.v +access+r -clean +define+SDF+F4
+ncverilog  +ncmaxdelays  testfixture.v IOTDF_pr.v -v tsmc13_neg.v +access+r -clean +define+SDF+F5
+ncverilog  +ncmaxdelays  testfixture.v IOTDF_pr.v -v tsmc13_neg.v +access+r -clean +define+SDF+F6
+ncverilog  +ncmaxdelays  testfixture.v IOTDF_pr.v -v tsmc13_neg.v +access+r -clean +define+SDF+F7

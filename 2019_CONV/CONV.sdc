@@ -2,12 +2,8 @@
 
 create_clock -name clk  -period 10.0   [get_ports  clk] 
 
-set_dont_touch_network      [all_clocks]
-set_fix_hold                [all_clocks]
 set_clock_uncertainty  0.1  [all_clocks]
 set_clock_latency      0.5  [all_clocks]
-set_ideal_network           [get_ports clk]
-
 
 
 #Don't touch the basic env setting as below
