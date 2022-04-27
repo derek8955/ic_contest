@@ -1,0 +1,36 @@
+ncverilog: 15.20-s039: (c) Copyright 1995-2017 Cadence Design Systems, Inc.
+TOOL:	ncverilog	15.20-s039: Started on Apr 27, 2022 at 14:59:56 CST
+ncverilog
+	testfixture3.v
+	../03_APR/ISE_pr.v
+	-v
+	tsmc13_neg.v
+	+define+SDF
+	+ncmaxdelays
+Loading snapshot worklib.test:v .................... Done
+*Verdi* Loading libsscore_ius152.so
+ncsim> source /usr/cad/cadence/INCISIV/cur/tools/inca/files/ncsimrc
+ncsim> run
+-----------------------------------------------------
+
+Start to Send Pixel...
+...
+...
+...
+Send Pixel Over!
+-----------------------------------------------------
+
+
+Start to Run Output Compare....
+-----------------------------------------------------
+
+-----------------------------------------------------
+
+Congratulations! All data have been generated successfully!
+
+-------------------------PASS------------------------
+
+Simulation complete via $finish(1) at time 5249150 NS + 0
+./testfixture3.v:156       #(`CYCLE/2); $finish;
+ncsim> exit
+TOOL:	ncverilog	15.20-s039: Exiting on Apr 27, 2022 at 15:01:34 CST  (total: 00:01:38)

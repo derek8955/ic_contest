@@ -1,0 +1,20 @@
+catch { setAnalysisMode -analysisType single }
+catch { setAnalysisMode -virtualIPO false }
+catch { setExtractRCMode  -engine preRoute }
+catch { setPlaceMode -MXPBoundaryLevel 7 }
+catch { setPlaceMode -MXPConstraintFile {} }
+catch { setPlaceMode -MXPControlSetting 0 }
+catch { setPlaceMode -MXPLogicHierAware 0 }
+catch { setPlaceMode -MXPPreplaceSetting 5 }
+catch { setPlaceMode -MXPRefineSetting 17 }
+catch { setPlaceMode -place_global_place_io_pins false }
+catch { setPlaceMode -timingDriven true }
+catch { setIlmMode -keepHighFanoutPorts true -keepLoopBack false -keepFlatten true }
+catch { setPlanDesignMode -boundaryPlace true }
+catch { setPlanDesignMode -effort high }
+catch { setPlanDesignMode -fixPlacedMacros false }
+catch { setPlanDesignMode -incremental false }
+catch { setPlanDesignMode -noColorize false }
+catch { setDelayCalMode -engine aae }
+catch { setFPlanMode -maxIoHeight false }
+catch { setFPlanMode -powerRailLayer {} }

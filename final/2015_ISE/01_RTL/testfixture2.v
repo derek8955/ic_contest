@@ -1,6 +1,6 @@
 `timescale 1ns/10ps
 `define CYCLE     10.0       	         // Modify your clock period here
-`define SDFFILE   "./ISE_syn.sdf"	 // Modify your sdf file name
+`define SDFFILE   "../03_APR/ISE_pr.sdf"	 // Modify your sdf file name
 `define End_CYCLE 100000000              // Modify cycle times once your design need more cycle times!
 `define IN_PAT    "./in_pattern2.dat"
 `define EXP       "./out_golden2.dat"

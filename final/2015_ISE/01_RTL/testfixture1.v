@@ -1,6 +1,6 @@
 `timescale 1ns/10ps
 `define CYCLE     10.0        	         // Modify your clock period here
-`define SDFFILE   "./ISE_syn.sdf"	 // Modify your sdf file name
+`define SDFFILE   "../03_APR/ISE_pr.sdf"	 // Modify your sdf file name
 `define End_CYCLE 100000000              // Modify cycle times once your design need more cycle times!
 `define IN_PAT    "./in_pattern1.dat"
 `define EXP       "./out_golden1.dat"
@@ -66,8 +66,8 @@ always begin #(`CYCLE/2) clk = ~clk; end
 initial begin
 //$dumpfile("ISE.vcd");
 //$dumpvars;
-//$fsdbDumpfile("ISE.fsdb");
-//$fsdbDumpvars;
+$fsdbDumpfile("ISE.fsdb");
+$fsdbDumpvars;
 
    out_f = $fopen("out.dat");
    if (out_f == 0) begin
