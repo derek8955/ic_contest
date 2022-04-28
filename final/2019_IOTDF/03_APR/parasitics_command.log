@@ -1,0 +1,44 @@
+Information: Derived library resistance unit is 1.000000 Kohm (Time unit is 1 ns, and Capacitance unit is 1.000000 pF). (DES-028)
+
+****************************************
+Report : read_parasitics /home/t107360223/Desktop/ic_contest/final/2019_IOTDF/03_APR/IOTDF_pr.spef
+Design : IOTDF
+Version: Q-2019.12
+Date   : Thu Apr 28 18:38:44 2022
+****************************************
+
+        0 error(s)
+        Format is SPEF
+        Annotated nets                   :         4858
+        Annotated capacitances           :        73065
+        Annotated resistances            :        68207
+        Reduced coupling capacitances    :         9068
+        Annotated PI models              :            0
+        Annotated Elmore delays          :            0
+
+
+Executing command 'report_annotated_parasitics':
+****************************************
+Report : annotated_parasitics
+	-internal_nets
+	-boundary_nets
+Design : IOTDF
+Version: Q-2019.12
+Date   : Thu Apr 28 18:38:44 2022
+****************************************
+
+                    |         |         |         |   RC    |   Not   |
+Net Type            |  Total  | Lumped  |  RC pi  | network |Annotated|
+--------------------+---------+---------+---------+---------+---------+
+Internal nets       |         |         |         |         |         |
+  - Pin to pin nets |    4714 |       0 |       0 |    4714 |       0 |
+  - Driverless nets |      20 |       0 |       0 |       0 |      20 |
+  - Loadless nets   |       0 |       0 |       0 |       0 |       0 |
+--------------------+---------+---------+---------+---------+---------+
+Boundary/port nets  |         |         |         |         |         |
+  - Pin to pin nets |     144 |       0 |       0 |     144 |       0 |
+  - Driverless nets |       0 |       0 |       0 |       0 |       0 |
+  - Loadless nets   |       0 |       0 |       0 |       0 |       0 |
+--------------------+---------+---------+---------+---------+---------+
+                    |    4878 |       0 |       0 |    4858 |      20 |
+

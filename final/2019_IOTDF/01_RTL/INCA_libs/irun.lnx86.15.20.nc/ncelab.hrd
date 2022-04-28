@@ -1,0 +1,7 @@
+//
+// File created by:  ncverilog
+// Do not modify this file
+//
+-MAXDELAYS
+-ACCESS
++r

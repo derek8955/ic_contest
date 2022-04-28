@@ -1,0 +1,303 @@
+
+Cadence Innovus(TM) Implementation System.
+Copyright 2019 Cadence Design Systems, Inc. All rights reserved worldwide.
+
+Version:	v19.12-s087_1, built Mon Nov 11 17:32:01 PST 2019
+Options:	
+Date:		Thu Apr 28 18:31:37 2022
+Host:		islabx6 (x86_64 w/Linux 2.6.32-642.el6.x86_64) (6cores*24cpus*Intel(R) Xeon(R) CPU E5-2630 0 @ 2.30GHz 15360KB)
+OS:		CentOS release 6.8 (Final)
+
+License:
+		invs	Innovus Implementation System	19.1	checkout succeeded
+		8 CPU jobs allowed with the current license(s). Use setMultiCpuUsage to set your required CPU count.
+Change the soft stacksize limit to 0.2%RAM (193 mbytes). Set global soft_stack_size_limit to change the value.
+
+**INFO:  MMMC transition support version v31-84 
+
+<CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+<CMD> suppressMessage ENCEXT-2799
+<CMD> win
+<CMD> encMessage warning 0
+Suppress "**WARN ..." messages.
+<CMD> encMessage debug 0
+<CMD> encMessage info 0
+default_rc_corner
+**WARN: (IMPLF-119):	LAYER 'METAL1' has been found in the database. Its content except ANTENNA* data will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+**WARN: (IMPLF-119):	LAYER 'METAL2' has been found in the database. Its content except ANTENNA* data will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+**WARN: (IMPLF-119):	LAYER 'METAL3' has been found in the database. Its content except ANTENNA* data will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+**WARN: (IMPLF-119):	LAYER 'METAL4' has been found in the database. Its content except ANTENNA* data will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+**WARN: (IMPLF-119):	LAYER 'METAL5' has been found in the database. Its content except ANTENNA* data will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+**WARN: (IMPLF-119):	LAYER 'METAL6' has been found in the database. Its content except ANTENNA* data will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+**WARN: (IMPLF-119):	LAYER 'METAL7' has been found in the database. Its content except ANTENNA* data will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+**WARN: (IMPLF-119):	LAYER 'METAL8' has been found in the database. Its content except ANTENNA* data will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+**WARN: (IMPLF-119):	LAYER 'VIA12' has been found in the database. Its content except ANTENNA* data will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+**WARN: (IMPLF-119):	LAYER 'VIA23' has been found in the database. Its content except ANTENNA* data will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+**WARN: (IMPLF-119):	LAYER 'VIA34' has been found in the database. Its content except ANTENNA* data will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+**WARN: (IMPLF-119):	LAYER 'VIA45' has been found in the database. Its content except ANTENNA* data will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+**WARN: (IMPLF-119):	LAYER 'VIA56' has been found in the database. Its content except ANTENNA* data will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+**WARN: (IMPLF-119):	LAYER 'VIA67' has been found in the database. Its content except ANTENNA* data will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+**WARN: (IMPLF-119):	LAYER 'VIA78' has been found in the database. Its content except ANTENNA* data will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+**WARN: (IMPLF-44):	Macro 'PDC0102CDG' has no SIZE statement or a zero SIZE
+statement and it is a class CORE macro so it needs a correct SIZE. There
+is no SITE statement, so a useful SIZE cannot be computed, so this macro
+is not loaded in the Innovus database and cannot be used in the
+netlist.
+**WARN: (IMPLF-44):	Macro 'PDC0204CDG' has no SIZE statement or a zero SIZE
+statement and it is a class CORE macro so it needs a correct SIZE. There
+is no SITE statement, so a useful SIZE cannot be computed, so this macro
+is not loaded in the Innovus database and cannot be used in the
+netlist.
+**WARN: (IMPLF-44):	Macro 'PDC0408CDG' has no SIZE statement or a zero SIZE
+statement and it is a class CORE macro so it needs a correct SIZE. There
+is no SITE statement, so a useful SIZE cannot be computed, so this macro
+is not loaded in the Innovus database and cannot be used in the
+netlist.
+**WARN: (IMPLF-44):	Macro 'PDC1216CDG' has no SIZE statement or a zero SIZE
+statement and it is a class CORE macro so it needs a correct SIZE. There
+is no SITE statement, so a useful SIZE cannot be computed, so this macro
+is not loaded in the Innovus database and cannot be used in the
+netlist.
+**WARN: (IMPLF-44):	Macro 'PDS0102CDG' has no SIZE statement or a zero SIZE
+statement and it is a class CORE macro so it needs a correct SIZE. There
+is no SITE statement, so a useful SIZE cannot be computed, so this macro
+is not loaded in the Innovus database and cannot be used in the
+netlist.
+**WARN: (IMPLF-44):	Macro 'PDS0204CDG' has no SIZE statement or a zero SIZE
+statement and it is a class CORE macro so it needs a correct SIZE. There
+is no SITE statement, so a useful SIZE cannot be computed, so this macro
+is not loaded in the Innovus database and cannot be used in the
+netlist.
+**WARN: (IMPLF-44):	Macro 'PDS0408CDG' has no SIZE statement or a zero SIZE
+statement and it is a class CORE macro so it needs a correct SIZE. There
+is no SITE statement, so a useful SIZE cannot be computed, so this macro
+is not loaded in the Innovus database and cannot be used in the
+netlist.
+**WARN: (IMPLF-44):	Macro 'PDS1216CDG' has no SIZE statement or a zero SIZE
+statement and it is a class CORE macro so it needs a correct SIZE. There
+is no SITE statement, so a useful SIZE cannot be computed, so this macro
+is not loaded in the Innovus database and cannot be used in the
+netlist.
+**WARN: (IMPLF-44):	Macro 'PRC0102CDG' has no SIZE statement or a zero SIZE
+statement and it is a class CORE macro so it needs a correct SIZE. There
+is no SITE statement, so a useful SIZE cannot be computed, so this macro
+is not loaded in the Innovus database and cannot be used in the
+netlist.
+**WARN: (IMPLF-44):	Macro 'PRC0204CDG' has no SIZE statement or a zero SIZE
+statement and it is a class CORE macro so it needs a correct SIZE. There
+is no SITE statement, so a useful SIZE cannot be computed, so this macro
+is not loaded in the Innovus database and cannot be used in the
+netlist.
+**WARN: (IMPLF-44):	Macro 'PRC0408CDG' has no SIZE statement or a zero SIZE
+statement and it is a class CORE macro so it needs a correct SIZE. There
+is no SITE statement, so a useful SIZE cannot be computed, so this macro
+is not loaded in the Innovus database and cannot be used in the
+netlist.
+**WARN: (IMPLF-44):	Macro 'PRC1216CDG' has no SIZE statement or a zero SIZE
+statement and it is a class CORE macro so it needs a correct SIZE. There
+is no SITE statement, so a useful SIZE cannot be computed, so this macro
+is not loaded in the Innovus database and cannot be used in the
+netlist.
+**WARN: (IMPLF-44):	Macro 'PRS0102CDG' has no SIZE statement or a zero SIZE
+statement and it is a class CORE macro so it needs a correct SIZE. There
+is no SITE statement, so a useful SIZE cannot be computed, so this macro
+is not loaded in the Innovus database and cannot be used in the
+netlist.
+**WARN: (IMPLF-44):	Macro 'PRS0204CDG' has no SIZE statement or a zero SIZE
+statement and it is a class CORE macro so it needs a correct SIZE. There
+is no SITE statement, so a useful SIZE cannot be computed, so this macro
+is not loaded in the Innovus database and cannot be used in the
+netlist.
+**WARN: (IMPLF-44):	Macro 'PRS0408CDG' has no SIZE statement or a zero SIZE
+statement and it is a class CORE macro so it needs a correct SIZE. There
+is no SITE statement, so a useful SIZE cannot be computed, so this macro
+is not loaded in the Innovus database and cannot be used in the
+netlist.
+**WARN: (IMPLF-44):	Macro 'PRS1216CDG' has no SIZE statement or a zero SIZE
+statement and it is a class CORE macro so it needs a correct SIZE. There
+is no SITE statement, so a useful SIZE cannot be computed, so this macro
+is not loaded in the Innovus database and cannot be used in the
+netlist.
+**WARN: (IMPLF-44):	Macro 'PVDD1CDG' has no SIZE statement or a zero SIZE
+statement and it is a class CORE macro so it needs a correct SIZE. There
+is no SITE statement, so a useful SIZE cannot be computed, so this macro
+is not loaded in the Innovus database and cannot be used in the
+netlist.
+**WARN: (IMPLF-44):	Macro 'PVSS1CDG' has no SIZE statement or a zero SIZE
+statement and it is a class CORE macro so it needs a correct SIZE. There
+is no SITE statement, so a useful SIZE cannot be computed, so this macro
+is not loaded in the Innovus database and cannot be used in the
+netlist.
+**WARN: (IMPLF-44):	Macro 'PVSS3CDG' has no SIZE statement or a zero SIZE
+statement and it is a class CORE macro so it needs a correct SIZE. There
+is no SITE statement, so a useful SIZE cannot be computed, so this macro
+is not loaded in the Innovus database and cannot be used in the
+netlist.
+**WARN: (IMPLF-44):	Macro 'PXOE1CDG' has no SIZE statement or a zero SIZE
+statement and it is a class CORE macro so it needs a correct SIZE. There
+is no SITE statement, so a useful SIZE cannot be computed, so this macro
+is not loaded in the Innovus database and cannot be used in the
+netlist.
+**WARN: (EMS-27):	Message (IMPLF-44) has exceeded the current message display limit of 20.
+To increase the message display limit, refer to the product command reference manual.
+**WARN: (IMPLF-200):	Pin 'A' in macro 'ANTENNA' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+**WARN: (IMPPP-557):	A single-layer VIARULE GENERATE for turn-vias is obsolete and is being ignored. Remove this statement from the technology file: VIARULE TURNM1 GENERATE.
+**WARN: (IMPPP-557):	A single-layer VIARULE GENERATE for turn-vias is obsolete and is being ignored. Remove this statement from the technology file: VIARULE TURNM2 GENERATE.
+**WARN: (IMPPP-557):	A single-layer VIARULE GENERATE for turn-vias is obsolete and is being ignored. Remove this statement from the technology file: VIARULE TURNM3 GENERATE.
+**WARN: (IMPPP-557):	A single-layer VIARULE GENERATE for turn-vias is obsolete and is being ignored. Remove this statement from the technology file: VIARULE TURNM4 GENERATE.
+**WARN: (IMPPP-557):	A single-layer VIARULE GENERATE for turn-vias is obsolete and is being ignored. Remove this statement from the technology file: VIARULE TURNM5 GENERATE.
+**WARN: (IMPPP-557):	A single-layer VIARULE GENERATE for turn-vias is obsolete and is being ignored. Remove this statement from the technology file: VIARULE TURNM6 GENERATE.
+**WARN: (IMPPP-557):	A single-layer VIARULE GENERATE for turn-vias is obsolete and is being ignored. Remove this statement from the technology file: VIARULE TURNM7 GENERATE.
+**WARN: (IMPPP-557):	A single-layer VIARULE GENERATE for turn-vias is obsolete and is being ignored. Remove this statement from the technology file: VIARULE TURNM8 GENERATE.
+Loading view definition file from /home/t107360223/Desktop/ic_contest/final/2019_IOTDF/03_APR/chip.enc.dat/viewDefinition.tcl
+**WARN: (TECHLIB-302):	No function defined for cell 'HOLDX1'. The cell will only be used for analysis. (File /opt/Design_kit/CBDK_IC_Contest_v2.5/SOCE/lib/slow.lib)
+*** End library_loading (cpu=0.01min, real=0.02min, mem=16.5M, fe_cpu=0.34min, fe_real=1.15min, fe_mem=682.7M) ***
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR3XL' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR3XL' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR3X4' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR3X4' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR3X2' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR3X2' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR3X1' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR3X1' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR2XL' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR2XL' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR2X4' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR2X4' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR2X2' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR2X2' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR2X1' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR2X1' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'XNOR3XL' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'XNOR3XL' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'XNOR3X4' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'XNOR3X4' is defined in LEF but not in the timing library.
+**WARN: (EMS-27):	Message (IMPVL-159) has exceeded the current message display limit of 20.
+To increase the message display limit, refer to the product command reference manual.
+*** Netlist is unique.
+Loading preference file /home/t107360223/Desktop/ic_contest/final/2019_IOTDF/03_APR/chip.enc.dat/gui.pref.tcl ...
+**WARN: (IMPOPT-3602):	The specified path group name reg2reg is not defined.
+**WARN: (IMPOPT-3602):	The specified path group name reg2out is not defined.
+**WARN: (IMPOPT-3602):	The specified path group name in2reg is not defined.
+**WARN: (IMPOPT-3602):	The specified path group name in2out is not defined.
+**WARN: (IMPTCM-77):	Option "-drouteStartIteration" for command setNanoRouteMode is obsolete and will be removed in a future release. The obsolete option still works in this release but to avoid this warning and to ensure compatibility with future releases, remove the obsolete option from your script.
+IOTDF
+**WARN: (TA-976):	Path groups asserted by the group_path constraint are considered by the software to be global in nature - they cannot be restricted to specific constraint modes. Due to this restriction, the group_path constraint is not supported directly in the constraint files which are configured in mode-specific commands such as create_constraint_mode. The current group_path entry will be ignored. You can enter the group_path constraint interactively or as part of a general command script -  where it will be interpreted as global and will be in effect for all modes.
+Loading place ...
+**WARN: (IMPEXT-2773):	The via resistance between layers M0 and M1 could not be determined from the LEF technology file because the via resistance specification is missing. A default of 4 Ohms will be used as via resistance between these layers.
+**WARN: (IMPEXT-2776):	The via resistance between layers M1 and M2 is not defined in the capacitance table file. The via resistance of 1.02 Ohms defined in the LEF technology file will be used as via resistance between these layers.
+**WARN: (IMPEXT-2776):	The via resistance between layers M2 and M3 is not defined in the capacitance table file. The via resistance of 1.02 Ohms defined in the LEF technology file will be used as via resistance between these layers.
+**WARN: (IMPEXT-2776):	The via resistance between layers M3 and M4 is not defined in the capacitance table file. The via resistance of 1.02 Ohms defined in the LEF technology file will be used as via resistance between these layers.
+**WARN: (IMPEXT-2776):	The via resistance between layers M4 and M5 is not defined in the capacitance table file. The via resistance of 1.02 Ohms defined in the LEF technology file will be used as via resistance between these layers.
+**WARN: (IMPEXT-2776):	The via resistance between layers M5 and M6 is not defined in the capacitance table file. The via resistance of 1.02 Ohms defined in the LEF technology file will be used as via resistance between these layers.
+**WARN: (IMPEXT-2776):	The via resistance between layers M6 and M7 is not defined in the capacitance table file. The via resistance of 1.02 Ohms defined in the LEF technology file will be used as via resistance between these layers.
+**WARN: (IMPEXT-2776):	The via resistance between layers M7 and M8 is not defined in the capacitance table file. The via resistance of 0.63 Ohms defined in the LEF technology file will be used as via resistance between these layers.
+**WARN: (IMPEXT-2766):	The sheet resistance for layer M1 is not defined in the cap table. Therefore, the LEF value 0.117 will be used instead. To avoid this message, update the relevant cap table to include the sheet resistance for the specified layer and read it back in.
+**WARN: (IMPEXT-2766):	The sheet resistance for layer M2 is not defined in the cap table. Therefore, the LEF value 0.077 will be used instead. To avoid this message, update the relevant cap table to include the sheet resistance for the specified layer and read it back in.
+**WARN: (IMPEXT-2766):	The sheet resistance for layer M3 is not defined in the cap table. Therefore, the LEF value 0.077 will be used instead. To avoid this message, update the relevant cap table to include the sheet resistance for the specified layer and read it back in.
+**WARN: (IMPEXT-2766):	The sheet resistance for layer M4 is not defined in the cap table. Therefore, the LEF value 0.077 will be used instead. To avoid this message, update the relevant cap table to include the sheet resistance for the specified layer and read it back in.
+**WARN: (IMPEXT-2766):	The sheet resistance for layer M5 is not defined in the cap table. Therefore, the LEF value 0.077 will be used instead. To avoid this message, update the relevant cap table to include the sheet resistance for the specified layer and read it back in.
+**WARN: (IMPEXT-2766):	The sheet resistance for layer M6 is not defined in the cap table. Therefore, the LEF value 0.077 will be used instead. To avoid this message, update the relevant cap table to include the sheet resistance for the specified layer and read it back in.
+**WARN: (IMPEXT-2766):	The sheet resistance for layer M7 is not defined in the cap table. Therefore, the LEF value 0.077 will be used instead. To avoid this message, update the relevant cap table to include the sheet resistance for the specified layer and read it back in.
+**WARN: (IMPEXT-2766):	The sheet resistance for layer M8 is not defined in the cap table. Therefore, the LEF value 0.027 will be used instead. To avoid this message, update the relevant cap table to include the sheet resistance for the specified layer and read it back in.
+Loading path group file /home/t107360223/Desktop/ic_contest/final/2019_IOTDF/03_APR/chip.enc.dat/mmmc/pathgroup.sdc ...
+'set_default_switching_activity' finished successfully.
+**WARN: (IMPCTE-107):	The following globals have been obsoleted since version 19.12-s087_1. They will be removed in the next release. 
+timing_enable_default_delay_arc
+default_rc_corner
+<CMD> reset_parasitics
+Performing RC Extraction ...
+<CMD> extractRC
+Extraction called for design 'IOTDF' of instances=8162 and nets=4881 using extraction engine 'postRoute' at effort level 'low' .
+**WARN: (IMPEXT-3530):	The process node is not set. Use the command setDesignMode -process <process node> prior to extraction for maximum accuracy and optimal automatic threshold setting.
+Type 'man IMPEXT-3530' for more detail.
+PostRoute (effortLevel low) RC Extraction called for design IOTDF.
+RC Extraction called in multi-corner(1) mode.
+**WARN: (IMPEXT-6197):	The Cap table file is not specified. This will result in lower parasitic accuracy when using preRoute extraction or postRoute extraction with effort level 'low'. It is recommended to generate the Cap table file using the 'generateCapTbl' command and specify it before extraction using 'create_rc_corner/update_rc_corner -cap_table'.
+Type 'man IMPEXT-6197' for more detail.
+**WARN: (IMPEXT-3032):	Because the cap table file was not provided, it will be created internally with the following process info:
+* Layer Id             : 1 - M1
+      Thickness        : 0.26
+      Min Width        : 0.16
+      Layer Dielectric : 4.1
+* Layer Id             : 2 - M2
+      Thickness        : 0.35
+      Min Width        : 0.2
+      Layer Dielectric : 4.1
+* Layer Id             : 3 - M3
+      Thickness        : 0.35
+      Min Width        : 0.2
+      Layer Dielectric : 4.1
+* Layer Id             : 4 - M4
+      Thickness        : 0.35
+      Min Width        : 0.2
+      Layer Dielectric : 4.1
+* Layer Id             : 5 - M5
+      Thickness        : 0.35
+      Min Width        : 0.2
+      Layer Dielectric : 4.1
+* Layer Id             : 6 - M6
+      Thickness        : 0.35
+      Min Width        : 0.2
+      Layer Dielectric : 4.1
+* Layer Id             : 7 - M7
+      Thickness        : 0.35
+      Min Width        : 0.2
+      Layer Dielectric : 4.1
+* Layer Id             : 8 - M8
+      Thickness        : 0.9
+      Min Width        : 0.44
+      Layer Dielectric : 4.1
+extractDetailRC Option : -outfile /tmp/innovus_temp_13633_islabx6_t107360223_bvenbg/IOTDF_13633_M6dYWP.rcdb.d  -basic
+RC Mode: PostRoute -effortLevel low [Basic CapTable, LEF Resistances]
+      RC Corner Indexes            0   
+Capacitance Scaling Factor   : 1.00000 
+Coupling Cap. Scaling Factor : 1.00000 
+Resistance Scaling Factor    : 1.00000 
+Clock Cap. Scaling Factor    : 1.00000 
+Clock Res. Scaling Factor    : 1.00000 
+Shrink Factor                : 1.00000
+Initializing multi-corner resistance tables ...
+Checking LVS Completed (CPU Time= 0:00:00.0  MEM= 982.4M)
+Extracted 10.0029% (CPU Time= 0:00:00.1  MEM= 1044.5M)
+Extracted 20.0031% (CPU Time= 0:00:00.1  MEM= 1045.5M)
+Extracted 30.0034% (CPU Time= 0:00:00.1  MEM= 1046.5M)
+Extracted 40.0037% (CPU Time= 0:00:00.1  MEM= 1047.5M)
+Extracted 50.0039% (CPU Time= 0:00:00.2  MEM= 1048.5M)
+Extracted 60.0042% (CPU Time= 0:00:00.2  MEM= 1048.5M)
+Extracted 70.0045% (CPU Time= 0:00:00.2  MEM= 1049.5M)
+Extracted 80.0047% (CPU Time= 0:00:00.3  MEM= 1049.4M)
+Extracted 90.005% (CPU Time= 0:00:00.3  MEM= 1049.4M)
+Extracted 100% (CPU Time= 0:00:00.4  MEM= 1050.4M)
+Number of Extracted Resistors     : 68207
+Number of Extracted Ground Cap.   : 69117
+Number of Extracted Coupling Cap. : 139664
+Filtering XCap in 'relativeOnly' mode using values relative_c_threshold=0.03 and total_c_threshold=5fF.
+Checking LVS Completed (CPU Time= 0:00:00.0  MEM= 1018.4M)
+PostRoute (effortLevel low) RC Extraction DONE (CPU Time: 0:00:01.1  Real Time: 0:00:01.0  MEM: 1026.430M)
+<CMD> rcOut -spef IOTDF_pr.spef
+RC Out has the following PVT Info:
+   RC-typical 
+Dumping Spef file.....
+Printing D_NET...
+RC Out from RCDB Completed (CPU Time= 0:00:00.6  MEM= 1026.4M)
+
+*** Memory Usage v#1 (Current mem = 998.430M, initial mem = 281.535M) ***
+*** Message Summary: 1126 warning(s), 0 error(s)
+
+--- Ending "Innovus" (totcpu=0:00:30.0, real=0:01:55, mem=998.4M) ---

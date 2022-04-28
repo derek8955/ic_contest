@@ -5,12 +5,8 @@
 -XLMODE
 ./INCA_libs/irun.lnx86.15.20.nc
 -RUNMODE
-testfixture3.v
-../03_APR/ISE_pr.v
--VFILE
-tsmc13_neg.v
--DEFINE
-SDF
+testfixture2.v
+ISE.v
 -CDSLIB
 ./INCA_libs/irun.lnx86.15.20.nc/cdsrun.lib
 -HDLVAR

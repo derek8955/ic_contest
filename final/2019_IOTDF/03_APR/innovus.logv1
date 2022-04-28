@@ -1,0 +1,493 @@
+[04/28 15:24:03      0s] 
+[04/28 15:24:03      0s] Cadence Innovus(TM) Implementation System.
+[04/28 15:24:03      0s] Copyright 2019 Cadence Design Systems, Inc. All rights reserved worldwide.
+[04/28 15:24:03      0s] 
+[04/28 15:24:03      0s] Version:	v19.12-s087_1, built Mon Nov 11 17:32:01 PST 2019
+[04/28 15:24:03      0s] Options:	
+[04/28 15:24:03      0s] Date:		Thu Apr 28 15:24:03 2022
+[04/28 15:24:03      0s] Host:		islabx6 (x86_64 w/Linux 2.6.32-642.el6.x86_64) (6cores*24cpus*Intel(R) Xeon(R) CPU E5-2630 0 @ 2.30GHz 15360KB)
+[04/28 15:24:03      0s] OS:		CentOS release 6.8 (Final)
+[04/28 15:24:03      0s] 
+[04/28 15:24:03      0s] License:
+[04/28 15:24:03      0s] 		invs	Innovus Implementation System	19.1	checkout succeeded
+[04/28 15:24:03      0s] 		8 CPU jobs allowed with the current license(s). Use setMultiCpuUsage to set your required CPU count.
+[04/28 15:24:26     14s] @(#)CDS: Innovus v19.12-s087_1 (64bit) 11/11/2019 17:32 (Linux 2.6.32-431.11.2.el6.x86_64)
+[04/28 15:24:26     14s] @(#)CDS: NanoRoute 19.12-s087_1 NR191024-1807/19_12-UB (database version 18.20, 485.7.1) {superthreading v1.51}
+[04/28 15:24:26     14s] @(#)CDS: AAE 19.12-s033 (64bit) 11/11/2019 (Linux 2.6.32-431.11.2.el6.x86_64)
+[04/28 15:24:26     14s] @(#)CDS: CTE 19.12-s033_1 () Oct 24 2019 14:09:28 ( )
+[04/28 15:24:26     14s] @(#)CDS: SYNTECH 19.12-s008_1 () Oct  6 2019 23:25:36 ( )
+[04/28 15:24:26     14s] @(#)CDS: CPE v19.12-s079
+[04/28 15:24:26     14s] @(#)CDS: IQuantus/TQuantus 19.1.3-s095 (64bit) Fri Aug 30 18:16:09 PDT 2019 (Linux 2.6.32-431.11.2.el6.x86_64)
+[04/28 15:24:26     14s] @(#)CDS: OA 22.60-p024 Thu Sep  5 03:05:12 2019
+[04/28 15:24:26     14s] @(#)CDS: SGN 18.10-d003 (18-Jul-2018) (64 bit executable, Qt5.9.1)
+[04/28 15:24:26     14s] @(#)CDS: RCDB 11.14.18
+[04/28 15:24:26     14s] @(#)CDS: STYLUS 19.10-s011_1 (09/04/2019 02:55 PDT)
+[04/28 15:24:26     14s] Create and set the environment variable TMPDIR to /tmp/innovus_temp_3223_islabx6_t107360223_CSvYxr.
+
+[04/28 15:24:26     14s] Change the soft stacksize limit to 0.2%RAM (193 mbytes). Set global soft_stack_size_limit to change the value.
+[04/28 15:24:33     15s] 
+[04/28 15:24:33     15s] **INFO:  MMMC transition support version v31-84 
+[04/28 15:24:33     15s] 
+[04/28 15:24:33     15s] <CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+[04/28 15:24:33     15s] <CMD> suppressMessage ENCEXT-2799
+[04/28 15:24:33     15s] <CMD> win
+[04/28 15:25:10     17s] <CMD> encMessage warning 0
+[04/28 15:25:10     17s] Suppress "**WARN ..." messages.
+[04/28 15:25:10     17s] <CMD> encMessage debug 0
+[04/28 15:25:10     17s] <CMD> encMessage info 0
+[04/28 15:25:11     18s] **WARN: (IMPLF-119):	LAYER 'METAL1' has been found in the database. Its content except ANTENNA* data will be ignored.
+[04/28 15:25:11     18s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[04/28 15:25:11     18s] **WARN: (IMPLF-119):	LAYER 'METAL2' has been found in the database. Its content except ANTENNA* data will be ignored.
+[04/28 15:25:11     18s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[04/28 15:25:11     18s] **WARN: (IMPLF-119):	LAYER 'METAL3' has been found in the database. Its content except ANTENNA* data will be ignored.
+[04/28 15:25:11     18s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[04/28 15:25:11     18s] **WARN: (IMPLF-119):	LAYER 'METAL4' has been found in the database. Its content except ANTENNA* data will be ignored.
+[04/28 15:25:11     18s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[04/28 15:25:11     18s] **WARN: (IMPLF-119):	LAYER 'METAL5' has been found in the database. Its content except ANTENNA* data will be ignored.
+[04/28 15:25:11     18s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[04/28 15:25:11     18s] **WARN: (IMPLF-119):	LAYER 'METAL6' has been found in the database. Its content except ANTENNA* data will be ignored.
+[04/28 15:25:11     18s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[04/28 15:25:11     18s] **WARN: (IMPLF-119):	LAYER 'METAL7' has been found in the database. Its content except ANTENNA* data will be ignored.
+[04/28 15:25:11     18s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[04/28 15:25:11     18s] **WARN: (IMPLF-119):	LAYER 'METAL8' has been found in the database. Its content except ANTENNA* data will be ignored.
+[04/28 15:25:11     18s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[04/28 15:25:11     18s] **WARN: (IMPLF-119):	LAYER 'VIA12' has been found in the database. Its content except ANTENNA* data will be ignored.
+[04/28 15:25:11     18s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[04/28 15:25:11     18s] **WARN: (IMPLF-119):	LAYER 'VIA23' has been found in the database. Its content except ANTENNA* data will be ignored.
+[04/28 15:25:11     18s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[04/28 15:25:11     18s] **WARN: (IMPLF-119):	LAYER 'VIA34' has been found in the database. Its content except ANTENNA* data will be ignored.
+[04/28 15:25:11     18s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[04/28 15:25:11     18s] **WARN: (IMPLF-119):	LAYER 'VIA45' has been found in the database. Its content except ANTENNA* data will be ignored.
+[04/28 15:25:11     18s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[04/28 15:25:11     18s] **WARN: (IMPLF-119):	LAYER 'VIA56' has been found in the database. Its content except ANTENNA* data will be ignored.
+[04/28 15:25:11     18s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[04/28 15:25:11     18s] **WARN: (IMPLF-119):	LAYER 'VIA67' has been found in the database. Its content except ANTENNA* data will be ignored.
+[04/28 15:25:11     18s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[04/28 15:25:11     18s] **WARN: (IMPLF-119):	LAYER 'VIA78' has been found in the database. Its content except ANTENNA* data will be ignored.
+[04/28 15:25:11     18s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[04/28 15:25:11     18s] **WARN: (IMPLF-44):	Macro 'PDC0102CDG' has no SIZE statement or a zero SIZE
+[04/28 15:25:11     18s] statement and it is a class CORE macro so it needs a correct SIZE. There
+[04/28 15:25:11     18s] is no SITE statement, so a useful SIZE cannot be computed, so this macro
+[04/28 15:25:11     18s] is not loaded in the Innovus database and cannot be used in the
+[04/28 15:25:11     18s] netlist.
+[04/28 15:25:11     18s] **WARN: (IMPLF-44):	Macro 'PDC0204CDG' has no SIZE statement or a zero SIZE
+[04/28 15:25:11     18s] statement and it is a class CORE macro so it needs a correct SIZE. There
+[04/28 15:25:11     18s] is no SITE statement, so a useful SIZE cannot be computed, so this macro
+[04/28 15:25:11     18s] is not loaded in the Innovus database and cannot be used in the
+[04/28 15:25:11     18s] netlist.
+[04/28 15:25:11     18s] **WARN: (IMPLF-44):	Macro 'PDC0408CDG' has no SIZE statement or a zero SIZE
+[04/28 15:25:11     18s] statement and it is a class CORE macro so it needs a correct SIZE. There
+[04/28 15:25:11     18s] is no SITE statement, so a useful SIZE cannot be computed, so this macro
+[04/28 15:25:11     18s] is not loaded in the Innovus database and cannot be used in the
+[04/28 15:25:11     18s] netlist.
+[04/28 15:25:11     18s] **WARN: (IMPLF-44):	Macro 'PDC1216CDG' has no SIZE statement or a zero SIZE
+[04/28 15:25:11     18s] statement and it is a class CORE macro so it needs a correct SIZE. There
+[04/28 15:25:11     18s] is no SITE statement, so a useful SIZE cannot be computed, so this macro
+[04/28 15:25:11     18s] is not loaded in the Innovus database and cannot be used in the
+[04/28 15:25:11     18s] netlist.
+[04/28 15:25:11     18s] **WARN: (IMPLF-44):	Macro 'PDS0102CDG' has no SIZE statement or a zero SIZE
+[04/28 15:25:11     18s] statement and it is a class CORE macro so it needs a correct SIZE. There
+[04/28 15:25:11     18s] is no SITE statement, so a useful SIZE cannot be computed, so this macro
+[04/28 15:25:11     18s] is not loaded in the Innovus database and cannot be used in the
+[04/28 15:25:11     18s] netlist.
+[04/28 15:25:11     18s] **WARN: (IMPLF-44):	Macro 'PDS0204CDG' has no SIZE statement or a zero SIZE
+[04/28 15:25:11     18s] statement and it is a class CORE macro so it needs a correct SIZE. There
+[04/28 15:25:11     18s] is no SITE statement, so a useful SIZE cannot be computed, so this macro
+[04/28 15:25:11     18s] is not loaded in the Innovus database and cannot be used in the
+[04/28 15:25:11     18s] netlist.
+[04/28 15:25:11     18s] **WARN: (IMPLF-44):	Macro 'PDS0408CDG' has no SIZE statement or a zero SIZE
+[04/28 15:25:11     18s] statement and it is a class CORE macro so it needs a correct SIZE. There
+[04/28 15:25:11     18s] is no SITE statement, so a useful SIZE cannot be computed, so this macro
+[04/28 15:25:11     18s] is not loaded in the Innovus database and cannot be used in the
+[04/28 15:25:11     18s] netlist.
+[04/28 15:25:11     18s] **WARN: (IMPLF-44):	Macro 'PDS1216CDG' has no SIZE statement or a zero SIZE
+[04/28 15:25:11     18s] statement and it is a class CORE macro so it needs a correct SIZE. There
+[04/28 15:25:11     18s] is no SITE statement, so a useful SIZE cannot be computed, so this macro
+[04/28 15:25:11     18s] is not loaded in the Innovus database and cannot be used in the
+[04/28 15:25:11     18s] netlist.
+[04/28 15:25:11     18s] **WARN: (IMPLF-44):	Macro 'PRC0102CDG' has no SIZE statement or a zero SIZE
+[04/28 15:25:11     18s] statement and it is a class CORE macro so it needs a correct SIZE. There
+[04/28 15:25:11     18s] is no SITE statement, so a useful SIZE cannot be computed, so this macro
+[04/28 15:25:11     18s] is not loaded in the Innovus database and cannot be used in the
+[04/28 15:25:11     18s] netlist.
+[04/28 15:25:11     18s] **WARN: (IMPLF-44):	Macro 'PRC0204CDG' has no SIZE statement or a zero SIZE
+[04/28 15:25:11     18s] statement and it is a class CORE macro so it needs a correct SIZE. There
+[04/28 15:25:11     18s] is no SITE statement, so a useful SIZE cannot be computed, so this macro
+[04/28 15:25:11     18s] is not loaded in the Innovus database and cannot be used in the
+[04/28 15:25:11     18s] netlist.
+[04/28 15:25:11     18s] **WARN: (IMPLF-44):	Macro 'PRC0408CDG' has no SIZE statement or a zero SIZE
+[04/28 15:25:11     18s] statement and it is a class CORE macro so it needs a correct SIZE. There
+[04/28 15:25:11     18s] is no SITE statement, so a useful SIZE cannot be computed, so this macro
+[04/28 15:25:11     18s] is not loaded in the Innovus database and cannot be used in the
+[04/28 15:25:11     18s] netlist.
+[04/28 15:25:11     18s] **WARN: (IMPLF-44):	Macro 'PRC1216CDG' has no SIZE statement or a zero SIZE
+[04/28 15:25:11     18s] statement and it is a class CORE macro so it needs a correct SIZE. There
+[04/28 15:25:11     18s] is no SITE statement, so a useful SIZE cannot be computed, so this macro
+[04/28 15:25:11     18s] is not loaded in the Innovus database and cannot be used in the
+[04/28 15:25:11     18s] netlist.
+[04/28 15:25:11     18s] **WARN: (IMPLF-44):	Macro 'PRS0102CDG' has no SIZE statement or a zero SIZE
+[04/28 15:25:11     18s] statement and it is a class CORE macro so it needs a correct SIZE. There
+[04/28 15:25:11     18s] is no SITE statement, so a useful SIZE cannot be computed, so this macro
+[04/28 15:25:11     18s] is not loaded in the Innovus database and cannot be used in the
+[04/28 15:25:11     18s] netlist.
+[04/28 15:25:11     18s] **WARN: (IMPLF-44):	Macro 'PRS0204CDG' has no SIZE statement or a zero SIZE
+[04/28 15:25:11     18s] statement and it is a class CORE macro so it needs a correct SIZE. There
+[04/28 15:25:11     18s] is no SITE statement, so a useful SIZE cannot be computed, so this macro
+[04/28 15:25:11     18s] is not loaded in the Innovus database and cannot be used in the
+[04/28 15:25:11     18s] netlist.
+[04/28 15:25:11     18s] **WARN: (IMPLF-44):	Macro 'PRS0408CDG' has no SIZE statement or a zero SIZE
+[04/28 15:25:11     18s] statement and it is a class CORE macro so it needs a correct SIZE. There
+[04/28 15:25:11     18s] is no SITE statement, so a useful SIZE cannot be computed, so this macro
+[04/28 15:25:11     18s] is not loaded in the Innovus database and cannot be used in the
+[04/28 15:25:11     18s] netlist.
+[04/28 15:25:11     18s] **WARN: (IMPLF-44):	Macro 'PRS1216CDG' has no SIZE statement or a zero SIZE
+[04/28 15:25:11     18s] statement and it is a class CORE macro so it needs a correct SIZE. There
+[04/28 15:25:11     18s] is no SITE statement, so a useful SIZE cannot be computed, so this macro
+[04/28 15:25:11     18s] is not loaded in the Innovus database and cannot be used in the
+[04/28 15:25:11     18s] netlist.
+[04/28 15:25:11     18s] **WARN: (IMPLF-44):	Macro 'PVDD1CDG' has no SIZE statement or a zero SIZE
+[04/28 15:25:11     18s] statement and it is a class CORE macro so it needs a correct SIZE. There
+[04/28 15:25:11     18s] is no SITE statement, so a useful SIZE cannot be computed, so this macro
+[04/28 15:25:11     18s] is not loaded in the Innovus database and cannot be used in the
+[04/28 15:25:11     18s] netlist.
+[04/28 15:25:11     18s] **WARN: (IMPLF-44):	Macro 'PVSS1CDG' has no SIZE statement or a zero SIZE
+[04/28 15:25:11     18s] statement and it is a class CORE macro so it needs a correct SIZE. There
+[04/28 15:25:11     18s] is no SITE statement, so a useful SIZE cannot be computed, so this macro
+[04/28 15:25:11     18s] is not loaded in the Innovus database and cannot be used in the
+[04/28 15:25:11     18s] netlist.
+[04/28 15:25:11     18s] **WARN: (IMPLF-44):	Macro 'PVSS3CDG' has no SIZE statement or a zero SIZE
+[04/28 15:25:11     18s] statement and it is a class CORE macro so it needs a correct SIZE. There
+[04/28 15:25:11     18s] is no SITE statement, so a useful SIZE cannot be computed, so this macro
+[04/28 15:25:11     18s] is not loaded in the Innovus database and cannot be used in the
+[04/28 15:25:11     18s] netlist.
+[04/28 15:25:11     18s] **WARN: (IMPLF-44):	Macro 'PXOE1CDG' has no SIZE statement or a zero SIZE
+[04/28 15:25:11     18s] statement and it is a class CORE macro so it needs a correct SIZE. There
+[04/28 15:25:11     18s] is no SITE statement, so a useful SIZE cannot be computed, so this macro
+[04/28 15:25:11     18s] is not loaded in the Innovus database and cannot be used in the
+[04/28 15:25:11     18s] netlist.
+[04/28 15:25:11     18s] **WARN: (EMS-27):	Message (IMPLF-44) has exceeded the current message display limit of 20.
+[04/28 15:25:11     18s] To increase the message display limit, refer to the product command reference manual.
+[04/28 15:25:11     18s] **WARN: (IMPLF-200):	Pin 'A' in macro 'ANTENNA' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[04/28 15:25:11     18s] **WARN: (IMPPP-557):	A single-layer VIARULE GENERATE for turn-vias is obsolete and is being ignored. Remove this statement from the technology file: VIARULE TURNM1 GENERATE.
+[04/28 15:25:11     18s] **WARN: (IMPPP-557):	A single-layer VIARULE GENERATE for turn-vias is obsolete and is being ignored. Remove this statement from the technology file: VIARULE TURNM2 GENERATE.
+[04/28 15:25:11     18s] **WARN: (IMPPP-557):	A single-layer VIARULE GENERATE for turn-vias is obsolete and is being ignored. Remove this statement from the technology file: VIARULE TURNM3 GENERATE.
+[04/28 15:25:11     18s] **WARN: (IMPPP-557):	A single-layer VIARULE GENERATE for turn-vias is obsolete and is being ignored. Remove this statement from the technology file: VIARULE TURNM4 GENERATE.
+[04/28 15:25:11     18s] **WARN: (IMPPP-557):	A single-layer VIARULE GENERATE for turn-vias is obsolete and is being ignored. Remove this statement from the technology file: VIARULE TURNM5 GENERATE.
+[04/28 15:25:11     18s] **WARN: (IMPPP-557):	A single-layer VIARULE GENERATE for turn-vias is obsolete and is being ignored. Remove this statement from the technology file: VIARULE TURNM6 GENERATE.
+[04/28 15:25:11     18s] **WARN: (IMPPP-557):	A single-layer VIARULE GENERATE for turn-vias is obsolete and is being ignored. Remove this statement from the technology file: VIARULE TURNM7 GENERATE.
+[04/28 15:25:11     18s] **WARN: (IMPPP-557):	A single-layer VIARULE GENERATE for turn-vias is obsolete and is being ignored. Remove this statement from the technology file: VIARULE TURNM8 GENERATE.
+[04/28 15:25:11     18s] Loading view definition file from /home/t107360223/Desktop/ic_contest/final/2019_IOTDF/03_APR/postroute.enc.dat/viewDefinition.tcl
+[04/28 15:25:11     19s] **WARN: (TECHLIB-302):	No function defined for cell 'HOLDX1'. The cell will only be used for analysis. (File /opt/Design_kit/CBDK_IC_Contest_v2.5/SOCE/lib/slow.lib)
+[04/28 15:25:12     19s] *** End library_loading (cpu=0.01min, real=0.02min, mem=11.5M, fe_cpu=0.32min, fe_real=1.15min, fe_mem=677.7M) ***
+[04/28 15:25:12     19s] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR3XL' is defined in LEF but not in the timing library.
+[04/28 15:25:12     19s] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR3XL' is defined in LEF but not in the timing library.
+[04/28 15:25:12     19s] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR3X4' is defined in LEF but not in the timing library.
+[04/28 15:25:12     19s] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR3X4' is defined in LEF but not in the timing library.
+[04/28 15:25:12     19s] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR3X2' is defined in LEF but not in the timing library.
+[04/28 15:25:12     19s] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR3X2' is defined in LEF but not in the timing library.
+[04/28 15:25:12     19s] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR3X1' is defined in LEF but not in the timing library.
+[04/28 15:25:12     19s] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR3X1' is defined in LEF but not in the timing library.
+[04/28 15:25:12     19s] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR2XL' is defined in LEF but not in the timing library.
+[04/28 15:25:12     19s] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR2XL' is defined in LEF but not in the timing library.
+[04/28 15:25:12     19s] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR2X4' is defined in LEF but not in the timing library.
+[04/28 15:25:12     19s] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR2X4' is defined in LEF but not in the timing library.
+[04/28 15:25:12     19s] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR2X2' is defined in LEF but not in the timing library.
+[04/28 15:25:12     19s] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR2X2' is defined in LEF but not in the timing library.
+[04/28 15:25:12     19s] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR2X1' is defined in LEF but not in the timing library.
+[04/28 15:25:12     19s] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR2X1' is defined in LEF but not in the timing library.
+[04/28 15:25:12     19s] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'XNOR3XL' is defined in LEF but not in the timing library.
+[04/28 15:25:12     19s] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'XNOR3XL' is defined in LEF but not in the timing library.
+[04/28 15:25:12     19s] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'XNOR3X4' is defined in LEF but not in the timing library.
+[04/28 15:25:12     19s] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'XNOR3X4' is defined in LEF but not in the timing library.
+[04/28 15:25:12     19s] **WARN: (EMS-27):	Message (IMPVL-159) has exceeded the current message display limit of 20.
+[04/28 15:25:12     19s] To increase the message display limit, refer to the product command reference manual.
+[04/28 15:25:12     19s] *** Netlist is unique.
+[04/28 15:25:12     19s] Loading preference file /home/t107360223/Desktop/ic_contest/final/2019_IOTDF/03_APR/postroute.enc.dat/gui.pref.tcl ...
+[04/28 15:25:12     19s] **WARN: (IMPOPT-3602):	The specified path group name reg2reg is not defined.
+[04/28 15:25:12     19s] **WARN: (IMPOPT-3602):	The specified path group name reg2out is not defined.
+[04/28 15:25:12     19s] **WARN: (IMPOPT-3602):	The specified path group name in2reg is not defined.
+[04/28 15:25:12     19s] **WARN: (IMPOPT-3602):	The specified path group name in2out is not defined.
+[04/28 15:25:12     19s] **WARN: (IMPTCM-77):	Option "-drouteStartIteration" for command setNanoRouteMode is obsolete and will be removed in a future release. The obsolete option still works in this release but to avoid this warning and to ensure compatibility with future releases, remove the obsolete option from your script.
+[04/28 15:25:13     20s] **WARN: (TA-976):	Path groups asserted by the group_path constraint are considered by the software to be global in nature - they cannot be restricted to specific constraint modes. Due to this restriction, the group_path constraint is not supported directly in the constraint files which are configured in mode-specific commands such as create_constraint_mode. The current group_path entry will be ignored. You can enter the group_path constraint interactively or as part of a general command script -  where it will be interpreted as global and will be in effect for all modes.
+[04/28 15:25:14     20s] Loading place ...
+[04/28 15:25:15     21s] **WARN: (IMPEXT-2773):	The via resistance between layers M0 and M1 could not be determined from the LEF technology file because the via resistance specification is missing. A default of 4 Ohms will be used as via resistance between these layers.
+[04/28 15:25:15     21s] **WARN: (IMPEXT-2776):	The via resistance between layers M1 and M2 is not defined in the capacitance table file. The via resistance of 1.02 Ohms defined in the LEF technology file will be used as via resistance between these layers.
+[04/28 15:25:15     21s] **WARN: (IMPEXT-2776):	The via resistance between layers M2 and M3 is not defined in the capacitance table file. The via resistance of 1.02 Ohms defined in the LEF technology file will be used as via resistance between these layers.
+[04/28 15:25:15     21s] **WARN: (IMPEXT-2776):	The via resistance between layers M3 and M4 is not defined in the capacitance table file. The via resistance of 1.02 Ohms defined in the LEF technology file will be used as via resistance between these layers.
+[04/28 15:25:15     21s] **WARN: (IMPEXT-2776):	The via resistance between layers M4 and M5 is not defined in the capacitance table file. The via resistance of 1.02 Ohms defined in the LEF technology file will be used as via resistance between these layers.
+[04/28 15:25:15     21s] **WARN: (IMPEXT-2776):	The via resistance between layers M5 and M6 is not defined in the capacitance table file. The via resistance of 1.02 Ohms defined in the LEF technology file will be used as via resistance between these layers.
+[04/28 15:25:15     21s] **WARN: (IMPEXT-2776):	The via resistance between layers M6 and M7 is not defined in the capacitance table file. The via resistance of 1.02 Ohms defined in the LEF technology file will be used as via resistance between these layers.
+[04/28 15:25:15     21s] **WARN: (IMPEXT-2776):	The via resistance between layers M7 and M8 is not defined in the capacitance table file. The via resistance of 0.63 Ohms defined in the LEF technology file will be used as via resistance between these layers.
+[04/28 15:25:15     21s] **WARN: (IMPEXT-2766):	The sheet resistance for layer M1 is not defined in the cap table. Therefore, the LEF value 0.117 will be used instead. To avoid this message, update the relevant cap table to include the sheet resistance for the specified layer and read it back in.
+[04/28 15:25:15     21s] **WARN: (IMPEXT-2766):	The sheet resistance for layer M2 is not defined in the cap table. Therefore, the LEF value 0.077 will be used instead. To avoid this message, update the relevant cap table to include the sheet resistance for the specified layer and read it back in.
+[04/28 15:25:15     21s] **WARN: (IMPEXT-2766):	The sheet resistance for layer M3 is not defined in the cap table. Therefore, the LEF value 0.077 will be used instead. To avoid this message, update the relevant cap table to include the sheet resistance for the specified layer and read it back in.
+[04/28 15:25:15     21s] **WARN: (IMPEXT-2766):	The sheet resistance for layer M4 is not defined in the cap table. Therefore, the LEF value 0.077 will be used instead. To avoid this message, update the relevant cap table to include the sheet resistance for the specified layer and read it back in.
+[04/28 15:25:15     21s] **WARN: (IMPEXT-2766):	The sheet resistance for layer M5 is not defined in the cap table. Therefore, the LEF value 0.077 will be used instead. To avoid this message, update the relevant cap table to include the sheet resistance for the specified layer and read it back in.
+[04/28 15:25:15     21s] **WARN: (IMPEXT-2766):	The sheet resistance for layer M6 is not defined in the cap table. Therefore, the LEF value 0.077 will be used instead. To avoid this message, update the relevant cap table to include the sheet resistance for the specified layer and read it back in.
+[04/28 15:25:15     21s] **WARN: (IMPEXT-2766):	The sheet resistance for layer M7 is not defined in the cap table. Therefore, the LEF value 0.077 will be used instead. To avoid this message, update the relevant cap table to include the sheet resistance for the specified layer and read it back in.
+[04/28 15:25:15     21s] **WARN: (IMPEXT-2766):	The sheet resistance for layer M8 is not defined in the cap table. Therefore, the LEF value 0.027 will be used instead. To avoid this message, update the relevant cap table to include the sheet resistance for the specified layer and read it back in.
+[04/28 15:25:15     21s] Loading path group file /home/t107360223/Desktop/ic_contest/final/2019_IOTDF/03_APR/postroute.enc.dat/mmmc/pathgroup.sdc ...
+[04/28 15:25:16     22s] **WARN: (IMPCTE-107):	The following globals have been obsoleted since version 19.12-s087_1. They will be removed in the next release. 
+[04/28 15:25:16     22s] timing_enable_default_delay_arc
+[04/28 15:25:22     22s] <CMD> setDrawView place
+[04/28 15:25:34     23s] <CMD> getFillerMode -quiet
+[04/28 15:25:44     24s] <CMD> addFiller -cell FILL64 FILL1 FILL2 FILL4 FILL8 FILL16 FILL32 -prefix FILLER
+[04/28 15:25:44     24s] **WARN: (IMPSP-5217):	addFiller command is running on a postRoute database. It is recommended to be followed by ecoRoute -target command to make the DRC clean.
+[04/28 15:25:44     24s] Type 'man IMPSP-5217' for more detail.
+[04/28 15:25:44     24s] OPERPROF: Starting PlacementAddFillerCore
+ at level 1, MEM:1017.0M
+[04/28 15:25:44     24s] OPERPROF:   Starting DPlace-Init at level 2, MEM:1017.0M
+[04/28 15:25:45     24s] OPERPROF:     Starting spInitSiteArr at level 3, MEM:1019.0M
+[04/28 15:25:45     24s] OPERPROF:       Starting spiInitFpSiteArr at level 4, MEM:1019.0M
+[04/28 15:25:45     24s] Core basic site is TSM13SITE
+[04/28 15:25:45     24s] Use non-trimmed site array because memory saving is not enough.
+[04/28 15:25:45     24s] SiteArray: non-trimmed site array dimensions = 110 x 892
+[04/28 15:25:45     24s] SiteArray: use 450,560 bytes
+[04/28 15:25:45     24s] SiteArray: current memory after site array memory allocation 1020.5M
+[04/28 15:25:45     24s] SiteArray: FP blocked sites are writable
+[04/28 15:25:45     24s] Estimated cell power/ground rail width = 0.577 um
+[04/28 15:25:45     24s] Layer info - lib-1st H=1, V=2.  Cell-FPin=1. Top-pin=2
+[04/28 15:25:45     24s] OPERPROF:         Starting RoutingBlockageFromWireViaStBox at level 5, MEM:1020.5M
+[04/28 15:25:45     25s] Process 79703 wires and vias for routing blockage and capacity analysis
+[04/28 15:25:45     25s] OPERPROF:         Finished RoutingBlockageFromWireViaStBox at level 5, CPU:0.030, REAL:0.029, MEM:1020.5M
+[04/28 15:25:45     25s] OPERPROF:       Finished spiInitFpSiteArr at level 4, CPU:0.100, REAL:0.097, MEM:1020.5M
+[04/28 15:25:45     25s] OPERPROF:     Finished spInitSiteArr at level 3, CPU:0.100, REAL:0.099, MEM:1020.5M
+[04/28 15:25:45     25s] [CPU] DPlace-Init (cpu=0:00:00.2, real=0:00:01.0, mem=1020.5MB).
+[04/28 15:25:45     25s] OPERPROF:   Finished DPlace-Init at level 2, CPU:0.220, REAL:0.230, MEM:1020.5M
+[04/28 15:25:45     25s] OPERPROF:   Starting PlacementInitRegWireSearchTree at level 2, MEM:1020.5M
+[04/28 15:25:45     25s]   Signal wire search tree: 79806 elements. (cpu=0:00:00.0, mem=1.0M)
+[04/28 15:25:45     25s] OPERPROF:   Finished PlacementInitRegWireSearchTree at level 2, CPU:0.030, REAL:0.023, MEM:1021.5M
+[04/28 15:25:45     25s] OPERPROF:   Starting AddFillerWithCallMap at level 2, MEM:1022.5M
+[04/28 15:25:45     25s] OPERPROF:     Starting AddFillerWithCallMap-Iter-1 at level 3, MEM:1022.5M
+[04/28 15:25:45     25s] OPERPROF:       Starting AddFillerWithCallMap/AddFiller at level 4, MEM:1022.5M
+[04/28 15:25:45     25s] OPERPROF:         Starting spiAddFillerInstInBox at level 5, MEM:1022.5M
+[04/28 15:25:45     25s] AddFiller init all instances time CPU:0.000, REAL:0.001
+[04/28 15:25:45     25s] AddFiller main function time CPU:0.399, REAL:0.402
+[04/28 15:25:45     25s] Filler instance commit time CPU:0.113, REAL:0.112
+[04/28 15:25:45     25s] *INFO: Adding fillers to top-module.
+[04/28 15:25:45     25s] *INFO:   Added 716 filler insts (cell FILL64 / prefix FILLER).
+[04/28 15:25:45     25s] *INFO:   Added 166 filler insts (cell FILL32 / prefix FILLER).
+[04/28 15:25:45     25s] *INFO:   Added 180 filler insts (cell FILL16 / prefix FILLER).
+[04/28 15:25:45     25s] *INFO:   Added 365 filler insts (cell FILL8 / prefix FILLER).
+[04/28 15:25:45     25s] *INFO:   Added 973 filler insts (cell FILL4 / prefix FILLER).
+[04/28 15:25:45     25s] *INFO:   Added 2103 filler insts (cell FILL2 / prefix FILLER).
+[04/28 15:25:45     25s] *INFO:   Added 2239 filler insts (cell FILL1 / prefix FILLER).
+[04/28 15:25:45     25s] OPERPROF:         Finished spiAddFillerInstInBox at level 5, CPU:0.400, REAL:0.403, MEM:1036.5M
+[04/28 15:25:45     25s] *INFO: Total 6742 filler insts added - prefix FILLER (CPU: 0:00:00.7).
+[04/28 15:25:45     25s] OPERPROF:       Finished AddFillerWithCallMap/AddFiller at level 4, CPU:0.400, REAL:0.404, MEM:1036.5M
+[04/28 15:25:45     25s] OPERPROF:       Starting AddFillerWithCellMap/BatchGNCProcess at level 4, MEM:1036.5M
+[04/28 15:25:45     25s] For 6742 new insts, *** Applied 2 GNC rules (cpu = 0:00:00.0)
+[04/28 15:25:45     25s] OPERPROF:       Finished AddFillerWithCellMap/BatchGNCProcess at level 4, CPU:0.010, REAL:0.008, MEM:1036.5M
+[04/28 15:25:45     25s] OPERPROF:     Finished AddFillerWithCallMap-Iter-1 at level 3, CPU:0.420, REAL:0.412, MEM:1036.5M
+[04/28 15:25:45     25s] OPERPROF:   Finished AddFillerWithCallMap at level 2, CPU:0.420, REAL:0.412, MEM:1036.5M
+[04/28 15:25:45     25s] OPERPROF:   Starting spSiteCleanup(true) at level 2, MEM:1036.5M
+[04/28 15:25:45     25s] OPERPROF:   Finished spSiteCleanup(true) at level 2, CPU:0.000, REAL:0.004, MEM:1036.0M
+[04/28 15:25:45     25s] All LLGs are deleted
+[04/28 15:25:45     25s] OPERPROF:   Starting spSiteCleanup(true) at level 2, MEM:1036.0M
+[04/28 15:25:45     25s] OPERPROF:   Finished spSiteCleanup(true) at level 2, CPU:0.010, REAL:0.000, MEM:1036.0M
+[04/28 15:25:45     25s] OPERPROF: Finished PlacementAddFillerCore
+ at level 1, CPU:0.700, REAL:0.698, MEM:1036.0M
+[04/28 15:25:55     26s] <CMD> setVerifyGeometryMode -area { 0 0 0 0 } -minWidth true -minSpacing true -minArea true -sameNet true -short true -overlap true -offRGrid false -offMGrid true -mergedMGridCheck true -minHole true -implantCheck true -minimumCut true -minStep true -viaEnclosure true -antenna false -insuffMetalOverlap true -pinInBlkg false -diffCellViol true -sameCellViol false -padFillerCellsOverlap true -routingBlkgPinOverlap true -routingCellBlkgOverlap true -regRoutingOnly false -stackedViasOnRegNet false -wireExt true -useNonDefaultSpacing false -maxWidth true -maxNonPrefLength -1 -error 1000
+[04/28 15:25:55     26s] <CMD> verifyGeometry
+[04/28 15:25:55     26s]  *** Starting Verify Geometry (MEM: 1038.4) ***
+[04/28 15:25:55     26s] 
+[04/28 15:25:55     26s] **WARN: (IMPVFG-257):	verifyGeometry command is replaced by verify_drc command. It still works in this release but will be removed in future release. Please update your script to use the new command.
+[04/28 15:25:55     26s]   VERIFY GEOMETRY ...... Starting Verification
+[04/28 15:25:55     26s]   VERIFY GEOMETRY ...... Initializing
+[04/28 15:25:55     26s]   VERIFY GEOMETRY ...... Deleting Existing Violations
+[04/28 15:25:55     26s]   VERIFY GEOMETRY ...... Creating Sub-Areas
+[04/28 15:25:55     26s]                   ...... bin size: 8320
+[04/28 15:25:55     26s]   VERIFY GEOMETRY ...... SubArea : 1 of 1
+[04/28 15:25:59     29s]   VERIFY GEOMETRY ...... Cells          :  0 Viols.
+[04/28 15:25:59     29s]   VERIFY GEOMETRY ...... SameNet        :  0 Viols.
+[04/28 15:25:59     29s]   VERIFY GEOMETRY ...... Wiring         :  0 Viols.
+[04/28 15:25:59     29s]   VERIFY GEOMETRY ...... Antenna        :  0 Viols.
+[04/28 15:25:59     29s]   VERIFY GEOMETRY ...... Sub-Area : 1 complete 0 Viols. 0 Wrngs.
+[04/28 15:25:59     29s] VG: elapsed time: 4.00
+[04/28 15:25:59     29s] Begin Summary ...
+[04/28 15:25:59     29s]   Cells       : 0
+[04/28 15:25:59     29s]   SameNet     : 0
+[04/28 15:25:59     29s]   Wiring      : 0
+[04/28 15:25:59     29s]   Antenna     : 0
+[04/28 15:25:59     29s]   Short       : 0
+[04/28 15:25:59     29s]   Overlap     : 0
+[04/28 15:25:59     29s] End Summary
+[04/28 15:25:59     29s] 
+[04/28 15:25:59     29s]   Verification Complete : 0 Viols.  0 Wrngs.
+[04/28 15:25:59     29s] 
+[04/28 15:25:59     29s] **********End: VERIFY GEOMETRY**********
+[04/28 15:25:59     29s]  *** verify geometry (CPU: 0:00:03.7  MEM: 209.6M)
+[04/28 15:25:59     29s] 
+[04/28 15:25:59     29s] <CMD> setVerifyGeometryMode -area { 0 0 0 0 }
+[04/28 15:26:07     30s] <CMD> verifyConnectivity -type all -error 1000 -warning 50
+[04/28 15:26:07     30s] VERIFY_CONNECTIVITY use new engine.
+[04/28 15:26:07     30s] 
+[04/28 15:26:07     30s] ******** Start: VERIFY CONNECTIVITY ********
+[04/28 15:26:07     30s] Start Time: Thu Apr 28 15:26:07 2022
+[04/28 15:26:07     30s] 
+[04/28 15:26:07     30s] Design Name: IOTDF
+[04/28 15:26:07     30s] Database Units: 2000
+[04/28 15:26:07     30s] Design Boundary: (0.0000, 0.0000) (490.3600, 486.2600)
+[04/28 15:26:07     30s] Error Limit = 1000; Warning Limit = 50
+[04/28 15:26:07     30s] Check all nets
+[04/28 15:26:08     30s] **** 15:26:08 **** Processed 5000 nets.
+[04/28 15:26:08     30s] **** 15:26:08 **** Processed 10000 nets.
+[04/28 15:26:08     30s] 
+[04/28 15:26:08     30s] Begin Summary 
+[04/28 15:26:08     30s]   Found no problems or warnings.
+[04/28 15:26:08     30s] End Summary
+[04/28 15:26:08     30s] 
+[04/28 15:26:08     30s] End Time: Thu Apr 28 15:26:08 2022
+[04/28 15:26:08     30s] Time Elapsed: 0:00:01.0
+[04/28 15:26:08     30s] 
+[04/28 15:26:08     30s] ******** End: VERIFY CONNECTIVITY ********
+[04/28 15:26:08     30s]   Verification Complete : 0 Viols.  0 Wrngs.
+[04/28 15:26:08     30s]   (CPU Time: 0:00:00.5  MEM: 0.000M)
+[04/28 15:26:08     30s] 
+[04/28 15:26:17     31s] <CMD> verifyProcessAntenna -report IOTDF.antenna.rpt -error 1000
+[04/28 15:26:17     31s] 
+[04/28 15:26:17     31s] ******* START VERIFY ANTENNA ********
+[04/28 15:26:17     31s] Report File: IOTDF.antenna.rpt
+[04/28 15:26:17     31s] LEF Macro File: IOTDF.antenna.lef
+[04/28 15:26:17     31s] 5000 nets processed: 0 violations
+[04/28 15:26:17     31s] 10000 nets processed: 0 violations
+[04/28 15:26:18     31s] Verification Complete: 0 Violations
+[04/28 15:26:18     31s] ******* DONE VERIFY ANTENNA ********
+[04/28 15:26:18     31s] (CPU Time: 0:00:00.5  MEM: 0.000M)
+[04/28 15:26:18     31s] 
+[04/28 15:27:05     37s] <CMD> streamOut IOTDF_pr.gds -mapFile streamOut.map -libName DesignLib -merge { ../../../../../../cell_lib/CBDK_IC_Contest_v2.5/Phantom/tsmc13gfsg_fram.gds } -outputMacros -units 1000 -mode ALL
+[04/28 15:27:05     37s] Finding the highest version number among the merge files
+[04/28 15:27:05     37s] Merge file: ../../../../../../cell_lib/CBDK_IC_Contest_v2.5/Phantom/tsmc13gfsg_fram.gds has version number: 5
+[04/28 15:27:05     37s] 
+[04/28 15:27:05     37s] Parse map file...
+[04/28 15:27:05     37s] **WARN: (IMPOGDS-407):	Duplicate entry found in line 8, the same mapping is already specified before this line. Duplicate entries leads to duplicate write hence bigger file size. Remove the line from mapping file if not intended.
+[04/28 15:27:05     37s] Writing GDSII file ...
+[04/28 15:27:05     37s] 	****** db unit per micron = 2000 ******
+[04/28 15:27:05     37s] 	****** output gds2 file unit per micron = 1000 ******
+[04/28 15:27:05     37s] 	****** unit scaling factor = 0.5 ******
+[04/28 15:27:05     37s] **WARN: (IMPOGDS-250):	Specified unit is smaller than the one in db. You may have rounding problems
+[04/28 15:27:05     37s] Output for instance
+[04/28 15:27:05     37s] Output for bump
+[04/28 15:27:05     37s] Output for physical terminals
+[04/28 15:27:05     37s] Output for logical terminals
+[04/28 15:27:05     37s] Output for regular nets
+[04/28 15:27:05     37s] Output for special nets and metal fills
+[04/28 15:27:05     37s] Output for via structure generation
+[04/28 15:27:05     37s] Statistics for GDS generated (version 5)
+[04/28 15:27:05     37s] ----------------------------------------
+[04/28 15:27:05     37s] Stream Out Layer Mapping Information:
+[04/28 15:27:05     37s] GDS Layer Number          GDS Layer Name
+[04/28 15:27:05     37s] ----------------------------------------
+[04/28 15:27:05     37s]     31                            METAL1
+[04/28 15:27:05     37s]     32                            METAL2
+[04/28 15:27:05     37s]     33                            METAL3
+[04/28 15:27:05     37s]     34                            METAL4
+[04/28 15:27:05     37s]     35                            METAL5
+[04/28 15:27:05     37s]     36                            METAL6
+[04/28 15:27:05     37s]     37                            METAL7
+[04/28 15:27:05     37s]     38                            METAL8
+[04/28 15:27:05     37s]     51                             VIA12
+[04/28 15:27:05     37s]     52                             VIA23
+[04/28 15:27:05     37s]     53                             VIA34
+[04/28 15:27:05     37s]     54                             VIA45
+[04/28 15:27:05     37s]     55                             VIA56
+[04/28 15:27:05     37s]     56                             VIA67
+[04/28 15:27:05     37s]     57                             VIA78
+[04/28 15:27:05     37s]     131                           METAL1
+[04/28 15:27:05     37s]     132                           METAL2
+[04/28 15:27:05     37s]     133                           METAL3
+[04/28 15:27:05     37s]     134                           METAL4
+[04/28 15:27:05     37s]     135                           METAL5
+[04/28 15:27:05     37s]     136                           METAL6
+[04/28 15:27:05     37s]     137                           METAL7
+[04/28 15:27:05     37s]     138                           METAL8
+[04/28 15:27:05     37s] 
+[04/28 15:27:05     37s] 
+[04/28 15:27:05     37s] Stream Out Information Processed for GDS version 5:
+[04/28 15:27:05     37s] Units: 1000 DBU
+[04/28 15:27:05     37s] 
+[04/28 15:27:05     37s] Object                             Count
+[04/28 15:27:05     37s] ----------------------------------------
+[04/28 15:27:05     37s] Instances                          12235
+[04/28 15:27:05     37s] 
+[04/28 15:27:05     37s] Ports/Pins                           144
+[04/28 15:27:05     37s]     metal layer METAL2                72
+[04/28 15:27:05     37s]     metal layer METAL3                72
+[04/28 15:27:05     37s] 
+[04/28 15:27:05     37s] Nets                               48587
+[04/28 15:27:05     37s]     metal layer METAL1              5174
+[04/28 15:27:05     37s]     metal layer METAL2             28102
+[04/28 15:27:05     37s]     metal layer METAL3             11651
+[04/28 15:27:05     37s]     metal layer METAL4              3492
+[04/28 15:27:05     37s]     metal layer METAL5               168
+[04/28 15:27:05     37s] 
+[04/28 15:27:05     37s]     Via Instances                  31219
+[04/28 15:27:05     37s] 
+[04/28 15:27:05     37s] Special Nets                         353
+[04/28 15:27:05     37s]     metal layer METAL1               333
+[04/28 15:27:05     37s]     metal layer METAL4                16
+[04/28 15:27:05     37s]     metal layer METAL5                 4
+[04/28 15:27:05     37s] 
+[04/28 15:27:05     37s]     Via Instances                    698
+[04/28 15:27:05     37s] 
+[04/28 15:27:05     37s] Metal Fills                            0
+[04/28 15:27:05     37s] 
+[04/28 15:27:05     37s]     Via Instances                      0
+[04/28 15:27:05     37s] 
+[04/28 15:27:05     37s] Metal FillOPCs                         0
+[04/28 15:27:05     37s] 
+[04/28 15:27:05     37s]     Via Instances                      0
+[04/28 15:27:05     37s] 
+[04/28 15:27:05     37s] Metal FillDRCs                         0
+[04/28 15:27:05     37s] 
+[04/28 15:27:05     37s]     Via Instances                      0
+[04/28 15:27:05     37s] 
+[04/28 15:27:05     37s] Text                                 146
+[04/28 15:27:05     37s]     metal layer METAL2                72
+[04/28 15:27:05     37s]     metal layer METAL3                72
+[04/28 15:27:05     37s]     metal layer METAL5                 2
+[04/28 15:27:05     37s] 
+[04/28 15:27:05     37s] 
+[04/28 15:27:05     37s] Blockages                              0
+[04/28 15:27:05     37s] 
+[04/28 15:27:05     37s] 
+[04/28 15:27:05     37s] Custom Text                            0
+[04/28 15:27:05     37s] 
+[04/28 15:27:05     37s] 
+[04/28 15:27:05     37s] Custom Box                             0
+[04/28 15:27:05     37s] 
+[04/28 15:27:05     37s] Trim Metal                             0
+[04/28 15:27:05     37s] 
+[04/28 15:27:05     37s] Merging with GDS libraries
+[04/28 15:27:05     37s] Scanning GDS file ../../../../../../cell_lib/CBDK_IC_Contest_v2.5/Phantom/tsmc13gfsg_fram.gds to register cell name ......
+[04/28 15:27:05     37s] Merging GDS file ../../../../../../cell_lib/CBDK_IC_Contest_v2.5/Phantom/tsmc13gfsg_fram.gds ......
+[04/28 15:27:05     37s] 	****** Merge file: ../../../../../../cell_lib/CBDK_IC_Contest_v2.5/Phantom/tsmc13gfsg_fram.gds has version number: 5.
+[04/28 15:27:05     37s] 	****** Merge file: ../../../../../../cell_lib/CBDK_IC_Contest_v2.5/Phantom/tsmc13gfsg_fram.gds has units: 1000 per micron.
+[04/28 15:27:05     37s] 	****** unit scaling factor = 1 ******
+[04/28 15:27:05     37s] Output for cells
+[04/28 15:27:05     37s] ######Streamout is finished!
+[04/28 15:27:09     37s] 
+[04/28 15:27:09     37s] *** Memory Usage v#1 (Current mem = 1124.930M, initial mem = 281.535M) ***
+[04/28 15:27:09     37s] 
+[04/28 15:27:09     37s] *** Summary of all messages that are not suppressed in this session:
+[04/28 15:27:09     37s] Severity  ID               Count  Summary                                  
+[04/28 15:27:09     37s] WARNING   IMPLF-44            21  Macro '%s' has no SIZE statement or a ze...
+[04/28 15:27:09     37s] WARNING   IMPLF-200            1  Pin '%s' in macro '%s' has no ANTENNAGAT...
+[04/28 15:27:09     37s] WARNING   IMPLF-119           15  LAYER '%s' has been found in the databas...
+[04/28 15:27:09     37s] WARNING   IMPOGDS-250          1  Specified unit is smaller than the one i...
+[04/28 15:27:09     37s] WARNING   IMPOGDS-407          1  Duplicate entry found in line %d, the sa...
+[04/28 15:27:09     37s] WARNING   IMPEXT-2766          8  The sheet resistance for layer %s is not...
+[04/28 15:27:09     37s] WARNING   IMPEXT-2773          1  The via resistance between layers %s and...
+[04/28 15:27:09     37s] WARNING   IMPEXT-2776          7  The via resistance between layers %s and...
+[04/28 15:27:09     37s] WARNING   IMPVL-159         1054  Pin '%s' of cell '%s' is defined in LEF ...
+[04/28 15:27:09     37s] WARNING   IMPVFG-257           1  verifyGeometry command is replaced by ve...
+[04/28 15:27:09     37s] WARNING   IMPPP-557            8  A single-layer VIARULE GENERATE for turn...
+[04/28 15:27:09     37s] WARNING   IMPSP-5217           1  addFiller command is running on a postRo...
+[04/28 15:27:09     37s] WARNING   IMPOPT-3602          4  The specified path group name %s is not ...
+[04/28 15:27:09     37s] WARNING   IMPCTE-107           1  The following globals have been obsolete...
+[04/28 15:27:09     37s] WARNING   IMPTCM-77            1  Option "%s" for command %s is obsolete a...
+[04/28 15:27:09     37s] WARNING   TA-976               1  Path groups asserted by the group_path c...
+[04/28 15:27:09     37s] WARNING   TECHLIB-302          1  No function defined for cell '%s'. The c...
+[04/28 15:27:09     37s] *** Message Summary: 1127 warning(s), 0 error(s)
+[04/28 15:27:09     37s] 
+[04/28 15:27:09     37s] --- Ending "Innovus" (totcpu=0:00:37.7, real=0:03:06, mem=1124.9M) ---

@@ -1,0 +1,7 @@
+# Version:1.0 MMMC View Definition File
+# Do Not Remove Above Line
+create_library_set -name lib_max -timing {../../../../../../cell_lib/CBDK_IC_Contest_v2.5/SOCE/lib/slow.lib}
+create_constraint_mode -name func_mode -sdc_files {IOTDF_APR.sdc}
+create_delay_corner -name DC_max -library_set {lib_max}
+create_analysis_view -name av_func_mode -constraint_mode {func_mode} -delay_corner {DC_max}
+set_analysis_view -setup {av_func_mode} -hold {av_func_mode}

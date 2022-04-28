@@ -1,0 +1,6 @@
+Command Line: /usr/cad/synopsys/verdi/cur/platform/LINUXAMD64/bin/fsdb2vcd /home/t107360223/Desktop/ic_contest/final/2019_IOTDF/01_RTL/IOTDF_F7.fsdb
+uname(Linux islabx6 2.6.32-642.el6.x86_64 #1 SMP Tue May 10 17:27:01 UTC 2016 x86_64)
+Load signals (0)-(16360000) time 0.039588 0.179972 0.158976 delta 58138624 58138624 total 317386752 317386752
+Write signals (0)-(16360000) time 2.521157 0.543918 0.008998 delta 925696 925696 total 318312448 318312448
+Unload (0)-(16360000) time 0.002179 0.001999 0.000000 delta 0 0 total 318312448 318312448
+au time 4.212275 1.556764 0.203969 delta 100794368 100794368 total 201531392 201531392

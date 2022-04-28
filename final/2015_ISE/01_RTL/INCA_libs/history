@@ -578,3 +578,5 @@ s573::(27Apr2022:14:59:50):( ncverilog testfixture3.v ../03_APR/ISE_pr.v -v tsmc
 s574::(27Apr2022:14:59:52):( ncverilog testfixture3.v ../03_APR/ISE_pr.v -v tsmc13_neg.v +define+SDF +ncmaxdelays )
 s575::(27Apr2022:14:59:54):( ncverilog testfixture3.v ../03_APR/ISE_pr.v -v tsmc13_neg.v +define+SDF +ncmaxdelays )
 s576::(27Apr2022:14:59:56):( ncverilog testfixture3.v ../03_APR/ISE_pr.v -v tsmc13_neg.v +define+SDF +ncmaxdelays )
+s577::(27Apr2022:19:57:08):( ncverilog testfixture2.v ISE.v )
+s578::(27Apr2022:19:57:11):( ncverilog testfixture2.v ISE.v )

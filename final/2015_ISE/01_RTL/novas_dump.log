@@ -23,9 +23,9 @@ HOME=/home/t107360223
 PATH=/usr/cad/mentor/Tessent/cur/bin:/usr/cad/mentor/Catapult/cur//bin:/usr/cad/mentor/calibre/cur/bin:/usr/cad/synopsys/xa/cur/bin:/usr/cad/synopsys/verdi/cur/bin:/usr/cad/synopsys/verdi/cur/nLint/bin:/usr/cad/synopsys/tmax/cur/bin:/usr/bin/X11:/usr/cad/synopsys/coreConsultant/cur/bin:/usr/cad/synopsys/synthesis/cur/amd64/syn/bin:/usr/cad/synopsys/lc/cur/bin:/usr/cad/synopsys/spyglass/cur/SPYGLASS_HOME/bin:/usr/bin/X11:/usr/cad/synopsys/primetime/cur/amd64/syn/bin:/usr/cad/synopsys/formality/cur/bin:/usr/cad/cadence/STRATUS/cur/tools/bin:/usr/cad/cadence/JASPER/cur/bin:/usr/cad/cadence/JASPER/cur/bin:/usr/cad/cadence/JASPER/cur/bin:/usr/cad/cadence/JASPER/cur/bin:/usr/cad/cadence/JASPER/cur/bin:/usr/cad/cadence/INNOVUS/cur/tools/celtic/bin:/usr/cad/cadence/INNOVUS/cur/tools/plato/bin:/usr/cad/cadence/INNOVUS/cur/tools/dfII/bin:/usr/cad/cadence/INNOVUS/cur/tools/bin:/usr/cad/cadence/INNOVUS/cur//tools/tlfUtil/bin:/usr/cad/cadence/GENUS/cur/tools/bin:/usr/cad/cadence/INCISIV/cur/tools/bin:/usr/cad/cadence/INCISIV/cur/tools/vtools/vfault/bin:/usr/cad/cadence/INCISIV/cur/tools/dfII/bin:/bin:/usr/bin:/usr/ucb:/etc:.
 MAIL=/var/spool/mail/t107360223
 SHELL=/bin/tcsh
-SSH_CLIENT=115.43.154.125 58569 22
-SSH_CONNECTION=115.43.154.125 58569 140.124.72.29 22
-SSH_TTY=/dev/pts/1
+SSH_CLIENT=115.43.154.125 56082 22
+SSH_CONNECTION=115.43.154.125 56082 140.124.72.29 22
+SSH_TTY=/dev/pts/0
 TERM=xterm-256color
 SELINUX_ROLE_REQUESTED=
 SELINUX_LEVEL_REQUESTED=
@@ -50,7 +50,7 @@ QTDIR=/usr/lib64/qt-3.3
 QTINC=/usr/lib64/qt-3.3/include
 QTLIB=/usr/lib64/qt-3.3/lib
 LD_LIBRARY_PATH=/usr/cad/synopsys/verdi/cur/etc/lib/libstdc++/LINUX64/:/usr/cad/synopsys/verdi/cur/share/PLI/IUS/LINUX:/:/usr/cad/cadence/STRATUS/cur/tools/lib:/usr/cad/cadence/INNOVUS/cur//tools/tlfUtil/lib:/usr/cad/cadence/GENUS/cur/tools/lib:/usr/cad/cadence/INCISIV/cur/tools/lib:/usr/cad/cadence/INCISIV/cur/tools/vtools/vfault/lib:/usr/openwin/lib:/usr/dt/lib:/usr/lib:/usr/local/lib
-LM_LICENSE_FILE=1717@lshc:26585@lscic:5280@lshc:5280@lscic:5280@lsnctu:
+LM_LICENSE_FILE=1717@lshc:26585@lscic:5280@lshc:5280@lsntu:5280@lsncku:
 ENCOUNTER=/usr/cad/cadence/INNOVUS/cur/tools/fe
 FORMALITY=/usr/cad/synopsys/formality/cur
 PRIMETIME=/usr/cad/synopsys/primetime/cur
@@ -72,20 +72,16 @@ IMPERAS_PORT_FILE=.vsp_ovp_gdb_port
 TCL_LIBRARY=/usr/cad/cadence/INCISIV/cur/tools/inca/files/tcl/library
 Runtime command line arguments:
 argv[0]=ncverilog
-argv[1]=testfixture3.v
-argv[2]=../03_APR/ISE_pr.v
-argv[3]=-v
-argv[4]=tsmc13_neg.v
-argv[5]=+define+SDF
-argv[6]=+ncmaxdelays
-80 profile - 100
-          CPU/Mem usage: 0.040 sys,  0.040 user,  70.12M sys,  0.00M vm
-81 VC callback profile - scalar:0 vector:0
-82 Wed Apr 27 14:59:57 2022
-83 pliAppInit
-84 FSDB_GATE is disabled.
-85 Enable Parallel Dumping.
-86 pliAppMiscSet: New Sim Round
-87 pliEntryInit
-88 LIBSSCORE=found /usr/cad/synopsys/verdi/cur/share/PLI/IUS/LINUX/libsscore_ius152.so through $LD_LIBRARY_PATH setting.
-89 Sim process exit
+argv[1]=testfixture2.v
+argv[2]=ISE.v
+76 profile - 100
+          CPU/Mem usage: 0.030 sys,  0.040 user,  65.55M sys,  0.00M vm
+77 VC callback profile - scalar:0 vector:0
+78 Wed Apr 27 19:57:12 2022
+79 pliAppInit
+80 FSDB_GATE is disabled.
+81 Enable Parallel Dumping.
+82 pliAppMiscSet: New Sim Round
+83 pliEntryInit
+84 LIBSSCORE=found /usr/cad/synopsys/verdi/cur/share/PLI/IUS/LINUX/libsscore_ius152.so through $LD_LIBRARY_PATH setting.
+85 Sim process exit

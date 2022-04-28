@@ -1,5 +1,5 @@
 `timescale 1ns/10ps
-`define SDFFILE     "./IOTDF_syn.sdf"     //Modify your sdf file name
+`define SDFFILE     "../03_APR/IOTDF_pr.sdf"     //Modify your sdf file name
 `define CYCLE       10                   //Modify your CYCLE 
 `define DEL         1.0
 `define PAT_NUM     96

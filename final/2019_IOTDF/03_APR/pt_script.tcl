@@ -13,37 +13,37 @@ read_parasitics -format SPEF -verbose  ./IOTDF_pr.spef
 ## Measure  power
 #report_switching_activity -list_not_annotated -show_pin
 
-read_vcd  -strip_path test/u_IOTDF  ./IOTDF_F1.fsdb
+read_vcd  -strip_path test/u_IOTDF  ../01_RTL/IOTDF_F1.fsdb
 update_power
 report_power 
 report_power > F1_7.power
 
-read_vcd  -strip_path test/u_IOTDF  ./IOTDF_F2.fsdb
+read_vcd  -strip_path test/u_IOTDF  ../01_RTL/IOTDF_F2.fsdb
 update_power
 report_power
 report_power >> F1_7.power
 
-read_vcd  -strip_path test/u_IOTDF  ./IOTDF_F3.fsdb
+read_vcd  -strip_path test/u_IOTDF  ../01_RTL/IOTDF_F3.fsdb
 update_power
 report_power
 report_power >> F1_7.power
 
-read_vcd  -strip_path test/u_IOTDF  ./IOTDF_F4.fsdb
+read_vcd  -strip_path test/u_IOTDF  ../01_RTL/IOTDF_F4.fsdb
 update_power
 report_power
 report_power >> F1_7.power
 
-read_vcd  -strip_path test/u_IOTDF  ./IOTDF_F5.fsdb
+read_vcd  -strip_path test/u_IOTDF  ../01_RTL/IOTDF_F5.fsdb
 update_power
 report_power
 report_power >> F1_7.power
 
-read_vcd  -strip_path test/u_IOTDF  ./IOTDF_F6.fsdb
+read_vcd  -strip_path test/u_IOTDF  ../01_RTL/IOTDF_F6.fsdb
 update_power
 report_power
 report_power >> F1_7.power
 
-read_vcd  -strip_path test/u_IOTDF  ./IOTDF_F7.fsdb
+read_vcd  -strip_path test/u_IOTDF  ../01_RTL/IOTDF_F7.fsdb
 update_power
 report_power
 report_power >> F1_7.power

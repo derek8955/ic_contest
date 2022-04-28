@@ -1,0 +1,98 @@
+#######################################################
+#                                                     
+#  Innovus Command Logging File                     
+#  Created on Thu Apr 28 18:12:53 2022                
+#                                                     
+#######################################################
+
+#@(#)CDS: Innovus v19.12-s087_1 (64bit) 11/11/2019 17:32 (Linux 2.6.32-431.11.2.el6.x86_64)
+#@(#)CDS: NanoRoute 19.12-s087_1 NR191024-1807/19_12-UB (database version 18.20, 485.7.1) {superthreading v1.51}
+#@(#)CDS: AAE 19.12-s033 (64bit) 11/11/2019 (Linux 2.6.32-431.11.2.el6.x86_64)
+#@(#)CDS: CTE 19.12-s033_1 () Oct 24 2019 14:09:28 ( )
+#@(#)CDS: SYNTECH 19.12-s008_1 () Oct  6 2019 23:25:36 ( )
+#@(#)CDS: CPE v19.12-s079
+#@(#)CDS: IQuantus/TQuantus 19.1.3-s095 (64bit) Fri Aug 30 18:16:09 PDT 2019 (Linux 2.6.32-431.11.2.el6.x86_64)
+
+set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+suppressMessage ENCEXT-2799
+win
+encMessage warning 0
+encMessage debug 0
+encMessage info 0
+is_common_ui_mode
+restoreDesign /home/t107360223/Desktop/ic_contest/final/2019_IOTDF/03_APR/powerplan.enc.dat IOTDF
+setDrawView fplan
+encMessage warning 1
+encMessage debug 0
+encMessage info 1
+setDrawView place
+setPlaceMode -fp false
+place_design
+checkPlace IOTDF.checkPlace
+setDrawView place
+fit
+redirect -quiet {set honorDomain [getAnalysisMode -honorClockDomains]} > /dev/null
+timeDesign -preCTS -pathReports -drvReports -slackReports -numPaths 50 -prefix IOTDF_preCTS -outDir timingReports
+setOptMode -fixCap true -fixTran true -fixFanoutLoad true
+optDesign -preCTS
+saveDesign placement.enc
+set_ccopt_property update_io_latency false
+create_ccopt_clock_tree_spec -file ccopt.spec
+get_ccopt_clock_trees
+ccopt_check_and_flatten_ilms_no_restore
+create_ccopt_clock_tree -name clk -source clk -no_skew_group
+set_ccopt_property clock_period -pin clk 10
+create_ccopt_skew_group -name clk/func_mode -sources clk -auto_sinks
+set_ccopt_property include_source_latency -skew_group clk/func_mode true
+set_ccopt_property target_insertion_delay -skew_group clk/func_mode 1.000
+set_ccopt_property extracted_from_clock_name -skew_group clk/func_mode clk
+set_ccopt_property extracted_from_constraint_mode_name -skew_group clk/func_mode func_mode
+set_ccopt_property extracted_from_delay_corners -skew_group clk/func_mode {DC_max DC_max}
+check_ccopt_clock_tree_convergence
+get_ccopt_property auto_design_state_for_ilms
+ccopt_design
+saveDesign cts.enc
+redirect -quiet {set honorDomain [getAnalysisMode -honorClockDomains]} > /dev/null
+timeDesign -postCTS -pathReports -drvReports -slackReports -numPaths 50 -prefix IOTDF_postCTS -outDir timingReports
+redirect -quiet {set honorDomain [getAnalysisMode -honorClockDomains]} > /dev/null
+timeDesign -postCTS -hold -pathReports -slackReports -numPaths 50 -prefix IOTDF_postCTS -outDir timingReports
+saveDesign postcts.enc
+addTieHiLo -cell {TIELO TIEHI} -prefix LTIE
+setNanoRouteMode -quiet -routeInsertAntennaDiode 1
+setNanoRouteMode -quiet -routeAntennaCellName ANTENNA
+setNanoRouteMode -quiet -timingEngine {}
+setNanoRouteMode -quiet -routeWithTimingDriven 1
+setNanoRouteMode -quiet -routeWithSiDriven 1
+setNanoRouteMode -quiet -routeTopRoutingLayer default
+setNanoRouteMode -quiet -routeBottomRoutingLayer default
+setNanoRouteMode -quiet -drouteEndIteration default
+setNanoRouteMode -quiet -routeWithTimingDriven true
+setNanoRouteMode -quiet -routeWithSiDriven true
+routeDesign -globalDetail -viaOpt -wireOpt
+saveDesign nanoroute.enc
+uiSetTool stretchWire
+setEditMode -type regular
+uiSetTool addWire
+uiSetTool select
+setAnalysisMode -analysisType onChipVariation
+redirect -quiet {set honorDomain [getAnalysisMode -honorClockDomains]} > /dev/null
+timeDesign -postRoute -pathReports -drvReports -slackReports -numPaths 50 -prefix IOTDF_postRoute -outDir timingReports
+setOptMode -fixCap true -fixTran true -fixFanoutLoad true
+setDelayCalMode -engine default -siAware true
+optDesign -postRoute
+redirect -quiet {set honorDomain [getAnalysisMode -honorClockDomains]} > /dev/null
+timeDesign -postRoute -hold -pathReports -slackReports -numPaths 50 -prefix IOTDF_postRoute -outDir timingReports
+saveDesign postroute.enc
+getFillerMode -quiet
+addFiller -cell FILL1 FILL2 FILL4 FILL8 FILL16 FILL32 FILL64 -prefix FILLER
+setVerifyGeometryMode -area { 0 0 0 0 } -minWidth true -minSpacing true -minArea true -sameNet true -short true -overlap true -offRGrid false -offMGrid true -mergedMGridCheck true -minHole true -implantCheck true -minimumCut true -minStep true -viaEnclosure true -antenna false -insuffMetalOverlap true -pinInBlkg false -diffCellViol true -sameCellViol false -padFillerCellsOverlap true -routingBlkgPinOverlap true -routingCellBlkgOverlap true -regRoutingOnly false -stackedViasOnRegNet false -wireExt true -useNonDefaultSpacing false -maxWidth true -maxNonPrefLength -1 -error 1000
+verifyGeometry
+setVerifyGeometryMode -area { 0 0 0 0 }
+verifyConnectivity -type all -error 1000 -warning 50
+verifyProcessAntenna -report IOTDF.antenna.rpt -error 1000
+saveNetlist IOTDF_pr.v
+all_hold_analysis_views 
+all_setup_analysis_views 
+write_sdf IOTDF_pr.sdf
+streamOut IOTDF_pr.gds -mapFile streamOut.map -libName DesignLib -merge { ../../../../../../cell_lib/CBDK_IC_Contest_v2.5/Phantom/tsmc13gfsg_fram.gds } -outputMacros -units 1000 -mode ALL
+saveDesign chip.enc

@@ -2,10 +2,7 @@
 // File created by:  ncverilog
 // Do not modify this file
 //
-+define+SDF
-+ncmaxdelays
 -noshowtop
--MAXDELAYS
 -MESSAGES
 -XLMODE
 ./INCA_libs/irun.lnx86.15.20.nc
