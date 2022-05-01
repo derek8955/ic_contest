@@ -4,7 +4,7 @@ set ::IMEX::libVar ${::IMEX::dataVar}/libs
 
 create_library_set -name lib_max\
    -timing\
-    [list ${::IMEX::libVar}/mmmc/slow.lib]
+    [list ${::IMEX::libVar}/lib/typ/slow.lib]
 create_rc_corner -name default_rc_corner\
    -preRoute_res 1\
    -postRoute_res 1\

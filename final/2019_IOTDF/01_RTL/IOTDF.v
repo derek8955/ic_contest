@@ -73,16 +73,9 @@ wire [127:0] iot_out_tmp;
 
 assign iot_out_tmp = {input_data[0],input_data[1],input_data[2],input_data[3],input_data[4],input_data[5],input_data[6],input_data[7],input_data[8],input_data[9],input_data[10],input_data[11],input_data[12],input_data[13],input_data[14],input_data[15]};
 
-always@( posedge clk or posedge rst )
+always@( posedge clk )
 begin
-	if( rst ) 
-	begin
-		input_data[0] <= 8'd0; input_data[1] <= 8'd0; input_data[2] <= 8'd0; input_data[3] <= 8'd0; 
-		input_data[4] <= 8'd0; input_data[5] <= 8'd0; input_data[6] <= 8'd0; input_data[7] <= 8'd0; 
-		input_data[8] <= 8'd0; input_data[9] <= 8'd0; input_data[10] <= 8'd0; input_data[11] <= 8'd0; 
-		input_data[12] <= 8'd0; input_data[13] <= 8'd0; input_data[14] <= 8'd0; input_data[15] <= 8'd0;
-	end
-	else if( in_en ) input_data[cnt] <= iot_in; //Is odd 
+	if( in_en ) input_data[cnt] <= iot_in; //Is odd 
 end
 
 //AVG
@@ -104,62 +97,105 @@ begin
 	else if( cur_state == OUTPUT && cnt2 == 3'd7 ) first_round <= 1'd0;
 end
 
-always@( posedge clk )
-begin
-	/*else if( cur_state == OUTPUT )
-	begin
-		if( fn_sel )
-	end*/
-	if( cur_state == OUTPUT ) 
-	begin
-		if( cnt2 == 7 ) 
-		begin
-			if( fn_sel == PEAKMAX && first_round )
-			begin			
-				if( iot_out_tmp > iot_out ) iot_out_base <= iot_out_tmp;
-				else iot_out_base <= iot_out;
-			end
-			else if( fn_sel == PEAKMIN && first_round ) 
-			begin
-				if( iot_out_tmp < iot_out ) iot_out_base <= iot_out_tmp;
-				else iot_out_base <= iot_out;
-			end
-			else if( fn_sel == PEAKMIN && first_round == 1'd0 )
-			begin
-				if( iot_out < iot_out_base ) iot_out_base <= iot_out;
-				else if( iot_out_tmp < iot_out_base ) iot_out_base <= iot_out_tmp;
-			end
-		end
-	end
-end
+reg [7:0] target_data[0:15];
+reg change_valid;
+wire [127:0] target_tmp;
+integer idx;
+
+assign target_tmp = {target_data[0],target_data[1],target_data[2],target_data[3],target_data[4],target_data[5],target_data[6],target_data[7],target_data[8],target_data[9],target_data[10],target_data[11],target_data[12],target_data[13],target_data[14],target_data[15]};
 
 always@( posedge clk or posedge rst )
 begin
-	if( rst ) iot_out <= 128'd0;
-	else if( cur_state == OUTPUT && cnt2 == 0 ) iot_out <= iot_out_tmp;
+	if( rst ) change_valid <= 1'd0;
+	else if( cur_state == OUTPUT && cnt2 == 0 ) 
+	begin
+		if( fn_sel == PEAKMAX )
+		begin
+			if( first_round )
+			begin
+				for( idx=0 ; idx<16 ; idx=idx+1) target_data[idx] <= input_data[idx];	
+				change_valid <= 1'd1;
+			end
+			else 
+			begin
+				if( iot_out_tmp > target_tmp ) 
+				begin
+					for( idx=0 ; idx<16 ; idx=idx+1) target_data[idx] <= input_data[idx];	
+					change_valid <= 1'd1;
+				end
+				else change_valid <= 1'd0;
+			end
+		end
+		else if( fn_sel == PEAKMIN )
+		begin
+			if( first_round )
+			begin
+				for( idx=0 ; idx<16 ; idx=idx+1) target_data[idx] <= input_data[idx];	
+				change_valid <= 1'd1;
+			end
+			else 
+			begin
+				if( iot_out_tmp < target_tmp ) 
+				begin
+					for( idx=0 ; idx<16 ; idx=idx+1) target_data[idx] <= input_data[idx];	
+					change_valid <= 1'd1;
+				end
+				else change_valid <= 1'd0;
+			end
+		end
+		else 
+		begin
+			for( idx=0 ; idx<16 ; idx=idx+1) target_data[idx] <= input_data[idx];	
+		end
+	end
 	else if( cur_state == OUTPUT && cnt2 != 0 )
 	begin
 		case( fn_sel )
-		MAX, PEAKMAX: 
+		MAX: 
 		begin
-			if( iot_out_tmp > iot_out ) iot_out <= iot_out_tmp;
+			if( iot_out_tmp > target_tmp ) 
+			begin
+				for( idx=0 ; idx<16 ; idx=idx+1) target_data[idx] <= input_data[idx];	
+			end
 		end
-		MIN, PEAKMIN:
+		PEAKMAX:
 		begin
-			if( iot_out_tmp < iot_out ) iot_out <= iot_out_tmp;		
+			if( iot_out_tmp > target_tmp ) 
+			begin
+				for( idx=0 ; idx<16 ; idx=idx+1) target_data[idx] <= input_data[idx];	
+				change_valid <= 1'd1;
+			end
 		end
-		AVG:
+		MIN:
 		begin
-			if( cnt2 == 3'd7 ) iot_out <= ( sum + iot_out_tmp ) >> 3 ;
+			if( iot_out_tmp < target_tmp ) 
+			begin
+				for( idx=0 ; idx<16 ; idx=idx+1) target_data[idx] <= input_data[idx];	
+			end		
+		end
+		PEAKMIN:
+		begin
+			if( iot_out_tmp < target_tmp ) 
+			begin
+				for( idx=0 ; idx<16 ; idx=idx+1) target_data[idx] <= input_data[idx];	
+				change_valid <= 1'd1;
+			end
 		end
 		EXTRACT, EXCLUDE:
 		begin
-			iot_out <= iot_out_tmp;
+			for( idx=0 ; idx<16 ; idx=idx+1) target_data[idx] <= input_data[idx];	
 		end
 	
 		endcase
 	end
 end
+
+always@( * )
+begin
+	if( fn_sel == AVG ) iot_out = sum[130:3];
+	else iot_out = target_tmp;
+end
+
 
 //================================================================
 //  busy
@@ -190,21 +226,13 @@ begin
 		end
 		PEAKMAX:
 		begin
-			if( cnt2 == 3'd7 )
-			begin
-				if( first_round ) valid <= 1'd1;
-				else if( iot_out > iot_out_base ) valid <= 1'd1;
-				else if( iot_out_tmp > iot_out_base ) valid <= 1'd1;
-			end
+			if( cnt2 == 3'd7 && change_valid ) valid <= 1'd1;
+			else if( cnt2 == 3'd7 && iot_out_tmp > target_tmp ) valid <= 1'd1;
 		end
 		PEAKMIN:
 		begin
-			if( cnt2 == 3'd7 )
-			begin
-				if( first_round ) valid <= 1'd1;
-				else if( iot_out < iot_out_base ) valid <= 1'd1;
-				else if( iot_out_tmp < iot_out_base ) valid <= 1'd1;
-			end
+			if( cnt2 == 3'd7 && change_valid ) valid <= 1'd1;
+			else if( cnt2 == 3'd7 && iot_out_tmp < target_tmp ) valid <= 1'd1;
 		end
 		default:
 		begin

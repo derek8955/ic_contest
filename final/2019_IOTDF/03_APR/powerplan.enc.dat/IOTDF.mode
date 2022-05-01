@@ -1,9 +1,5 @@
 catch { setAnalysisMode -analysisType single }
 catch { setAnalysisMode -virtualIPO false }
-catch { setPathGroupOptions reg2reg -effortLevel high -weight 2 }
-catch { setPathGroupOptions reg2out -effortLevel low }
-catch { setPathGroupOptions in2reg -effortLevel low }
-catch { setPathGroupOptions in2out -effortLevel low }
 catch { setExtractRCMode  -engine preRoute }
 catch { setPlaceMode -MXPBoundaryLevel 7 }
 catch { setPlaceMode -MXPConstraintFile {} }

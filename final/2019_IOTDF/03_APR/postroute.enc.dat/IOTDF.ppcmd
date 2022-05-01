@@ -1,6 +1,6 @@
 # PPCMD 1 
 # sroute -connect { corePin } -layerChangeRange { METAL1(1) METAL8(8) } -blockPinTarget { nearestTarget } -corePinTarget { firstAfterRowEnd } -allowJogging 1 -crossoverViaLayerRange { METAL1(1) METAL8(8) } -nets { VDD VSS } -allowLayerChange 1 -targetViaLayerRange { METAL1(1) METAL8(8) }
-# 7 
+# 5 
 # 16 
 # 0 
 # 0 
@@ -13,26 +13,26 @@
 # END_PPCMD 1 
 
 # PPCMD 2 
-# addStripe -nets {VDD VSS} -layer METAL4 -direction vertical -width 2 -spacing 0.24 -set_to_set_distance 100 -start_from left -start_offset 30 -switch_layer_over_obs false -max_same_layer_jog_length 2 -padcore_ring_top_layer_limit METAL8 -padcore_ring_bottom_layer_limit METAL1 -block_ring_top_layer_limit METAL8 -block_ring_bottom_layer_limit METAL1 -use_wire_group 0 -snap_wire_center_to_grid None -stacked_via_bottom_layer METAL1 -stacked_via_top_layer METAL8 -via_using_exact_crossover_size false
-# 6 
+# addStripe -nets {VDD VSS} -layer METAL4 -direction vertical -width 2 -spacing 0.24 -set_to_set_distance 60 -start_from left -start_offset 50 -switch_layer_over_obs false -max_same_layer_jog_length 2 -padcore_ring_top_layer_limit METAL8 -padcore_ring_bottom_layer_limit METAL1 -block_ring_top_layer_limit METAL8 -block_ring_bottom_layer_limit METAL1 -use_wire_group 0 -snap_wire_center_to_grid None -stacked_via_bottom_layer METAL1 -stacked_via_top_layer METAL8 -via_using_exact_crossover_size false
+# 4 
 # 2 
 # 1 
 # 0 
 # 0 
 # 2 
 # BOX_LIST 
-# 35780 35940 628140 622620 0 
-# 40260 40420 623660 618140 0 
+# 35780 35940 538900 534060 0 
+# 40260 40420 534420 529580 0 
 # END_BOX_LIST 
 # NET_INFO_LIST 
-# VSS 4000 4 0 144520 587880 200000 0 0 
-# VDD 4000 4 0 140040 587880 200000 0 0 
+# VSS 4000 4 0 184520 498640 120000 0 0 
+# VDD 4000 4 0 180040 498640 120000 0 0 
 # END_NET_INFO_LIST 
 # END_PPCMD 2 
 
 # PPCMD 3 
 # setAddStripeMode -ignore_block_check false -break_at none -route_over_rows_only false -rows_without_stripes_only false -extend_to_closest_target none -stop_at_last_wire_for_area false -partial_set_thru_domain false -ignore_nondefault_domains false -trim_antenna_back_to_shape none -spacing_type edge_to_edge -spacing_from_block 0 -stripe_min_length stripe_width -stacked_via_top_layer METAL8 -stacked_via_bottom_layer METAL1 -via_using_exact_crossover_size false -split_vias false -orthogonal_only true -allow_jog { padcore_ring  block_ring } -skip_via_on_pin {  standardcell } -skip_via_on_wire_shape {  noshape   }
-# 5 
+# 3 
 # 0 
 # 0 
 # 0 
@@ -45,38 +45,6 @@
 # END_PPCMD 3 
 
 # PPCMD 4 
-# addStripe -nets {VDD VSS} -layer METAL4 -direction vertical -width 2 -spacing 0.24 -set_to_set_distance 100 -start_from left -start_offset 50 -switch_layer_over_obs false -max_same_layer_jog_length 2 -padcore_ring_top_layer_limit METAL8 -padcore_ring_bottom_layer_limit METAL1 -block_ring_top_layer_limit METAL8 -block_ring_bottom_layer_limit METAL1 -use_wire_group 0 -snap_wire_center_to_grid None -stacked_via_bottom_layer METAL1 -stacked_via_top_layer METAL8 -via_using_exact_crossover_size false
-# 4 
-# 2 
-# 1 
-# 0 
-# 0 
-# 2 
-# BOX_LIST 
-# 35780 35940 628140 622620 0 
-# 40260 40420 623660 618140 0 
-# END_BOX_LIST 
-# NET_INFO_LIST 
-# VSS 4000 4 0 184520 587880 200000 0 0 
-# VDD 4000 4 0 180040 587880 200000 0 0 
-# END_NET_INFO_LIST 
-# END_PPCMD 4 
-
-# PPCMD 5 
-# setAddStripeMode -ignore_block_check false -break_at none -route_over_rows_only false -rows_without_stripes_only false -extend_to_closest_target none -stop_at_last_wire_for_area false -partial_set_thru_domain false -ignore_nondefault_domains false -trim_antenna_back_to_shape none -spacing_type edge_to_edge -spacing_from_block 0 -stripe_min_length stripe_width -stacked_via_top_layer METAL8 -stacked_via_bottom_layer METAL1 -via_using_exact_crossover_size false -split_vias false -orthogonal_only true -allow_jog { padcore_ring  block_ring } -skip_via_on_pin {  standardcell } -skip_via_on_wire_shape {  noshape   }
-# 3 
-# 0 
-# 0 
-# 0 
-# 0 
-# 0 
-# BOX_LIST 
-# END_BOX_LIST 
-# NET_INFO_LIST 
-# END_NET_INFO_LIST 
-# END_PPCMD 5 
-
-# PPCMD 6 
 # addRing -nets {VDD VSS} -type core_rings -follow core -layer {top METAL5 bottom METAL5 left METAL4 right METAL4} -width {top 2 bottom 2 left 2 right 2} -spacing {top 0.24 bottom 0.24 left 0.24 right 0.24} -offset {top 1.8 bottom 1.8 left 1.8 right 1.8} -center 1 -threshold 0 -jog_distance 0 -snap_wire_center_to_grid None
 # 2 
 # 32 
@@ -89,24 +57,24 @@
 # NET_INFO_LIST 
 # VSS 4000 5 1 0 0 0 0 0 
 # RING_PT_INFO_LIST 
-# 333960 37940 333960 624620 
+# 289340 37940 289340 536060 
 # END_RING_PT_INFO_LIST 
 # VSS 4000 4 1 0 0 0 0 0 
 # RING_PT_INFO_LIST 
-# 37780 331280 630140 331280 
+# 37780 287000 540900 287000 
 # END_RING_PT_INFO_LIST 
 # VDD 4000 5 1 0 0 0 0 0 
 # RING_PT_INFO_LIST 
-# 333960 42420 333960 620140 
+# 289340 42420 289340 531580 
 # END_RING_PT_INFO_LIST 
 # VDD 4000 4 1 0 0 0 0 0 
 # RING_PT_INFO_LIST 
-# 42260 331280 625660 331280 
+# 42260 287000 536420 287000 
 # END_RING_PT_INFO_LIST 
 # END_NET_INFO_LIST 
-# END_PPCMD 6 
+# END_PPCMD 4 
 
-# PPCMD 7 
+# PPCMD 5 
 # setAddRingMode -ring_target default -extend_over_row 0 -ignore_rows 0 -avoid_short 0 -skip_crossing_trunks none -stacked_via_top_layer METAL8 -stacked_via_bottom_layer METAL1 -via_using_exact_crossover_size 1 -orthogonal_only true -skip_via_on_pin {  standardcell } -skip_via_on_wire_shape {  noshape }
 # 1 
 # 0 
@@ -118,5 +86,5 @@
 # END_BOX_LIST 
 # NET_INFO_LIST 
 # END_NET_INFO_LIST 
-# END_PPCMD 7 
+# END_PPCMD 5 
 
