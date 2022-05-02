@@ -92,7 +92,6 @@ catch { setAddRingMode -skip_via_on_wire_shape noshape }
 catch { setAddRingMode -stacked_via_bottom_layer METAL1 }
 catch { setAddRingMode -stacked_via_top_layer METAL8 }
 catch { setAddRingMode -via_using_exact_crossover_size true }
-catch { setEditMode -type regular }
 catch { setSIMode -separate_delta_delay_on_data true }
 catch { setAddStripeMode -allow_jog {padcore_ring block_ring} }
 catch { setAddStripeMode -break_at none }

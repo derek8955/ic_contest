@@ -12,7 +12,7 @@ tsmc13_neg.v
 -DEFINE
 SDF
 -DEFINE
-F1
+F7
 -CDSLIB
 ./INCA_libs/irun.lnx86.15.20.nc/cdsrun.lib
 -HDLVAR

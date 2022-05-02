@@ -1,6 +1,6 @@
 #@ # 
 #@ # Running pt_shell Version Q-2019.12 for linux64 -- Nov 20, 2019
-#@ # Date:   Sun May  1 15:52:09 2022
+#@ # Date:   Mon May  2 12:48:41 2022
 #@ # Run by: t107360223@islabx6
 #@ 
 
@@ -907,7 +907,7 @@ source -echo -verbose pt_script.tcl
 
 #@ ###################################################################
 #@ 
-#@ # Created by write_sdc on Sun May  1 12:23:34 2022
+#@ # Created by write_sdc on Mon May  2 12:26:32 2022
 #@ 
 #@ ###################################################################
 #@ set sdc_version 1.7
@@ -1372,37 +1372,37 @@ source -echo -verbose pt_script.tcl
 #@ read_vcd  -strip_path test/u_IOTDF  ../01_RTL/IOTDF_F1.fsdb
 #@ update_power
 #@ report_power 
-#@ report_power > F1_7_after.power
+#@ report_power > F1_7.power
 #@ 
 #@ read_vcd  -strip_path test/u_IOTDF  ../01_RTL/IOTDF_F2.fsdb
 #@ update_power
 #@ report_power
-#@ report_power >> F1_7_after.power
+#@ report_power >> F1_7.power
 #@ 
 #@ read_vcd  -strip_path test/u_IOTDF  ../01_RTL/IOTDF_F3.fsdb
 #@ update_power
 #@ report_power
-#@ report_power >> F1_7_after.power
+#@ report_power >> F1_7.power
 #@ 
 #@ read_vcd  -strip_path test/u_IOTDF  ../01_RTL/IOTDF_F4.fsdb
 #@ update_power
 #@ report_power
-#@ report_power >> F1_7_after.power
+#@ report_power >> F1_7.power
 #@ 
 #@ read_vcd  -strip_path test/u_IOTDF  ../01_RTL/IOTDF_F5.fsdb
 #@ update_power
 #@ report_power
-#@ report_power >> F1_7_after.power
+#@ report_power >> F1_7.power
 #@ 
 #@ read_vcd  -strip_path test/u_IOTDF  ../01_RTL/IOTDF_F6.fsdb
 #@ update_power
 #@ report_power
-#@ report_power >> F1_7_after.power
+#@ report_power >> F1_7.power
 #@ 
 #@ read_vcd  -strip_path test/u_IOTDF  ../01_RTL/IOTDF_F7.fsdb
 #@ update_power
 #@ report_power
-#@ report_power >> F1_7_after.power
+#@ report_power >> F1_7.power
 #@ 
 #@ 
 #@ # -- End source pt_script.tcl

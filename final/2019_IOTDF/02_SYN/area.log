@@ -3,7 +3,7 @@
 Report : area
 Design : IOTDF
 Version: Q-2019.12
-Date   : Sun May  1 12:23:34 2022
+Date   : Mon May  2 12:26:32 2022
 ****************************************
 
 Library(s) Used:
@@ -11,20 +11,20 @@ Library(s) Used:
     slow (File: /home/cell_lib/CBDK_IC_Contest_v2.5/SynopsysDC/db/slow.db)
 
 Number of ports:                          802
-Number of nets:                          3419
-Number of cells:                         2721
-Number of combinational cells:           2317
+Number of nets:                          3989
+Number of cells:                         2935
+Number of combinational cells:           2531
 Number of sequential cells:               400
 Number of macros/black boxes:               0
-Number of buf/inv:                        442
-Number of references:                      48
+Number of buf/inv:                        544
+Number of references:                      45
 
-Combinational area:              16809.351990
-Buf/Inv area:                     1738.137573
-Noncombinational area:           13450.197683
+Combinational area:              19240.028682
+Buf/Inv area:                     2101.381167
+Noncombinational area:           12896.844765
 Macro/Black Box area:                0.000000
 Net Interconnect area:      undefined  (No wire load specified)
 
-Total cell area:                 30259.549673
+Total cell area:                 32136.873447
 Total area:                 undefined
 1

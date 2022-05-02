@@ -8,7 +8,7 @@ Report : power
         -analysis_effort low
 Design : IOTDF
 Version: Q-2019.12
-Date   : Sun May  1 12:23:35 2022
+Date   : Mon May  2 12:26:33 2022
 ****************************************
 
 
@@ -30,12 +30,12 @@ Power-specific unit information :
     Leakage Power Units = 1pW
 
 
-  Cell Internal Power  = 779.4978 uW   (98%)
-  Net Switching Power  =  15.2146 uW    (2%)
+  Cell Internal Power  = 837.6315 uW   (97%)
+  Net Switching Power  =  25.1270 uW    (3%)
                          ---------
-Total Dynamic Power    = 794.7125 uW  (100%)
+Total Dynamic Power    = 862.7585 uW  (100%)
 
-Cell Leakage Power     =  25.4707 uW
+Cell Leakage Power     =  28.0045 uW
 
 
                  Internal         Switching           Leakage            Total
@@ -45,9 +45,9 @@ io_pad             0.0000            0.0000            0.0000            0.0000 
 memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
 black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
 clock_network      0.0000            0.0000            0.0000            0.0000  (   0.00%)
-register           0.7690        2.1056e-03        1.0359e+07            0.7815  (  95.28%)
+register           0.8216        3.5075e-03        1.1877e+07            0.8370  (  93.96%)
 sequential         0.0000            0.0000            0.0000            0.0000  (   0.00%)
-combinational  1.0481e-02        1.3109e-02        1.5111e+07        3.8701e-02  (   4.72%)
+combinational  1.6052e-02        2.1620e-02        1.6127e+07        5.3799e-02  (   6.04%)
 --------------------------------------------------------------------------------------------------
-Total              0.7795 mW     1.5215e-02 mW     2.5471e+07 pW         0.8202 mW
+Total              0.8376 mW     2.5127e-02 mW     2.8004e+07 pW         0.8908 mW
 1

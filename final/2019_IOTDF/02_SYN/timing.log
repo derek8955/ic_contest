@@ -6,102 +6,101 @@ Report : timing
         -max_paths 1
 Design : IOTDF
 Version: Q-2019.12
-Date   : Sun May  1 12:23:34 2022
+Date   : Mon May  2 12:26:32 2022
 ****************************************
 
 Operating Conditions: slow   Library: slow
 Wire Load Model Mode: top
 
-  Startpoint: sum_reg[64]
+  Startpoint: input_data_reg[10][0]
               (rising edge-triggered flip-flop clocked by clk)
   Endpoint: sum_reg[130]
             (rising edge-triggered flip-flop clocked by clk)
   Path Group: clk
   Path Type: max
 
-  Point                                                   Incr       Path
-  --------------------------------------------------------------------------
-  clock clk (rise edge)                                   0.00       0.00
-  clock network delay (ideal)                             1.00       1.00
-  sum_reg[64]/CK (DFFRX1)                                 0.00       1.00 r
-  sum_reg[64]/Q (DFFRX1)                                  0.44       1.44 r
-  add_87_S2/A[64] (IOTDF_DW01_add_1)                      0.00       1.44 r
-  add_87_S2/U1879/Y (NAND2X1)                             0.08       1.52 f
-  add_87_S2/U1186/Y (OAI21XL)                             0.29       1.80 r
-  add_87_S2/U1664/Y (AOI21X1)                             0.13       1.94 f
-  add_87_S2/U1095/Y (OAI21XL)                             0.22       2.15 r
-  add_87_S2/U1105/Y (AO21X1)                              0.23       2.38 r
-  add_87_S2/U1094/Y (NAND2X1)                             0.06       2.45 f
-  add_87_S2/U1120/Y (NAND2X1)                             0.08       2.53 r
-  add_87_S2/U1151/Y (AOI21X1)                             0.08       2.61 f
-  add_87_S2/U1102/Y (NAND2X1)                             0.10       2.71 r
-  add_87_S2/U1193/Y (AOI21X1)                             0.10       2.81 f
-  add_87_S2/U1136/Y (CLKINVX1)                            0.06       2.87 r
-  add_87_S2/U1192/Y (NAND2X1)                             0.05       2.92 f
-  add_87_S2/U1137/Y (NAND2X1)                             0.09       3.01 r
-  add_87_S2/U1101/Y (AOI21X1)                             0.11       3.11 f
-  add_87_S2/U1123/Y (OAI21XL)                             0.18       3.29 r
-  add_87_S2/U1115/Y (AOI21XL)                             0.14       3.44 f
-  add_87_S2/U1128/Y (CLKINVX1)                            0.07       3.51 r
-  add_87_S2/U1126/Y (NAND2X1)                             0.05       3.56 f
-  add_87_S2/U1127/Y (NAND2X1)                             0.09       3.64 r
-  add_87_S2/U1131/Y (AOI21X1)                             0.12       3.76 f
-  add_87_S2/U1091/Y (OAI21X2)                             0.13       3.89 r
-  add_87_S2/U1122/Y (AOI21X1)                             0.10       3.99 f
-  add_87_S2/U1628/Y (OAI21XL)                             0.23       4.23 r
-  add_87_S2/U1244/Y (AOI21XL)                             0.16       4.38 f
-  add_87_S2/U1627/Y (OAI21XL)                             0.25       4.63 r
-  add_87_S2/U1245/Y (AOI21XL)                             0.16       4.78 f
-  add_87_S2/U1626/Y (OAI21XL)                             0.25       5.03 r
-  add_87_S2/U1246/Y (AOI21XL)                             0.16       5.19 f
-  add_87_S2/U1625/Y (OAI21XL)                             0.25       5.44 r
-  add_87_S2/U1247/Y (AOI21XL)                             0.16       5.59 f
-  add_87_S2/U1624/Y (OAI21XL)                             0.25       5.84 r
-  add_87_S2/U1248/Y (AOI21XL)                             0.16       5.99 f
-  add_87_S2/U1623/Y (OAI21XL)                             0.25       6.24 r
-  add_87_S2/U1249/Y (AOI21XL)                             0.16       6.40 f
-  add_87_S2/U1622/Y (OAI21XL)                             0.25       6.64 r
-  add_87_S2/U1250/Y (AOI21XL)                             0.16       6.80 f
-  add_87_S2/U1621/Y (OAI21XL)                             0.25       7.05 r
-  add_87_S2/U1251/Y (AOI21XL)                             0.16       7.20 f
-  add_87_S2/U1620/Y (OAI21XL)                             0.25       7.45 r
-  add_87_S2/U1252/Y (AOI21XL)                             0.16       7.61 f
-  add_87_S2/U1619/Y (OAI21XL)                             0.25       7.85 r
-  add_87_S2/U1253/Y (AOI21XL)                             0.16       8.01 f
-  add_87_S2/U1618/Y (OAI21XL)                             0.25       8.26 r
-  add_87_S2/U1254/Y (AOI21XL)                             0.14       8.40 f
-  add_87_S2/U1100/Y (OAI21XL)                             0.24       8.65 r
-  add_87_S2/U1255/Y (AOI21XL)                             0.15       8.79 f
-  add_87_S2/U1125/Y (INVX1)                               0.09       8.88 r
-  add_87_S2/U1119/Y (NAND2X1)                             0.06       8.94 f
-  add_87_S2/U1114/Y (NAND2X1)                             0.09       9.02 r
-  add_87_S2/U1110/Y (AO21X1)                              0.17       9.20 r
-  add_87_S2/U1158/Y (NAND2X1)                             0.06       9.26 f
-  add_87_S2/U1159/Y (NAND2X1)                             0.09       9.35 r
-  add_87_S2/U1111/Y (AO21X1)                              0.17       9.52 r
-  add_87_S2/U1329/Y (NAND2X1)                             0.06       9.58 f
-  add_87_S2/U1330/Y (NAND2X1)                             0.09       9.66 r
-  add_87_S2/U1630/Y (AOI21X1)                             0.09       9.76 f
-  add_87_S2/U1616/Y (OAI21XL)                             0.22       9.98 r
-  add_87_S2/U1359/Y (NAND2XL)                             0.14      10.13 f
-  add_87_S2/U1814/Y (NOR2X1)                              0.10      10.23 r
-  add_87_S2/U1407/Y (XOR2XL)                              0.13      10.36 f
-  add_87_S2/SUM[130] (IOTDF_DW01_add_1)                   0.00      10.36 f
-  U1049/Y (AO22X1)                                        0.31      10.67 f
-  sum_reg[130]/D (DFFRX1)                                 0.00      10.67 f
-  data arrival time                                                 10.67
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              1.00       1.00
+  input_data_reg[10][0]/CK (DFFRX1)        0.00       1.00 r
+  input_data_reg[10][0]/Q (DFFRX1)         0.50       1.50 r
+  r415/B[40] (IOTDF_DW01_add_1)            0.00       1.50 r
+  r415/U1887/Y (NAND2X1)                   0.10       1.60 f
+  r415/U1103/Y (OAI21XL)                   0.25       1.85 r
+  r415/U1251/Y (AOI21XL)                   0.14       1.99 f
+  r415/U1096/Y (OAI21XL)                   0.19       2.18 r
+  r415/U1253/Y (AOI21XL)                   0.09       2.27 f
+  r415/U1517/Y (OAI21XL)                   0.18       2.45 r
+  r415/U1200/Y (AOI21XL)                   0.10       2.55 f
+  r415/U1126/Y (CLKINVX1)                  0.07       2.62 r
+  r415/U1199/Y (NAND2X2)                   0.05       2.67 f
+  r415/U1125/Y (NAND2X2)                   0.05       2.73 r
+  r415/U1165/Y (AOI21X1)                   0.09       2.81 f
+  r415/U1163/Y (CLKINVX1)                  0.06       2.87 r
+  r415/U1162/Y (NAND2X1)                   0.05       2.92 f
+  r415/U1106/Y (NAND2X1)                   0.08       3.00 r
+  r415/U1643/Y (AOI21X1)                   0.10       3.11 f
+  r415/U1120/Y (OAI21X1)                   0.15       3.25 r
+  r415/U1233/Y (AOI21XL)                   0.13       3.38 f
+  r415/U1625/Y (OAI21XL)                   0.23       3.61 r
+  r415/U1234/Y (AOI21XL)                   0.15       3.76 f
+  r415/U1626/Y (OAI21XL)                   0.25       4.00 r
+  r415/U1235/Y (AOI21XL)                   0.16       4.16 f
+  r415/U1627/Y (OAI21XL)                   0.25       4.41 r
+  r415/U1236/Y (AOI21XL)                   0.16       4.56 f
+  r415/U1628/Y (OAI21XL)                   0.25       4.81 r
+  r415/U1237/Y (AOI21XL)                   0.16       4.96 f
+  r415/U1629/Y (OAI21XL)                   0.25       5.21 r
+  r415/U1238/Y (AOI21XL)                   0.16       5.37 f
+  r415/U1630/Y (OAI21XL)                   0.25       5.62 r
+  r415/U1239/Y (AOI21XL)                   0.16       5.77 f
+  r415/U1631/Y (OAI21XL)                   0.25       6.02 r
+  r415/U1240/Y (AOI21XL)                   0.16       6.17 f
+  r415/U1632/Y (OAI21XL)                   0.25       6.42 r
+  r415/U1241/Y (AOI21XL)                   0.16       6.58 f
+  r415/U1633/Y (OAI21XL)                   0.25       6.83 r
+  r415/U1242/Y (AOI21XL)                   0.16       6.98 f
+  r415/U1634/Y (OAI21XL)                   0.25       7.23 r
+  r415/U1243/Y (AOI21XL)                   0.16       7.38 f
+  r415/U1635/Y (OAI21XL)                   0.25       7.63 r
+  r415/U1244/Y (AOI21XL)                   0.16       7.79 f
+  r415/U1636/Y (OAI21XL)                   0.25       8.03 r
+  r415/U1245/Y (AOI21XL)                   0.16       8.19 f
+  r415/U1637/Y (OAI21XL)                   0.25       8.44 r
+  r415/U1246/Y (AOI21XL)                   0.16       8.59 f
+  r415/U1638/Y (OAI21XL)                   0.25       8.84 r
+  r415/U1247/Y (AOI21XL)                   0.16       9.00 f
+  r415/U1111/Y (OAI21XL)                   0.27       9.27 r
+  r415/U1138/Y (AOI21X1)                   0.15       9.42 f
+  r415/U1173/Y (CLKINVX1)                  0.07       9.48 r
+  r415/U1171/Y (NAND2X1)                   0.05       9.54 f
+  r415/U1172/Y (NAND2X1)                   0.09       9.62 r
+  r415/U1193/Y (AOI21X1)                   0.10       9.72 f
+  r415/U1114/Y (CLKINVX1)                  0.06       9.78 r
+  r415/U1402/Y (NAND2X1)                   0.05       9.83 f
+  r415/U1113/Y (NAND2X1)                   0.08       9.91 r
+  r415/U1401/Y (AOI21X1)                   0.10      10.01 f
+  r415/U1119/Y (NOR2X1)                    0.11      10.12 r
+  r415/U1912/Y (AND2X2)                    0.13      10.25 r
+  r415/U1911/Y (XOR2X1)                    0.10      10.35 r
+  r415/SUM[130] (IOTDF_DW01_add_1)         0.00      10.35 r
+  U1434/Y (INVXL)                          0.06      10.41 f
+  U1686/Y (OAI22XL)                        0.22      10.63 r
+  sum_reg[130]/D (DFFRX1)                  0.00      10.63 r
+  data arrival time                                  10.63
 
-  clock clk (rise edge)                                  10.00      10.00
-  clock network delay (ideal)                             1.00      11.00
-  clock uncertainty                                      -0.10      10.90
-  sum_reg[130]/CK (DFFRX1)                                0.00      10.90 r
-  library setup time                                     -0.21      10.69
-  data required time                                                10.69
-  --------------------------------------------------------------------------
-  data required time                                                10.69
-  data arrival time                                                -10.67
-  --------------------------------------------------------------------------
-  slack (MET)                                                        0.02
+  clock clk (rise edge)                   10.00      10.00
+  clock network delay (ideal)              1.00      11.00
+  clock uncertainty                       -0.10      10.90
+  sum_reg[130]/CK (DFFRX1)                 0.00      10.90 r
+  library setup time                      -0.26      10.64
+  data required time                                 10.64
+  -----------------------------------------------------------
+  data required time                                 10.64
+  data arrival time                                 -10.63
+  -----------------------------------------------------------
+  slack (MET)                                         0.00
 
 
 1

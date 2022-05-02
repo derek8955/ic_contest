@@ -2,10 +2,10 @@
 // File created by:  ncverilog
 // Do not modify this file
 //
++ncmaxdelays
 testfixture.v
 ../03_APR/IOTDF_pr.v
 -v
 tsmc13_neg.v
-+ncmaxdelays
 +access+r
-+define+SDF+F1
++define+SDF+F7

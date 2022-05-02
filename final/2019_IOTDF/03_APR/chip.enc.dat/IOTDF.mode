@@ -8,7 +8,6 @@ catch { setAnalysisMode -virtualIPO false }
 catch { setOptMode -activeSetupViews { av_func_mode } }
 catch { setOptMode -autoSetupViews { av_func_mode} }
 catch { setOptMode -autoTDGRSetupViews { av_func_mode} }
-catch { setOptMode -deleteInst true }
 catch { setOptMode -drcMargin 0 }
 catch { setOptMode -fixCap true }
 catch { setOptMode -fixDrc true }
@@ -22,16 +21,12 @@ catch { setPathGroupOptions reg2out -effortLevel low }
 catch { setPathGroupOptions in2reg -effortLevel low }
 catch { setPathGroupOptions in2out -effortLevel low }
 catch { setExtractRCMode  -engine postRoute -total_c_th 5 -relative_c_th 0.03 -coupling_c_th 3 -minNetTermNrToBeInMem 50 }
-catch {setNanoRouteMode -quiet -drouteAntennaFactor 1.000000}
-catch {setNanoRouteMode -quiet -droutePostRouteSpreadWire "auto"}
-catch {setNanoRouteMode -quiet -drouteStartIteration 0}
 catch {setNanoRouteMode -quiet -extractThirdPartyCompatible false}
 catch {setNanoRouteMode -quiet -grouteExpTdStdDelay 34.800000}
 catch {setNanoRouteMode -quiet -grouteExpTdUseTifTimingEngineForImportDesign false}
 catch {setNanoRouteMode -quiet -routeAntennaCellName "ANTENNA"}
 catch {setNanoRouteMode -quiet -routeInsertAntennaDiode true}
 catch {setNanoRouteMode -quiet -routeWithSiDriven true}
-catch {setNanoRouteMode -quiet -routeWithSiPostRouteFix false}
 catch {setNanoRouteMode -quiet -routeWithTimingDriven true}
 catch {setNanoRouteMode -quiet -timingEngine ""}
 
@@ -98,10 +93,6 @@ catch { setAddRingMode -skip_via_on_wire_shape noshape }
 catch { setAddRingMode -stacked_via_bottom_layer METAL1 }
 catch { setAddRingMode -stacked_via_top_layer METAL8 }
 catch { setAddRingMode -via_using_exact_crossover_size true }
-catch { setEditMode -type regular }
-catch { setHierMode -disableArt false }
-catch { setHierMode -reportPostRouteArtTiming false }
-catch { setHierMode -trialRouteHonorReadOnly false }
 catch { setSIMode -separate_delta_delay_on_data true }
 catch { setAddStripeMode -allow_jog {padcore_ring block_ring} }
 catch { setAddStripeMode -break_at none }
