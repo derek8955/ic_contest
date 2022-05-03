@@ -1,0 +1,110 @@
+MACRO sram_256x16
+  PIN AA[0]
+    AntennaGateArea  0.039 ;
+  END AA[0]
+  PIN AA[1]
+    AntennaGateArea  0.039 ;
+  END AA[1]
+  PIN AA[2]
+    AntennaGateArea  0.039 ;
+  END AA[2]
+  PIN AA[3]
+    AntennaGateArea  0.039 ;
+  END AA[3]
+  PIN AA[4]
+    AntennaGateArea  0.039 ;
+  END AA[4]
+  PIN AA[5]
+    AntennaGateArea  0.039 ;
+  END AA[5]
+  PIN AA[6]
+    AntennaGateArea  0.039 ;
+  END AA[6]
+  PIN AA[7]
+    AntennaGateArea  0.039 ;
+  END AA[7]
+  PIN AB[0]
+    AntennaGateArea  0.039 ;
+  END AB[0]
+  PIN AB[1]
+    AntennaGateArea  0.039 ;
+  END AB[1]
+  PIN AB[2]
+    AntennaGateArea  0.039 ;
+  END AB[2]
+  PIN AB[3]
+    AntennaGateArea  0.039 ;
+  END AB[3]
+  PIN AB[4]
+    AntennaGateArea  0.039 ;
+  END AB[4]
+  PIN AB[5]
+    AntennaGateArea  0.039 ;
+  END AB[5]
+  PIN AB[6]
+    AntennaGateArea  0.039 ;
+  END AB[6]
+  PIN AB[7]
+    AntennaGateArea  0.039 ;
+  END AB[7]
+  PIN CENA
+    AntennaGateArea  0.039 ;
+  END CENA
+  PIN CENB
+    AntennaGateArea  0.039 ;
+  END CENB
+  PIN CLKA
+    AntennaGateArea  0.039 ;
+  END CLKA
+  PIN CLKB
+    AntennaGateArea  0.039 ;
+  END CLKB
+  PIN DB[0]
+    AntennaGateArea  0.039 ;
+  END DB[0]
+  PIN DB[10]
+    AntennaGateArea  0.039 ;
+  END DB[10]
+  PIN DB[11]
+    AntennaGateArea  0.039 ;
+  END DB[11]
+  PIN DB[12]
+    AntennaGateArea  0.039 ;
+  END DB[12]
+  PIN DB[13]
+    AntennaGateArea  0.039 ;
+  END DB[13]
+  PIN DB[14]
+    AntennaGateArea  0.039 ;
+  END DB[14]
+  PIN DB[15]
+    AntennaGateArea  0.039 ;
+  END DB[15]
+  PIN DB[1]
+    AntennaGateArea  0.039 ;
+  END DB[1]
+  PIN DB[2]
+    AntennaGateArea  0.039 ;
+  END DB[2]
+  PIN DB[3]
+    AntennaGateArea  0.039 ;
+  END DB[3]
+  PIN DB[4]
+    AntennaGateArea  0.039 ;
+  END DB[4]
+  PIN DB[5]
+    AntennaGateArea  0.039 ;
+  END DB[5]
+  PIN DB[6]
+    AntennaGateArea  0.039 ;
+  END DB[6]
+  PIN DB[7]
+    AntennaGateArea  0.039 ;
+  END DB[7]
+  PIN DB[8]
+    AntennaGateArea  0.039 ;
+  END DB[8]
+  PIN DB[9]
+    AntennaGateArea  0.039 ;
+  END DB[9]
+END sram_256x16

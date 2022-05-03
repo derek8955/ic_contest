@@ -1,0 +1,672 @@
+/*
+ *      CONFIDENTIAL  AND  PROPRIETARY SOFTWARE OF ARTISAN COMPONENTS, INC.
+ *      
+ *      Copyright (c) 2017  Artisan Components, Inc.  All  Rights Reserved.
+ *      
+ *      Use of this Software is subject to the terms and conditions  of the
+ *      applicable license agreement with Artisan Components, Inc. In addition,
+ *      this Software is protected by patents, copyright law and international
+ *      treaties.
+ *      
+ *      The copyright notice(s) in this Software does not indicate actual or
+ *      intended publication of this Software.
+ *      
+ *      name:			RF-2P-HS Register File Generator
+ *           			TSMC CL013G-FSG Process
+ *      version:		2004Q2V1
+ *      comment:		
+ *      configuration:	 -instname "sram_256x16" -words 256 -bits 16 -frequency 333 -ring_width 2 -mux 4 -drive 4 -write_mask off -wp_size 8 -top_layer met8 -power_type rings -horiz met3 -vert met2 -cust_comment "" -left_bus_delim "[" -right_bus_delim "]" -pwr_gnd_rename "VDD:VDD,GND:VSS" -prefix "" -pin_space 0.0 -name_case upper -check_instname on -diodes on -inside_ring_type GND -libname "sram_256x16"
+ *
+ *      Synopsys model for Synchronous Dual-Port Register File
+ *
+ *      Library Name:   sram_256x16
+ *      Instance Name:  sram_256x16
+ *      Words:          256
+ *      Word Width:     16
+ *      Mux:            4
+ *      Pipeline:       No
+ *      Process:        slow
+ *
+ *      Creation Date:  2017-03-07 07:07:28Z
+ *      Version:        2004Q2V1
+ *
+ *      Verified With: Synopsys Design Compiler
+ *
+ *      Modeling Assumptions: This library contains a black box description
+ *          for a memory element.  At the library level, a
+ *          default_max_transition constraint is set to the maximum
+ *          characterized input slew.  Each output has a max_capacitance
+ *          constraint set to the highest characterized output load.  These two
+ *          constraints force Design Compiler to synthesize circuits that
+ *          operate within the characterization space.  The user can tighten
+ *          these constraints, if desired.  When writing SDF from Design
+ *          Compiler, use the version 2.1 option.  This ensures the SDF will
+ *          annotate to simulation models provided with this generator.
+ *
+ *      Modeling Limitations:
+ *          Due to limitations of the .lib format, some data reduction was
+ *          necessary.  When reducing data, minimum values were chosen for the
+ *          fast case corner and maximum values were used for the typical and
+ *          best case corners.  It is recommended that critical timing and
+ *          setup and hold times be checked at all corners.
+ *
+ *      Known Bugs: None.
+ *
+ *      Known Work Arounds: N/A
+ *
+ */
+
+library(sram_256x16) {
+	delay_model		: table_lookup;
+	revision		: 2004Q2V1;
+	date			: "2017-03-07 07:07:28Z";
+	comment			: "Confidential Information of Artisan Components, Inc.  Use subject to Artisan Components license. Copyright (c) 2017 Artisan Components, Inc.";
+	time_unit		: "1ns";
+	voltage_unit		: "1V";
+	current_unit		: "1mA";
+        leakage_power_unit      : "1mW";
+	nom_process		: 1;
+	nom_temperature		: 125.000;
+	nom_voltage		: 1.080;
+	capacitive_load_unit	 (1,pf);
+
+	pulling_resistance_unit	        : "1kohm";
+
+	/* additional header data */
+	default_cell_leakage_power      : 0;
+	default_fanout_load		: 1;
+	default_inout_pin_cap		: 0.005;
+	default_input_pin_cap		: 0.005;
+	default_output_pin_cap		: 0.0;
+	default_max_transition		: 1.500;
+
+        /* default attributes */
+        default_leakage_power_density : 0.0;
+        slew_derate_from_library      : 1;
+        slew_lower_threshold_pct_fall : 10.0;
+        slew_upper_threshold_pct_fall : 90.0;
+        slew_lower_threshold_pct_rise : 10.0;
+        slew_upper_threshold_pct_rise : 90.0;
+        input_threshold_pct_fall      : 50.0;
+        input_threshold_pct_rise      : 50.0;
+        output_threshold_pct_fall     : 50.0;
+        output_threshold_pct_rise     : 50.0;
+
+ 	/* k-factors */
+ 	k_process_cell_fall             : 1;
+ 	k_process_cell_leakage_power    : 0;
+ 	k_process_cell_rise             : 1;
+ 	k_process_fall_transition       : 1;
+ 	k_process_hold_fall             : 1;
+ 	k_process_hold_rise             : 1;
+ 	k_process_internal_power        : 0;
+ 	k_process_min_pulse_width_high  : 1;
+ 	k_process_min_pulse_width_low   : 1;
+ 	k_process_pin_cap               : 0;
+ 	k_process_recovery_fall         : 1;
+ 	k_process_recovery_rise         : 1;
+ 	k_process_rise_transition       : 1;
+ 	k_process_setup_fall            : 1;
+ 	k_process_setup_rise            : 1;
+ 	k_process_wire_cap              : 0;
+ 	k_process_wire_res              : 0;
+	k_temp_cell_fall		: 0.0;
+	k_temp_cell_rise		: 0.0;
+	k_temp_hold_fall                : 0.0;
+	k_temp_hold_rise                : 0.0;
+	k_temp_min_pulse_width_high     : 0.0;
+	k_temp_min_pulse_width_low      : 0.0;
+	k_temp_min_period               : 0.0;
+	k_temp_rise_propagation         : 0.0;
+	k_temp_fall_propagation         : 0.0;
+	k_temp_rise_transition          : 0.0;
+	k_temp_fall_transition          : 0.0;
+	k_temp_recovery_fall            : 0.0;
+	k_temp_recovery_rise            : 0.0;
+	k_temp_setup_fall               : 0.0;
+	k_temp_setup_rise               : 0.0;
+	k_volt_cell_fall                : 0.0;
+	k_volt_cell_rise                : 0.0;
+	k_volt_hold_fall                : 0.0;
+	k_volt_hold_rise                : 0.0;
+	k_volt_min_pulse_width_high     : 0.0;
+	k_volt_min_pulse_width_low      : 0.0;
+	k_volt_min_period               : 0.0;
+	k_volt_rise_propagation         : 0.0;
+	k_volt_fall_propagation         : 0.0;
+	k_volt_rise_transition	        : 0.0;
+	k_volt_fall_transition	        : 0.0;
+	k_volt_recovery_fall            : 0.0;
+	k_volt_recovery_rise            : 0.0;
+	k_volt_setup_fall               : 0.0;
+	k_volt_setup_rise               : 0.0;
+
+
+	operating_conditions(slow) {
+		process		 : 1;
+		temperature	 : 125.000;
+		voltage		 : 1.080;
+		tree_type	 : balanced_tree;
+	}
+
+	wire_load("sample") {
+		resistance	 : 1.6e-05;
+		capacitance	 : 0.0002;
+		area		 : 1.7;
+  		slope		 : 500;
+		fanout_length	 (1,500);
+	}
+	output_voltage(GENERAL) {
+		vol	 : 0.4;
+		voh	 : VDD - 0.4;
+		vomin	 : -0.5;
+		vomax	 : VDD + 0.5;
+	}
+	input_voltage(CMOS) {
+		vil	 : 0.3 * VDD;
+		vih	 : 0.7 * VDD;
+		vimin	 : -0.5;
+		vimax	 : VDD + 0.5;
+	}
+	input_voltage(TTL) {
+		vil	 : 0.8;
+		vih	 : 2;
+		vimin	 : -0.5;
+		vimax	 : VDD + 0.5;
+	}
+        lu_table_template(sram_256x16_delay_template) {
+           variable_1 : input_net_transition;
+           variable_2 : total_output_net_capacitance;
+               index_1 ("1000, 1001, 1002, 1003, 1004, 1005, 1006");
+               index_2 ("1000, 1001, 1002, 1003, 1004, 1005, 1006");
+        }
+	lu_table_template(sram_256x16_constraint_template) {
+           variable_1 : related_pin_transition;
+           variable_2 : constrained_pin_transition;
+               index_1 ("1000, 1001, 1002, 1003, 1004, 1005, 1006");
+               index_2 ("1000, 1001, 1002, 1003, 1004, 1005, 1006");
+        }
+	lu_table_template(sram_256x16_load_template) {
+           variable_1 : total_output_net_capacitance;
+               index_1 ("1000, 1001, 1002, 1003, 1004, 1005, 1006");
+        }
+        power_lut_template(sram_256x16_passive_energy_template_1x2) {
+           variable_1 : input_transition_time;
+               index_1 ("1000, 1001");
+        }
+	library_features(report_delay_calculation);
+	type (sram_256x16_DATA) {
+		base_type : array ;
+		data_type : bit ;
+		bit_width : 16;
+		bit_from  : 15;
+		bit_to	  : 0 ;
+		downto 	  : true ;
+	}
+
+	type (sram_256x16_ADDRESS) {
+		base_type : array ;
+		data_type : bit ;
+		bit_width : 8;
+		bit_from  : 7;
+		bit_to    : 0 ;
+		downto    : true ;
+	}
+
+
+cell(sram_256x16) {
+	area		 : 44653.878;
+	dont_use	 : TRUE;
+	dont_touch	 : TRUE;
+	interface_timing : TRUE;
+	memory() {
+		type : ram;
+		address_width : 8;
+		word_width : 16;
+	}
+	pin(CENB) {
+		direction : input;
+		capacitance : 0.003;
+		timing() {
+			related_pin : "CLKB" ;
+			timing_type : setup_rising ;
+			rise_constraint(sram_256x16_constraint_template) {
+			index_1 ("0.010, 0.050, 0.100, 0.200, 0.500, 1.000, 1.500");
+			index_2 ("0.010, 0.050, 0.100, 0.200, 0.500, 1.000, 1.500");
+			values ( \
+			  "0.333, 0.334, 0.334, 0.335, 0.337, 0.340, 0.344", \
+			  "0.330, 0.330, 0.331, 0.331, 0.333, 0.337, 0.340", \
+			  "0.326, 0.326, 0.326, 0.327, 0.329, 0.333, 0.336", \
+			  "0.318, 0.318, 0.318, 0.319, 0.321, 0.325, 0.328", \
+			  "0.293, 0.293, 0.293, 0.294, 0.296, 0.300, 0.303", \
+			  "0.251, 0.252, 0.252, 0.253, 0.255, 0.258, 0.262", \
+			  "0.210, 0.210, 0.211, 0.211, 0.214, 0.217, 0.221" \
+			)
+			}
+			fall_constraint(sram_256x16_constraint_template) {
+			index_1 ("0.010, 0.050, 0.100, 0.200, 0.500, 1.000, 1.500");
+			index_2 ("0.010, 0.050, 0.100, 0.200, 0.500, 1.000, 1.500");
+			values ( \
+			  "0.405, 0.414, 0.426, 0.448, 0.517, 0.631, 0.745", \
+			  "0.402, 0.411, 0.422, 0.445, 0.513, 0.627, 0.741", \
+			  "0.398, 0.407, 0.418, 0.441, 0.509, 0.623, 0.737", \
+			  "0.389, 0.399, 0.410, 0.433, 0.501, 0.615, 0.729", \
+			  "0.365, 0.374, 0.385, 0.408, 0.476, 0.590, 0.704", \
+			  "0.323, 0.332, 0.344, 0.367, 0.435, 0.549, 0.663", \
+			  "0.282, 0.291, 0.303, 0.325, 0.394, 0.508, 0.621" \
+			)
+		}	}
+
+		timing() {
+			related_pin : "CLKB" ;
+			timing_type : hold_rising ;
+			rise_constraint(sram_256x16_constraint_template) {
+			index_1 ("0.010, 0.050, 0.100, 0.200, 0.500, 1.000, 1.500");
+			index_2 ("0.010, 0.050, 0.100, 0.200, 0.500, 1.000, 1.500");
+			values ( \
+			  "0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000", \
+			  "0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000", \
+			  "0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000", \
+			  "0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000", \
+			  "0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000", \
+			  "0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000", \
+			  "0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000" \
+			)
+			}
+			fall_constraint(sram_256x16_constraint_template) {
+			index_1 ("0.010, 0.050, 0.100, 0.200, 0.500, 1.000, 1.500");
+			index_2 ("0.010, 0.050, 0.100, 0.200, 0.500, 1.000, 1.500");
+			values ( \
+			  "0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000", \
+			  "0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000", \
+			  "0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000", \
+			  "0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000", \
+			  "0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000", \
+			  "0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000", \
+			  "0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000" \
+			)
+	}	}	}
+	bus (AB)  {
+		bus_type : sram_256x16_ADDRESS;
+  	        direction : input;
+		capacitance : 0.005;
+	        internal_power(){
+	    		when : "CENB";
+			power(sram_256x16_passive_energy_template_1x2) {
+				index_1 ("0.0 1.0");
+	    			values ("0.130, 0.130")
+			}	
+		}
+		timing() {
+			related_pin : "CLKB"
+			timing_type : setup_rising ;
+			rise_constraint(sram_256x16_constraint_template) {
+			index_1 ("0.010, 0.050, 0.100, 0.200, 0.500, 1.000, 1.500");
+			index_2 ("0.010, 0.050, 0.100, 0.200, 0.500, 1.000, 1.500");
+			values ( \
+			  "0.464, 0.472, 0.481, 0.501, 0.561, 0.661, 0.760", \
+			  "0.460, 0.468, 0.478, 0.498, 0.558, 0.657, 0.757", \
+			  "0.456, 0.464, 0.474, 0.494, 0.554, 0.653, 0.753", \
+			  "0.448, 0.456, 0.466, 0.486, 0.545, 0.645, 0.745", \
+			  "0.423, 0.431, 0.441, 0.461, 0.521, 0.620, 0.720", \
+			  "0.382, 0.390, 0.400, 0.420, 0.479, 0.579, 0.679", \
+			  "0.340, 0.348, 0.358, 0.378, 0.438, 0.538, 0.637" \
+			)
+			}
+			fall_constraint(sram_256x16_constraint_template) {
+			index_1 ("0.010, 0.050, 0.100, 0.200, 0.500, 1.000, 1.500");
+			index_2 ("0.010, 0.050, 0.100, 0.200, 0.500, 1.000, 1.500");
+			values ( \
+			  "0.338, 0.351, 0.366, 0.398, 0.493, 0.651, 0.809", \
+			  "0.335, 0.347, 0.363, 0.395, 0.490, 0.648, 0.806", \
+			  "0.330, 0.343, 0.359, 0.391, 0.485, 0.643, 0.802", \
+			  "0.322, 0.335, 0.351, 0.382, 0.477, 0.635, 0.793", \
+			  "0.297, 0.310, 0.326, 0.357, 0.452, 0.610, 0.768", \
+			  "0.256, 0.269, 0.285, 0.316, 0.411, 0.569, 0.727", \
+			  "0.215, 0.227, 0.243, 0.275, 0.370, 0.528, 0.686" \
+			)
+		}	}
+		timing() {
+			related_pin : "CLKB"
+			timing_type : hold_rising ;
+			rise_constraint(sram_256x16_constraint_template) {
+			index_1 ("0.010, 0.050, 0.100, 0.200, 0.500, 1.000, 1.500");
+			index_2 ("0.010, 0.050, 0.100, 0.200, 0.500, 1.000, 1.500");
+			values ( \
+			  "0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000", \
+			  "0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000", \
+			  "0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000", \
+			  "0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000", \
+			  "0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000", \
+			  "0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000", \
+			  "0.037, 0.029, 0.019, 0.000, 0.000, 0.000, 0.000" \
+			)
+			}
+			fall_constraint(sram_256x16_constraint_template) {
+			index_1 ("0.010, 0.050, 0.100, 0.200, 0.500, 1.000, 1.500");
+			index_2 ("0.010, 0.050, 0.100, 0.200, 0.500, 1.000, 1.500");
+			values ( \
+			  "0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000", \
+			  "0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000", \
+			  "0.004, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000", \
+			  "0.013, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000", \
+			  "0.037, 0.025, 0.009, 0.000, 0.000, 0.000, 0.000", \
+			  "0.079, 0.066, 0.050, 0.019, 0.000, 0.000, 0.000", \
+			  "0.120, 0.107, 0.092, 0.060, 0.000, 0.000, 0.000" \
+			)
+	}	}	}
+	bus (DB)	 {
+		bus_type : sram_256x16_DATA;
+		direction : input;
+		capacitance : 0.002;
+		memory_write() {
+			address : AB;
+			clocked_on : "CLKB";
+		}
+		timing() {
+			related_pin : "CLKB"
+			timing_type : setup_rising ;
+			rise_constraint(sram_256x16_constraint_template) {
+			index_1 ("0.010, 0.050, 0.100, 0.200, 0.500, 1.000, 1.500");
+			index_2 ("0.010, 0.050, 0.100, 0.200, 0.500, 1.000, 1.500");
+			values ( \
+			  "0.207, 0.207, 0.207, 0.208, 0.209, 0.211, 0.213", \
+			  "0.204, 0.204, 0.204, 0.204, 0.206, 0.207, 0.209", \
+			  "0.200, 0.200, 0.200, 0.200, 0.201, 0.203, 0.205", \
+			  "0.191, 0.192, 0.192, 0.192, 0.193, 0.195, 0.197", \
+			  "0.167, 0.167, 0.167, 0.167, 0.168, 0.170, 0.172", \
+			  "0.125, 0.125, 0.126, 0.126, 0.127, 0.129, 0.131", \
+			  "0.084, 0.084, 0.084, 0.085, 0.086, 0.088, 0.089" \
+			)
+			}
+			fall_constraint(sram_256x16_constraint_template) {
+			index_1 ("0.010, 0.050, 0.100, 0.200, 0.500, 1.000, 1.500");
+			index_2 ("0.010, 0.050, 0.100, 0.200, 0.500, 1.000, 1.500");
+			values ( \
+			  "0.185, 0.195, 0.206, 0.229, 0.297, 0.410, 0.524", \
+			  "0.182, 0.191, 0.203, 0.225, 0.293, 0.407, 0.521", \
+			  "0.178, 0.187, 0.198, 0.221, 0.289, 0.403, 0.517", \
+			  "0.170, 0.179, 0.190, 0.213, 0.281, 0.395, 0.508", \
+			  "0.145, 0.154, 0.165, 0.188, 0.256, 0.370, 0.483", \
+			  "0.104, 0.113, 0.124, 0.147, 0.215, 0.329, 0.442", \
+			  "0.062, 0.071, 0.083, 0.106, 0.174, 0.287, 0.401" \
+			)
+		}	}
+		timing() {
+			related_pin : "CLKB"
+			timing_type : hold_rising ;
+			rise_constraint(sram_256x16_constraint_template) {
+			index_1 ("0.010, 0.050, 0.100, 0.200, 0.500, 1.000, 1.500");
+			index_2 ("0.010, 0.050, 0.100, 0.200, 0.500, 1.000, 1.500");
+			values ( \
+			  "0.126, 0.126, 0.126, 0.125, 0.124, 0.122, 0.120", \
+			  "0.129, 0.129, 0.129, 0.129, 0.127, 0.126, 0.124", \
+			  "0.133, 0.133, 0.133, 0.133, 0.132, 0.130, 0.128", \
+			  "0.142, 0.141, 0.141, 0.141, 0.140, 0.138, 0.136", \
+			  "0.166, 0.166, 0.166, 0.166, 0.165, 0.163, 0.161", \
+			  "0.208, 0.208, 0.207, 0.207, 0.206, 0.204, 0.202", \
+			  "0.249, 0.249, 0.249, 0.248, 0.247, 0.245, 0.244" \
+			)
+			}
+			fall_constraint(sram_256x16_constraint_template) {
+			index_1 ("0.010, 0.050, 0.100, 0.200, 0.500, 1.000, 1.500");
+			index_2 ("0.010, 0.050, 0.100, 0.200, 0.500, 1.000, 1.500");
+			values ( \
+			  "0.054, 0.045, 0.034, 0.011, 0.000, 0.000, 0.000", \
+			  "0.058, 0.049, 0.037, 0.014, 0.000, 0.000, 0.000", \
+			  "0.062, 0.053, 0.041, 0.019, 0.000, 0.000, 0.000", \
+			  "0.070, 0.061, 0.050, 0.027, 0.000, 0.000, 0.000", \
+			  "0.095, 0.086, 0.074, 0.052, 0.000, 0.000, 0.000", \
+			  "0.136, 0.127, 0.116, 0.093, 0.025, 0.000, 0.000", \
+			  "0.177, 0.168, 0.157, 0.134, 0.066, 0.000, 0.000" \
+			)
+	}	}	}
+	pin(CENA) {
+		direction : input;
+		capacitance : 0.004;
+		timing() {
+			related_pin : "CLKA" ;
+			timing_type : setup_rising ;
+			rise_constraint(sram_256x16_constraint_template) {
+			index_1 ("0.010, 0.050, 0.100, 0.200, 0.500, 1.000, 1.500");
+			index_2 ("0.010, 0.050, 0.100, 0.200, 0.500, 1.000, 1.500");
+			values ( \
+			  "0.351, 0.351, 0.351, 0.352, 0.354, 0.358, 0.361", \
+			  "0.347, 0.348, 0.348, 0.349, 0.351, 0.354, 0.358", \
+			  "0.343, 0.343, 0.344, 0.345, 0.347, 0.350, 0.354", \
+			  "0.335, 0.335, 0.336, 0.336, 0.338, 0.342, 0.345", \
+			  "0.310, 0.310, 0.311, 0.311, 0.314, 0.317, 0.321", \
+			  "0.269, 0.269, 0.269, 0.270, 0.272, 0.276, 0.279", \
+			  "0.227, 0.228, 0.228, 0.229, 0.231, 0.234, 0.238" \
+			)
+			}
+			fall_constraint(sram_256x16_constraint_template) {
+			index_1 ("0.010, 0.050, 0.100, 0.200, 0.500, 1.000, 1.500");
+			index_2 ("0.010, 0.050, 0.100, 0.200, 0.500, 1.000, 1.500");
+			values ( \
+			  "0.417, 0.426, 0.437, 0.460, 0.528, 0.642, 0.756", \
+			  "0.413, 0.422, 0.434, 0.457, 0.525, 0.639, 0.753", \
+			  "0.409, 0.418, 0.430, 0.452, 0.521, 0.635, 0.748", \
+			  "0.401, 0.410, 0.421, 0.444, 0.512, 0.626, 0.740", \
+			  "0.376, 0.385, 0.397, 0.419, 0.488, 0.602, 0.715", \
+			  "0.335, 0.344, 0.355, 0.378, 0.446, 0.560, 0.674", \
+			  "0.293, 0.303, 0.314, 0.337, 0.405, 0.519, 0.633" \
+			)
+		}	}
+		timing() {
+			related_pin : "CLKA " ;
+			timing_type : hold_rising ;
+			rise_constraint(sram_256x16_constraint_template) {
+			index_1 ("0.010, 0.050, 0.100, 0.200, 0.500, 1.000, 1.500");
+			index_2 ("0.010, 0.050, 0.100, 0.200, 0.500, 1.000, 1.500");
+			values ( \
+			  "0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000", \
+			  "0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000", \
+			  "0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000", \
+			  "0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000", \
+			  "0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000", \
+			  "0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000", \
+			  "0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000" \
+			)
+				
+			}
+			fall_constraint(sram_256x16_constraint_template) {
+			index_1 ("0.010, 0.050, 0.100, 0.200, 0.500, 1.000, 1.500");
+			index_2 ("0.010, 0.050, 0.100, 0.200, 0.500, 1.000, 1.500");
+			values ( \
+			  "0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000", \
+			  "0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000", \
+			  "0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000", \
+			  "0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000", \
+			  "0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000", \
+			  "0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000", \
+			  "0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000" \
+			)
+	}	}   }
+	bus (AA)  {
+		bus_type : sram_256x16_ADDRESS;
+		direction : input;
+		capacitance : 0.005;
+	        internal_power(){
+	    		when : "CENA";
+			power(sram_256x16_passive_energy_template_1x2) {
+				index_1 ("0.0 1.0");
+	    			values ("0.130, 0.130")
+			}	
+		}
+
+		timing() {
+			related_pin : "CLKA"
+			timing_type : setup_rising ;
+			rise_constraint(sram_256x16_constraint_template) {
+			index_1 ("0.010, 0.050, 0.100, 0.200, 0.500, 1.000, 1.500");
+			index_2 ("0.010, 0.050, 0.100, 0.200, 0.500, 1.000, 1.500");
+			values ( \
+			  "0.462, 0.470, 0.480, 0.500, 0.560, 0.660, 0.759", \
+			  "0.459, 0.467, 0.477, 0.497, 0.557, 0.656, 0.756", \
+			  "0.455, 0.463, 0.473, 0.493, 0.553, 0.652, 0.752", \
+			  "0.447, 0.455, 0.465, 0.485, 0.544, 0.644, 0.744", \
+			  "0.422, 0.430, 0.440, 0.460, 0.520, 0.619, 0.719", \
+			  "0.381, 0.389, 0.399, 0.419, 0.478, 0.578, 0.678", \
+			  "0.339, 0.347, 0.357, 0.377, 0.437, 0.537, 0.636" \
+			)
+			}
+			fall_constraint(sram_256x16_constraint_template) {
+			index_1 ("0.010, 0.050, 0.100, 0.200, 0.500, 1.000, 1.500");
+			index_2 ("0.010, 0.050, 0.100, 0.200, 0.500, 1.000, 1.500");
+			values ( \
+			  "0.338, 0.350, 0.366, 0.398, 0.492, 0.651, 0.809", \
+			  "0.334, 0.347, 0.363, 0.394, 0.489, 0.647, 0.805", \
+			  "0.330, 0.343, 0.359, 0.390, 0.485, 0.643, 0.801", \
+			  "0.322, 0.335, 0.350, 0.382, 0.477, 0.635, 0.793", \
+			  "0.297, 0.310, 0.326, 0.357, 0.452, 0.610, 0.768", \
+			  "0.256, 0.268, 0.284, 0.316, 0.411, 0.569, 0.727", \
+			  "0.214, 0.227, 0.243, 0.274, 0.369, 0.527, 0.685" \
+			)
+		}	}
+		timing() {
+			related_pin : "CLKA"
+			timing_type : hold_rising ;
+			rise_constraint(sram_256x16_constraint_template) {
+			index_1 ("0.010, 0.050, 0.100, 0.200, 0.500, 1.000, 1.500");
+			index_2 ("0.010, 0.050, 0.100, 0.200, 0.500, 1.000, 1.500");
+			values ( \
+			  "0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000", \
+			  "0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000", \
+			  "0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000", \
+			  "0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000", \
+			  "0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000", \
+			  "0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000", \
+			  "0.038, 0.030, 0.020, 0.000, 0.000, 0.000, 0.000" \
+			)
+			}
+			fall_constraint(sram_256x16_constraint_template) {
+			index_1 ("0.010, 0.050, 0.100, 0.200, 0.500, 1.000, 1.500");
+			index_2 ("0.010, 0.050, 0.100, 0.200, 0.500, 1.000, 1.500");
+			values ( \
+			  "0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000", \
+			  "0.001, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000", \
+			  "0.006, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000", \
+			  "0.014, 0.001, 0.000, 0.000, 0.000, 0.000, 0.000", \
+			  "0.039, 0.026, 0.010, 0.000, 0.000, 0.000, 0.000", \
+			  "0.080, 0.067, 0.051, 0.020, 0.000, 0.000, 0.000", \
+			  "0.121, 0.109, 0.093, 0.061, 0.000, 0.000, 0.000" \
+			)
+	}	}   }
+
+	pin(CLKB) {
+		direction : input;
+		capacitance : 0.030
+		clock	 : true;
+		min_pulse_width_low	 : 0.442;
+		min_pulse_width_high	 : 0.091;
+		min_period		 : 2.121;
+                max_transition           : 1.500;
+	        internal_power(){
+	    		when : "CENB";
+			power(sram_256x16_passive_energy_template_1x2) {
+	    			index_1 ("0.0 1.0");
+	    			values ("0.016, 0.016")
+			}
+		}
+	        internal_power(){
+			when : "!CENB";
+			rise_power(sram_256x16_passive_energy_template_1x2) {
+	    			index_1 ("0.0 1.0");
+	    			values ("7.459, 7.459")
+			}	
+			fall_power(sram_256x16_passive_energy_template_1x2) {
+	    			index_1 ("0.0 1.0");
+	    			values ("0.0, 0.0")
+			}	
+		}	
+		timing() {
+			related_pin : "CLKA" ;
+			timing_type : setup_rising ;
+			rise_constraint(scalar) {
+				values ("1.027")
+			}
+		}
+	}
+   	pin(CLKA) {
+		direction : input;
+		capacitance : 0.036
+		clock	 : true;
+		min_pulse_width_low	 : 0.466;
+		min_pulse_width_high	 : 0.093;
+		min_period		 : 2.452;
+                max_transition           : 1.500;
+	        internal_power(){
+	    		when : "CENA";
+			power(sram_256x16_passive_energy_template_1x2) {
+	    			index_1 ("0.0 1.0");
+	    			values ("0.016, 0.016")
+			}
+		}
+	        internal_power(){
+	    		when : "!CENA";
+			rise_power(sram_256x16_passive_energy_template_1x2) {
+	    			index_1 ("0.0 1.0");
+	    			values ("9.521, 9.521")
+			}
+			fall_power(sram_256x16_passive_energy_template_1x2) {
+	    			index_1 ("0.0 1.0");
+	    			values ("0.0, 0.0")
+			}
+		}
+		timing() {
+			related_pin : "CLKB" ;
+			timing_type : setup_rising ;
+			rise_constraint(scalar) {
+				values ("1.027")
+			}
+		}	}
+	bus(QA) {
+                bus_type : sram_256x16_DATA;
+        	direction : output;
+                memory_read() {
+			address : AA;
+		}
+		timing() {
+			related_pin :	"CLKA";
+			timing_type : rising_edge;
+			timing_sense : non_unate;
+
+			cell_rise(sram_256x16_delay_template) {
+			index_1 ("0.010, 0.050, 0.100, 0.200, 0.500, 1.000, 1.500");
+			index_2 ("0.000, 0.010, 0.030, 0.050, 0.130, 0.250, 0.400");
+			values ( \
+			  "1.658, 1.677, 1.715, 1.753, 1.905, 2.133, 2.417", \
+			  "1.662, 1.681, 1.719, 1.757, 1.908, 2.136, 2.421", \
+			  "1.666, 1.685, 1.723, 1.761, 1.912, 2.140, 2.425", \
+			  "1.674, 1.693, 1.731, 1.769, 1.921, 2.148, 2.433", \
+			  "1.699, 1.718, 1.756, 1.794, 1.946, 2.173, 2.458", \
+			  "1.740, 1.759, 1.797, 1.835, 1.987, 2.215, 2.499", \
+			  "1.781, 1.800, 1.838, 1.876, 2.028, 2.256, 2.541" \
+			)
+			}
+			rise_transition(sram_256x16_load_template) {
+			index_1 ("0.000, 0.010, 0.030, 0.050, 0.130, 0.250, 0.400");
+			values ("0.124, 0.165, 0.245, 0.326, 0.650, 1.135, 1.741")
+			}
+			cell_fall(sram_256x16_delay_template) {
+			index_1 ("0.010, 0.050, 0.100, 0.200, 0.500, 1.000, 1.500");
+			index_2 ("0.000, 0.010, 0.030, 0.050, 0.130, 0.250, 0.400");
+			values ( \
+			  "1.709, 1.719, 1.741, 1.762, 1.846, 1.972, 2.130", \
+			  "1.712, 1.723, 1.744, 1.765, 1.849, 1.976, 2.134", \
+			  "1.716, 1.727, 1.748, 1.769, 1.853, 1.980, 2.138", \
+			  "1.725, 1.735, 1.756, 1.777, 1.862, 1.988, 2.146", \
+			  "1.749, 1.760, 1.781, 1.802, 1.886, 2.013, 2.171", \
+			  "1.791, 1.801, 1.822, 1.843, 1.928, 2.054, 2.212", \
+			  "1.832, 1.843, 1.864, 1.885, 1.969, 2.095, 2.253" \
+			)
+			}
+			fall_transition(sram_256x16_load_template) {
+			index_1 ("0.000, 0.010, 0.030, 0.050, 0.130, 0.250, 0.400");
+			values ("0.088, 0.109, 0.150, 0.192, 0.360, 0.611, 0.925")
+		}	}
+	}
+	cell_leakage_power : 0.094;
+    }
+}
