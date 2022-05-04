@@ -1,0 +1,64 @@
+01_01110_z_0001_0111_1101_1100     //LCU: 0=> type: 1, bank_pos=14, class=z, offset={ 1,  7, -3, -4}
+10_zzzzz_1_0010_0110_1111_1010     //LCU: 1=> type: 2, bank_pos=zz, class=1, offset={ 2,  6, -1, -6}
+00_zzzzz_z_zzzz_zzzz_zzzz_zzzz     //LCU: 2=> type: 0, bank_pos=zz, class=z, offset={ z,  z,  z,  z}
+10_zzzzz_0_0011_0110_1100_1010     //LCU: 3=> type: 2, bank_pos=zz, class=0, offset={ 3,  6, -4, -6}
+01_01010_z_0010_0011_1100_1010     //LCU: 4=> type: 1, bank_pos=10, class=z, offset={ 2,  3, -4, -6}
+01_10000_z_0001_0000_1101_1100     //LCU: 5=> type: 1, bank_pos=16, class=z, offset={ 1,  0, -3, -4}
+10_zzzzz_0_0110_0010_1100_1011     //LCU: 6=> type: 2, bank_pos=zz, class=0, offset={ 6,  2, -4, -5}
+10_zzzzz_0_0010_0001_1101_0000     //LCU: 7=> type: 2, bank_pos=zz, class=0, offset={ 2,  1, -3,  0}
+01_01100_z_0101_0001_1111_1100     //LCU: 8=> type: 1, bank_pos=12, class=z, offset={ 5,  1, -1, -4}
+00_zzzzz_z_zzzz_zzzz_zzzz_zzzz     //LCU: 9=> type: 0, bank_pos=zz, class=z, offset={ z,  z,  z,  z}
+00_zzzzz_z_zzzz_zzzz_zzzz_zzzz     //LCU:10=> type: 0, bank_pos=zz, class=z, offset={ z,  z,  z,  z}
+01_01100_z_0100_0011_1100_1010     //LCU:11=> type: 1, bank_pos=12, class=z, offset={ 4,  3, -4, -6}
+10_zzzzz_0_0101_0011_1100_1110     //LCU:12=> type: 2, bank_pos=zz, class=0, offset={ 5,  3, -4, -2}
+10_zzzzz_0_0101_0010_1111_1110     //LCU:13=> type: 2, bank_pos=zz, class=0, offset={ 5,  2, -1, -2}
+00_zzzzz_z_zzzz_zzzz_zzzz_zzzz     //LCU:14=> type: 0, bank_pos=zz, class=z, offset={ z,  z,  z,  z}
+10_zzzzz_1_0010_0000_1111_1010     //LCU:15=> type: 2, bank_pos=zz, class=1, offset={ 2,  0, -1, -6}
+10_zzzzz_1_0101_0110_1110_1010     //LCU:16=> type: 2, bank_pos=zz, class=1, offset={ 5,  6, -2, -6}
+10_zzzzz_1_0001_0111_1101_1110     //LCU:17=> type: 2, bank_pos=zz, class=1, offset={ 1,  7, -3, -2}
+10_zzzzz_1_0110_0011_1100_1011     //LCU:18=> type: 2, bank_pos=zz, class=1, offset={ 6,  3, -4, -5}
+10_zzzzz_1_0110_0011_1111_1110     //LCU:19=> type: 2, bank_pos=zz, class=1, offset={ 6,  3, -1, -2}
+10_zzzzz_0_0110_0111_1100_1001     //LCU:20=> type: 2, bank_pos=zz, class=0, offset={ 6,  7, -4, -7}
+10_zzzzz_1_0100_0111_1011_1111     //LCU:21=> type: 2, bank_pos=zz, class=1, offset={ 4,  7, -5, -1}
+01_00100_z_0100_0100_1010_1100     //LCU:22=> type: 1, bank_pos= 4, class=z, offset={ 4,  4, -6, -4}
+10_zzzzz_1_0111_0001_1110_1101     //LCU:23=> type: 2, bank_pos=zz, class=1, offset={ 7,  1, -2, -3}
+01_00101_z_0001_0010_1111_1011     //LCU:24=> type: 1, bank_pos= 5, class=z, offset={ 1,  2, -1, -5}
+10_zzzzz_1_0010_0110_1100_1110     //LCU:25=> type: 2, bank_pos=zz, class=1, offset={ 2,  6, -4, -2}
+01_01011_z_0101_0000_1100_1001     //LCU:26=> type: 1, bank_pos=11, class=z, offset={ 5,  0, -4, -7}
+01_00100_z_0011_0100_1010_1110     //LCU:27=> type: 1, bank_pos= 4, class=z, offset={ 3,  4, -6, -2}
+00_zzzzz_z_zzzz_zzzz_zzzz_zzzz     //LCU:28=> type: 0, bank_pos=zz, class=z, offset={ z,  z,  z,  z}
+10_zzzzz_1_0110_0001_1010_1110     //LCU:29=> type: 2, bank_pos=zz, class=1, offset={ 6,  1, -6, -2}
+10_zzzzz_0_0110_0110_1111_1001     //LCU:30=> type: 2, bank_pos=zz, class=0, offset={ 6,  6, -1, -7}
+10_zzzzz_0_0010_0101_1010_1101     //LCU:31=> type: 2, bank_pos=zz, class=0, offset={ 2,  5, -6, -3}
+10_zzzzz_0_0110_0001_1111_1010     //LCU:32=> type: 2, bank_pos=zz, class=0, offset={ 6,  1, -1, -6}
+01_00001_z_0000_0101_1010_1111     //LCU:33=> type: 1, bank_pos= 1, class=z, offset={ 0,  5, -6, -1}
+01_01000_z_0011_0010_1011_1110     //LCU:34=> type: 1, bank_pos= 8, class=z, offset={ 3,  2, -5, -2}
+10_zzzzz_1_0110_0001_1010_1010     //LCU:35=> type: 2, bank_pos=zz, class=1, offset={ 6,  1, -6, -6}
+10_zzzzz_0_0001_0000_1100_0000     //LCU:36=> type: 2, bank_pos=zz, class=0, offset={ 1,  0, -4,  0}
+10_zzzzz_0_0110_0110_1011_1110     //LCU:37=> type: 2, bank_pos=zz, class=0, offset={ 6,  6, -5, -2}
+10_zzzzz_1_0100_0111_1010_1100     //LCU:38=> type: 2, bank_pos=zz, class=1, offset={ 4,  7, -6, -4}
+10_zzzzz_0_0110_0110_1100_0000     //LCU:39=> type: 2, bank_pos=zz, class=0, offset={ 6,  6, -4,  0}
+01_00111_z_0010_0011_1101_1010     //LCU:40=> type: 1, bank_pos= 7, class=z, offset={ 2,  3, -3, -6}
+01_00010_z_0000_0010_1111_1110     //LCU:41=> type: 1, bank_pos= 2, class=z, offset={ 0,  2, -1, -2}
+10_zzzzz_1_0101_0010_1110_1111     //LCU:42=> type: 2, bank_pos=zz, class=1, offset={ 5,  2, -2, -1}
+01_00000_z_0010_0110_1101_1011     //LCU:43=> type: 1, bank_pos= 0, class=z, offset={ 2,  6, -3, -5}
+10_zzzzz_1_0111_0011_1100_1001     //LCU:44=> type: 2, bank_pos=zz, class=1, offset={ 7,  3, -4, -7}
+01_00110_z_0011_0101_1110_1010     //LCU:45=> type: 1, bank_pos= 6, class=z, offset={ 3,  5, -2, -6}
+10_zzzzz_0_0010_0010_1010_1101     //LCU:46=> type: 2, bank_pos=zz, class=0, offset={ 2,  2, -6, -3}
+10_zzzzz_1_0001_0000_1111_1110     //LCU:47=> type: 2, bank_pos=zz, class=1, offset={ 1,  0, -1, -2}
+01_00110_z_0111_0101_1011_1010     //LCU:48=> type: 1, bank_pos= 6, class=z, offset={ 7,  5, -5, -6}
+10_zzzzz_1_0011_0101_1101_1010     //LCU:49=> type: 2, bank_pos=zz, class=1, offset={ 3,  5, -3, -6}
+10_zzzzz_0_0011_0110_0000_1001     //LCU:50=> type: 2, bank_pos=zz, class=0, offset={ 3,  6,  0, -7}
+10_zzzzz_0_0010_0000_1111_1101     //LCU:51=> type: 2, bank_pos=zz, class=0, offset={ 2,  0, -1, -3}
+10_zzzzz_1_0110_0010_1011_1111     //LCU:52=> type: 2, bank_pos=zz, class=1, offset={ 6,  2, -5, -1}
+10_zzzzz_0_0101_0010_1111_1010     //LCU:53=> type: 2, bank_pos=zz, class=0, offset={ 5,  2, -1, -6}
+10_zzzzz_0_0101_0111_1001_1100     //LCU:54=> type: 2, bank_pos=zz, class=0, offset={ 5,  7, -7, -4}
+01_00110_z_0110_0011_1010_0000     //LCU:55=> type: 1, bank_pos= 6, class=z, offset={ 6,  3, -6,  0}
+00_zzzzz_z_zzzz_zzzz_zzzz_zzzz     //LCU:56=> type: 0, bank_pos=zz, class=z, offset={ z,  z,  z,  z}
+10_zzzzz_1_0001_0101_1101_1101     //LCU:57=> type: 2, bank_pos=zz, class=1, offset={ 1,  5, -3, -3}
+10_zzzzz_0_0100_0000_1101_0000     //LCU:58=> type: 2, bank_pos=zz, class=0, offset={ 4,  0, -3,  0}
+10_zzzzz_1_0101_0100_1111_1101     //LCU:59=> type: 2, bank_pos=zz, class=1, offset={ 5,  4, -1, -3}
+10_zzzzz_0_0011_0101_1110_1111     //LCU:60=> type: 2, bank_pos=zz, class=0, offset={ 3,  5, -2, -1}
+10_zzzzz_0_0011_0101_1100_1010     //LCU:61=> type: 2, bank_pos=zz, class=0, offset={ 3,  5, -4, -6}
+01_00111_z_0010_0010_1110_1010     //LCU:62=> type: 1, bank_pos= 7, class=z, offset={ 2,  2, -2, -6}
+10_zzzzz_0_0101_0110_1011_1011     //LCU:63=> type: 2, bank_pos=zz, class=0, offset={ 5,  6, -5, -5}

@@ -1,0 +1,43 @@
+$date
+    May  4, 2022  22:36:54
+$end
+$version
+    TOOL:	ncsim	15.20-s039
+$end
+$timescale
+    1 ps
+$end
+
+$scope module test $end
+$var parameter 32 !    IMAGE_NUM  $end
+$var parameter 32 "    size  $end
+$var parameter 32 #    size_sqr  $end
+$var parameter 32 $    block  $end
+
+$scope module SAO $end
+
+$scope module golden_sram $end
+$var parameter 32 %    BITS  $end
+$var parameter 32 &    word_depth  $end
+$var parameter 32 '    addr_width  $end
+$var parameter  8 (    wordx  $end
+$var parameter 14 )    addrx  $end
+$upscope $end
+
+$upscope $end
+
+$upscope $end
+
+$enddefinitions $end
+$dumpvars
+bx )
+bx (
+b1110 '
+b100000000000000 &
+b1000 %
+b1000 $
+b100000000 #
+b10000 "
+b100000000000000 !
+$end
+#78656035

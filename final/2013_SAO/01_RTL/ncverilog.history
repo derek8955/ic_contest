@@ -1,0 +1,15 @@
+s1(04May2022:21:49:42):  ncverilog testfixture1.v SAO.v 
+s2(04May2022:21:49:52):  ncverilog testfixture1.v SAO.v +notimingcheck 
+s3(04May2022:21:49:59):  ncverilog testfixture2.v SAO.v +notimingcheck 
+s4(04May2022:21:50:05):  ncverilog testfixture3.v SAO.v +notimingcheck 
+s5(04May2022:21:55:03):  ncverilog testfixture1.v ../02_SYN/SAO_syn.v -v tsmc13_neg.v +define+SDF 
+s6(04May2022:21:55:31):  ncverilog testfixture2.v ../02_SYN/SAO_syn.v -v tsmc13_neg.v +define+SDF 
+s7(04May2022:21:56:51):  ncverilog +notimingcheck testfixture1.v SAO.v 
+s8(04May2022:21:59:12):  ncverilog testfixture1.v ../02_SYN/SAO_syn.v -v tsmc13_neg.v +define+SDF 
+s9(04May2022:22:02:20):  ncverilog testfixture1.v ../02_SYN/SAO_syn.v -v tsmc13_neg.v +define+SDF 
+s10(04May2022:22:31:24):  ncverilog +notimingcheck testfixture1.v SAO.v 
+s11(04May2022:22:32:21):  ncverilog testfixture1.v ../02_SYN/SAO_syn.v -v tsmc13_neg.v +define+SDF 
+s12(04May2022:22:32:41):  ncverilog testfixture2.v ../02_SYN/SAO_syn.v -v tsmc13_neg.v +define+SDF 
+s13(04May2022:22:34:14):  ncverilog +notimingcheck testfixture1.v SAO.v 
+s14(04May2022:22:36:40):  ncverilog testfixture1.v ../02_SYN/SAO_syn.v -v tsmc13_neg.v +define+SDF 
+s15(04May2022:22:36:52):  ncverilog testfixture1.v ../02_SYN/SAO_syn.v -v tsmc13_neg.v +define+SDF +notimingcheck 

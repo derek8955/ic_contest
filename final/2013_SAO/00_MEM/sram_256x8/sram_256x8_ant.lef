@@ -1,0 +1,59 @@
+MACRO sram_256x8
+  PIN A[0]
+    AntennaGateArea  0.039 ;
+  END A[0]
+  PIN A[1]
+    AntennaGateArea  0.039 ;
+  END A[1]
+  PIN A[2]
+    AntennaGateArea  0.039 ;
+  END A[2]
+  PIN A[3]
+    AntennaGateArea  0.039 ;
+  END A[3]
+  PIN A[4]
+    AntennaGateArea  0.039 ;
+  END A[4]
+  PIN A[5]
+    AntennaGateArea  0.039 ;
+  END A[5]
+  PIN A[6]
+    AntennaGateArea  0.039 ;
+  END A[6]
+  PIN A[7]
+    AntennaGateArea  0.039 ;
+  END A[7]
+  PIN CEN
+    AntennaGateArea  0.039 ;
+  END CEN
+  PIN CLK
+    AntennaGateArea  0.039 ;
+  END CLK
+  PIN D[0]
+    AntennaGateArea  0.039 ;
+  END D[0]
+  PIN D[1]
+    AntennaGateArea  0.039 ;
+  END D[1]
+  PIN D[2]
+    AntennaGateArea  0.039 ;
+  END D[2]
+  PIN D[3]
+    AntennaGateArea  0.039 ;
+  END D[3]
+  PIN D[4]
+    AntennaGateArea  0.039 ;
+  END D[4]
+  PIN D[5]
+    AntennaGateArea  0.039 ;
+  END D[5]
+  PIN D[6]
+    AntennaGateArea  0.039 ;
+  END D[6]
+  PIN D[7]
+    AntennaGateArea  0.039 ;
+  END D[7]
+  PIN WEN
+    AntennaGateArea  0.039 ;
+  END WEN
+END sram_256x8

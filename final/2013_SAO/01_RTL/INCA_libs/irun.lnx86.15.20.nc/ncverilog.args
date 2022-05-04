@@ -1,0 +1,10 @@
+//
+// File created by:  ncverilog
+// Do not modify this file
+//
+testfixture1.v
+../02_SYN/SAO_syn.v
+-v
+tsmc13_neg.v
++define+SDF
++notimingcheck

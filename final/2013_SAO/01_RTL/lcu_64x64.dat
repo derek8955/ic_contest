@@ -1,0 +1,4 @@
+10_zzzzz_0_0100_0110_1101_1110     //LCU: 0=> type: 2, bank_pos=zz, class=0, offset={ 4,  6, -3, -2}
+10_zzzzz_0_0011_0101_1111_1101     //LCU: 1=> type: 2, bank_pos=zz, class=0, offset={ 3,  5, -1, -3}
+01_01010_z_0001_0001_1001_1100     //LCU: 2=> type: 1, bank_pos=10, class=z, offset={ 1,  1, -7, -4}
+10_zzzzz_1_0011_0101_1100_1011     //LCU: 3=> type: 2, bank_pos=zz, class=1, offset={ 3,  5, -4, -5}

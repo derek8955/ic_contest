@@ -1,0 +1,17 @@
+FORMATVERSION 1
+ADDINST ANTENNA DIODE_1 1 addPortAsNeeded
+INSTTERM A sao_offset[2] -
+ADDINST ANTENNA DIODE_2 1 addPortAsNeeded
+INSTTERM A sao_offset[4] -
+ADDINST ANTENNA DIODE_3 1 addPortAsNeeded
+INSTTERM A sao_offset[0] -
+ADDINST ANTENNA DIODE_4 1 addPortAsNeeded
+INSTTERM A sao_offset[5] -
+ADDINST ANTENNA DIODE_5 1 addPortAsNeeded
+INSTTERM A sao_offset[6] -
+ADDINST ANTENNA DIODE_6 1 addPortAsNeeded
+INSTTERM A sao_offset[7] -
+ADDINST ANTENNA DIODE_7 1 addPortAsNeeded
+INSTTERM A sao_offset[8] -
+ADDINST ANTENNA DIODE_8 1 addPortAsNeeded
+INSTTERM A sao_offset[9] -
