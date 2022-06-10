@@ -1,5 +1,5 @@
 
-# Completed:
+Completed:
 
 ## Graduate level:
 - 2014 Serial Transmitter and Data Arrange Controller 
