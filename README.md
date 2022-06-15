@@ -9,7 +9,7 @@ Completed:
 - [ ] 2018 Huffman Coding
 - [x] 2019 Image Convolution Circuit Design
 - [x] 2020 String Matching Engine
-- []  2021 Geofence
+- [ ]  2021 Geofence
 ## undergraduate level:
 - [x] 2018 Image Display Control
 - [ ] 2019 Image Convolution Circuit Design
