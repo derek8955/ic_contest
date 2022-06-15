@@ -1,6 +1,4 @@
 
-Completed:
-
 ## Graduate level:
 - [x] 2014 Serial Transmitter and Data Arrange Controller 
 - [x] 2015 指定集合內覆蓋之元素個數計數器 
