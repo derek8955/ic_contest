@@ -1,18 +1,24 @@
 
 ## Graduate level:
 - [x] 2014 Serial Transmitter and Data Arrange Controller 
+	![Report](https://img.shields.io/badge/cycles-3725-red.svg)
 - [x] 2015 指定集合內覆蓋之元素個數計數器 
+	![Report](https://img.shields.io/badge/cycles-6777-red.svg)
 - [x] 2016 Local Binary Pattern
 - [x] 2017 Distance Transform
 - [ ] 2018 Huffman Coding
-- [x] 2019 Image Convolution Circuit Design
+- [] 2019 Image Convolution Circuit Design
 - [x] 2020 String Matching Engine
 - [ ]  2021 Geofence
 ## undergraduate level:
 - [x] 2018 Image Display Control
-- [ ] 2019 Image Convolution Circuit Design
+	![Report](https://img.shields.io/badge/cycles-152156-red.svg)
+- [x] 2019 Image Convolution Circuit Design
+	![Report](https://img.shields.io/badge/cycles-26012-red.svg)
 - [ ] 2020 String Matching Engine
 - [x] 2021 Geofence
+	![Report](https://img.shields.io/badge/cycles-21901-red.svg)
 - [x] 2022 Job Assignment Machine
-
+	![Report](https://img.shields.io/badge/cycles-7648-red.svg)
+	
  
