@@ -7,7 +7,7 @@
 - [x] 2016 Local Binary Pattern
 - [x] 2017 Distance Transform
 - [ ] 2018 Huffman Coding
-- [] 2019 Image Convolution Circuit Design
+- [ ] 2019 Image Convolution Circuit Design
 - [x] 2020 String Matching Engine
 - [ ]  2021 Geofence
 ## undergraduate level:
