@@ -6,7 +6,7 @@
 	![Report](https://img.shields.io/badge/area-6777-red.svg)
 - [x] 2016 Local Binary Pattern
 - [x] 2017 Distance Transform
-	![Report](https://img.shields.io/badge/area-8301-red.svg) ![Report](https://img.shields.io/badge/time-963240-red.svg) 
+	![Report](https://img.shields.io/badge/area-8301-red.svg) ![Report](https://img.shields.io/badge/time-963240-blue.svg) 
 - [ ] 2018 Huffman Coding
 - [ ] 2019 Image Convolution Circuit Design
 - [x] 2020 String Matching Engine
