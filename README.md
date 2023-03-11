@@ -5,6 +5,7 @@
 - [x] 2015 指定集合內覆蓋之元素個數計數器 
 	![Report](https://img.shields.io/badge/area-6777-red.svg)
 - [x] 2016 Local Binary Pattern
+	![Report](https://img.shields.io/badge/area-6283-red.svg) ![Report](https://img.shields.io/badge/time-1587670-blue.svg)
 - [x] 2017 Distance Transform
 	![Report](https://img.shields.io/badge/area-8301-red.svg) ![Report](https://img.shields.io/badge/time-963240-blue.svg) 
 - [ ] 2018 Huffman Coding
