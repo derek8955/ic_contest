@@ -196,9 +196,5 @@ always @(posedge clk or negedge reset ) begin
 	end
 end
 
-always @(posedge clk or negedge reset ) begin
-	if(!reset) done <= 0;
-	else done <= (cur_state == STATE_FINISH );
-end
  
 endmodule
