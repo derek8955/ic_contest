@@ -10,14 +10,14 @@
 	![Report](https://img.shields.io/badge/area-8301-red.svg) ![Report](https://img.shields.io/badge/time-963240-blue.svg) 
 - [ ] 2018 Huffman Coding
 - [x] 2019 Image Convolution Circuit Design
-	![Report](https://img.shields.io/badge/area-89792-red.svg)
+	![Report](https://img.shields.io/badge/area-49413-red.svg)
 - [x] 2020 String Matching Engine
 - [ ]  2021 Geofence
 ## undergraduate level:
 - [x] 2018 Image Display Control
 	![Report](https://img.shields.io/badge/area-152156-red.svg)
 - [x] 2019 Image Convolution Circuit Design
-	![Report](https://img.shields.io/badge/area-26012-red.svg)
+	![Report](https://img.shields.io/badge/area-26248-red.svg)
 - [ ] 2020 String Matching Engine
 - [x] 2021 Geofence
 	![Report](https://img.shields.io/badge/area-21901-red.svg)
