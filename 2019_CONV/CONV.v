@@ -1,13 +1,4 @@
-//############################################################################
-//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-//   2019 IC Contest
-//   grad_cell_based          : Convolution Neural Network
-//   Author         : Yao-Zhan Xu (xuyaozhan8905@gmail.com)
-//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-//   File Name   : CONV.v
-//   Module Name : CONV
-//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-//############################################################################
+
 module  CONV(
 	input			clk, 
 	input			reset, 
@@ -46,7 +37,7 @@ parameter NOSEL = 3'd0, LAYER0_kernel0 = 3'd1, 	LAYER0_kernel1 = 3'd2, LAYER1_ke
 //================================================================
 //  Wires & Registers 
 //================================================================
-reg [3:0] cur_state, nx_state, previos_state;
+reg [2:0] cur_state, nx_state, previos_state;
 reg [1:0] cur_rd_state, nx_rd_state, cur_wr_state, nx_wr_state;
 // Input 
 reg signed [19:0] idata_buffer;
@@ -84,9 +75,9 @@ always @( posedge clk or posedge reset ) begin
 end
 
 always @( posedge clk or posedge reset ) begin
-	if( reset ) cnt_block <= 'd0;
-	else if( nx_state == STATE_CONV ) cnt_block <= cnt_block + 'd1;
-	else cnt_block <= 'd0;
+	if( reset ) cnt_block <= 0;
+	else if( nx_state == STATE_CONV ) cnt_block <= cnt_block + 1;
+	else cnt_block <= 0;
 end
 
 always @( posedge clk or posedge reset ) begin
@@ -146,21 +137,21 @@ KERNEL1 u_kernel1( .counter(cnt_block), .kernel(kernel_1) );
 // Control Signals 
 //================================================================
 always @( posedge clk or posedge reset ) begin
-	if( reset ) busy <= 1'b0;
-	else if( cur_state == STATE_FINISH ) busy <= 1'b0;
-	else if( cur_state == STATE_IDLE ) busy <= 1'b1;
+	if( reset ) busy <= 0;
+	else if( cur_state == STATE_FINISH ) busy <= 0;
+	else if( cur_state == STATE_IDLE ) busy <= 1;
 end
 
 always @( * ) begin
 	case( cur_state ) 
 	STATE_IDLE, STATE_CONV, STATE_DELAY, STATE_READ_MEM : begin
-		crd = 1'b1; cwr = 1'b0;
+		crd = 1; cwr = 0;
 	end	
 	STATE_L0MEM, STATE_L1MEM, STATE_L2MEM: begin
-		crd = 1'b0; cwr = 1'b1;
+		crd = 0; cwr = 1;
 	end
 	default: begin
-		crd = 1'b0; cwr = 1'b0;
+		crd = 0; cwr = 0;
 	end
 	endcase
 end
@@ -188,9 +179,9 @@ end
 // MAX-POOLING
 //================================================================
 always @( posedge clk or posedge reset ) begin
-	if( reset ) cnt_pooling <= 'd0;
+	if( reset ) cnt_pooling <= 0;
 	else if( nx_rd_state == STATE_READ_L0MEM0 || nx_rd_state == STATE_READ_L0MEM1 ) cnt_pooling <= cnt_pooling + 2'd1;
-	else cnt_pooling <= 'd0;
+	else cnt_pooling <= 0;
 end
 
 always @( posedge clk or posedge reset ) begin
@@ -205,7 +196,7 @@ end
 // OUTPUT: iaddr
 //================================================================
 always @( posedge clk or posedge reset ) begin
-	if( reset ) iaddr <= 'd0;
+	if( reset ) iaddr <= 0;
 	else if( nx_state == STATE_CONV ) begin
 		case( cnt_block )
 		0: iaddr <= {y-6'd1,x-6'd1};
@@ -224,17 +215,17 @@ end
 // flag
 //================================================================
 always @( posedge clk or posedge reset ) begin
-	if( reset ) flag_2 <= 'd0;
+	if( reset ) flag_2 <= 0;
 	else if( cur_state == STATE_L2MEM ) flag_2 <= ~flag_2;
 end
 
 always @( posedge clk or posedge reset ) begin
-	if( reset ) flag_1 <= 'd0;
+	if( reset ) flag_1 <= 0;
 	else if( cur_state == STATE_L1MEM ) flag_1 <= ~flag_1;
 end
 
 always @( posedge clk or posedge reset ) begin
-	if( reset ) flag_0 <= 'd0;
+	if( reset ) flag_0 <= 0;
 	else if( cur_state == STATE_L0MEM ) flag_0 <= ~flag_0;
 end
 
@@ -250,14 +241,14 @@ assign carry1 = ( sum1[15] )? sum1[35:16] + 1: sum1[35:16];
 // OUTPUT
 //================================================================
 always @( posedge clk or posedge reset ) begin
-	if( reset ) caddr_wr <= 'd0;
+	if( reset ) caddr_wr <= 0;
 	else if( nx_state == STATE_L0MEM ) caddr_wr <= {y,x};
 	else if( nx_state == STATE_L1MEM ) caddr_wr <= {y[5:1],x[5:1]};
 	else if( nx_state == STATE_L2MEM ) caddr_wr <= {y,x[4:0],1'b0} + flag_2;
 end
 
 always @( posedge clk or posedge reset ) begin
-	if( reset ) cdata_wr <= 'd0;
+	if( reset ) cdata_wr <= 0;
 	else if( nx_state == STATE_L0MEM ) begin
 		if( cur_state == STATE_L0MEM ) cdata_wr <= ( carry1 > 0 )? carry1 : 'd0 ; // using flag_0 will error
 		else cdata_wr <= ( carry0 > 0 )? carry0 : 'd0 ;
@@ -267,7 +258,7 @@ always @( posedge clk or posedge reset ) begin
 end
  
 always @( posedge clk or posedge reset ) begin
-	if( reset ) caddr_rd <= 'd0;
+	if( reset ) caddr_rd <= 0;
 	else if( nx_rd_state == STATE_READ_L0MEM0 || nx_rd_state == STATE_READ_L0MEM1 ) begin
 		case( cnt_pooling )
 		0: caddr_rd <= {y,x};

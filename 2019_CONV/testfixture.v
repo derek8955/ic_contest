@@ -1,5 +1,5 @@
 `timescale 1ns/10ps
-`define CYCLE      10.0          	  // Modify your clock period here
+`define CYCLE      4.0          	  // Modify your clock period here
 `define SDFFILE    "../02_SYN/conv_syn.sdf"	  // Modify your sdf file name
 `define End_CYCLE  10000000              // Modify cycle times once your design need more cycle times!
 
