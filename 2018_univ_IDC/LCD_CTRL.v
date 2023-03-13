@@ -1,13 +1,4 @@
-//############################################################################
-//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-//   2018 IC Contest
-//   univ_cell_based          : Image Display Control
-//   Author         : Yao-Zhan Xu (xuyaozhan8905@gmail.com)
-//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-//   File Name   : LCD_CTRL.v
-//   Module Name : LCD_CTRL
-//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-//############################################################################
+
 module LCD_CTRL(clk, reset, cmd, cmd_valid, IROM_Q, IROM_rd, IROM_A, IRAM_valid, IRAM_D, IRAM_A, busy, done);
 //================================================================
 //  INPUT AND OUTPUT DECLARATION                         
@@ -36,7 +27,7 @@ assign P3 = P0 + 6'd9;
 
 reg [7:0] data[0:63];
 reg [6:0] idx;
-reg [1:0] state, nx_state;
+reg [1:0] cur_state, nx_state;
 reg [5:0] counter;
 reg [5:0] max_idx, min_idx;
 reg [9:0] sum;
@@ -49,30 +40,30 @@ parameter cmd_WR = 0, cmd_SU = 1, cmd_SD = 2, cmd_SL = 3, cmd_SR = 4, cmd_MAX = 
 parameter cmd_AVG = 7, cmd_CCR = 8, cmd_CR = 9, cmd_MRX = 10, cmd_MRY = 11;
 
 //global status
-parameter RD = 0, CMD = 1, OP = 2, WR = 3;
+parameter STATE_RD = 0, STATE_CMD = 1, STATE_OP = 2, STATE_WR = 3;
 
 //================================================================
 //  FSM
 //================================================================
 always@( posedge clk or posedge reset ) 
 begin
-	if( reset ) state <= RD;
-	else state <= nx_state;
+	if( reset ) cur_state <= STATE_RD;
+	else cur_state <= nx_state;
 end
 
 //nx_state
 always@(*)
 begin
-	case(state)
-		RD: nx_state = ( IROM_A == 6'd63 )? CMD : RD;
-		CMD: 
+	case(cur_state)
+		STATE_RD: nx_state = ( IROM_A == 6'd63 )? STATE_CMD : STATE_RD;
+		STATE_CMD: 
 		begin 
-			if( cmd_valid && cmd != 4'd0 ) nx_state = OP;
-			else if( cmd_valid && cmd == 4'd0 ) nx_state = WR;
-			else nx_state = CMD;
+			if( cmd_valid && cmd != 4'd0 ) nx_state = STATE_OP;
+			else if( cmd_valid && cmd == 4'd0 ) nx_state = STATE_WR;
+			else nx_state = STATE_CMD;
 		end
-		OP: nx_state = CMD;
-		WR: nx_state = WR;
+		STATE_OP: nx_state = STATE_CMD;
+		STATE_WR: nx_state = STATE_WR;
 	endcase
 end
 
@@ -80,7 +71,7 @@ end
 always@( posedge clk or posedge reset )  
 begin
 	if( reset ) IROM_A <= 6'd0;
-	else if( state == RD ) IROM_A <= IROM_A + 6'd1;
+	else if( cur_state == STATE_RD ) IROM_A <= IROM_A + 6'd1;
 end
 
 //output logic 
@@ -95,9 +86,9 @@ begin
 	end
 	else 
 	begin
-		case(state)
-		RD: data[IROM_A] <= IROM_Q;
-		CMD: 
+		case(cur_state)
+		STATE_RD: data[IROM_A] <= IROM_Q;
+		STATE_CMD: 
 		begin
 			case(cmd)
 			cmd_SU: if( P0 > 6'd7 )P0 <= P0 - 6'd8;
@@ -193,26 +184,26 @@ always@(*)
 //control singal
 always@(*)
 begin
-	case(state)
-		RD:
+	case(cur_state)
+		STATE_RD:
 		begin
 			IROM_rd    = 1'd1;
 			IRAM_valid = 1'd0;
 			busy       = 1'd1;
 		end
-		CMD:
+		STATE_CMD:
 		begin
 			IROM_rd    = 1'd0;
 			IRAM_valid = 1'd0;
 			busy       = 1'd0;
 		end
-		OP:
+		STATE_OP:
 		begin
 			IROM_rd    = 1'd0;
 			IRAM_valid = 1'd0;
 			busy       = 1'd1;
 		end
-		WR:
+		STATE_WR:
 		begin
 			IROM_rd    = 1'd0;
 			IRAM_valid = 1'd1;
@@ -228,7 +219,7 @@ begin
 		counter <= 6'd0;
 		IRAM_D <= 8'd0;
 	end
-	else if( state == WR && IRAM_valid ) begin
+	else if( cur_state == STATE_WR && IRAM_valid ) begin
 		counter <= ( counter == 6'd63 )? 6'd63 : counter + 6'd1;
 		IRAM_D <= data[counter];
 	end
@@ -244,7 +235,7 @@ end
 //done
 always @( posedge clk )
 begin
-	if (state == WR && IRAM_A == 6'd63) done <= 1'd1;
+	if (cur_state == STATE_WR && IRAM_A == 6'd63) done <= 1'd1;
 	else done <= 1'd0;
 end
 
