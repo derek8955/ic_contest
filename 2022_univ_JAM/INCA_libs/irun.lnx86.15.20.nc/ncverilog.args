@@ -1,8 +1,0 @@
-//
-// File created by:  ncverilog
-// Do not modify this file
-//
--sv
-tb.sv
-JAM.v
-+define+P1
