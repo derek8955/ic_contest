@@ -12,7 +12,8 @@
 - [x] 2019 Image Convolution Circuit Design
 	![Report](https://img.shields.io/badge/area-49413-red.svg)
 - [x] 2020 String Matching Engine
-- [ ] 2021 Geofence
+- [x] 2021 Geofence
+	![Report](https://img.shields.io/badge/area-74464-red.svg)
 - [x] 2022 Job Assignment Machine
 	![Report](https://img.shields.io/badge/area-9968-red.svg) ![Report](https://img.shields.io/badge/time-4032045-blue.svg) 
 ## undergraduate level:
