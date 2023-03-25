@@ -31,7 +31,7 @@ reg [2:0] cur_state, nx_state;
 reg [2:0] cnt, cntCross, cntTri, cntSix;
 reg [9:0] x_coor[0:5], y_coor[0:5];
 reg [10: 0] distance[0:5];
-wire signed[10:0] ax, ay, bx, by;
+wire signed[12:0] ax, ay, bx, by;
 reg [2:0] round;
 reg [12:0] c_temp;
 
@@ -254,10 +254,17 @@ end
 
 wire [11:0] tri_1, tri_2;
 
+// wire [23:0] unsigned_cross1, unsigned_cross2;
+// assign unsigned_cross1 = (cross1<0)?cross1*-1:cross1;
+// assign unsigned_cross2 = (cross2<0)?cross2*-1:cross2;
+
+// DW_sqrt_inst TriArea1 (.radicand(unsigned_cross1), .square_root(tri_1));
+// DW_sqrt_inst TriArea2 (.radicand(unsigned_cross2), .square_root(tri_2));
 DW_sqrt_inst TriArea1 (.radicand(cross1), .square_root(tri_1));
 DW_sqrt_inst TriArea2 (.radicand(cross2), .square_root(tri_2));
 
-reg  [42:0] totalArea;
+
+reg  [26:0] totalArea;
 
 always @(posedge clk or posedge reset) begin
     if(reset) flag <= 0;
@@ -353,7 +360,7 @@ endmodule
 
 module DW_sqrt_inst (radicand, square_root);
 parameter radicand_width = 24;
-parameter tc_mode = 0;
+parameter tc_mode = 1;
 input [radicand_width-1 : 0] radicand;
 output [(radicand_width+1)/2-1 : 0] square_root;
 // Please add +incdir+$SYNOPSYS/dw/sim_ver+ to your verilog simulator
