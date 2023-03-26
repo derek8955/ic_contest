@@ -15,7 +15,7 @@
 - [x] 2021 Geofence
 	![Report](https://img.shields.io/badge/area-74464-red.svg)
 - [x] 2022 Job Assignment Machine
-	![Report](https://img.shields.io/badge/area-9968-red.svg) ![Report](https://img.shields.io/badge/time-4032045-blue.svg) 
+	![Report](https://img.shields.io/badge/area-9968-red.svg) ![Report](https://img.shields.io/badge/cycle-403205-blue.svg) 
 ## undergraduate level:
 - [x] 2018 Image Display Control
 	![Report](https://img.shields.io/badge/area-152156-red.svg)
