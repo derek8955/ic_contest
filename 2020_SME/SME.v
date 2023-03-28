@@ -33,7 +33,6 @@ reg [7:0] match_arr[0:27];
 reg match_w;
 
 reg [7:0] patStar[0:7];
-reg [7:0] patStar2[0:7];
 reg [7:0] matchStar[0:26];
 reg [2:0] star_index ;
 
@@ -426,13 +425,13 @@ always @( * ) begin
 	case( cur_state ) 
 	STATE_IDLE:           nx_state = (isstring) ? STATE_STRING : STATE_IDLE;
 	STATE_STRING:         nx_state = (ispattern) ? STATE_PATTERN : STATE_STRING;
-    STATE_PATTERN:        nx_state = (!ispattern)? STATE_ADJUST : STATE_PATTERN;
-    STATE_ADJUST:         nx_state = (haveStar)? STATE_PROC_STAR : STATE_PROC_NORMAL; 
-    STATE_PROC_NORMAL:    nx_state = STATE_OUTPUT;
-    STATE_PROC_STAR:      nx_state = STATE_OUTPUT;
-    STATE_OUTPUT:         nx_state = STATE_DELAY;
-    STATE_DELAY:          nx_state = (isstring) ? STATE_STRING : STATE_PATTERN;
-    default:        nx_state = STATE_IDLE;
+        STATE_PATTERN:        nx_state = (!ispattern)? STATE_ADJUST : STATE_PATTERN;
+    	STATE_ADJUST:         nx_state = (haveStar)? STATE_PROC_STAR : STATE_PROC_NORMAL; 
+    	STATE_PROC_NORMAL:    nx_state = STATE_OUTPUT;
+    	STATE_PROC_STAR:      nx_state = STATE_OUTPUT;
+    	STATE_OUTPUT:         nx_state = STATE_DELAY;
+    	STATE_DELAY:          nx_state = (isstring) ? STATE_STRING : STATE_PATTERN;
+    	default:        nx_state = STATE_IDLE;
 	endcase	
 end
 
